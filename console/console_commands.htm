@@ -1,0 +1,567 @@
+<html xmlns:v="urn:schemas-microsoft-com:vml"
+xmlns:o="urn:schemas-microsoft-com:office:office"
+xmlns:w="urn:schemas-microsoft-com:office:word"
+xmlns="http://www.w3.org/TR/REC-html40">
+
+<head>
+<meta http-equiv=Content-Type content="text/html; charset=windows-1252">
+<meta name=ProgId content=Word.Document>
+<meta name=Generator content="Microsoft Word 10">
+<meta name=Originator content="Microsoft Word 10">
+<link rel=File-List href="console_commands_files/filelist.xml">
+<title>Console commands for artists</title>
+<!--[if gte mso 9]><xml>
+ <o:DocumentProperties>
+  <o:Author>ecook</o:Author>
+  <o:LastAuthor>bbilodeau</o:LastAuthor>
+  <o:Revision>3</o:Revision>
+  <o:TotalTime>129</o:TotalTime>
+  <o:Created>2004-12-08T04:03:00Z</o:Created>
+  <o:LastSaved>2004-12-08T04:05:00Z</o:LastSaved>
+  <o:Pages>1</o:Pages>
+  <o:Words>1084</o:Words>
+  <o:Characters>6184</o:Characters>
+  <o:Company>EALA</o:Company>
+  <o:Lines>51</o:Lines>
+  <o:Paragraphs>14</o:Paragraphs>
+  <o:CharactersWithSpaces>7254</o:CharactersWithSpaces>
+  <o:Version>10.3501</o:Version>
+ </o:DocumentProperties>
+</xml><![endif]--><!--[if gte mso 9]><xml>
+ <w:WordDocument>
+  <w:Zoom>TextFit</w:Zoom>
+  <w:GrammarState>Clean</w:GrammarState>
+  <w:Compatibility>
+   <w:BreakWrappedTables/>
+   <w:SnapToGridInCell/>
+   <w:WrapTextWithPunct/>
+   <w:UseAsianBreakRules/>
+  </w:Compatibility>
+  <w:BrowserLevel>MicrosoftInternetExplorer4</w:BrowserLevel>
+ </w:WordDocument>
+</xml><![endif]-->
+<style>
+<!--
+ /* Font Definitions */
+ @font-face
+	{font-family:Tahoma;
+	panose-1:2 11 6 4 3 5 4 4 2 4;
+	mso-font-charset:0;
+	mso-generic-font-family:swiss;
+	mso-font-pitch:variable;
+	mso-font-signature:553679495 -2147483648 8 0 66047 0;}
+@font-face
+	{font-family:"Arial Narrow";
+	panose-1:2 11 5 6 2 2 2 3 2 4;
+	mso-font-charset:0;
+	mso-generic-font-family:swiss;
+	mso-font-pitch:variable;
+	mso-font-signature:647 0 0 0 159 0;}
+@font-face
+	{font-family:Impact;
+	panose-1:2 11 8 6 3 9 2 5 2 4;
+	mso-font-charset:0;
+	mso-generic-font-family:swiss;
+	mso-font-pitch:variable;
+	mso-font-signature:647 0 0 0 159 0;}
+ /* Style Definitions */
+ p.MsoNormal, li.MsoNormal, div.MsoNormal
+	{mso-style-parent:"";
+	margin:0in;
+	margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	font-size:12.0pt;
+	font-family:"Times New Roman";
+	mso-fareast-font-family:"Times New Roman";}
+p.MsoDocumentMap, li.MsoDocumentMap, div.MsoDocumentMap
+	{mso-style-noshow:yes;
+	margin:0in;
+	margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	background:navy;
+	font-size:12.0pt;
+	font-family:Tahoma;
+	mso-fareast-font-family:"Times New Roman";}
+span.GramE
+	{mso-style-name:"";
+	mso-gram-e:yes;}
+@page Section1
+	{size:8.5in 11.0in;
+	margin:1.0in 1.25in 1.0in 1.25in;
+	mso-header-margin:.5in;
+	mso-footer-margin:.5in;
+	mso-paper-source:0;}
+div.Section1
+	{page:Section1;}
+-->
+</style>
+<!--[if gte mso 10]>
+<style>
+ /* Style Definitions */
+ table.MsoNormalTable
+	{mso-style-name:"Table Normal";
+	mso-tstyle-rowband-size:0;
+	mso-tstyle-colband-size:0;
+	mso-style-noshow:yes;
+	mso-style-parent:"";
+	mso-padding-alt:0in 5.4pt 0in 5.4pt;
+	mso-para-margin:0in;
+	mso-para-margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	font-size:10.0pt;
+	font-family:"Times New Roman";}
+</style>
+<![endif]--><!--[if gte mso 9]><xml>
+ <o:shapedefaults v:ext="edit" spidmax="5122">
+  <o:colormenu v:ext="edit" strokecolor="#36f"/>
+ </o:shapedefaults></xml><![endif]--><!--[if gte mso 9]><xml>
+ <o:shapelayout v:ext="edit">
+  <o:idmap v:ext="edit" data="1"/>
+ </o:shapelayout></xml><![endif]-->
+</head>
+
+<body lang=EN-US style='tab-interval:.5in'>
+
+<div class=Section1>
+
+<p class=MsoNormal align=center style='text-align:center;mso-outline-level:
+1'><span style='font-size:16.0pt;font-family:Impact'>Console commands for Mod
+Developers</span><span style='font-size:16.0pt;font-family:Arial;color:black'><o:p></o:p></span></p>
+
+<p class=MsoNormal><span style='font-family:Arial;color:black'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal><span style='font-size:14.0pt;font-family:Arial;color:black'>The
+console is a text based window that streams information coming from the game
+and allows you to type in commands for the engine to follow. To bring up the console,
+run the game and press the tilde (~) key while playing. Many of these commands
+can be used in a shortcut by preceding them with “+set”.<o:p></o:p></span></p>
+
+<p class=MsoNormal><span style='font-family:Arial;color:black'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal style='mso-outline-level:1'><span style='font-size:14.0pt;
+font-family:Impact;mso-bidi-font-family:Arial;color:black'>Basics<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:117.0pt;text-indent:-99.0pt;tab-stops:
+117.0pt'><span style='font-size:10.0pt;font-family:"Arial Narrow";mso-bidi-font-family:
+Arial;color:black'>Dog ……………………<span style='mso-tab-count:1'>       </span>Puts
+you in “god mode.” You can’t be killed while in this mode.<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:117.0pt;text-indent:-99.0pt;tab-stops:
+117.0pt'><span style='font-size:10.0pt;font-family:"Arial Narrow";mso-bidi-font-family:
+Arial;color:black'>Noclip …………………<span style='mso-tab-count:1'>        </span>Allows
+you to fly around and go through walls.<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:117.0pt;text-indent:-99.0pt;tab-stops:
+117.0pt'><span style='font-size:10.0pt;font-family:"Arial Narrow";mso-bidi-font-family:
+Arial;color:black'>Give all ……………….<span style='mso-tab-count:1'>        </span>Gives
+you lots of weapons and bullets and stuff.<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:117.0pt;text-indent:-99.0pt;tab-stops:
+117.0pt'><span style='font-size:10.0pt;font-family:"Arial Narrow";mso-bidi-font-family:
+Arial;color:black'>Map &lt;mapname&gt; …...<span style='mso-tab-count:1'>         </span>Loads
+the map entered.<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:117.0pt;text-indent:-99.0pt;tab-stops:
+117.0pt'><span style='font-size:10.0pt;font-family:"Arial Narrow";mso-bidi-font-family:
+Arial;color:black'>Maplist ………………..<span style='mso-tab-count:1'>        </span>Brings
+up a list that you can browse through to find the map you want to load.<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:117.0pt;text-indent:-99.0pt;tab-stops:
+117.0pt'><span style='font-size:10.0pt;font-family:"Arial Narrow";mso-bidi-font-family:
+Arial;color:black'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal style='mso-outline-level:1'><span style='font-size:14.0pt;
+font-family:Impact;mso-bidi-font-family:Arial;color:black'>Rendering<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:117.0pt;text-indent:-99.0pt;tab-stops:
+117.0pt'><span style='font-size:10.0pt;font-family:"Arial Narrow";mso-bidi-font-family:
+Arial;color:black'>R_znear &lt;1, 0&gt;………..<span style='mso-tab-count:1'>      </span>A
+value of 1 will help get rid of z-fighting problems on levels with a distant
+farplane. A value of 0 puts it back to normal.<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:117.0pt;text-indent:-99.0pt;tab-stops:
+117.0pt'><span style='font-size:10.0pt;font-family:"Arial Narrow";mso-bidi-font-family:
+Arial;color:black'>Cg_3rdperson &lt;1, 0&gt; ..<span style='mso-tab-count:1'>       </span>Using
+1 will pull the camera into the 3<sup>rd</sup> person allowing you to see your
+character. This is useful for checking the scale on something because you can
+see it next to a person. Using 0 puts the camera back into the 1<sup>st</sup>
+person.<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:117.0pt;text-indent:-99.0pt;tab-stops:
+117.0pt'><span style='font-size:10.0pt;font-family:"Arial Narrow";mso-bidi-font-family:
+Arial;color:black'>Script player Global_posteffect &lt;0,7&gt;………..Using 0 will
+turn the post effects off. Using 7 will turn them back on.<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:117.0pt;text-indent:-99.0pt;tab-stops:
+117.0pt'><span style='font-size:10.0pt;font-family:"Arial Narrow";mso-bidi-font-family:
+Arial;color:black'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal style='margin-left:117.0pt;text-indent:-99.0pt;tab-stops:
+117.0pt'><span style='font-size:10.0pt;font-family:"Arial Narrow";mso-bidi-font-family:
+Arial;color:black'>R_showtris &lt;1, 0&gt; …….<span style='mso-tab-count:1'>      </span>This
+will draw the edges of all triangles rather than the faces. This is useful in
+getting a rough idea of where lots of tris are. You must turn the post effects
+off using r_postfx before this will work.<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:117.0pt;text-indent:-99.0pt;tab-stops:
+117.0pt'><span style='font-size:10.0pt;font-family:"Arial Narrow";mso-bidi-font-family:
+Arial;color:black'>R_overdraw &lt;2, 1, <span class=GramE>0</span>&gt;...<span
+style='mso-tab-count:1'>      </span>Using 2 shows you the actual overdraw
+occurring in the game. Using 1 shows you worst case overdraw. This is how bad
+it would be if the renderer didn’t do some optimizations that it does. Using 0
+turns it off and makes the scene render like normal.<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:117.0pt;text-indent:-99.0pt;tab-stops:
+117.0pt'><span style='font-size:10.0pt;font-family:"Arial Narrow";mso-bidi-font-family:
+Arial;color:black'>R_drawcollmeshes &lt;1, 0&gt;<span style='mso-tab-count:
+1'>   </span>Using 1 will draw collision volumes instead of art meshes. Using 0
+draws things like normal.<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:117.0pt;text-indent:-99.0pt;tab-stops:
+117.0pt'><span style='font-size:10.0pt;font-family:"Arial Narrow";mso-bidi-font-family:
+Arial;color:black'>r_picmip &lt;number&gt;…...<span style='mso-tab-count:1'>       </span>This
+will change the resolution (and therefore memory footprint) of all textures
+loaded. Before this will take effect you must use the r_reloadtextures command.<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:117.0pt;text-indent:-99.0pt;tab-stops:
+117.0pt'><span style='font-size:10.0pt;font-family:"Arial Narrow";mso-bidi-font-family:
+Arial;color:black'>r_reloadtextures 1…….<span style='mso-tab-count:1'>       </span>This
+reloads all textures into memory. This should be used after changing the picmip
+level in the console. It should also be used if you have alt-tabbed out of the
+game, changed a texture, and returned to the game.<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:117.0pt;text-indent:-99.0pt;tab-stops:
+117.0pt'><span style='font-size:10.0pt;font-family:"Arial Narrow";mso-bidi-font-family:
+Arial;color:black'>Pushmenu lighting …...<span style='mso-tab-count:1'>        </span>This
+brings up the lighting control center. See lighting documentation for a diagram
+of these controls.<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:117.0pt;text-indent:-99.0pt;tab-stops:
+117.0pt'><span style='font-size:10.0pt;font-family:"Arial Narrow";mso-bidi-font-family:
+Arial;color:black'>R_draw&lt;thing&gt; &lt;0, 1&gt;..<span style='mso-tab-count:
+1'>       </span>This turns on and off the drawing of particular things. It
+works for water and other things. To find out all of the things you can stop
+drawing, type R_draw and keep hitting tab.<o:p></o:p></span></p>
+
+<span style='font-size:10.0pt;font-family:"Arial Narrow";mso-fareast-font-family:
+"Times New Roman";mso-bidi-font-family:Arial;color:black;mso-ansi-language:
+EN-US;mso-fareast-language:EN-US;mso-bidi-language:AR-SA'><br clear=all
+style='page-break-before:always'>
+</span>
+
+<p class=MsoNormal style='mso-outline-level:1'><span style='font-size:14.0pt;
+font-family:Impact;mso-bidi-font-family:Arial;color:black'>LOD and Visibility<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:117.0pt;text-indent:-99.0pt;tab-stops:
+117.0pt'><span style='font-size:10.0pt;font-family:"Arial Narrow";mso-bidi-font-family:
+Arial;color:black'>R_forcelod &lt;-1, 0, 1…&gt;<span style='mso-tab-count:1'>       </span>An
+entry of 0 will force all models to draw at their highest LOD. An entry of 1
+will make everything draw at LOD1(if they have an LOD1) and so on. An entry of
+-1 will turn forcelod off and things will LOD as they normally would.<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:117.0pt;text-indent:-99.0pt;tab-stops:
+117.0pt'><span style='font-size:10.0pt;font-family:"Arial Narrow";mso-bidi-font-family:
+Arial'>wdb_lock_visibility<span style='color:black'>&lt;1, 0&gt;<span
+style='mso-tab-count:1'>      </span>An entry of 1 will lock visibility and LOD
+of al objects so that you can move freely around and see what is culling out
+and what LOD things are at from a particular vantage point.<o:p></o:p></span></span></p>
+
+<p class=MsoNormal style='margin-left:117.0pt;text-indent:-99.0pt;tab-stops:
+117.0pt'><span style='font-size:10.0pt;font-family:"Arial Narrow";mso-bidi-font-family:
+Arial;color:black'>R_lodbias &lt;…-1, 0, 1…&gt;<span style='mso-tab-count:1'>     </span>This
+will change the LOD that everything uses based on the number entered. Entering
+1 will make things that would normally be at LOD0 draw LOD1 instead. If you
+enter 1 and something is far enough that it is displaying LOD1, it will display
+LOD2 instead. The same goes for negative numbers. -1 will take things from LOD1
+to LOD0 and so on. Entering 0 returns things to normal.<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:117.0pt;text-indent:-99.0pt;tab-stops:
+117.0pt'><span style='font-size:10.0pt;font-family:"Arial Narrow";mso-bidi-font-family:
+Arial;color:black'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal style='mso-outline-level:1'><span style='font-size:14.0pt;
+font-family:Impact;mso-bidi-font-family:Arial;color:black'>Scripting<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:.25in;mso-outline-level:1'><b><span
+style='font-size:10.0pt;font-family:"Arial Narrow";mso-bidi-font-family:Arial;
+color:black'>removeclass</span></b><span style='font-size:10.0pt;font-family:
+"Arial Narrow";mso-bidi-font-family:Arial;color:black;mso-bidi-font-weight:
+bold'> &lt;class name&gt; - Remove all objects derived from this classname</span><span
+style='font-size:14.0pt;font-family:Impact;mso-bidi-font-family:Arial;
+color:black'><o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:.25in;mso-outline-level:1'><b><span
+style='font-size:10.0pt;font-family:"Arial Narrow";mso-bidi-font-family:Arial;
+color:black'>removeent</span></b><span style='font-size:10.0pt;font-family:
+"Arial Narrow";mso-bidi-font-family:Arial;color:black;mso-bidi-font-weight:
+bold'> &lt;number&gt; - remove a specific entity by number<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:.25in;mso-outline-level:1'><b><span
+style='font-size:10.0pt;font-family:"Arial Narrow";mso-bidi-font-family:Arial;
+color:black'>killclass</span></b><span style='font-size:10.0pt;font-family:
+"Arial Narrow";mso-bidi-font-family:Arial;color:black;mso-bidi-font-weight:
+bold'> &lt;class name&gt; - apply a lethal amount of damage to all objects
+derived from this classname<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:.25in;mso-outline-level:1'><b><span
+style='font-size:10.0pt;font-family:"Arial Narrow";mso-bidi-font-family:Arial;
+color:black'>killent</span></b><span style='font-size:10.0pt;font-family:"Arial Narrow";
+mso-bidi-font-family:Arial;color:black;mso-bidi-font-weight:bold'>
+&lt;number&gt; - kill a specific entity by number<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:.25in;mso-outline-level:1'><b><span
+style='font-size:10.0pt;font-family:"Arial Narrow";mso-bidi-font-family:Arial;
+color:black'>whatis</span></b><span style='font-size:10.0pt;font-family:"Arial Narrow";
+mso-bidi-font-family:Arial;color:black;mso-bidi-font-weight:bold'>
+&lt;number&gt; - retrieve entity specific information by number<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:.25in;mso-outline-level:1'><b><span
+style='font-size:10.0pt;font-family:"Arial Narrow";mso-bidi-font-family:Arial;
+color:black'>sv_showentnums</span></b><span style='font-size:10.0pt;font-family:
+"Arial Narrow";mso-bidi-font-family:Arial;color:black;mso-bidi-font-weight:
+bold'> [0,1] - show entity numbers above objects in the game<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:.25in;mso-outline-level:1'><b><span
+style='font-size:10.0pt;font-family:"Arial Narrow";mso-bidi-font-family:Arial;
+color:black'>sv_showbboxes</span></b><span style='font-size:10.0pt;font-family:
+"Arial Narrow";mso-bidi-font-family:Arial;color:black;mso-bidi-font-weight:
+bold'> [0,28] -<span style='mso-spacerun:yes'>  </span>show bounding boxes of
+entities.<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:.25in;mso-outline-level:1'><span
+style='font-size:10.0pt;font-family:"Arial Narrow";mso-bidi-font-family:Arial;
+color:black;mso-bidi-font-weight:bold'>1 - shows all solid entities with their
+standard mins and maxs<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:.25in;mso-outline-level:1'><span
+style='font-size:10.0pt;font-family:"Arial Narrow";mso-bidi-font-family:Arial;
+color:black;mso-bidi-font-weight:bold'>2 - shows all solid entities with their
+absmins and absmaxs<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:.25in;mso-outline-level:1'><span
+style='font-size:10.0pt;font-family:"Arial Narrow";mso-bidi-font-family:Arial;
+color:black;mso-bidi-font-weight:bold'>3 - shows all entities that are solid
+and non solid but are not tagged as RF_DONTDRAW<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:.25in;mso-outline-level:1'><span
+style='font-size:10.0pt;font-family:"Arial Narrow";mso-bidi-font-family:Arial;
+color:black;mso-bidi-font-weight:bold'>4 - shows all entities, even those
+tagged as RF_DONTDRAW<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:.25in;mso-outline-level:1'><span
+style='font-size:10.0pt;font-family:"Arial Narrow";mso-bidi-font-family:Arial;
+color:black;mso-bidi-font-weight:bold'>7 - shows all entities with their TIKI
+bounding boxes<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:.25in;mso-outline-level:1'><span
+style='font-size:10.0pt;font-family:"Arial Narrow";mso-bidi-font-family:Arial;
+color:black;mso-bidi-font-weight:bold'>8 – shows normal bounding boxes as well
+as a small bounding box around the origin<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:.25in;mso-outline-level:1'><span
+style='font-size:10.0pt;font-family:"Arial Narrow";mso-bidi-font-family:Arial;
+color:black;mso-bidi-font-weight:bold'>9 – 28 – show bounding boxes of hit
+locations on models<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:.25in;mso-outline-level:1'><b><span
+style='font-size:10.0pt;font-family:"Arial Narrow";mso-bidi-font-family:Arial;
+color:black'>actorinfo</span></b><span style='font-size:10.0pt;font-family:
+"Arial Narrow";mso-bidi-font-family:Arial;color:black;mso-bidi-font-weight:
+bold'> &lt;number&gt; - display actor specific information about a particular
+entity<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:.25in;mso-outline-level:1'><b><span
+style='font-size:10.0pt;font-family:"Arial Narrow";mso-bidi-font-family:Arial;
+color:black'>testthread</span></b><span style='font-size:10.0pt;font-family:
+"Arial Narrow";mso-bidi-font-family:Arial;color:black;mso-bidi-font-weight:
+bold'> &lt;thread label&gt; - executes a thread from the command line<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:.25in;mso-outline-level:1'><b><span
+style='font-size:10.0pt;font-family:"Arial Narrow";mso-bidi-font-family:Arial;
+color:black'>spawn</span></b><span style='font-size:10.0pt;font-family:"Arial Narrow";
+mso-bidi-font-family:Arial;color:black;mso-bidi-font-weight:bold'> classname
+&lt;keyname&gt; &lt;value&gt; … - spawn an entity<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:.25in;mso-outline-level:1'><b><span
+style='font-size:10.0pt;font-family:"Arial Narrow";mso-bidi-font-family:Arial;
+color:black'>actor</span></b><span style='font-size:10.0pt;font-family:"Arial Narrow";
+mso-bidi-font-family:Arial;color:black;mso-bidi-font-weight:bold'> modelname
+&lt;keyname&gt; &lt;value&gt; … - spawn an actor <o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:.25in;mso-outline-level:1'><b><span
+style='font-size:10.0pt;font-family:"Arial Narrow";mso-bidi-font-family:Arial;
+color:black'>ai_shownodenums</span></b><span style='font-size:10.0pt;
+font-family:"Arial Narrow";mso-bidi-font-family:Arial;color:black;mso-bidi-font-weight:
+bold'> – show node numbers above ai path nodes<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:.25in;mso-outline-level:1'><b><span
+style='font-size:10.0pt;font-family:"Arial Narrow";mso-bidi-font-family:Arial;
+color:black'>ai_showpath</span></b><span style='font-size:10.0pt;font-family:
+"Arial Narrow";mso-bidi-font-family:Arial;color:black;mso-bidi-font-weight:
+bold'> – show ai paths, the interconnections between ai path nodes<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:.25in;mso-outline-level:1'><b><span
+style='font-size:10.0pt;font-family:"Arial Narrow";mso-bidi-font-family:Arial;
+color:black'>g_entinfo_max</span></b><span style='font-size:10.0pt;font-family:
+"Arial Narrow";mso-bidi-font-family:Arial;color:black;mso-bidi-font-weight:
+bold'> – maximum distance to show entity information<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:.25in;mso-outline-level:1'><b><span
+style='font-size:10.0pt;font-family:"Arial Narrow";mso-bidi-font-family:Arial;
+color:black'>g_entinfo</span></b><span style='font-size:10.0pt;font-family:
+"Arial Narrow";mso-bidi-font-family:Arial;color:black;mso-bidi-font-weight:
+bold'> [0,4] – display information about entities as you get close to
+them.<span style='mso-spacerun:yes'>  </span>A non-zero value will cause all
+entities to run there ::ShowInfo method when the player gets near them.<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:.25in;mso-outline-level:1'><span
+style='font-size:10.0pt;font-family:"Arial Narrow";mso-bidi-font-family:Arial;
+color:black;mso-bidi-font-weight:bold'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal style='margin-left:.25in;mso-outline-level:1'><span
+style='font-size:10.0pt;font-family:"Arial Narrow";mso-bidi-font-family:Arial;
+color:black;mso-bidi-font-weight:bold'>For Actors::<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:.25in;mso-outline-level:1'><span
+style='font-size:10.0pt;font-family:"Arial Narrow";mso-bidi-font-family:Arial;
+color:black;mso-bidi-font-weight:bold'><span style='mso-tab-count:1'>        </span><b>G_entinfo
+1<o:p></o:p></b></span></p>
+
+<p class=MsoNormal style='margin-left:.25in;mso-outline-level:1'><span
+style='font-size:10.0pt;font-family:"Arial Narrow";mso-bidi-font-family:Arial;
+color:black;mso-bidi-font-weight:bold'><span style='mso-tab-count:1'>        </span>Green
+Line is between the actor’s centroid and his m_vHome position<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:.25in;mso-outline-level:1'><span
+style='font-size:10.0pt;font-family:"Arial Narrow";mso-bidi-font-family:Arial;
+color:black;mso-bidi-font-weight:bold'><span style='mso-tab-count:1'>        </span>Green
+circle is represents his leash distance away from his home position<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:.25in;mso-outline-level:1'><span
+style='font-size:10.0pt;font-family:"Arial Narrow";mso-bidi-font-family:Arial;
+color:black;mso-bidi-font-weight:bold'><span style='mso-tab-count:1'>        </span>Red
+circle is his m_fMinDistance<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:.25in;mso-outline-level:1'><span
+style='font-size:10.0pt;font-family:"Arial Narrow";mso-bidi-font-family:Arial;
+color:black;mso-bidi-font-weight:bold'><span style='mso-tab-count:1'>        </span>Blue
+circle is his m_fMaxDistance<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:.25in;mso-outline-level:1'><span
+style='font-size:10.0pt;font-family:"Arial Narrow";mso-bidi-font-family:Arial;
+color:black;mso-bidi-font-weight:bold'><span style='mso-tab-count:1'>        </span><b>G_entinfo
+2<o:p></o:p></b></span></p>
+
+<p class=MsoNormal style='margin-left:.25in;mso-outline-level:1'><b><span
+style='font-size:10.0pt;font-family:"Arial Narrow";mso-bidi-font-family:Arial;
+color:black'><span style='mso-tab-count:1'>        </span></span></b><span
+style='font-size:10.0pt;font-family:"Arial Narrow";mso-bidi-font-family:Arial;
+color:black;mso-bidi-font-weight:bold'>Red circle is his hearing<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:.25in;mso-outline-level:1'><span
+style='font-size:10.0pt;font-family:"Arial Narrow";mso-bidi-font-family:Arial;
+color:black;mso-bidi-font-weight:bold'><span style='mso-tab-count:1'>        </span>Blue
+circle is his sight<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:.25in;mso-outline-level:1'><span
+style='font-size:10.0pt;font-family:"Arial Narrow";mso-bidi-font-family:Arial;
+color:black;mso-bidi-font-weight:bold'><span style='mso-tab-count:1'>        </span><b>G_entinfo
+4 – show all actors all the time<o:p></o:p></b></span></p>
+
+<p class=MsoNormal style='tab-stops:117.0pt'><span style='font-size:10.0pt;
+font-family:"Arial Narrow";mso-bidi-font-family:Arial;color:black'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal style='mso-outline-level:1'><span style='font-size:14.0pt;
+font-family:Impact;mso-bidi-font-family:Arial;color:black'>Miscellaneous<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:117.0pt;text-indent:-99.0pt;mso-outline-level:
+1'><span style='font-size:10.0pt;font-family:"Arial Narrow";mso-bidi-font-family:
+Arial;color:black'>modbase &lt;string&gt;<span style='mso-tab-count:1'>                </span>Valid
+in MOHPA patch 2 only. Sets the location of where to put the moddir folder.
+Should be used with the +set command line since the moddir folder needs to be
+set up when the game starts.<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:117.0pt;text-indent:-99.0pt;tab-stops:
+117.0pt'><span style='font-size:10.0pt;font-family:"Arial Narrow";mso-bidi-font-family:
+Arial;color:black'>Timescale &lt;number&gt; ..<span style='mso-tab-count:1'>        </span>Slows
+the game down or speeds it up. A number between 0 and 1 will slow the game
+down. A number greater than 1 will speed the game up. A timescale of 0.3 is good
+when you want a more accurate movement.<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:117.0pt;text-indent:-99.0pt;tab-stops:
+117.0pt'><span style='font-size:10.0pt;font-family:"Arial Narrow";mso-bidi-font-family:
+Arial;color:black'>Kill_axis ……………….<span style='mso-tab-count:1'>       </span>Use
+this to kill all of your enemies!<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:117.0pt;text-indent:-99.0pt;tab-stops:
+117.0pt'><span style='font-size:10.0pt;font-family:"Arial Narrow";mso-bidi-font-family:
+Arial;color:black'>Sv_showentnums &lt;1, 0&gt;<span style='mso-tab-count:1'>     </span>Shows
+the entity number for all entities. It floats above the entity. With many
+entities in one location it is hard to read the numbers and tell which models
+they go to. This only works on normal objects, not replicants or compressed
+replicants.<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:117.0pt;text-indent:-99.0pt;tab-stops:
+117.0pt'><span style='font-size:10.0pt;font-family:"Arial Narrow";mso-bidi-font-family:
+Arial;color:black'>Whatis &lt;number&gt;……..<span style='mso-tab-count:1'>        </span>This
+will give you a list of information in the console about the entity with the
+entity number you specify in this command. This is a good way to find out what
+gr2 you are looking at.<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:117.0pt;text-indent:-99.0pt;tab-stops:
+117.0pt'><span style='font-size:10.0pt;font-family:"Arial Narrow";mso-bidi-font-family:
+Arial;color:black'>r_mode &lt;number&gt;…….<span style='mso-tab-count:1'>       </span>This
+changes the resolution of the game. This is primarily meant to be used in your
+shortcut. Valid numbers and the corresponding resolutions are:<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:117.0pt;text-indent:-99.0pt;tab-stops:
+117.0pt 135.0pt 207.0pt'><span style='font-size:10.0pt;font-family:"Arial Narrow";
+mso-bidi-font-family:Arial;color:black'><span style='mso-tab-count:2'>                                                    </span>3
+– 640 x 480<span style='mso-tab-count:1'>          </span>7 – 1152 x 864<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:117.0pt;text-indent:-99.0pt;tab-stops:
+117.0pt 135.0pt 207.0pt'><span style='font-size:10.0pt;font-family:"Arial Narrow";
+mso-bidi-font-family:Arial;color:black'><span style='mso-tab-count:2'>                                                    </span>4
+– 800 x 600<span style='mso-tab-count:1'>          </span>8 – 1280 x 1024<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:117.0pt;text-indent:-99.0pt;tab-stops:
+117.0pt 135.0pt 207.0pt'><span style='font-size:10.0pt;font-family:"Arial Narrow";
+mso-bidi-font-family:Arial;color:black'><span style='mso-tab-count:2'>                                                    </span>5
+– 960 x 720<span style='mso-tab-count:1'>          </span>9 – 1600 x 1200<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:117.0pt;text-indent:-99.0pt;tab-stops:
+117.0pt 135.0pt 207.0pt'><span style='font-size:10.0pt;font-family:"Arial Narrow";
+mso-bidi-font-family:Arial;color:black'><span style='mso-tab-count:2'>                                                    </span>6
+– 1024 x 768<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:117.0pt;text-indent:-99.0pt;tab-stops:
+117.0pt 135.0pt 207.0pt'><span style='font-size:10.0pt;font-family:"Arial Narrow";
+mso-bidi-font-family:Arial;color:black'>fps &lt;1, 0&gt;………………<span
+style='mso-tab-count:1'>       </span>Using 1 puts a framerate ticker and other
+useful information at the bottom of the hud. Using 0 takes it off the hud. This
+setting persists from session to session. See resource_management.doc (doesn’t
+exist yet) for a description of all of the information this command provides.<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:117.0pt;text-indent:-99.0pt;tab-stops:
+117.0pt 135.0pt 207.0pt'><span style='font-size:10.0pt;font-family:"Arial Narrow";
+mso-bidi-font-family:Arial;color:black'>Ui_hud &lt;0, 1&gt;………….<span
+style='mso-tab-count:1'>      </span>Using 0 turns the hud off. Using 1 turns
+the hud on.<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:117.0pt;text-indent:-99.0pt;tab-stops:
+117.0pt 135.0pt 207.0pt'><span style='font-size:10.0pt;font-family:"Arial Narrow";
+mso-bidi-font-family:Arial;color:black'>Pushmenu emitter2……<span
+style='mso-tab-count:1'>       </span>Note that there is not a space between “emitter”
+and “2”. This brings up the particle effects menu. This allows you to, among
+other things, to view particle effects. The details of viewing a particle
+effect with this tool are exposed in emitter2.doc.<o:p></o:p></span></p>
+
+<p class=MsoNormal style='tab-stops:117.0pt 135.0pt 207.0pt'><span
+style='font-size:10.0pt;font-family:"Arial Narrow";mso-bidi-font-family:Arial;
+color:black'><o:p>&nbsp;</o:p></span></p>
+
+</div>
+
+</body>
+
+</html>

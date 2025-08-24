@@ -1,0 +1,791 @@
+<html xmlns:v="urn:schemas-microsoft-com:vml"
+xmlns:o="urn:schemas-microsoft-com:office:office"
+xmlns:w="urn:schemas-microsoft-com:office:word"
+xmlns:dt="uuid:C2F41010-65B3-11d1-A29F-00AA00C14882"
+xmlns="http://www.w3.org/TR/REC-html40">
+
+<head>
+<meta http-equiv=Content-Type content="text/html; charset=windows-1252">
+<meta name=ProgId content=Word.Document>
+<meta name=Generator content="Microsoft Word 10">
+<meta name=Originator content="Microsoft Word 10">
+<link rel=File-List href="havok_script_commands_files/filelist.xml">
+<title>Havok Script Commands</title>
+<!--[if gte mso 9]><xml>
+ <o:DocumentProperties>
+  <o:Author>JGaczk</o:Author>
+  <o:LastAuthor>bbilodeau</o:LastAuthor>
+  <o:Revision>2</o:Revision>
+  <o:TotalTime>216</o:TotalTime>
+  <o:Created>2004-12-07T19:17:00Z</o:Created>
+  <o:LastSaved>2004-12-07T19:17:00Z</o:LastSaved>
+  <o:Pages>1</o:Pages>
+  <o:Words>917</o:Words>
+  <o:Characters>5230</o:Characters>
+  <o:Company>EA</o:Company>
+  <o:Lines>43</o:Lines>
+  <o:Paragraphs>12</o:Paragraphs>
+  <o:CharactersWithSpaces>6135</o:CharactersWithSpaces>
+  <o:Version>10.3501</o:Version>
+ </o:DocumentProperties>
+ <o:CustomDocumentProperties>
+  <o:_AdHocReviewCycleID dt:dt="float">897043592</o:_AdHocReviewCycleID>
+  <o:_EmailSubject dt:dt="string">new doc</o:_EmailSubject>
+  <o:_AuthorEmail dt:dt="string">JGaczkowski@EA.com</o:_AuthorEmail>
+  <o:_AuthorEmailDisplayName dt:dt="string">Gaczkowski, Jim</o:_AuthorEmailDisplayName>
+  <o:_ReviewingToolsShownOnce dt:dt="string"></o:_ReviewingToolsShownOnce>
+ </o:CustomDocumentProperties>
+</xml><![endif]--><!--[if gte mso 9]><xml>
+ <w:WordDocument>
+  <w:GrammarState>Clean</w:GrammarState>
+  <w:Compatibility>
+   <w:BreakWrappedTables/>
+   <w:SnapToGridInCell/>
+   <w:WrapTextWithPunct/>
+   <w:UseAsianBreakRules/>
+  </w:Compatibility>
+  <w:BrowserLevel>MicrosoftInternetExplorer4</w:BrowserLevel>
+ </w:WordDocument>
+</xml><![endif]-->
+<style>
+<!--
+ /* Style Definitions */
+ p.MsoNormal, li.MsoNormal, div.MsoNormal
+	{mso-style-parent:"";
+	margin:0in;
+	margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	font-size:12.0pt;
+	font-family:"Times New Roman";
+	mso-fareast-font-family:"Times New Roman";}
+@page Section1
+	{size:8.5in 11.0in;
+	margin:1.0in 1.25in 1.0in 1.25in;
+	mso-header-margin:.5in;
+	mso-footer-margin:.5in;
+	mso-paper-source:0;}
+div.Section1
+	{page:Section1;}
+-->
+</style>
+<!--[if gte mso 10]>
+<style>
+ /* Style Definitions */
+ table.MsoNormalTable
+	{mso-style-name:"Table Normal";
+	mso-tstyle-rowband-size:0;
+	mso-tstyle-colband-size:0;
+	mso-style-noshow:yes;
+	mso-style-parent:"";
+	mso-padding-alt:0in 5.4pt 0in 5.4pt;
+	mso-para-margin:0in;
+	mso-para-margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	font-size:10.0pt;
+	font-family:"Times New Roman";}
+</style>
+<![endif]--><!--[if gte mso 9]><xml>
+ <o:shapedefaults v:ext="edit" spidmax="3074">
+  <o:colormru v:ext="edit" colors="#b2d8fe"/>
+  <o:colormenu v:ext="edit" fillcolor="#b2d8fe"/>
+ </o:shapedefaults></xml><![endif]--><!--[if gte mso 9]><xml>
+ <o:shapelayout v:ext="edit">
+  <o:idmap v:ext="edit" data="1"/>
+ </o:shapelayout></xml><![endif]-->
+</head>
+
+<body bgcolor="#B2D8FE" lang=EN-US style='tab-interval:.5in'>
+
+<div class=Section1>
+
+<p class=MsoNormal align=center style='text-align:center'><b style='mso-bidi-font-weight:
+normal'><span style='font-size:20.0pt'>Havok Script Commands<o:p></o:p></span></b></p>
+
+<p class=MsoNormal><b style='mso-bidi-font-weight:normal'><span
+style='font-size:10.0pt'><o:p>&nbsp;</o:p></span></b></p>
+
+<p class=MsoNormal><b style='mso-bidi-font-weight:normal'><span
+style='font-size:10.0pt'><o:p>&nbsp;</o:p></span></b></p>
+
+<p class=MsoNormal><b style='mso-bidi-font-weight:normal'><span
+style='font-size:10.0pt'><o:p>&nbsp;</o:p></span></b></p>
+
+<div style='border:none;border-bottom:solid windowtext 1.5pt;padding:0in 0in 1.0pt 0in'>
+
+<p class=MsoNormal style='border:none;mso-border-bottom-alt:solid windowtext 1.5pt;
+padding:0in;mso-padding-alt:0in 0in 1.0pt 0in'><b style='mso-bidi-font-weight:
+normal'><span style='font-size:14.0pt'>Which commands will I find in this
+document?<o:p></o:p></span></b></p>
+
+<p class=MsoNormal style='border:none;mso-border-bottom-alt:solid windowtext 1.5pt;
+padding:0in;mso-padding-alt:0in 0in 1.0pt 0in'><b style='mso-bidi-font-weight:
+normal'><span style='font-size:22.0pt'><o:p>&nbsp;</o:p></span></b></p>
+
+<p class=MsoNormal style='border:none;mso-border-bottom-alt:solid windowtext 1.5pt;
+padding:0in;mso-padding-alt:0in 0in 1.0pt 0in'><b style='mso-bidi-font-weight:
+normal'><span style='mso-tab-count:1'>            </span>havok_game_driven<o:p></o:p></b></p>
+
+<p class=MsoNormal style='border:none;mso-border-bottom-alt:solid windowtext 1.5pt;
+padding:0in;mso-padding-alt:0in 0in 1.0pt 0in'><b style='mso-bidi-font-weight:
+normal'><span style='mso-tab-count:1'>            </span>havok_physics_driven<o:p></o:p></b></p>
+
+<p class=MsoNormal style='border:none;mso-border-bottom-alt:solid windowtext 1.5pt;
+padding:0in;mso-padding-alt:0in 0in 1.0pt 0in'><b style='mso-bidi-font-weight:
+normal'><span style='mso-tab-count:1'>            </span>havok_lock_sleeping<o:p></o:p></b></p>
+
+<p class=MsoNormal style='border:none;mso-border-bottom-alt:solid windowtext 1.5pt;
+padding:0in;mso-padding-alt:0in 0in 1.0pt 0in'><b style='mso-bidi-font-weight:
+normal'><span style='mso-tab-count:1'>            </span>havok_force_awake<o:p></o:p></b></p>
+
+<p class=MsoNormal style='border:none;mso-border-bottom-alt:solid windowtext 1.5pt;
+padding:0in;mso-padding-alt:0in 0in 1.0pt 0in'><b style='mso-bidi-font-weight:
+normal'><span style='mso-tab-count:1'>            </span>havok_disable_wakeup<o:p></o:p></b></p>
+
+<p class=MsoNormal style='border:none;mso-border-bottom-alt:solid windowtext 1.5pt;
+padding:0in;mso-padding-alt:0in 0in 1.0pt 0in'><b style='mso-bidi-font-weight:
+normal'><span style='mso-tab-count:1'>            </span>havok_enable_wakeup<o:p></o:p></b></p>
+
+<p class=MsoNormal style='border:none;mso-border-bottom-alt:solid windowtext 1.5pt;
+padding:0in;mso-padding-alt:0in 0in 1.0pt 0in'><b style='mso-bidi-font-weight:
+normal'><span style='mso-tab-count:1'>            </span>force_explode<o:p></o:p></b></p>
+
+<p class=MsoNormal style='border:none;mso-border-bottom-alt:solid windowtext 1.5pt;
+padding:0in;mso-padding-alt:0in 0in 1.0pt 0in'><b style='mso-bidi-font-weight:
+normal'><span style='mso-tab-count:1'>            </span>altmodel<o:p></o:p></b></p>
+
+<p class=MsoNormal style='border:none;mso-border-bottom-alt:solid windowtext 1.5pt;
+padding:0in;mso-padding-alt:0in 0in 1.0pt 0in'><b style='mso-bidi-font-weight:
+normal'><span style='mso-tab-count:1'>            </span>altmodel_int<o:p></o:p></b></p>
+
+<p class=MsoNormal style='border:none;mso-border-bottom-alt:solid windowtext 1.5pt;
+padding:0in;mso-padding-alt:0in 0in 1.0pt 0in'><b style='mso-bidi-font-weight:
+normal'><span style='font-size:22.0pt'><o:p>&nbsp;</o:p></span></b></p>
+
+</div>
+
+<p class=MsoNormal><b style='mso-bidi-font-weight:normal'><span
+style='font-size:10.0pt'><o:p>&nbsp;</o:p></span></b></p>
+
+<p class=MsoNormal><b style='mso-bidi-font-weight:normal'><span
+style='font-size:10.0pt'><o:p>&nbsp;</o:p></span></b></p>
+
+<p class=MsoNormal><b style='mso-bidi-font-weight:normal'><span
+style='font-size:14.0pt'>havok_game_driven<o:p></o:p></span></b></p>
+
+<p class=MsoNormal><b style='mso-bidi-font-weight:normal'><span
+style='font-size:18.0pt'><o:p>&nbsp;</o:p></span></b></p>
+
+<p class=MsoNormal><b style='mso-bidi-font-weight:normal'><span
+style='mso-tab-count:1'>            </span></b><u>Syntax:<o:p></o:p></u></p>
+
+<p class=MsoNormal><u><o:p><span style='text-decoration:none'>&nbsp;</span></o:p></u></p>
+
+<p class=MsoNormal><span style='mso-tab-count:2'>                        </span><i
+style='mso-bidi-font-style:normal'>$targetname havok_game_driven [joint_name]<o:p></o:p></i></p>
+
+<p class=MsoNormal><o:p>&nbsp;</o:p></p>
+
+<p class=MsoNormal style='tab-stops:.5in 1.0in 1.5in 177.0pt'><span
+style='mso-tab-count:1'>            </span><u>What it does:<o:p></o:p></u></p>
+
+<p class=MsoNormal style='tab-stops:.5in 1.0in 1.5in 177.0pt'><u><o:p><span
+ style='text-decoration:none'>&nbsp;</span></o:p></u></p>
+
+<p class=MsoNormal style='margin-left:1.0in'>Sets bones to be <b
+style='mso-bidi-font-weight:normal'>game-driven</b>. <b style='mso-bidi-font-weight:
+normal'>Game-driven</b> bones cannot be woken-up directly by bullets, grenades,
+etc.</p>
+
+<p class=MsoNormal style='margin-left:1.0in'>If no joint name is specified it will
+act on all joints in the asset. If a joint name is specified it will act only </p>
+
+<p class=MsoNormal style='margin-left:1.0in'>On that joint. “Acting on the
+joint” means that if the joint is set to <b style='mso-bidi-font-weight:normal'>havok_physics_driven</b>,
+it will set the joint to havok_game_driven. If the joint is <b
+style='mso-bidi-font-weight:normal'>static</b> or <b style='mso-bidi-font-weight:
+normal'>game_driven</b>, this command will have no effect.</p>
+
+<p class=MsoNormal><o:p>&nbsp;</o:p></p>
+
+<div style='border:none;border-bottom:solid windowtext 1.5pt;padding:0in 0in 0in 0in'>
+
+<p class=MsoNormal style='border:none;mso-border-bottom-alt:solid windowtext 1.5pt;
+padding:0in;mso-padding-alt:0in 0in 0in 0in'><span style='mso-tab-count:1'>            </span><u>Examples:<o:p></o:p></u></p>
+
+<p class=MsoNormal style='border:none;mso-border-bottom-alt:solid windowtext 1.5pt;
+padding:0in;mso-padding-alt:0in 0in 0in 0in'><u><o:p><span style='text-decoration:
+ none'>&nbsp;</span></o:p></u></p>
+
+<p class=MsoNormal style='border:none;mso-border-bottom-alt:solid windowtext 1.5pt;
+padding:0in;mso-padding-alt:0in 0in 0in 0in'><span style='mso-tab-count:2'>                        </span>$village_hut<span
+style='mso-spacerun:yes'>   </span><b style='mso-bidi-font-weight:normal'>havok_game_driven</b><span
+style='mso-spacerun:yes'>                    </span>//set all <b
+style='mso-bidi-font-weight:normal'>physics-driven</b> bones to <b
+style='mso-bidi-font-weight:normal'>game_driven<span style='mso-tab-count:1'>          </span></b></p>
+
+<p class=MsoNormal style='border:none;mso-border-bottom-alt:solid windowtext 1.5pt;
+padding:0in;mso-padding-alt:0in 0in 0in 0in'><span style='mso-tab-count:2'>                        </span>$super_plane<span
+style='mso-spacerun:yes'>  </span><b style='mso-bidi-font-weight:normal'>havok_game_driven</b>
+joint_wing //if joint_wing is <b style='mso-bidi-font-weight:normal'>physics-driven</b>,
+set it to <b style='mso-bidi-font-weight:normal'>game_driven</b></p>
+
+<p class=MsoNormal style='border:none;mso-border-bottom-alt:solid windowtext 1.5pt;
+padding:0in;mso-padding-alt:0in 0in 0in 0in'><span style='font-size:16.0pt'><o:p>&nbsp;</o:p></span></p>
+
+</div>
+
+<p class=MsoNormal><span style='font-size:18.0pt'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal><b style='mso-bidi-font-weight:normal'><span
+style='font-size:14.0pt'>havok_physics_driven<o:p></o:p></span></b></p>
+
+<p class=MsoNormal><b style='mso-bidi-font-weight:normal'><span
+style='font-size:18.0pt'><o:p>&nbsp;</o:p></span></b></p>
+
+<p class=MsoNormal><b style='mso-bidi-font-weight:normal'><span
+style='mso-tab-count:1'>            </span></b><u>Syntax:<o:p></o:p></u></p>
+
+<p class=MsoNormal><u><o:p><span style='text-decoration:none'>&nbsp;</span></o:p></u></p>
+
+<p class=MsoNormal><span style='mso-tab-count:2'>                        </span><i
+style='mso-bidi-font-style:normal'>$targetname havok_physics_driven
+[joint_name]<o:p></o:p></i></p>
+
+<p class=MsoNormal><o:p>&nbsp;</o:p></p>
+
+<p class=MsoNormal><span style='mso-tab-count:1'>            </span><u>What it
+does:<o:p></o:p></u></p>
+
+<p class=MsoNormal><u><o:p><span style='text-decoration:none'>&nbsp;</span></o:p></u></p>
+
+<p class=MsoNormal style='margin-left:1.0in'>Sets bones to be <b
+style='mso-bidi-font-weight:normal'>physics-driven</b>. <b style='mso-bidi-font-weight:
+normal'>Game-driven</b> bones that are set to <b style='mso-bidi-font-weight:
+normal'>physics-driven</b> will WAKE UP!</p>
+
+<p class=MsoNormal style='margin-left:1.0in'>If no joint name is specified it
+will act on all joints in the asset. If a joint name is specified it will act
+only </p>
+
+<p class=MsoNormal style='margin-left:1.0in'>On that joint. “Acting on the
+joint” means that if the joint is set to <b style='mso-bidi-font-weight:normal'>havok_game_driven</b>,
+it will set the joint</p>
+
+<p class=MsoNormal style='margin-left:1.0in'>to <b style='mso-bidi-font-weight:
+normal'>havok_physics_driven</b>. If the joint is <b style='mso-bidi-font-weight:
+normal'>static</b> or <b style='mso-bidi-font-weight:normal'>physics_driven</b>,
+this command will have no effect.</p>
+
+<p class=MsoNormal style='margin-left:1.0in'><o:p>&nbsp;</o:p></p>
+
+<div style='border:none;border-bottom:solid windowtext 1.5pt;padding:0in 0in 1.0pt 0in'>
+
+<p class=MsoNormal style='border:none;mso-border-bottom-alt:solid windowtext 1.5pt;
+padding:0in;mso-padding-alt:0in 0in 1.0pt 0in'><span style='mso-tab-count:1'>            </span><u>Example:<o:p></o:p></u></p>
+
+<p class=MsoNormal style='border:none;mso-border-bottom-alt:solid windowtext 1.5pt;
+padding:0in;mso-padding-alt:0in 0in 1.0pt 0in'><b style='mso-bidi-font-weight:
+normal'><span style='mso-tab-count:2'>                        </span><o:p></o:p></b></p>
+
+<p class=MsoNormal style='border:none;mso-border-bottom-alt:solid windowtext 1.5pt;
+padding:0in;mso-padding-alt:0in 0in 1.0pt 0in'><b style='mso-bidi-font-weight:
+normal'><span style='mso-tab-count:2'>                        </span></b>$crate<span
+style='mso-spacerun:yes'>  </span><b style='mso-bidi-font-weight:normal'>havok_physics_driven</b><span
+style='mso-spacerun:yes'>                         </span>//set all <b
+style='mso-bidi-font-weight:normal'>game-driven</b> bones to <b
+style='mso-bidi-font-weight:normal'>physics-driven</b>, and wake them up</p>
+
+<p class=MsoNormal style='border:none;mso-border-bottom-alt:solid windowtext 1.5pt;
+padding:0in;mso-padding-alt:0in 0in 1.0pt 0in'><span style='mso-tab-count:2'>                        </span>$fence
+<b style='mso-bidi-font-weight:normal'>havok_physics_driven</b>
+joint_post01<span style='mso-spacerun:yes'>   </span>//if joint_post01 is <b
+style='mso-bidi-font-weight:normal'>game-driven</b>, set it to <b
+style='mso-bidi-font-weight:normal'>physics-driven</b> and wake it up<u><o:p></o:p></u></p>
+
+<p class=MsoNormal style='border:none;mso-border-bottom-alt:solid windowtext 1.5pt;
+padding:0in;mso-padding-alt:0in 0in 1.0pt 0in'><u><span style='font-size:18.0pt'><o:p><span
+ style='text-decoration:none'>&nbsp;</span></o:p></span></u></p>
+
+<p class=MsoNormal style='border:none;mso-border-bottom-alt:solid windowtext 1.5pt;
+padding:0in;mso-padding-alt:0in 0in 1.0pt 0in'><u><span style='font-size:18.0pt'><o:p><span
+ style='text-decoration:none'>&nbsp;</span></o:p></span></u></p>
+
+</div>
+
+<p class=MsoNormal><b style='mso-bidi-font-weight:normal'><span
+style='font-size:18.0pt'><o:p>&nbsp;</o:p></span></b></p>
+
+<p class=MsoNormal><b style='mso-bidi-font-weight:normal'><span
+style='font-size:14.0pt'>havok_lock_sleeping<o:p></o:p></span></b></p>
+
+<p class=MsoNormal><b style='mso-bidi-font-weight:normal'><span
+style='font-size:18.0pt'><o:p>&nbsp;</o:p></span></b></p>
+
+<p class=MsoNormal><b style='mso-bidi-font-weight:normal'><span
+style='mso-tab-count:1'>            </span></b><u>Syntax:<o:p></o:p></u></p>
+
+<p class=MsoNormal><u><o:p><span style='text-decoration:none'>&nbsp;</span></o:p></u></p>
+
+<p class=MsoNormal><span style='mso-tab-count:2'>                        </span><i
+style='mso-bidi-font-style:normal'>$targetname havok_disable_wakeup[joint_name]<o:p></o:p></i></p>
+
+<p class=MsoNormal><o:p>&nbsp;</o:p></p>
+
+<p class=MsoNormal><span style='mso-tab-count:1'>            </span><u>What it
+does:<o:p></o:p></u></p>
+
+<p class=MsoNormal><u><o:p><span style='text-decoration:none'>&nbsp;</span></o:p></u></p>
+
+<p class=MsoNormal style='margin-left:1.0in'>Sets bones that have never woken
+up to not be allowed to wake up.<span style='mso-spacerun:yes'>  </span>If the
+asset has already woken </p>
+
+<p class=MsoNormal style='margin-left:1.0in'>up this command will have no effect.
+This command is useful for telling an asset to be allowed to be </p>
+
+<p class=MsoNormal style='margin-left:1.0in'>woken up until a certain event
+happens. For instance: do not allow the player to destroy the wall of the
+building </p>
+
+<p class=MsoNormal style='margin-left:1.0in'>until after the second objective
+has been completed. This does the same thing as <b style='mso-bidi-font-weight:
+normal'>havok_disable_wakeup</b></p>
+
+<p class=MsoNormal><o:p>&nbsp;</o:p></p>
+
+<div style='border:none;border-bottom:solid windowtext 1.5pt;padding:0in 0in 1.0pt 0in'>
+
+<p class=MsoNormal style='border:none;mso-border-bottom-alt:solid windowtext 1.5pt;
+padding:0in;mso-padding-alt:0in 0in 1.0pt 0in'><span style='mso-tab-count:1'>            </span><u>Example:<o:p></o:p></u></p>
+
+<p class=MsoNormal style='border:none;mso-border-bottom-alt:solid windowtext 1.5pt;
+padding:0in;mso-padding-alt:0in 0in 1.0pt 0in'><u><o:p><span style='text-decoration:
+ none'>&nbsp;</span></o:p></u></p>
+
+<p class=MsoNormal style='border:none;mso-border-bottom-alt:solid windowtext 1.5pt;
+padding:0in;mso-padding-alt:0in 0in 1.0pt 0in'><span style='mso-tab-count:2'>                        </span>$building
+<b style='mso-bidi-font-weight:normal'>havok_lock_sleeping</b><span
+style='mso-spacerun:yes'>                     </span>//if $building has not yet
+been woken up, do not allow any bones to wake up</p>
+
+<p class=MsoNormal style='border:none;mso-border-bottom-alt:solid windowtext 1.5pt;
+padding:0in;mso-padding-alt:0in 0in 1.0pt 0in'><span style='mso-tab-count:2'>                        </span>$fence<span
+style='mso-spacerun:yes'>      </span><b style='mso-bidi-font-weight:normal'>havok_lock_sleeping</b><span
+style='mso-spacerun:yes'>  </span>joint_post<span style='mso-spacerun:yes'> 
+</span>//if $fence has not yet been woken up, do not allow joint_post to wake
+up</p>
+
+<p class=MsoNormal style='border:none;mso-border-bottom-alt:solid windowtext 1.5pt;
+padding:0in;mso-padding-alt:0in 0in 1.0pt 0in'><u><span style='font-size:18.0pt'><o:p><span
+ style='text-decoration:none'>&nbsp;</span></o:p></span></u></p>
+
+</div>
+
+<p class=MsoNormal><span style='font-size:18.0pt'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal><b style='mso-bidi-font-weight:normal'><span
+style='font-size:14.0pt'>havok_force_awake<o:p></o:p></span></b></p>
+
+<p class=MsoNormal><b style='mso-bidi-font-weight:normal'><span
+style='font-size:18.0pt'><o:p>&nbsp;</o:p></span></b></p>
+
+<p class=MsoNormal><b style='mso-bidi-font-weight:normal'><span
+style='mso-tab-count:1'>            </span></b><u>Syntax:<o:p></o:p></u></p>
+
+<p class=MsoNormal><u><o:p><span style='text-decoration:none'>&nbsp;</span></o:p></u></p>
+
+<p class=MsoNormal><span style='mso-tab-count:2'>                        </span><i
+style='mso-bidi-font-style:normal'>$targetname havok_force_awake<o:p></o:p></i></p>
+
+<p class=MsoNormal><o:p>&nbsp;</o:p></p>
+
+<p class=MsoNormal><span style='mso-tab-count:1'>            </span><u>What it
+does:<o:p></o:p></u></p>
+
+<p class=MsoNormal><u><o:p><span style='text-decoration:none'>&nbsp;</span></o:p></u></p>
+
+<p class=MsoNormal style='margin-left:1.0in'>Tell the bones in the asset to
+wake up.<span style='mso-spacerun:yes'>  </span>Any bone that is set to <b
+style='mso-bidi-font-weight:normal'>static</b> will not wake up (<b
+style='mso-bidi-font-weight:normal'>static</b></p>
+
+<p class=MsoNormal style='margin-left:1.0in'>bones will never wake up). Again, this
+command not only tells the asset’s bones to be able to</p>
+
+<p class=MsoNormal style='margin-left:1.0in'>be woken up, it actually wakes
+them up. </p>
+
+<p class=MsoNormal><u><o:p><span style='text-decoration:none'>&nbsp;</span></o:p></u></p>
+
+<div style='border:none;border-bottom:solid windowtext 1.5pt;padding:0in 0in 1.0pt 0in'>
+
+<p class=MsoNormal style='text-indent:.5in;border:none;mso-border-bottom-alt:
+solid windowtext 1.5pt;padding:0in;mso-padding-alt:0in 0in 1.0pt 0in'><u>Example:<o:p></o:p></u></p>
+
+<p class=MsoNormal style='text-indent:.5in;border:none;mso-border-bottom-alt:
+solid windowtext 1.5pt;padding:0in;mso-padding-alt:0in 0in 1.0pt 0in'><u><o:p><span
+ style='text-decoration:none'>&nbsp;</span></o:p></u></p>
+
+<p class=MsoNormal style='text-indent:.5in;border:none;mso-border-bottom-alt:
+solid windowtext 1.5pt;padding:0in;mso-padding-alt:0in 0in 1.0pt 0in'><span
+style='mso-tab-count:1'>            </span>$hut<span
+style='mso-spacerun:yes'>     </span><b style='mso-bidi-font-weight:normal'>havok_force_awake</b><span
+style='mso-spacerun:yes'>     </span>//tell the hut to wake up and fall to the
+ground</p>
+
+<p class=MsoNormal style='text-indent:.5in;border:none;mso-border-bottom-alt:
+solid windowtext 1.5pt;padding:0in;mso-padding-alt:0in 0in 1.0pt 0in'><span
+style='mso-tab-count:1'>            </span>$barrel <b style='mso-bidi-font-weight:
+normal'>havok_force_awake</b><span style='mso-spacerun:yes'>     </span>//wake
+up the barrel</p>
+
+<p class=MsoNormal style='text-indent:.5in;border:none;mso-border-bottom-alt:
+solid windowtext 1.5pt;padding:0in;mso-padding-alt:0in 0in 1.0pt 0in'><u><o:p><span
+ style='text-decoration:none'>&nbsp;</span></o:p></u></p>
+
+</div>
+
+<p class=MsoNormal><span style='font-size:18.0pt'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal><b style='mso-bidi-font-weight:normal'><span
+style='font-size:18.0pt'><o:p>&nbsp;</o:p></span></b></p>
+
+<p class=MsoNormal><b style='mso-bidi-font-weight:normal'><span
+style='font-size:14.0pt'>havok_disable_wakeup<o:p></o:p></span></b></p>
+
+<p class=MsoNormal><b style='mso-bidi-font-weight:normal'><span
+style='font-size:18.0pt'><o:p>&nbsp;</o:p></span></b></p>
+
+<p class=MsoNormal><b style='mso-bidi-font-weight:normal'><span
+style='mso-tab-count:1'>            </span></b><u>Syntax:<o:p></o:p></u></p>
+
+<p class=MsoNormal><u><o:p><span style='text-decoration:none'>&nbsp;</span></o:p></u></p>
+
+<p class=MsoNormal><span style='mso-tab-count:2'>                        </span><i
+style='mso-bidi-font-style:normal'>$targetname havok_disable_wakeup[joint_name]<o:p></o:p></i></p>
+
+<p class=MsoNormal><o:p>&nbsp;</o:p></p>
+
+<p class=MsoNormal><span style='mso-tab-count:1'>            </span><u>What it
+does:<o:p></o:p></u></p>
+
+<p class=MsoNormal><u><o:p><span style='text-decoration:none'>&nbsp;</span></o:p></u></p>
+
+<p class=MsoNormal style='margin-left:1.0in'>Sets bones that have never woken
+up to not be allowed to wake up.<span style='mso-spacerun:yes'>  </span>If the
+asset has already woken </p>
+
+<p class=MsoNormal style='margin-left:1.0in'>up this command will have no
+effect. This command is useful for telling an asset to be allowed to be </p>
+
+<p class=MsoNormal style='margin-left:1.0in'>woken up until a certain event
+happens. For instance: do not allow the player to destroy the wall of the
+building </p>
+
+<p class=MsoNormal style='margin-left:1.0in'>until after the second objective
+has been completed. </p>
+
+<p class=MsoNormal><o:p>&nbsp;</o:p></p>
+
+<div style='border:none;border-bottom:solid windowtext 1.5pt;padding:0in 0in 1.0pt 0in'>
+
+<p class=MsoNormal style='border:none;mso-border-bottom-alt:solid windowtext 1.5pt;
+padding:0in;mso-padding-alt:0in 0in 1.0pt 0in'><span style='mso-tab-count:1'>            </span><u>Example:<o:p></o:p></u></p>
+
+<p class=MsoNormal style='border:none;mso-border-bottom-alt:solid windowtext 1.5pt;
+padding:0in;mso-padding-alt:0in 0in 1.0pt 0in'><u><o:p><span style='text-decoration:
+ none'>&nbsp;</span></o:p></u></p>
+
+<p class=MsoNormal style='border:none;mso-border-bottom-alt:solid windowtext 1.5pt;
+padding:0in;mso-padding-alt:0in 0in 1.0pt 0in'><span style='mso-tab-count:2'>                        </span>$building
+<b style='mso-bidi-font-weight:normal'>havok_disable_wakeup</b><span
+style='mso-spacerun:yes'>          </span><span
+style='mso-spacerun:yes'>           </span>//if $building has not yet been
+woken up, do not allow any bones to wake up</p>
+
+<p class=MsoNormal style='border:none;mso-border-bottom-alt:solid windowtext 1.5pt;
+padding:0in;mso-padding-alt:0in 0in 1.0pt 0in'><span style='mso-tab-count:2'>                        </span>$fence<span
+style='mso-spacerun:yes'>      </span><b style='mso-bidi-font-weight:normal'>havok_disable_wakeup</b><span
+style='mso-spacerun:yes'>  </span>joint_post<span style='mso-spacerun:yes'> 
+</span>//if $fence has not yet been woken up, do not allow joint_post to wake
+up</p>
+
+<p class=MsoNormal style='border:none;mso-border-bottom-alt:solid windowtext 1.5pt;
+padding:0in;mso-padding-alt:0in 0in 1.0pt 0in'><u><span style='font-size:18.0pt'><o:p><span
+ style='text-decoration:none'>&nbsp;</span></o:p></span></u></p>
+
+</div>
+
+<p class=MsoNormal><span style='font-size:18.0pt'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal><b style='mso-bidi-font-weight:normal'><span
+style='font-size:18.0pt'><o:p>&nbsp;</o:p></span></b></p>
+
+<p class=MsoNormal><b style='mso-bidi-font-weight:normal'><span
+style='font-size:14.0pt'>havok_enable_wakeup<o:p></o:p></span></b></p>
+
+<p class=MsoNormal><b style='mso-bidi-font-weight:normal'><span
+style='font-size:14.0pt'><o:p>&nbsp;</o:p></span></b></p>
+
+<p class=MsoNormal><b style='mso-bidi-font-weight:normal'><span
+style='mso-tab-count:1'>            </span></b><u>Syntax:<o:p></o:p></u></p>
+
+<p class=MsoNormal><u><o:p><span style='text-decoration:none'>&nbsp;</span></o:p></u></p>
+
+<p class=MsoNormal style='margin-left:.5in;text-indent:.5in'><i
+style='mso-bidi-font-style:normal'>$targetname havok_enable_wakeup<o:p></o:p></i></p>
+
+<p class=MsoNormal style='margin-left:.5in;text-indent:.5in'><o:p>&nbsp;</o:p></p>
+
+<p class=MsoNormal><span style='mso-tab-count:1'>            </span><u>What it
+does:<o:p></o:p></u></p>
+
+<p class=MsoNormal><u><o:p><span style='text-decoration:none'>&nbsp;</span></o:p></u></p>
+
+<p class=MsoNormal style='margin-left:1.0in'>Sets bones that have been told to
+sleep via <b style='mso-bidi-font-weight:normal'>havok_enable_wakeup</b> to be
+allowed to wake up.<span style='mso-spacerun:yes'>  </span>If the</p>
+
+<p class=MsoNormal style='margin-left:1.0in'>asset has not had the <b
+style='mso-bidi-font-weight:normal'>havok_disable_wakeup</b> command issued on
+it,<span style='mso-spacerun:yes'>  </span>this command will have no effect. </p>
+
+<p class=MsoNormal><o:p>&nbsp;</o:p></p>
+
+<div style='border:none;border-bottom:solid windowtext 1.5pt;padding:0in 0in 1.0pt 0in'>
+
+<p class=MsoNormal style='border:none;mso-border-bottom-alt:solid windowtext 1.5pt;
+padding:0in;mso-padding-alt:0in 0in 1.0pt 0in'><span style='mso-tab-count:1'>            </span><u>Example:<o:p></o:p></u></p>
+
+<p class=MsoNormal style='border:none;mso-border-bottom-alt:solid windowtext 1.5pt;
+padding:0in;mso-padding-alt:0in 0in 1.0pt 0in'><u><o:p><span style='text-decoration:
+ none'>&nbsp;</span></o:p></u></p>
+
+<p class=MsoNormal style='text-indent:1.0in;border:none;mso-border-bottom-alt:
+solid windowtext 1.5pt;padding:0in;mso-padding-alt:0in 0in 1.0pt 0in'>$building
+<b style='mso-bidi-font-weight:normal'>havok_enable_wakeup</b><span
+style='mso-spacerun:yes'>                     </span>//if $building has not yet
+been woken up, do not allow any bones to wake up</p>
+
+<p class=MsoNormal style='border:none;mso-border-bottom-alt:solid windowtext 1.5pt;
+padding:0in;mso-padding-alt:0in 0in 1.0pt 0in'><span style='mso-tab-count:2'>                        </span>$fence<span
+style='mso-spacerun:yes'>      </span><b style='mso-bidi-font-weight:normal'>havok_enable_wakeup</b><span
+style='mso-spacerun:yes'>  </span>joint_post //if $fence has not yet been woken
+up, do not allow joint_post to wake up</p>
+
+<p class=MsoNormal style='border:none;mso-border-bottom-alt:solid windowtext 1.5pt;
+padding:0in;mso-padding-alt:0in 0in 1.0pt 0in'><span style='font-size:18.0pt'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal style='border:none;mso-border-bottom-alt:solid windowtext 1.5pt;
+padding:0in;mso-padding-alt:0in 0in 1.0pt 0in'><u><span style='font-size:18.0pt'><o:p><span
+ style='text-decoration:none'>&nbsp;</span></o:p></span></u></p>
+
+</div>
+
+<p class=MsoNormal><b style='mso-bidi-font-weight:normal'><span
+style='font-size:10.0pt'><o:p>&nbsp;</o:p></span></b></p>
+
+<p class=MsoNormal><b style='mso-bidi-font-weight:normal'><span
+style='font-size:14.0pt'>force_explode<o:p></o:p></span></b></p>
+
+<p class=MsoNormal><b style='mso-bidi-font-weight:normal'><span
+style='font-size:18.0pt'><o:p>&nbsp;</o:p></span></b></p>
+
+<p class=MsoNormal><b style='mso-bidi-font-weight:normal'><span
+style='mso-tab-count:1'>            </span></b><u>Syntax:<o:p></o:p></u></p>
+
+<p class=MsoNormal><u><o:p><span style='text-decoration:none'>&nbsp;</span></o:p></u></p>
+
+<p class=MsoNormal><span style='mso-tab-count:2'>                        </span><i
+style='mso-bidi-font-style:normal'>$targetname force_explode <o:p></o:p></i></p>
+
+<p class=MsoNormal><o:p>&nbsp;</o:p></p>
+
+<p class=MsoNormal style='tab-stops:.5in 1.0in 1.5in 177.0pt'><span
+style='mso-tab-count:1'>            </span><u>What it does:<o:p></o:p></u></p>
+
+<p class=MsoNormal style='tab-stops:.5in 1.0in 1.5in 177.0pt'><u><o:p><span
+ style='text-decoration:none'>&nbsp;</span></o:p></u></p>
+
+<p class=MsoNormal style='margin-left:1.0in'>Tells asset to swap visible
+renderable to the renderable (and renderable’s collision) to one called
+“destroyed”. </p>
+
+<p class=MsoNormal style='margin-left:1.0in'>A renderable called “destroyed”
+should exist in the asset. All bones set to <b style='mso-bidi-font-weight:
+normal'>game-driven</b> or <b style='mso-bidi-font-weight:normal'>physics-driven</b>
+will</p>
+
+<p class=MsoNormal style='margin-left:1.0in'>wake-up. This command can also be
+called from within the server section of an animation in a .hag file.</p>
+
+<p class=MsoNormal><o:p>&nbsp;</o:p></p>
+
+<div style='border:none;border-bottom:solid windowtext 1.5pt;padding:0in 0in 0in 0in'>
+
+<p class=MsoNormal style='border:none;mso-border-bottom-alt:solid windowtext 1.5pt;
+padding:0in;mso-padding-alt:0in 0in 0in 0in'><span style='mso-tab-count:1'>            </span><u>Examples:<o:p></o:p></u></p>
+
+<p class=MsoNormal style='border:none;mso-border-bottom-alt:solid windowtext 1.5pt;
+padding:0in;mso-padding-alt:0in 0in 0in 0in'><u><o:p><span style='text-decoration:
+ none'>&nbsp;</span></o:p></u></p>
+
+<p class=MsoNormal style='border:none;mso-border-bottom-alt:solid windowtext 1.5pt;
+padding:0in;mso-padding-alt:0in 0in 0in 0in'><span style='mso-tab-count:2'>                        </span>$village_hut<span
+style='mso-spacerun:yes'>   </span><b style='mso-bidi-font-weight:normal'>force_explode</b><span
+style='mso-spacerun:yes'>       </span>//tell $village_hut to go to destroyed
+renderable, and wake up<b style='mso-bidi-font-weight:normal'><span
+style='mso-tab-count:1'> </span></b></p>
+
+<p class=MsoNormal style='border:none;mso-border-bottom-alt:solid windowtext 1.5pt;
+padding:0in;mso-padding-alt:0in 0in 0in 0in'><span style='mso-tab-count:2'>                        </span>$super_plane<span
+style='mso-spacerun:yes'>  </span><b style='mso-bidi-font-weight:normal'>force_explode<span
+style='mso-spacerun:yes'>     </span></b><span
+style='mso-spacerun:yes'>  </span>//tell $super_plane to go to destroyed
+renderable, and wake up</p>
+
+<p class=MsoNormal style='border:none;mso-border-bottom-alt:solid windowtext 1.5pt;
+padding:0in;mso-padding-alt:0in 0in 0in 0in'><span style='font-size:16.0pt'><o:p>&nbsp;</o:p></span></p>
+
+</div>
+
+<p class=MsoNormal><span style='font-size:18.0pt'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal><b style='mso-bidi-font-weight:normal'><span
+style='font-size:14.0pt'>altmodel<o:p></o:p></span></b></p>
+
+<p class=MsoNormal><b style='mso-bidi-font-weight:normal'><span
+style='font-size:18.0pt'><o:p>&nbsp;</o:p></span></b></p>
+
+<p class=MsoNormal><b style='mso-bidi-font-weight:normal'><span
+style='mso-tab-count:1'>            </span></b><u>Syntax:<o:p></o:p></u></p>
+
+<p class=MsoNormal><u><o:p><span style='text-decoration:none'>&nbsp;</span></o:p></u></p>
+
+<p class=MsoNormal><span style='mso-tab-count:2'>                        </span><i
+style='mso-bidi-font-style:normal'>$targetname altmodel “renderableName”<o:p></o:p></i></p>
+
+<p class=MsoNormal><o:p>&nbsp;</o:p></p>
+
+<p class=MsoNormal style='tab-stops:.5in 1.0in 1.5in 177.0pt'><span
+style='mso-tab-count:1'>            </span><u>What it does:<o:p></o:p></u></p>
+
+<p class=MsoNormal style='tab-stops:.5in 1.0in 1.5in 177.0pt'><u><o:p><span
+ style='text-decoration:none'>&nbsp;</span></o:p></u></p>
+
+<p class=MsoNormal style='margin-left:1.0in'>Sets the named renderable (and
+that renderable’s collision) to be the current renderable. </p>
+
+<p class=MsoNormal style='margin-left:1.0in'>The collision is just as much a
+part of the renderable as a mesh or an LOD, all will be updated with this
+command.</p>
+
+<p class=MsoNormal style='margin-left:1.0in'>This command is useful when an
+asset has more than one renderable and you know the name of the renderable</p>
+
+<p class=MsoNormal style='margin-left:1.0in'>you want to switch to. </p>
+
+<p class=MsoNormal><o:p>&nbsp;</o:p></p>
+
+<div style='border:none;border-bottom:solid windowtext 1.5pt;padding:0in 0in 0in 0in'>
+
+<p class=MsoNormal style='border:none;mso-border-bottom-alt:solid windowtext 1.5pt;
+padding:0in;mso-padding-alt:0in 0in 0in 0in'><span style='mso-tab-count:1'>            </span><u>Examples:<o:p></o:p></u></p>
+
+<p class=MsoNormal style='border:none;mso-border-bottom-alt:solid windowtext 1.5pt;
+padding:0in;mso-padding-alt:0in 0in 0in 0in'><u><o:p><span style='text-decoration:
+ none'>&nbsp;</span></o:p></u></p>
+
+<p class=MsoNormal style='border:none;mso-border-bottom-alt:solid windowtext 1.5pt;
+padding:0in;mso-padding-alt:0in 0in 0in 0in'><span style='mso-tab-count:2'>                        </span>$plane
+<b style='mso-bidi-font-weight:normal'>altmodel</b> “destroyed”<span
+style='mso-spacerun:yes'>                       </span>//set the visible
+renderable to the renderable called “destroyed”<b style='mso-bidi-font-weight:
+normal'><span style='mso-tab-count:1'>            </span></b></p>
+
+<p class=MsoNormal style='border:none;mso-border-bottom-alt:solid windowtext 1.5pt;
+padding:0in;mso-padding-alt:0in 0in 0in 0in'><span style='mso-tab-count:2'>                        </span>$pier<span
+style='mso-spacerun:yes'>   </span><b style='mso-bidi-font-weight:normal'>altmodel</b>
+“really_really_damaged”<span style='mso-spacerun:yes'>  </span>//set the
+visible renderable to the renderable called “really_really_damaged”</p>
+
+<p class=MsoNormal style='border:none;mso-border-bottom-alt:solid windowtext 1.5pt;
+padding:0in;mso-padding-alt:0in 0in 0in 0in'><span style='font-size:16.0pt'><o:p>&nbsp;</o:p></span></p>
+
+</div>
+
+<p class=MsoNormal><b style='mso-bidi-font-weight:normal'><span
+style='font-size:10.0pt'><o:p>&nbsp;</o:p></span></b></p>
+
+<p class=MsoNormal><b style='mso-bidi-font-weight:normal'><span
+style='font-size:14.0pt'>altmodel_id<o:p></o:p></span></b></p>
+
+<p class=MsoNormal><b style='mso-bidi-font-weight:normal'><span
+style='font-size:18.0pt'><o:p>&nbsp;</o:p></span></b></p>
+
+<p class=MsoNormal><b style='mso-bidi-font-weight:normal'><span
+style='mso-tab-count:1'>            </span></b><u>Syntax:<o:p></o:p></u></p>
+
+<p class=MsoNormal><u><o:p><span style='text-decoration:none'>&nbsp;</span></o:p></u></p>
+
+<p class=MsoNormal><span style='mso-tab-count:2'>                        </span><i
+style='mso-bidi-font-style:normal'>$targetname altmodel_id renderableIndex
+//base zero<o:p></o:p></i></p>
+
+<p class=MsoNormal><o:p>&nbsp;</o:p></p>
+
+<p class=MsoNormal style='tab-stops:.5in 1.0in 1.5in 177.0pt'><span
+style='mso-tab-count:1'>            </span><u>What it does:<o:p></o:p></u></p>
+
+<p class=MsoNormal style='tab-stops:.5in 1.0in 1.5in 177.0pt'><u><o:p><span
+ style='text-decoration:none'>&nbsp;</span></o:p></u></p>
+
+<p class=MsoNormal style='margin-left:1.0in'>Sets the indexed renderable (and
+that renderable’s collision) to be the current renderable. </p>
+
+<p class=MsoNormal style='margin-left:1.0in'>The collision is just as much a
+part of the renderable as a mesh or an LOD, all will be updated with this
+command.</p>
+
+<p class=MsoNormal style='margin-left:1.0in'>This command is useful when an
+asset has more than one renderable and you know the index of the renderable</p>
+
+<p class=MsoNormal style='margin-left:1.0in'>you want to switch to. </p>
+
+<p class=MsoNormal><o:p>&nbsp;</o:p></p>
+
+<div style='border:none;border-bottom:solid windowtext 1.5pt;padding:0in 0in 0in 0in'>
+
+<p class=MsoNormal style='border:none;mso-border-bottom-alt:solid windowtext 1.5pt;
+padding:0in;mso-padding-alt:0in 0in 0in 0in'><span style='mso-tab-count:1'>            </span><u>Examples:<o:p></o:p></u></p>
+
+<p class=MsoNormal style='border:none;mso-border-bottom-alt:solid windowtext 1.5pt;
+padding:0in;mso-padding-alt:0in 0in 0in 0in'><u><o:p><span style='text-decoration:
+ none'>&nbsp;</span></o:p></u></p>
+
+<p class=MsoNormal style='border:none;mso-border-bottom-alt:solid windowtext 1.5pt;
+padding:0in;mso-padding-alt:0in 0in 0in 0in'><span style='mso-tab-count:2'>                        </span>$plane
+<b style='mso-bidi-font-weight:normal'>altmodel_id</b> 0<span
+style='mso-spacerun:yes'>  </span>//set the visible renderable to the first
+renderable<b style='mso-bidi-font-weight:normal'><span style='mso-tab-count:
+1'> </span></b></p>
+
+<p class=MsoNormal style='border:none;mso-border-bottom-alt:solid windowtext 1.5pt;
+padding:0in;mso-padding-alt:0in 0in 0in 0in'><span style='mso-tab-count:2'>                        </span>$pier<span
+style='mso-spacerun:yes'>   </span><b style='mso-bidi-font-weight:normal'>altmodel_id</b>
+4<span style='mso-spacerun:yes'>  </span>//set the visible renderable to the
+fifth renderable</p>
+
+<p class=MsoNormal style='border:none;mso-border-bottom-alt:solid windowtext 1.5pt;
+padding:0in;mso-padding-alt:0in 0in 0in 0in'><span style='font-size:16.0pt'><o:p>&nbsp;</o:p></span></p>
+
+</div>
+
+<p class=MsoNormal><b style='mso-bidi-font-weight:normal'><span
+style='font-size:18.0pt'><o:p>&nbsp;</o:p></span></b></p>
+
+</div>
+
+</body>
+
+</html>

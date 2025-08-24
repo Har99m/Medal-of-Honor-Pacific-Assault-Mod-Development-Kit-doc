@@ -1,0 +1,420 @@
+<html xmlns:o="urn:schemas-microsoft-com:office:office"
+xmlns:w="urn:schemas-microsoft-com:office:word"
+xmlns:st1="urn:schemas-microsoft-com:office:smarttags"
+xmlns="http://www.w3.org/TR/REC-html40">
+
+<head>
+<meta http-equiv=Content-Type content="text/html; charset=windows-1252">
+<meta name=ProgId content=Word.Document>
+<meta name=Generator content="Microsoft Word 10">
+<meta name=Originator content="Microsoft Word 10">
+<link rel=File-List href="animation_states_files/filelist.xml">
+<title>High-Level Animation States and Organization</title>
+<o:SmartTagType namespaceuri="urn:schemas-microsoft-com:office:smarttags"
+ name="PlaceType"/>
+<o:SmartTagType namespaceuri="urn:schemas-microsoft-com:office:smarttags"
+ name="PlaceName"/>
+<o:SmartTagType namespaceuri="urn:schemas-microsoft-com:office:smarttags"
+ name="place"/>
+<!--[if gte mso 9]><xml>
+ <o:DocumentProperties>
+  <o:Author>Clancy Imislund</o:Author>
+  <o:LastAuthor>bbilodeau</o:LastAuthor>
+  <o:Revision>4</o:Revision>
+  <o:TotalTime>3</o:TotalTime>
+  <o:Created>2004-10-13T23:28:00Z</o:Created>
+  <o:LastSaved>2004-12-08T00:15:00Z</o:LastSaved>
+  <o:Pages>1</o:Pages>
+  <o:Words>788</o:Words>
+  <o:Characters>4495</o:Characters>
+  <o:Company>EA</o:Company>
+  <o:Lines>37</o:Lines>
+  <o:Paragraphs>10</o:Paragraphs>
+  <o:CharactersWithSpaces>5273</o:CharactersWithSpaces>
+  <o:Version>10.3501</o:Version>
+ </o:DocumentProperties>
+</xml><![endif]--><!--[if gte mso 9]><xml>
+ <w:WordDocument>
+  <w:Zoom>TextFit</w:Zoom>
+  <w:GrammarState>Clean</w:GrammarState>
+  <w:Compatibility>
+   <w:BreakWrappedTables/>
+   <w:SnapToGridInCell/>
+   <w:WrapTextWithPunct/>
+   <w:UseAsianBreakRules/>
+  </w:Compatibility>
+  <w:BrowserLevel>MicrosoftInternetExplorer4</w:BrowserLevel>
+ </w:WordDocument>
+</xml><![endif]--><!--[if !mso]><object
+ classid="clsid:38481807-CA0E-42D2-BF39-B33AF135CC4D" id=ieooui></object>
+<style>
+st1\:*{behavior:url(#ieooui) }
+</style>
+<![endif]-->
+<style>
+<!--
+ /* Style Definitions */
+ p.MsoNormal, li.MsoNormal, div.MsoNormal
+	{mso-style-parent:"";
+	margin:0in;
+	margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	font-size:12.0pt;
+	font-family:"Times New Roman";
+	mso-fareast-font-family:"Times New Roman";}
+@page Section1
+	{size:8.5in 11.0in;
+	margin:1.0in 1.25in 1.0in 1.25in;
+	mso-header-margin:.5in;
+	mso-footer-margin:.5in;
+	mso-paper-source:0;}
+div.Section1
+	{page:Section1;}
+ /* List Definitions */
+ @list l0
+	{mso-list-id:895161418;
+	mso-list-type:hybrid;
+	mso-list-template-ids:-2008892370 67698705 67698713 67698715 67698703 67698713 67698715 67698703 67698713 67698715;}
+@list l0:level1
+	{mso-level-text:"%1\)";
+	mso-level-tab-stop:.5in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l0:level2
+	{mso-level-tab-stop:1.0in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l0:level3
+	{mso-level-tab-stop:1.5in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l0:level4
+	{mso-level-tab-stop:2.0in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l0:level5
+	{mso-level-tab-stop:2.5in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l0:level6
+	{mso-level-tab-stop:3.0in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l0:level7
+	{mso-level-tab-stop:3.5in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l0:level8
+	{mso-level-tab-stop:4.0in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l0:level9
+	{mso-level-tab-stop:4.5in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+ol
+	{margin-bottom:0in;}
+ul
+	{margin-bottom:0in;}
+-->
+</style>
+<!--[if gte mso 10]>
+<style>
+ /* Style Definitions */
+ table.MsoNormalTable
+	{mso-style-name:"Table Normal";
+	mso-tstyle-rowband-size:0;
+	mso-tstyle-colband-size:0;
+	mso-style-noshow:yes;
+	mso-style-parent:"";
+	mso-padding-alt:0in 5.4pt 0in 5.4pt;
+	mso-para-margin:0in;
+	mso-para-margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	font-size:10.0pt;
+	font-family:"Times New Roman";}
+</style>
+<![endif]-->
+</head>
+
+<body lang=EN-US style='tab-interval:.5in'>
+
+<div class=Section1>
+
+<p class=MsoNormal align=center style='text-align:center'><b style='mso-bidi-font-weight:
+normal'><span style='font-size:14.0pt'>High-Level </span></b><st1:place><st1:PlaceName><b
+  style='mso-bidi-font-weight:normal'><span style='font-size:14.0pt'>Animation</span></b></st1:PlaceName><b
+ style='mso-bidi-font-weight:normal'><span style='font-size:14.0pt'> </span></b><st1:PlaceType><b
+  style='mso-bidi-font-weight:normal'><span style='font-size:14.0pt'>States</span></b></st1:PlaceType></st1:place><b
+style='mso-bidi-font-weight:normal'><span style='font-size:14.0pt'> and
+Organization<o:p></o:p></span></b></p>
+
+<p class=MsoNormal><o:p>&nbsp;</o:p></p>
+
+<p class=MsoNormal><span style='mso-tab-count:1'>            </span>This
+document serves as an attempt to define the taxonomy and nomenclature used in
+the MOHPA Animation/Scripting Interface.<span style='mso-spacerun:yes'> 
+</span>It will also touch on interfaces with other systems in the engine such
+as “AI”, “Animation State Machine”, and concept of “Rag Doll”.<span
+style='mso-spacerun:yes'>   </span>Lastly, this document will show a naming
+convention for the notion of “Alias”. This is a term that is used to create the
+interface between the asset productions of the animation team (Via a “Tiki”
+file) and the C++ and scripting code that is meant to drive it.</p>
+
+<p class=MsoNormal><o:p>&nbsp;</o:p></p>
+
+<p class=MsoNormal><b style='mso-bidi-font-weight:normal'>Scripts are to be organized
+using the following classifications:<o:p></o:p></b></p>
+
+<p class=MsoNormal><o:p>&nbsp;</o:p></p>
+
+<p class=MsoNormal>“<i style='mso-bidi-font-style:normal'>Full Body</i>”<span
+style='mso-tab-count:1'>      </span></p>
+
+<p class=MsoNormal><o:p>&nbsp;</o:p></p>
+
+<p class=MsoNormal style='text-indent:.5in'>These are animations that are
+considered the “default” reference in resolving bone positions.<span
+style='mso-spacerun:yes'>  </span>They should generally control all bone
+translation and rotation although their values may be over-written by “Upper”
+animations described in the next section.</p>
+
+<p class=MsoNormal><o:p>&nbsp;</o:p></p>
+
+<p class=MsoNormal>“<i style='mso-bidi-font-style:normal'>Uppe</i>r”<span
+style='mso-tab-count:2'>                       </span></p>
+
+<p class=MsoNormal><o:p>&nbsp;</o:p></p>
+
+<p class=MsoNormal style='text-indent:.5in'>Secondary animations prioritize
+above the “Full Body” animations and block their values. These are used to
+control special activities (Like holding a gun or opening a door).<span
+style='mso-spacerun:yes'>  </span>The low-level animation system is responsible
+for blending between “Upper” and “Full Body” animations. </p>
+
+<p class=MsoNormal><o:p>&nbsp;</o:p></p>
+
+<p class=MsoNormal>Note: Certain animations may be designed in several
+versions. For instance, there may be several versions of a “Bored” animation
+that the game may want to employ to enhance realism and immersion. This will
+solved in the “Alias Construction” section of this document</p>
+
+<p class=MsoNormal><o:p>&nbsp;</o:p></p>
+
+<p class=MsoNormal><b style='mso-bidi-font-weight:normal'>“<i style='mso-bidi-font-style:
+normal'>Full Body</i>” Animation Break-Down:<o:p></o:p></b></p>
+
+<p class=MsoNormal><o:p>&nbsp;</o:p></p>
+
+<p class=MsoNormal>“<i style='mso-bidi-font-style:normal'>Position</i>” <span
+style='mso-tab-count:2'>                   </span></p>
+
+<p class=MsoNormal><o:p>&nbsp;</o:p></p>
+
+<p class=MsoNormal style='text-indent:.5in'>This set of animations control
+things like “Standing”, “Crouching”, and “Prone”. They are essentially the
+“Stopped” versions of the “Locomotion” animations described next.</p>
+
+<p class=MsoNormal style='text-indent:.5in'><o:p>&nbsp;</o:p></p>
+
+<p class=MsoNormal>“<i style='mso-bidi-font-style:normal'>Locomotion</i>”<span
+style='mso-tab-count:2'>              </span></p>
+
+<p class=MsoNormal><o:p>&nbsp;</o:p></p>
+
+<p class=MsoNormal style='text-indent:.5in'>These are sets of 4-directional
+“moving” versions of the “Position” animations described above. </p>
+
+<span style='font-size:12.0pt;font-family:"Times New Roman";mso-fareast-font-family:
+"Times New Roman";mso-ansi-language:EN-US;mso-fareast-language:EN-US;
+mso-bidi-language:AR-SA'><br clear=all style='page-break-before:always'>
+</span>
+
+<p class=MsoNormal style='text-indent:.5in'><span
+style='mso-spacerun:yes'> </span></p>
+
+<p class=MsoNormal>“<i style='mso-bidi-font-style:normal'>Mood</i>”<span
+style='mso-spacerun:yes'>  </span></p>
+
+<p class=MsoNormal><o:p>&nbsp;</o:p></p>
+
+<p class=MsoNormal style='text-indent:.5in'>These are a set of flavors of the
+“Position” and “Locomotion” animations.<span style='mso-spacerun:yes'> 
+</span>They add realism when displaying the character.<span
+style='mso-spacerun:yes'>   </span>“Mood” will be defined with the following
+set of keywords: “Curious”, “Alert”, “Bored”, and “Nervous”.</p>
+
+<p class=MsoNormal style='text-indent:.5in'><o:p>&nbsp;</o:p></p>
+
+<p class=MsoNormal>“<i style='mso-bidi-font-style:normal'>Pain</i>”<span
+style='mso-tab-count:2'>              </span></p>
+
+<p class=MsoNormal><o:p>&nbsp;</o:p></p>
+
+<p class=MsoNormal style='text-indent:.5in'><span
+style='mso-spacerun:yes'> </span>These are representations of the damage states
+a character may experience during his travels through the world. It covers
+areas like “Falling down” or “Standing Up”…etc. This script will also be a
+gateway to the “Rag Doll” system.<span style='mso-spacerun:yes'>  </span>Once
+in “Rag Doll”, always in “Rag Doll”.<span style='mso-spacerun:yes'>  
+</span>Animation scripts cease once we cross through this portal.</p>
+
+<p class=MsoNormal style='text-indent:.5in'><o:p>&nbsp;</o:p></p>
+
+<p class=MsoNormal>“<i style='mso-bidi-font-style:normal'>Transitions</i>”</p>
+
+<p class=MsoNormal><o:p>&nbsp;</o:p></p>
+
+<p class=MsoNormal><span style='mso-tab-count:1'>            </span>These are
+segues between “Position”, “Locomotion”, and/or “Pain” animations.<span
+style='mso-spacerun:yes'>  </span>They are of short duration and will be seen
+as an overhead so as to keep their numbers minimal.<span
+style='mso-spacerun:yes'>  </span>The lowest level of the animation system in
+the engine will be the default blending mechanism with “Transitions” being
+employed when the default is not “good enough”.</p>
+
+<p class=MsoNormal style='margin-left:.25in'><o:p>&nbsp;</o:p></p>
+
+<p class=MsoNormal style='margin-left:.25in'><o:p>&nbsp;</o:p></p>
+
+<p class=MsoNormal><b style='mso-bidi-font-weight:normal'>“Upper” Animation
+Break-Down<o:p></o:p></b></p>
+
+<p class=MsoNormal><o:p>&nbsp;</o:p></p>
+
+<p class=MsoNormal>1)<span style='mso-spacerun:yes'>  </span>“<i
+style='mso-bidi-font-style:normal'>Weapon Group</i>”</p>
+
+<p class=MsoNormal><o:p>&nbsp;</o:p></p>
+
+<p class=MsoNormal style='text-indent:.5in'>These are special smaller-scope
+secondary animation set used when the characters holding weapons.<span
+style='mso-spacerun:yes'>  </span>These are designed to get the character’s
+hands “close” to the weapon’s grips but the actual gluing with employ the use
+of some simple IK.</p>
+
+<p class=MsoNormal style='text-indent:.5in'><o:p>&nbsp;</o:p></p>
+
+<p class=MsoNormal>2)<span style='mso-spacerun:yes'>  </span>“<i
+style='mso-bidi-font-style:normal'>Pain</i>”</p>
+
+<p class=MsoNormal><o:p>&nbsp;</o:p></p>
+
+<p class=MsoNormal style='text-indent:.5in'>These represent area-specific
+damage like “a hit in the shoulder” or a “kick in the teeth”. The character may
+be continuing on with a “Full Body” walk cycle during either one of those
+events yet still be allowed to blend one of these over the top.</p>
+
+<p class=MsoNormal style='text-indent:.5in'><span
+style='mso-spacerun:yes'> </span></p>
+
+<p class=MsoNormal>3) “<i style='mso-bidi-font-style:normal'>Ambient</i>”<span
+style='mso-tab-count:2'>               </span></p>
+
+<p class=MsoNormal><o:p>&nbsp;</o:p></p>
+
+<p class=MsoNormal style='text-indent:.5in'>A “bored dude” may “scratch his
+head” while in a “Position”.<span style='mso-spacerun:yes'>  </span>These have
+no real effects on game play but they are meant to contribute to immersion.</p>
+
+<p class=MsoNormal><o:p>&nbsp;</o:p></p>
+
+<span style='font-size:12.0pt;font-family:"Times New Roman";mso-fareast-font-family:
+"Times New Roman";mso-ansi-language:EN-US;mso-fareast-language:EN-US;
+mso-bidi-language:AR-SA'><br clear=all style='page-break-before:always'>
+</span>
+
+<p class=MsoNormal>“<i style='mso-bidi-font-style:normal'>Transitions</i>”</p>
+
+<p class=MsoNormal><o:p>&nbsp;</o:p></p>
+
+<p class=MsoNormal style='text-indent:.5in'>These are segues between “Weapon
+Group” (When the character changes weapon), “Ambient”, and/or “Pain”
+animations.<span style='mso-spacerun:yes'>  </span>Again, these are of short
+duration and will be seen as an overhead so as to keep their numbers
+minimal.<span style='mso-spacerun:yes'>  </span>The lowest level of the
+animation system in the engine will be the default blending mechanism with
+“Transitions” being employed when the default is not “good enough”.</p>
+
+<p class=MsoNormal><b style='mso-bidi-font-weight:normal'><o:p>&nbsp;</o:p></b></p>
+
+<p class=MsoNormal><b style='mso-bidi-font-weight:normal'>Duties of the “AI”
+Module<o:p></o:p></b></p>
+
+<p class=MsoNormal><o:p>&nbsp;</o:p></p>
+
+<p class=MsoNormal>The “AI” module(s) will have the following duties:</p>
+
+<p class=MsoNormal><o:p>&nbsp;</o:p></p>
+
+<p class=MsoNormal style='margin-left:.5in;text-indent:-.25in;mso-list:l0 level1 lfo2;
+tab-stops:list .5in'><![if !supportLists]><span style='mso-list:Ignore'>1)<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></span><![endif]>It
+will set the character’s “Mood”</p>
+
+<p class=MsoNormal style='margin-left:.5in;text-indent:-.25in;mso-list:l0 level1 lfo2;
+tab-stops:list .5in'><![if !supportLists]><span style='mso-list:Ignore'>2)<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></span><![endif]>It
+will tell the character which weapon to use.</p>
+
+<p class=MsoNormal style='margin-left:.5in;text-indent:-.25in;mso-list:l0 level1 lfo2;
+tab-stops:list .5in'><![if !supportLists]><span style='mso-list:Ignore'>3)<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></span><![endif]>It
+will issue movement and attack commands</p>
+
+<p class=MsoNormal style='margin-left:.5in;text-indent:-.25in;mso-list:l0 level1 lfo2;
+tab-stops:list .5in'><![if !supportLists]><span style='mso-list:Ignore'>4)<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></span><![endif]>It
+will NOT call out animation scripts directly...period.<span
+style='mso-spacerun:yes'>  </span>This is an effort to decouple two systems in
+a clean way so that code obfuscation reduces.<span style='mso-spacerun:yes'>  
+</span>The actual script calling activities are to be carried out by the
+“Animation State Machine” described next.</p>
+
+<p class=MsoNormal><o:p>&nbsp;</o:p></p>
+
+<p class=MsoNormal><b style='mso-bidi-font-weight:normal'>Duties of “</b><st1:place><st1:PlaceName><b
+  style='mso-bidi-font-weight:normal'>Animation</b></st1:PlaceName><b
+ style='mso-bidi-font-weight:normal'> </b><st1:PlaceType><b style='mso-bidi-font-weight:
+  normal'>State</b></st1:PlaceType></st1:place><b style='mso-bidi-font-weight:
+normal'> Machine”<o:p></o:p></b></p>
+
+<p class=MsoNormal><o:p>&nbsp;</o:p></p>
+
+<p class=MsoNormal><span style='mso-tab-count:1'>            </span>This is the
+system that will manage the execution of the proper script files and labels
+used to adequately satisfy all of the “Full Body” and “Upper” animations and
+their transitions.<span style='mso-spacerun:yes'>   </span>The logic
+implemented here will see to all of the transitions and variants of “Mood”, “Position”,
+and “Locomotion” as will be outlined. The logic for the state machine will be
+implemented using our current scripting language with little or no introduction
+of new variables.</p>
+
+<p class=MsoNormal><o:p>&nbsp;</o:p></p>
+
+<p class=MsoNormal><b style='mso-bidi-font-weight:normal'>“Alias” Construction<o:p></o:p></b></p>
+
+<p class=MsoNormal><o:p>&nbsp;</o:p></p>
+
+<p class=MsoNormal><span style='mso-tab-count:1'>            </span>As stated,
+our engine and scripts rely on the concept of the “Alias” which decouples the
+animation asset filenames and their representations in-game.<span
+style='mso-spacerun:yes'>  </span>The idea here is to develop a short-hand
+grammar for the terms we use to classify the different animation varieties.<span
+style='mso-spacerun:yes'>  </span>This will yield a plan for writing simple and
+extensible “Alias Construction” scripts that harvest values from the character
+and generate “Alias” names.</p>
+
+<p class=MsoNormal><o:p>&nbsp;</o:p></p>
+
+<p class=MsoNormal><o:p>&nbsp;</o:p></p>
+
+<p class=MsoNormal><o:p>&nbsp;</o:p></p>
+
+<p class=MsoNormal><o:p>&nbsp;</o:p></p>
+
+</div>
+
+</body>
+
+</html>

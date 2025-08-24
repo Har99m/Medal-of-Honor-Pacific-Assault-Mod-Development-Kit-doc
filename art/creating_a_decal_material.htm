@@ -1,0 +1,477 @@
+<html xmlns:v="urn:schemas-microsoft-com:vml"
+xmlns:o="urn:schemas-microsoft-com:office:office"
+xmlns:w="urn:schemas-microsoft-com:office:word"
+xmlns="http://www.w3.org/TR/REC-html40">
+
+<head>
+<meta http-equiv=Content-Type content="text/html; charset=windows-1252">
+<meta name=ProgId content=Word.Document>
+<meta name=Generator content="Microsoft Word 10">
+<meta name=Originator content="Microsoft Word 10">
+<link rel=File-List href="creating_a_decal_material_files/filelist.xml">
+<link rel=Edit-Time-Data href="creating_a_decal_material_files/editdata.mso">
+<!--[if !mso]>
+<style>
+v\:* {behavior:url(#default#VML);}
+o\:* {behavior:url(#default#VML);}
+w\:* {behavior:url(#default#VML);}
+.shape {behavior:url(#default#VML);}
+</style>
+<![endif]-->
+<title>Creating a Decal Material</title>
+<!--[if gte mso 9]><xml>
+ <o:DocumentProperties>
+  <o:Author>lsempe</o:Author>
+  <o:LastAuthor>bbilodeau</o:LastAuthor>
+  <o:Revision>2</o:Revision>
+  <o:TotalTime>1134</o:TotalTime>
+  <o:Created>2004-12-07T18:36:00Z</o:Created>
+  <o:LastSaved>2004-12-07T18:36:00Z</o:LastSaved>
+  <o:Pages>1</o:Pages>
+  <o:Words>718</o:Words>
+  <o:Characters>4094</o:Characters>
+  <o:Company>EA</o:Company>
+  <o:Lines>34</o:Lines>
+  <o:Paragraphs>9</o:Paragraphs>
+  <o:CharactersWithSpaces>4803</o:CharactersWithSpaces>
+  <o:Version>10.3501</o:Version>
+ </o:DocumentProperties>
+</xml><![endif]--><!--[if gte mso 9]><xml>
+ <w:WordDocument>
+  <w:GrammarState>Clean</w:GrammarState>
+  <w:Compatibility>
+   <w:BreakWrappedTables/>
+   <w:SnapToGridInCell/>
+   <w:WrapTextWithPunct/>
+   <w:UseAsianBreakRules/>
+  </w:Compatibility>
+  <w:BrowserLevel>MicrosoftInternetExplorer4</w:BrowserLevel>
+ </w:WordDocument>
+</xml><![endif]-->
+<style>
+<!--
+ /* Font Definitions */
+ @font-face
+	{font-family:Tahoma;
+	panose-1:2 11 6 4 3 5 4 4 2 4;
+	mso-font-charset:0;
+	mso-generic-font-family:swiss;
+	mso-font-pitch:variable;
+	mso-font-signature:553679495 -2147483648 8 0 66047 0;}
+ /* Style Definitions */
+ p.MsoNormal, li.MsoNormal, div.MsoNormal
+	{mso-style-parent:"";
+	margin:0in;
+	margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	font-size:12.0pt;
+	font-family:"Times New Roman";
+	mso-fareast-font-family:"Times New Roman";}
+a:link, span.MsoHyperlink
+	{color:blue;
+	text-decoration:underline;
+	text-underline:single;}
+a:visited, span.MsoHyperlinkFollowed
+	{color:purple;
+	text-decoration:underline;
+	text-underline:single;}
+@page Section1
+	{size:8.5in 11.0in;
+	margin:1.0in 1.25in 1.0in 1.25in;
+	mso-header-margin:.5in;
+	mso-footer-margin:.5in;
+	mso-paper-source:0;}
+div.Section1
+	{page:Section1;}
+-->
+</style>
+<!--[if gte mso 10]>
+<style>
+ /* Style Definitions */
+ table.MsoNormalTable
+	{mso-style-name:"Table Normal";
+	mso-tstyle-rowband-size:0;
+	mso-tstyle-colband-size:0;
+	mso-style-noshow:yes;
+	mso-style-parent:"";
+	mso-padding-alt:0in 5.4pt 0in 5.4pt;
+	mso-para-margin:0in;
+	mso-para-margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	font-size:10.0pt;
+	font-family:"Times New Roman";}
+</style>
+<![endif]--><!--[if gte mso 9]><xml>
+ <o:shapedefaults v:ext="edit" spidmax="2050"/>
+</xml><![endif]--><!--[if gte mso 9]><xml>
+ <o:shapelayout v:ext="edit">
+  <o:idmap v:ext="edit" data="1"/>
+ </o:shapelayout></xml><![endif]-->
+</head>
+
+<body lang=EN-US link=blue vlink=purple style='tab-interval:.5in'>
+
+<div class=Section1>
+
+<p class=MsoNormal><b style='mso-bidi-font-weight:normal'><span
+style='font-family:Tahoma'>Creating a Decal Material<o:p></o:p></span></b></p>
+
+<p class=MsoNormal><b style='mso-bidi-font-weight:normal'><span
+style='font-size:10.0pt;font-family:Tahoma'><o:p>&nbsp;</o:p></span></b></p>
+
+<p class=MsoNormal><span style='font-size:10.0pt;font-family:Tahoma'>This guide
+will show how step by step how to create a decal material. The process consists
+of two parts, first, creating the source decal material in Photoshop. The second
+part is converting this Photoshop image into a format recognized by the game
+engine, there is a standalone tool that takes care of this part.<o:p></o:p></span></p>
+
+<p class=MsoNormal><span style='font-size:10.0pt;font-family:Tahoma'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal><span style='font-size:10.0pt;font-family:Tahoma'>A source
+decal material is a Photoshop file that will contain one layer per decal. The
+alpha channel is shared by all the decals, which means there can’t be any
+overlapping layers. For efficiency, layers should be sized in powers of two
+(32x32, 64x62, 128x128, etc).<o:p></o:p></span></p>
+
+<p class=MsoNormal><span style='font-size:10.0pt;font-family:Tahoma'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal><b style='mso-bidi-font-weight:normal'><span
+style='font-size:10.0pt;font-family:Tahoma'>Part 1 – Creating the source decal
+texture with Photoshop<o:p></o:p></span></b></p>
+
+<p class=MsoNormal><b style='mso-bidi-font-weight:normal'><span
+style='font-size:10.0pt;font-family:Tahoma'><o:p>&nbsp;</o:p></span></b></p>
+
+<p class=MsoNormal><span style='font-size:10.0pt;font-family:Tahoma'>Start by
+creating a new 512x512 image in Photoshop.<o:p></o:p></span></p>
+
+<p class=MsoNormal><span style='font-size:10.0pt;font-family:Tahoma'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal><span style='font-size:10.0pt;font-family:Tahoma'>Go to the
+“Layers” tab and click on “Create a new Layer”. The “Background” layer should
+be left empty, you can lock it if you wish, and it is recommended that you hide
+it.<o:p></o:p></span></p>
+
+<p class=MsoNormal><span style='font-size:10.0pt;font-family:Tahoma'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal><span style='font-size:10.0pt;font-family:Tahoma'><!--[if gte vml 1]><v:shapetype
+ id="_x0000_t75" coordsize="21600,21600" o:spt="75" o:preferrelative="t"
+ path="m@4@5l@4@11@9@11@9@5xe" filled="f" stroked="f">
+ <v:stroke joinstyle="miter"/>
+ <v:formulas>
+  <v:f eqn="if lineDrawn pixelLineWidth 0"/>
+  <v:f eqn="sum @0 1 0"/>
+  <v:f eqn="sum 0 0 @1"/>
+  <v:f eqn="prod @2 1 2"/>
+  <v:f eqn="prod @3 21600 pixelWidth"/>
+  <v:f eqn="prod @3 21600 pixelHeight"/>
+  <v:f eqn="sum @0 0 1"/>
+  <v:f eqn="prod @6 1 2"/>
+  <v:f eqn="prod @7 21600 pixelWidth"/>
+  <v:f eqn="sum @8 21600 0"/>
+  <v:f eqn="prod @7 21600 pixelHeight"/>
+  <v:f eqn="sum @10 21600 0"/>
+ </v:formulas>
+ <v:path o:extrusionok="f" gradientshapeok="t" o:connecttype="rect"/>
+ <o:lock v:ext="edit" aspectratio="t"/>
+</v:shapetype><v:shape id="_x0000_i1025" type="#_x0000_t75" style='width:152.25pt;
+ height:152.25pt'>
+ <v:imagedata src="creating_a_decal_material_files/image001.jpg" o:title="hide_background"/>
+</v:shape><![endif]--><![if !vml]><img width=203 height=203
+src="creating_a_decal_material_files/image002.jpg" v:shapes="_x0000_i1025"><![endif]><o:p></o:p></span></p>
+
+<p class=MsoNormal><span style='font-size:10.0pt;font-family:Tahoma'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal><span style='font-size:10.0pt;font-family:Tahoma'>Right
+click on the layer name (the area highlighted in blue) and select “Layer
+Properties”, the layer name will represent the decal name, so name it something
+meaningful and easy to remember. In this example, we name our decal
+“ConcreteBlast”.<o:p></o:p></span></p>
+
+<p class=MsoNormal><span style='font-size:10.0pt;font-family:Tahoma'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal><span style='font-size:10.0pt;font-family:Tahoma'><!--[if gte vml 1]><v:shape
+ id="_x0000_i1026" type="#_x0000_t75" style='width:243pt;height:60.75pt'>
+ <v:imagedata src="creating_a_decal_material_files/image003.jpg" o:title="layer_properties"/>
+</v:shape><![endif]--><![if !vml]><img width=324 height=81
+src="creating_a_decal_material_files/image004.jpg" v:shapes="_x0000_i1026"><![endif]><o:p></o:p></span></p>
+
+<p class=MsoNormal><span style='font-size:10.0pt;font-family:Tahoma'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal><span style='font-size:10.0pt;font-family:Tahoma'>Right
+click on the layer again, this time select the option “Blending Options”, <b
+style='mso-bidi-font-weight:normal'>THIS STEP IS VERY IMPORTANT</b>, if you
+forget to do this, the alpha channel will not get exported correctly and decals
+will look opaque or may not show up in the game. In the dialog that appears, <b
+style='mso-bidi-font-weight:normal'>uncheck</b> the option <i style='mso-bidi-font-style:
+normal'>Transparency Shapes Layer</i>. <b style='mso-bidi-font-weight:normal'>YOU
+MUST DO THIS FOR EVERY LAYER THAT YOU ADD. </b>Don’t forget.<o:p></o:p></span></p>
+
+<p class=MsoNormal><span style='font-size:10.0pt;font-family:Tahoma'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal><span style='font-size:10.0pt;font-family:Tahoma'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal><span style='font-size:10.0pt;font-family:Tahoma'><!--[if gte vml 1]><v:shape
+ id="_x0000_i1027" type="#_x0000_t75" style='width:6in;height:324pt'>
+ <v:imagedata src="creating_a_decal_material_files/image005.jpg" o:title="transparency_shape_uncheck"/>
+</v:shape><![endif]--><![if !vml]><img width=576 height=432
+src="creating_a_decal_material_files/image006.jpg" v:shapes="_x0000_i1027"><![endif]><o:p></o:p></span></p>
+
+<p class=MsoNormal><span style='font-size:10.0pt;font-family:Tahoma'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal><span style='font-size:10.0pt;font-family:Tahoma'>Now you
+can draw the decal into the first layer. As a suggestion, select the area that
+represents the size of the decal. In this example I selected a 128x128 area,
+and pasted an existing blast mark decal into it.<o:p></o:p></span></p>
+
+<p class=MsoNormal><span style='font-size:10.0pt;font-family:Tahoma'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal><span style='font-size:10.0pt;font-family:Tahoma'><!--[if gte vml 1]><v:shape
+ id="_x0000_i1028" type="#_x0000_t75" style='width:252pt;height:252pt'>
+ <v:imagedata src="creating_a_decal_material_files/image007.jpg" o:title="draw_decal"/>
+</v:shape><![endif]--><![if !vml]><img width=336 height=336
+src="creating_a_decal_material_files/image008.jpg" v:shapes="_x0000_i1028"><![endif]><o:p></o:p></span></p>
+
+<p class=MsoNormal><span style='font-size:10.0pt;font-family:Tahoma'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal><span style='font-size:10.0pt;font-family:Tahoma'>Now we
+need to add the alpha channel for the image, click on the “Channels” tab and
+then click on the “Create New” button. This will add an empty (all black) alpha
+channel. Remember that the alpha channel is shared by all decals, so you must
+be careful of placing the alpha information for each decal in the right place.
+This is another area in which working with a grid is very handy.<o:p></o:p></span></p>
+
+<p class=MsoNormal><span style='font-size:10.0pt;font-family:Tahoma'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal><span style='font-size:10.0pt;font-family:Tahoma'><!--[if gte vml 1]><v:shape
+ id="_x0000_i1029" type="#_x0000_t75" style='width:153.75pt;height:198pt'>
+ <v:imagedata src="creating_a_decal_material_files/image009.jpg" o:title="add_alpha_channel"/>
+</v:shape><![endif]--><![if !vml]><img width=205 height=264
+src="creating_a_decal_material_files/image010.jpg" v:shapes="_x0000_i1029"><![endif]><o:p></o:p></span></p>
+
+<p class=MsoNormal><span style='font-size:10.0pt;font-family:Tahoma'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal><span style='font-size:10.0pt;font-family:Tahoma'>Now draw
+the alpha for this decal, make sure it’s correctly placed under the correct
+decal layer.<o:p></o:p></span></p>
+
+<p class=MsoNormal><span style='font-size:10.0pt;font-family:Tahoma'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal><span style='font-size:10.0pt;font-family:Tahoma'><!--[if gte vml 1]><v:shape
+ id="_x0000_i1030" type="#_x0000_t75" style='width:252pt;height:252pt'>
+ <v:imagedata src="creating_a_decal_material_files/image011.jpg" o:title="sample_alpha"/>
+</v:shape><![endif]--><![if !vml]><img width=336 height=336
+src="creating_a_decal_material_files/image012.jpg" v:shapes="_x0000_i1030"><![endif]><o:p></o:p></span></p>
+
+<p class=MsoNormal><span style='font-size:10.0pt;font-family:Tahoma'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal><span style='font-size:10.0pt;font-family:Tahoma'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal><span style='font-size:10.0pt;font-family:Tahoma'>Now that
+you have one decal correctly setup, you can add a new one. It can be of a
+different size, as long as it doesn’t overlap with existing decals, and that it
+has a power of two size.<o:p></o:p></span></p>
+
+<p class=MsoNormal><span style='font-size:10.0pt;font-family:Tahoma'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal><span style='font-size:10.0pt;font-family:Tahoma'>The
+following is an example of what a decal texture with more than one decal would
+look like. Notice how it’s possible to have different sized decals anywhere in
+the texture as long as they do not overlap.<o:p></o:p></span></p>
+
+<p class=MsoNormal><span style='font-size:10.0pt;font-family:Tahoma'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal><span style='font-size:10.0pt;font-family:Tahoma'><!--[if gte vml 1]><v:shape
+ id="_x0000_i1031" type="#_x0000_t75" style='width:260.25pt;height:275.25pt'>
+ <v:imagedata src="creating_a_decal_material_files/image013.jpg" o:title="sample_decal_texture"/>
+</v:shape><![endif]--><![if !vml]><img width=347 height=367
+src="creating_a_decal_material_files/image014.jpg" v:shapes="_x0000_i1031"><![endif]><o:p></o:p></span></p>
+
+<p class=MsoNormal><span style='font-size:10.0pt;font-family:Tahoma'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal><span style='font-size:10.0pt;font-family:Tahoma'>The layer
+set for this decal texture is the following.<o:p></o:p></span></p>
+
+<p class=MsoNormal><span style='font-size:10.0pt;font-family:Tahoma'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal><span style='font-size:10.0pt;font-family:Tahoma'><!--[if gte vml 1]><v:shape
+ id="_x0000_i1032" type="#_x0000_t75" style='width:150pt;height:279pt'>
+ <v:imagedata src="creating_a_decal_material_files/image015.jpg" o:title="sample_layer_set"/>
+</v:shape><![endif]--><![if !vml]><img width=200 height=372
+src="creating_a_decal_material_files/image016.jpg" v:shapes="_x0000_i1032"><![endif]><o:p></o:p></span></p>
+
+<p class=MsoNormal><span style='font-size:10.0pt;font-family:Tahoma'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal><span style='font-size:10.0pt;font-family:Tahoma'>And here’s
+what the alpha channel for this decal texture looks like:<o:p></o:p></span></p>
+
+<p class=MsoNormal><span style='font-size:10.0pt;font-family:Tahoma'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal><span style='font-size:10.0pt;font-family:Tahoma'><!--[if gte vml 1]><v:shape
+ id="_x0000_i1033" type="#_x0000_t75" style='width:269.25pt;height:269.25pt'>
+ <v:imagedata src="creating_a_decal_material_files/image017.jpg" o:title="sample_alpha_channel"/>
+</v:shape><![endif]--><![if !vml]><img width=359 height=359
+src="creating_a_decal_material_files/image018.jpg" v:shapes="_x0000_i1033"><![endif]><o:p></o:p></span></p>
+
+<p class=MsoNormal><span style='font-size:10.0pt;font-family:Tahoma'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal><span style='font-size:10.0pt;font-family:Tahoma'>Finally,
+you need to save out this decal texture as a Photoshop PSD file. Make sure that
+the “Layers” and “Alpha Channels” options are checked:<o:p></o:p></span></p>
+
+<p class=MsoNormal><span style='font-size:10.0pt;font-family:Tahoma'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal><span style='font-size:10.0pt;font-family:Tahoma'><!--[if gte vml 1]><v:shape
+ id="_x0000_i1034" type="#_x0000_t75" style='width:252pt;height:279pt'>
+ <v:imagedata src="creating_a_decal_material_files/image019.jpg" o:title="save_options"/>
+</v:shape><![endif]--><![if !vml]><img width=336 height=372
+src="creating_a_decal_material_files/image020.jpg" v:shapes="_x0000_i1034"><![endif]><o:p></o:p></span></p>
+
+<p class=MsoNormal><span style='font-size:10.0pt;font-family:Tahoma'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal><b style='mso-bidi-font-weight:normal'><span
+style='font-size:10.0pt;font-family:Tahoma'>Part 2 – Exporting the decal
+texture for use in the game.<o:p></o:p></span></b></p>
+
+<p class=MsoNormal><b style='mso-bidi-font-weight:normal'><span
+style='font-size:10.0pt;font-family:Tahoma'><o:p>&nbsp;</o:p></span></b></p>
+
+<p class=MsoNormal><span style='font-size:10.0pt;font-family:Tahoma'>To export
+the decal texture into a format used by the game you need to use the “Decal
+Material Tool”<o:p></o:p></span></p>
+
+<p class=MsoNormal><o:p>&nbsp;</o:p></p>
+
+<p class=MsoNormal><!--[if gte vml 1]><v:shape id="_x0000_i1035" type="#_x0000_t75"
+ style='width:431.25pt;height:310.5pt'>
+ <v:imagedata src="creating_a_decal_material_files/image021.jpg" o:title="decalmattool01"/>
+</v:shape><![endif]--><![if !vml]><img width=575 height=414
+src="creating_a_decal_material_files/image022.jpg" v:shapes="_x0000_i1035"><![endif]></p>
+
+<p class=MsoNormal><o:p>&nbsp;</o:p></p>
+
+<p class=MsoNormal><span style='font-size:10.0pt;font-family:Tahoma'>Start by
+setting the “Source Decal Texture” which is the Photoshop PSD file, you can use
+the browse button to look for it. Then select the destination file for your decal
+material. This tool will create two files, a file with a .dmat extension and a
+.tga file with the image data. The two files will have the same name and will
+be placed in the same folder as the destination path.<o:p></o:p></span></p>
+
+<p class=MsoNormal><span style='font-size:10.0pt;font-family:Tahoma'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal><span style='font-size:10.0pt;font-family:Tahoma'>Click on
+the “Create Decal Material” button, if everything worked correctly you should
+see a message such as this:<o:p></o:p></span></p>
+
+<p class=MsoNormal><span style='font-size:10.0pt;font-family:Tahoma'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal><span style='font-size:10.0pt;font-family:"Courier New"'>Generated
+files:<o:p></o:p></span></p>
+
+<p class=MsoNormal><span style='font-size:10.0pt;font-family:"Courier New"'>materials\decal_texture.dmat<o:p></o:p></span></p>
+
+<p class=MsoNormal><span style='font-size:10.0pt;font-family:"Courier New"'>materials\decal_texture.tga<o:p></o:p></span></p>
+
+<p class=MsoNormal><span style='font-size:10.0pt;font-family:"Courier New"'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal><span style='font-size:10.0pt;font-family:"Courier New"'>Complete!<o:p></o:p></span></p>
+
+<p class=MsoNormal><span style='font-size:10.0pt;font-family:Tahoma'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal><span style='font-size:10.0pt;font-family:Tahoma'>When
+you’re done, you can click on the “Exit” button to close down the decal
+material tool.<o:p></o:p></span></p>
+
+<p class=MsoNormal><span style='font-size:10.0pt;font-family:Tahoma'><!--[if gte vml 1]><v:shape
+ id="_x0000_i1036" type="#_x0000_t75" style='width:431.25pt;height:310.5pt'>
+ <v:imagedata src="creating_a_decal_material_files/image023.jpg" o:title="decalmattool02"/>
+</v:shape><![endif]--><![if !vml]><img width=575 height=414
+src="creating_a_decal_material_files/image024.jpg" v:shapes="_x0000_i1036"><![endif]><o:p></o:p></span></p>
+
+<p class=MsoNormal><span style='font-size:10.0pt;font-family:Tahoma'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal><span style='font-size:10.0pt;font-family:Tahoma'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal><b style='mso-bidi-font-weight:normal'><span
+style='font-size:10.0pt;font-family:Tahoma'>PART 3 – How Decal Materials are
+used in-game.<o:p></o:p></span></b></p>
+
+<p class=MsoNormal><b style='mso-bidi-font-weight:normal'><span
+style='font-size:10.0pt;font-family:Tahoma'><o:p>&nbsp;</o:p></span></b></p>
+
+<p class=MsoNormal><span style='font-size:10.0pt;font-family:Tahoma'>Decals are
+applied in the game using collision materials, this means that the collision
+response spreadsheet must be setup to use decals. Open the collision response
+spreadsheet, usually at:<o:p></o:p></span></p>
+
+<p class=MsoNormal><span style='font-size:10.0pt;font-family:Tahoma'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal><span style='font-size:10.0pt;font-family:Tahoma'>collision_materials\collisionresponse.xls<o:p></o:p></span></p>
+
+<p class=MsoNormal><span style='font-size:10.0pt;font-family:Tahoma'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal><span style='font-size:10.0pt;font-family:Tahoma'>which is
+stored in the rez file:<o:p></o:p></span></p>
+
+<p class=MsoNormal><span style='font-size:10.0pt;font-family:Tahoma'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal><span style='font-size:10.0pt;font-family:Tahoma'>main\pak0.rez<o:p></o:p></span></p>
+
+<p class=MsoNormal><span style='font-size:10.0pt;font-family:Tahoma'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal><span style='font-size:10.0pt;font-family:Tahoma'>Open the <b
+style='mso-bidi-font-weight:normal'>Material Properties</b> sheet, now look for
+any instances in which the <b style='mso-bidi-font-weight:normal'>Command</b>
+is <b style='mso-bidi-font-weight:normal'>blastmark</b> this command will be
+used for decals, so in the FX Alias for a blastmark you will write the decal
+name you want to be applied when an explosion goes off on a surface of a given
+material name.<o:p></o:p></span></p>
+
+<p class=MsoNormal><span style='font-size:10.0pt;font-family:Tahoma'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal><span style='font-size:10.0pt;font-family:Tahoma'>Example:<o:p></o:p></span></p>
+
+<p class=MsoNormal><span style='font-size:10.0pt;font-family:Tahoma'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal><b style='mso-bidi-font-weight:normal'><span
+style='font-size:10.0pt;font-family:Tahoma'>Command<span style='mso-tab-count:
+2'>                     </span>Material Name<span style='mso-tab-count:2'>             </span>FX
+Alias<span style='mso-tab-count:2'>                        </span>Snd Alias<o:p></o:p></span></b></p>
+
+<p class=MsoNormal><b style='mso-bidi-font-weight:normal'><span
+style='font-size:10.0pt;font-family:Tahoma'>………<o:p></o:p></span></b></p>
+
+<p class=MsoNormal><b style='mso-bidi-font-weight:normal'><span
+style='font-size:10.0pt;font-family:Tahoma'>………<o:p></o:p></span></b></p>
+
+<p class=MsoNormal><b style='mso-bidi-font-weight:normal'><span
+style='font-size:10.0pt;font-family:Tahoma'>blastmark<span style='mso-tab-count:
+2'>                    </span>Concrete<span style='mso-tab-count:3'>                                 </span>Concrete_Blast<o:p></o:p></span></b></p>
+
+<p class=MsoNormal><b style='mso-bidi-font-weight:normal'><span
+style='font-size:10.0pt;font-family:Tahoma'>………<o:p></o:p></span></b></p>
+
+<p class=MsoNormal><b style='mso-bidi-font-weight:normal'><span
+style='font-size:10.0pt;font-family:Tahoma'>………<o:p></o:p></span></b></p>
+
+<p class=MsoNormal><b style='mso-bidi-font-weight:normal'><span
+style='font-size:10.0pt;font-family:Tahoma'>………<o:p></o:p></span></b></p>
+
+<p class=MsoNormal><b style='mso-bidi-font-weight:normal'><span
+style='font-size:10.0pt;font-family:Tahoma'>blastmark<span style='mso-tab-count:
+2'>                    </span>Grass<span style='mso-tab-count:4'>                                       </span>Grass_Blast<o:p></o:p></span></b></p>
+
+<p class=MsoNormal><b style='mso-bidi-font-weight:normal'><span
+style='font-size:10.0pt;font-family:Tahoma'><o:p>&nbsp;</o:p></span></b></p>
+
+<p class=MsoNormal><span style='font-size:10.0pt;font-family:Tahoma'>In this
+case, when an explosion goes off on a Concrete surface, the decal that was
+named “Concrete_Blast” in the decal material will be applied. If an explosion
+goes off on a grass surface, it will then apply the decal associated with the
+name “Grass_Blast” in the decal material.<o:p></o:p></span></p>
+
+</div>
+
+</body>
+
+</html>

@@ -1,0 +1,702 @@
+<html xmlns:o="urn:schemas-microsoft-com:office:office"
+xmlns:w="urn:schemas-microsoft-com:office:word"
+xmlns:st1="urn:schemas-microsoft-com:office:smarttags"
+xmlns="http://www.w3.org/TR/REC-html40">
+
+<head>
+<meta http-equiv=Content-Type content="text/html; charset=windows-1252">
+<meta name=ProgId content=Word.Document>
+<meta name=Generator content="Microsoft Word 10">
+<meta name=Originator content="Microsoft Word 10">
+<link rel=File-List href="Coding%20Standards_files/filelist.xml">
+<title>Coding Standards</title>
+<o:SmartTagType namespaceuri="urn:schemas-microsoft-com:office:smarttags"
+ name="country-region"/>
+<o:SmartTagType namespaceuri="urn:schemas-microsoft-com:office:smarttags"
+ name="place"/>
+<!--[if gte mso 9]><xml>
+ <o:DocumentProperties>
+  <o:Author>Jason Abbott</o:Author>
+  <o:LastAuthor>bbilodeau</o:LastAuthor>
+  <o:Revision>3</o:Revision>
+  <o:TotalTime>80</o:TotalTime>
+  <o:Created>2004-10-13T21:59:00Z</o:Created>
+  <o:LastSaved>2004-10-13T22:03:00Z</o:LastSaved>
+  <o:Pages>1</o:Pages>
+  <o:Words>1370</o:Words>
+  <o:Characters>7814</o:Characters>
+  <o:Company> </o:Company>
+  <o:Lines>65</o:Lines>
+  <o:Paragraphs>18</o:Paragraphs>
+  <o:CharactersWithSpaces>9166</o:CharactersWithSpaces>
+  <o:Version>10.3501</o:Version>
+ </o:DocumentProperties>
+</xml><![endif]--><!--[if gte mso 9]><xml>
+ <w:WordDocument>
+  <w:GrammarState>Clean</w:GrammarState>
+  <w:BrowserLevel>MicrosoftInternetExplorer4</w:BrowserLevel>
+ </w:WordDocument>
+</xml><![endif]--><!--[if !mso]><object
+ classid="clsid:38481807-CA0E-42D2-BF39-B33AF135CC4D" id=ieooui></object>
+<style>
+st1\:*{behavior:url(#ieooui) }
+</style>
+<![endif]-->
+<style>
+<!--
+ /* Font Definitions */
+ @font-face
+	{font-family:Fixedsys;
+	panose-1:0 0 0 0 0 0 0 0 0 0;
+	mso-font-charset:0;
+	mso-generic-font-family:modern;
+	mso-font-format:other;
+	mso-font-pitch:fixed;
+	mso-font-signature:3 0 0 0 1 0;}
+@font-face
+	{font-family:"Lucida Console";
+	panose-1:2 11 6 9 4 5 4 2 2 4;
+	mso-font-charset:0;
+	mso-generic-font-family:modern;
+	mso-font-pitch:fixed;
+	mso-font-signature:-2147482993 6144 0 0 31 0;}
+ /* Style Definitions */
+ p.MsoNormal, li.MsoNormal, div.MsoNormal
+	{mso-style-parent:"";
+	margin:0in;
+	margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	font-size:12.0pt;
+	font-family:"Times New Roman";
+	mso-fareast-font-family:"Times New Roman";}
+h1
+	{mso-style-next:Normal;
+	margin-top:12.0pt;
+	margin-right:0in;
+	margin-bottom:3.0pt;
+	margin-left:0in;
+	text-align:center;
+	mso-pagination:widow-orphan;
+	page-break-after:avoid;
+	mso-outline-level:1;
+	font-size:16.0pt;
+	font-family:Arial;
+	mso-font-kerning:16.0pt;}
+h2
+	{mso-style-next:Normal;
+	margin-top:12.0pt;
+	margin-right:0in;
+	margin-bottom:3.0pt;
+	margin-left:0in;
+	page-break-before:always;
+	mso-pagination:widow-orphan;
+	page-break-after:avoid;
+	mso-outline-level:2;
+	font-size:14.0pt;
+	font-family:Arial;
+	font-style:italic;}
+h3
+	{mso-style-next:Normal;
+	margin-top:12.0pt;
+	margin-right:0in;
+	margin-bottom:3.0pt;
+	margin-left:0in;
+	mso-pagination:widow-orphan;
+	page-break-after:avoid;
+	mso-outline-level:3;
+	font-size:13.0pt;
+	font-family:Arial;}
+p.MsoHeader, li.MsoHeader, div.MsoHeader
+	{margin:0in;
+	margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	tab-stops:center 3.0in right 6.0in;
+	font-size:12.0pt;
+	font-family:"Times New Roman";
+	mso-fareast-font-family:"Times New Roman";}
+p.MsoFooter, li.MsoFooter, div.MsoFooter
+	{margin:0in;
+	margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	tab-stops:center 3.0in right 6.0in;
+	font-size:12.0pt;
+	font-family:"Times New Roman";
+	mso-fareast-font-family:"Times New Roman";}
+p.MsoBodyTextIndent, li.MsoBodyTextIndent, div.MsoBodyTextIndent
+	{margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:1.75in;
+	margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	mso-layout-grid-align:none;
+	text-autospace:none;
+	font-size:10.0pt;
+	font-family:Arial;
+	mso-fareast-font-family:"Times New Roman";}
+p.Code, li.Code, div.Code
+	{mso-style-name:Code;
+	margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:.5in;
+	margin-bottom:.0001pt;
+	mso-pagination:widow-orphan lines-together;
+	page-break-after:avoid;
+	mso-layout-grid-align:none;
+	text-autospace:none;
+	font-size:10.0pt;
+	font-family:"Lucida Console";
+	mso-fareast-font-family:"Times New Roman";
+	mso-bidi-font-family:"Courier New";
+	color:black;
+	font-weight:bold;
+	mso-bidi-font-weight:normal;}
+@page Section1
+	{size:8.5in 11.0in;
+	margin:1.0in 1.25in 1.0in 1.25in;
+	mso-header-margin:.5in;
+	mso-footer-margin:.5in;
+	mso-header:url("Coding%20Standards_files/header.htm") h1;
+	mso-footer:url("Coding%20Standards_files/header.htm") f1;
+	mso-paper-source:0;}
+div.Section1
+	{page:Section1;}
+ /* List Definitions */
+ @list l0
+	{mso-list-id:-2;
+	mso-list-type:simple;
+	mso-list-template-ids:-820094970;}
+@list l0:level1
+	{mso-level-start-at:0;
+	mso-level-text:*;
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	margin-left:0in;
+	text-indent:0in;}
+@list l1
+	{mso-list-id:164319524;
+	mso-list-type:simple;
+	mso-list-template-ids:-497093746;}
+@list l1:level1
+	{mso-level-text:%1;
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	mso-level-legacy:yes;
+	mso-level-legacy-indent:0in;
+	mso-level-legacy-space:0in;
+	margin-left:0in;
+	text-indent:0in;
+	font-family:Arial;
+	mso-bidi-font-family:"Times New Roman";}
+@list l2
+	{mso-list-id:461532633;
+	mso-list-type:simple;
+	mso-list-template-ids:-497093746;}
+@list l2:level1
+	{mso-level-text:%1;
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	mso-level-legacy:yes;
+	mso-level-legacy-indent:0in;
+	mso-level-legacy-space:0in;
+	margin-left:0in;
+	text-indent:0in;
+	font-family:Arial;
+	mso-bidi-font-family:"Times New Roman";}
+@list l3
+	{mso-list-id:1823541000;
+	mso-list-type:simple;
+	mso-list-template-ids:-497093746;}
+@list l3:level1
+	{mso-level-text:%1;
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	mso-level-legacy:yes;
+	mso-level-legacy-indent:0in;
+	mso-level-legacy-space:0in;
+	margin-left:0in;
+	text-indent:0in;
+	font-family:Arial;
+	mso-bidi-font-family:"Times New Roman";}
+@list l4
+	{mso-list-id:2123844505;
+	mso-list-type:simple;
+	mso-list-template-ids:-497093746;}
+@list l4:level1
+	{mso-level-text:%1;
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	mso-level-legacy:yes;
+	mso-level-legacy-indent:0in;
+	mso-level-legacy-space:0in;
+	margin-left:0in;
+	text-indent:0in;
+	font-family:Arial;
+	mso-bidi-font-family:"Times New Roman";}
+@list l0:level1 lfo1
+	{mso-level-number-format:bullet;
+	mso-level-numbering:continue;
+	mso-level-text:\F0B7;
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	mso-level-legacy:yes;
+	mso-level-legacy-indent:0in;
+	mso-level-legacy-space:0in;
+	margin-left:0in;
+	text-indent:0in;
+	font-family:Symbol;}
+ol
+	{margin-bottom:0in;}
+ul
+	{margin-bottom:0in;}
+-->
+</style>
+<!--[if gte mso 10]>
+<style>
+ /* Style Definitions */
+ table.MsoNormalTable
+	{mso-style-name:"Table Normal";
+	mso-tstyle-rowband-size:0;
+	mso-tstyle-colband-size:0;
+	mso-style-noshow:yes;
+	mso-style-parent:"";
+	mso-padding-alt:0in 5.4pt 0in 5.4pt;
+	mso-para-margin:0in;
+	mso-para-margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	font-size:10.0pt;
+	font-family:"Times New Roman";}
+</style>
+<![endif]-->
+</head>
+
+<body lang=EN-US style='tab-interval:.5in'>
+
+<div class=Section1>
+
+<h1>Coding Standards</h1>
+
+<p class=MsoNormal><o:p>&nbsp;</o:p></p>
+
+<p class=MsoNormal>This document contains a collection of comments and
+guidelines for writing scripts and maps for the <u>Medal of Honor: Pacific
+Assault </u>multiplayer game.</p>
+
+<h2>Scripts</h2>
+
+<h3>File Headers</h3>
+
+<p class=MsoNormal style='mso-layout-grid-align:none;text-autospace:none'><span
+style='font-size:10.0pt;font-family:"Courier New";color:black'>File headers
+should list the name of the file, details about what the files covers, and
+lists of major revisions to that file:<o:p></o:p></span></p>
+
+<p class=Code>//</p>
+
+<p class=Code>// doKoolStuff.scr</p>
+
+<p class=Code>//</p>
+
+<p class=Code>//</p>
+
+<p class=Code>// To use in a script, set up the bomb/trigger as described </p>
+
+<p class=Code>// below, and the call init on the bomb (as described by the</p>
+
+<p class=Code>// function comments below) when the map starts up.<span
+style='mso-spacerun:yes'>  </span>When the</p>
+
+<p class=Code>// bomb should be visible (i.e. the objective which involves the</p>
+
+<p class=Code>// bomb is the current one), call activate on the bomb. When that</p>
+
+<p class=Code>// objective is completed, call deactivate on the bomb.</p>
+
+<p class=Code>//</p>
+
+<p class=Code>// In the map, there must be the following:</p>
+
+<p class=Code>// - A script_model, which will be the bomb/throbbox itself</p>
+
+<p class=Code>// - A trigger_multiple which surrounds the immediate vacinity of
+//<span style='mso-spacerun:yes'>   </span>the bomb (in which, if the player
+holds 'use', the bomb will</p>
+
+<p class=Code>//<span style='mso-spacerun:yes'>   </span>arm/disarm).</p>
+
+<p class=Code>//</p>
+
+<p class=Code>// 12.09.03 JABBOTT - Removed the old Kool stuff per design spec.</p>
+
+<p class=Code>//<span style='mso-spacerun:yes'>                   
+</span>changes, added elements under the new Kewl //<span style='mso-tab-count:
+2'>        </span><span style='mso-tab-count:1'>     </span><span
+style='mso-spacerun:yes'>    </span>model</p>
+
+<p class=Code>// 09.12.03 DSCOTT - Original version</p>
+
+<p class=Code>//</p>
+
+<p class=MsoNormal style='mso-layout-grid-align:none;text-autospace:none'><span
+style='font-size:10.0pt;font-family:"Courier New";color:black'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal>NOTE: the blank space is reserved, there may be copyright
+information that we'll have to go stuff in there later.<span style='font-size:
+10.0pt;font-family:Fixedsys;mso-bidi-font-family:Arial;color:blue'><o:p></o:p></span></p>
+
+<h3>Function Names</h3>
+
+<p class=MsoNormal>Function names are always all lower case with underscores
+for space separations. The arguments should always use the mixed case starting
+with lower case naming convention.</p>
+
+<h3>Function Comments</h3>
+
+<p class=MsoNormal>The function name should always be surrounded by a pair of
+hyphenated lines. If the function is the first function in the beginning of a
+section, then the hyphenated line before the function should be a full line
+width (2 slashes, 77 hyphens) across. If the function is a subroutine in a
+particular section, then the first line should be a partial line of hyphens (2
+slashes, 18 hyphens). In both cases the following line should be a partial line
+of hyphens (2 slashes, 18 hyphens). Comments specific to the routine
+(explanation of the arguments, and details on what the code does) should follow
+the function name.</p>
+
+<h3>Function Example</h3>
+
+<p class=Code><o:p>&nbsp;</o:p></p>
+
+<p class=Code>//---------------------------------------------------------------</p>
+
+<p class=Code>dynamite_unplant local.player local.axisBomb:</p>
+
+<p class=Code>//----------------</p>
+
+<p class=Code><o:p>&nbsp;</o:p></p>
+
+<p class=Code><span style='mso-tab-count:1'>     </span>// This is called when
+a allied player presses the use key</p>
+
+<p class=Code><span style='mso-tab-count:1'>     </span>// in the right area at
+the right time to defuse a bomb. We</p>
+
+<p class=Code><span style='mso-tab-count:1'>     </span>// display a stopwatch
+and let it tick down... until the</p>
+
+<p class=Code><span style='mso-tab-count:1'>     </span>// player is forced to
+not do so (dies, moves away) or the</p>
+
+<p class=Code><span style='mso-tab-count:1'>     </span>// time expires.</p>
+
+<p class=Code><o:p>&nbsp;</o:p></p>
+
+<p class=Code><span style='mso-tab-count:1'>     </span>if (self.planter != NIL
+&amp;&amp; self.planter != NULL)</p>
+
+<p class=Code><span style='mso-tab-count:2'>           </span>local.axisBomb
+thread do_explode local.player</p>
+
+<p class=Code>end</p>
+
+<h3>Debugging println</h3>
+
+<p class=MsoNormal>Final code should never contain debugging printlns that use
+the <b style='mso-bidi-font-weight:normal'><span style='font-size:10.0pt;
+font-family:"Lucida Console";mso-bidi-font-family:"Courier New";color:black'>iprintln</span></b>
+routine (or any of the other iprint* routines). Instead all debugging lines
+should use the <b style='mso-bidi-font-weight:normal'><span style='font-size:
+10.0pt;font-family:"Lucida Console";mso-bidi-font-family:"Courier New";
+color:black'>dprintln</span></b> (or any of the other dprin* routines). When
+someone invokes the game without the developer flag set, they should only ever
+see those lines intended for a player to see.</p>
+
+<h2>Entities</h2>
+
+<h3>Variables</h3>
+
+<p class=MsoNormal>All entity variables are composed of mixed cases, starting
+with lower cases. For example: <b style='mso-bidi-font-weight:normal'><span
+style='font-size:10.0pt;font-family:"Lucida Console";mso-bidi-font-family:"Courier New";
+color:black'>local.bombCountdown</span></b> and <b style='mso-bidi-font-weight:
+normal'><span style='font-size:10.0pt;font-family:"Lucida Console";mso-bidi-font-family:
+"Courier New";color:black'>self.isBombPlantedYet</span></b></p>
+
+<h3>Targetnames</h3>
+
+<p class=MsoNormal>All targetname and target values will be composed of all
+lower case, with multiple words separated by underscores. For example: <b
+style='mso-bidi-font-weight:normal'><span style='font-size:10.0pt;font-family:
+"Lucida Console";mso-bidi-font-family:"Courier New";color:black'>objective_1_bomb
+</span></b>and<b style='mso-bidi-font-weight:normal'><span style='font-size:
+10.0pt;font-family:"Lucida Console";mso-bidi-font-family:"Courier New";
+color:black'> jeep_waypoint_4</span></b></p>
+
+<h3>Spawn Points<span style='font-size:10.0pt;color:black'><o:p></o:p></span></h3>
+
+<p class=MsoNormal>Spawn points are either labeled &quot;<b style='mso-bidi-font-weight:
+normal'><span style='font-size:10.0pt;font-family:"Lucida Console";mso-bidi-font-family:
+"Courier New";color:black'>allies_spawn_#</span></b>&quot; or &quot;<b
+style='mso-bidi-font-weight:normal'><span style='font-size:10.0pt;font-family:
+"Lucida Console";mso-bidi-font-family:"Courier New";color:black'>axis_spawn_#</span></b>&quot;.</p>
+
+<h3>Fixed MG<span style='font-size:10.0pt'><o:p></o:p></span></h3>
+
+<p class=MsoNormal>The machine guns will have the targetname of &quot;<b
+style='mso-bidi-font-weight:normal'><span style='font-size:10.0pt;font-family:
+"Lucida Console";mso-bidi-font-family:"Courier New";color:black'>mg42</span></b>&quot;.
+They will each have a unique “<b style='mso-bidi-font-weight:normal'><span
+style='font-size:10.0pt;font-family:"Lucida Console";mso-bidi-font-family:"Courier New";
+color:black'>#set</span></b>&quot; attribute value. In the map they need to
+have two triggers associated with them, which should never overlap. The first
+trigger is a trigger_multiple that the gun has targetted. It also calls a
+setthread by the name of &quot;<b style='mso-bidi-font-weight:normal'><span
+style='font-size:10.0pt;font-family:"Lucida Console";mso-bidi-font-family:"Courier New";
+color:black'>reload_trigger</span></b>&quot;. This trigger is always placed to
+the side of the gun (usually the right hand side of the gun, where the ammo
+clip is).<span style='mso-spacerun:yes'>  </span>The second trigger is a
+trigger_use that has the same &quot;<b style='mso-bidi-font-weight:normal'><span
+style='font-size:10.0pt;font-family:"Lucida Console";mso-bidi-font-family:"Courier New";
+color:black'>#set</span></b>&quot; attribute value as the MG and calls a
+setthread by the name of &quot;<b style='mso-bidi-font-weight:normal'><span
+style='font-size:10.0pt;font-family:"Lucida Console";mso-bidi-font-family:"Courier New";
+color:black'>trigger_use</span></b>&quot;. This trigger is always placed right
+behind the gun.</p>
+
+<h3>Fixed Artillery</h3>
+
+<p class=MsoNormal>The artillery will have the targetname of &quot;<b
+style='mso-bidi-font-weight:normal'><span style='font-size:10.0pt;font-family:
+"Lucida Console";mso-bidi-font-family:"Courier New";color:black'>artillery</span></b>&quot;
+and they will each have a unique &quot;<b style='mso-bidi-font-weight:normal'><span
+style='font-size:10.0pt;font-family:"Lucida Console";mso-bidi-font-family:"Courier New";
+color:black'>#set</span></b>&quot; value. In the map they need to have three
+triggers associated with them, which should never overlap. The first trigger is
+a trigger_multiple that the artillery has targeted and also calls a setthread
+by the name of &quot;<b style='mso-bidi-font-weight:normal'><span
+style='font-size:10.0pt;font-family:"Lucida Console";mso-bidi-font-family:"Courier New";
+color:black'>reload_trigger</span></b>&quot;. This trigger is always placed to
+the side of the artillery (usually the right hand side of the artillery). The
+second trigger is a trigger_use that has the same &quot;<b style='mso-bidi-font-weight:
+normal'><span style='font-size:10.0pt;font-family:"Lucida Console";mso-bidi-font-family:
+"Courier New";color:black'>#set</span></b>&quot; value as the artillery and
+also calls a setthread by the name of &quot;<b style='mso-bidi-font-weight:
+normal'><span style='font-size:10.0pt;font-family:"Lucida Console";mso-bidi-font-family:
+"Courier New";color:black'>trigger_use</span></b>&quot;. This trigger is always
+placed right behind the artillery. The third trigger is a trigger_multiple with
+the same &quot;<b style='mso-bidi-font-weight:normal'><span style='font-size:
+10.0pt;font-family:"Lucida Console";mso-bidi-font-family:"Courier New";
+color:black'>#set</span></b>&quot; value as the artillery and also calls a setthread
+by the name of &quot;<b style='mso-bidi-font-weight:normal'><span
+style='font-size:10.0pt;font-family:"Lucida Console";mso-bidi-font-family:"Courier New";
+color:black'>artillery_bomb</span></b>&quot;. This trigger is always placed to
+the left of the artillery.</p>
+
+<p class=MsoNormal><span style='font-size:10.0pt;font-family:Arial'><o:p>&nbsp;</o:p></span></p>
+
+<h3>Objectives</h3>
+
+<p class=MsoNormal>Each objective is built around a trigger. This trigger is
+always named &quot;<b style='mso-bidi-font-weight:normal'><span
+style='font-size:10.0pt;font-family:"Lucida Console";mso-bidi-font-family:"Courier New";
+color:black'>objective_#</span></b>&quot;. This trigger usually calls a
+setthread by the name of &quot;<b style='mso-bidi-font-weight:normal'><span
+style='font-size:10.0pt;font-family:"Lucida Console";mso-bidi-font-family:"Courier New";
+color:black'>use_trigger_#</span></b>&quot;. If there are multiple triggers
+that do different things then they would be named &quot;<b style='mso-bidi-font-weight:
+normal'><span style='font-size:10.0pt;font-family:"Lucida Console";mso-bidi-font-family:
+"Courier New";color:black'>objective_#_#</span></b>&quot; and call &quot;<b
+style='mso-bidi-font-weight:normal'><span style='font-size:10.0pt;font-family:
+"Lucida Console";mso-bidi-font-family:"Courier New";color:black'>use_thread_#_#</span></b>&quot;.
+For example, the 2nd switch on the last objective would have a use trigger
+named &quot;<b style='mso-bidi-font-weight:normal'><span style='font-size:10.0pt;
+font-family:"Lucida Console";mso-bidi-font-family:"Courier New";color:black'>objective_4_2</span></b>&quot;.
+If there are moving parts associated with an objective, they are named &quot;<b
+style='mso-bidi-font-weight:normal'><span style='font-size:10.0pt;font-family:
+"Lucida Console";mso-bidi-font-family:"Courier New";color:black'>objective_#_handle</span></b>&quot;
+or &quot;<b style='mso-bidi-font-weight:normal'><span style='font-size:10.0pt;
+font-family:"Lucida Console";mso-bidi-font-family:"Courier New";color:black'>objective_#_#_handle</span></b>&quot;
+if there are multiple independent objects that move for any objective.</p>
+
+<h3>Vehicles<span style='font-size:10.0pt;font-family:"Courier New"'><o:p></o:p></span></h3>
+
+<p class=MsoNormal>Vehicle entities must have a targetname of &quot;<b
+style='mso-bidi-font-weight:normal'><span style='font-size:10.0pt;font-family:
+"Lucida Console";mso-bidi-font-family:"Courier New";color:black'>mpvehicle</span></b>&quot;.
+Vehicles take the following attribute value pairs:</p>
+
+<p class=MsoNormal><o:p>&nbsp;</o:p></p>
+
+<p class=Code style='margin-left:2.5in;text-indent:-2.0in'>$pathName<span
+style='mso-tab-count:1'>            </span>// targetname of the start of
+vehicle's // path</p>
+
+<p class=Code>$team<span style='mso-tab-count:4'>                </span>//
+&quot;allies&quot; or &quot;axis&quot;</p>
+
+<p class=Code style='margin-left:2.5in;text-indent:-2.0in'>#autoDrive<span
+style='mso-tab-count:1'>           </span>// 0 or 1, vehicle drives forward as
+soon // as driver gets in and ignores any<span style='mso-spacerun:yes'>   
+</span>// forward-backward key presses by the<span style='mso-spacerun:yes'> 
+</span>// user</p>
+
+<p class=Code>#hasDriverSlot<span style='mso-tab-count:2'>       </span>// 0 or
+1</p>
+
+<p class=Code style='margin-left:2.5in;text-indent:-2.0in'>#driverCanDismount<span
+style='mso-tab-count:1'>   </span>// 0 or 1, whether driver can press use //
+key to get out of vehicle</p>
+
+<p class=Code style='margin-left:2.5in;text-indent:-2.0in'>#ejectDriverAtPathBreak<span
+style='mso-tab-count:1'>    </span>// 0 or 1, at a path break, automatically //
+stop vehicle and kick driver out<span style='mso-spacerun:yes'>     </span>//
+(useful when setting driverCanDismount // to 0)</p>
+
+<p class=Code style='margin-left:2.5in;text-indent:-2.0in'>#rejectDriverAfterEject<span
+style='mso-tab-count:1'>    </span>// 0 or 1, after driver is auto-ejected, //
+don't let him back in</p>
+
+<p class=Code>#numTurretSlots<span style='mso-tab-count:2'>      </span>// 0 to
+whatever</p>
+
+<p class=Code style='margin-left:2.5in;text-indent:-2.0in'>#canReverse<span
+style='mso-tab-count:1'>          </span>// 0 or 1, gets defaulted to 0
+when<span style='mso-spacerun:yes'>     </span>// autoDrive is true; whether
+user can<span style='mso-spacerun:yes'>  </span>// hold back key to reverse</p>
+
+<p class=Code style='margin-left:2.5in;text-indent:-2.0in'>$bodyType<span
+style='mso-tab-count:1'>            </span>// currently defaults to
+&quot;jeep&quot;;<span style='mso-spacerun:yes'>        </span>// determines
+destroyed version model</p>
+
+<p class=Code style='margin-left:2.5in;text-indent:-2.0in'>#canRespawn<span
+style='mso-tab-count:1'>          </span>// 0 or 1</p>
+
+<p class=Code>#respawnTime<span style='mso-tab-count:2'>         </span>//
+default = 20 (seconds)</p>
+
+<p class=Code style='margin-left:2.5in;text-indent:-2.0in'>#slotRadius<span
+style='mso-tab-count:1'>          </span>// distance player must be to a slot
+to // engage it; default = 100</p>
+
+<p class=Code style='margin-left:2.5in;text-indent:-2.0in'>#grossSlotRadius<span
+style='mso-tab-count:1'>     </span>// distance at which slot-checking<span
+style='mso-spacerun:yes'>      </span>// takes place; should be somewhat large;
+// say, twice the &quot;radius&quot; of the<span
+style='mso-spacerun:yes'>       </span>// vehicle's extents, allowing for slot
+// radii; default = 512</p>
+
+<p class=Code style='margin-left:2.5in;text-indent:-2.0in'>#minSlotFacingAngle<span
+style='mso-tab-count:1'>  </span>// how narrowly you must be facing<span
+style='mso-spacerun:yes'>      </span>// towards slot to engage it;<span
+style='mso-spacerun:yes'>  </span>default = // 45 (degrees)</p>
+
+<p class=Code>#forwardSpeed<span style='mso-tab-count:2'>        </span>//
+default = 200</p>
+
+<p class=Code>#reverseSpeed<span style='mso-tab-count:2'>        </span>//
+default = 75</p>
+
+<p class=Code>#accel<span style='mso-tab-count:3'>               </span>//
+default = 75</p>
+
+<p class=Code>#reachDistance<span style='mso-tab-count:2'>       </span>// for
+vehicle-path code; default = 256</p>
+
+<p class=Code>#lookAhead<span style='mso-tab-count:3'>           </span>// for
+vehicle-path code; default = 256</p>
+
+<p class=Code>#damageHindersMobility<span style='mso-tab-count:1'>     </span>//
+0 or 1</p>
+
+<p class=Code style='margin-left:2.5in;text-indent:-2.0in'>#hasDynaChargeSlot<span
+style='mso-tab-count:1'>   </span>// 0 or 1; position is given a default<span
+style='mso-spacerun:yes'>  </span>// position in code, for now<span
+style='font-family:"Courier New"'><o:p></o:p></span></p>
+
+<h3>Vehicle paths</h3>
+
+<p class=MsoNormal>Vehicle path nodes must link vehicle nodes along entire
+path, even across initial breakages; path can loop back to origin if desired.
+Vehicle path nodes take the following attribute value pairs:</p>
+
+<p class=Code><o:p>&nbsp;</o:p></p>
+
+<p class=Code style='margin-left:2.0in;text-indent:-1.5in'>$namedBreakage<span
+style='mso-tab-count:1'>  </span>// specify if linkage to next node should
+be<span style='mso-spacerun:yes'>  </span>// breakable by in-map event or
+obstacle (like // the gate in our <st1:country-region><st1:place>Tunisia</st1:place></st1:country-region>
+proto level), in<span style='mso-spacerun:yes'>   </span>// script; if
+specified, then this specifies a // name used in the following statement<span
+style='mso-spacerun:yes'>       </span>// (&quot;breakageName&quot;):</p>
+
+<p class=Code>waitthread global/mp_vehicles.scr::MendPathBreak
+&quot;breakageName&quot;<span style='font-family:"Courier New"'><o:p></o:p></span></p>
+
+<p class=Code style='margin-left:2.0in;text-indent:-1.5in'>$nextAutoWayPoint<span
+style='mso-tab-count:1'>    </span>// name of another node at which to break
+the // path once vehicle arrives at this one;<span
+style='mso-spacerun:yes'>     </span>// basically, you can have sort of a
+sequence // of stop points for vehicles with &quot;autoDrive&quot; // turned
+on;<span style='mso-spacerun:yes'>  </span>set #initBroken to 1 for the<span
+style='mso-spacerun:yes'>   </span>// first in the series;<span
+style='mso-spacerun:yes'>  </span>vehicle will drive to // that waypoint then
+stop (possibly ejecting // driver, see params for vehicles up above);<span
+style='mso-spacerun:yes'>  </span>// next time vehicle is directed to
+drive<span style='mso-spacerun:yes'>     </span>// (e.g., When driver gets back
+in), current<span style='mso-spacerun:yes'>  </span>// linkage will be
+re-mended, and the next one // down the path will be broken</p>
+
+<p class=Code style='margin-left:2.0in;text-indent:-1.5in'>#initBroken<span
+style='mso-tab-count:1'>     </span>// 0 or 1, for named breakages or
+auto-<span style='mso-spacerun:yes'>       </span>// waypoints, linkage to next
+node starts off // broken when the map starts up</p>
+
+<h2>Mapping</h2>
+
+<h3>Setthread</h3>
+
+<p class=MsoNormal>Since setthread calls function names, all values of entity
+setthread attributes should be of the all lowercase separated by underscore
+format. For example:</p>
+
+<p class=MsoNormal><b style='mso-bidi-font-weight:normal'><span
+style='font-size:10.0pt;font-family:"Lucida Console";mso-bidi-font-family:"Courier New";
+color:black'><o:p>&nbsp;</o:p></span></b></p>
+
+<p class=Code>setthread trigger_blow_up_gate</p>
+
+<p class=Code>setthread use_weapon</p>
+
+<h3>Targetname and Target</h3>
+
+<p class=MsoNormal>Since all entities are named with the all lowercase
+separated by underscore format, all targetname and target attributes should
+have values in this format. Note that target and targetname do not require the
+dollar sign infront of them. For example: </p>
+
+<p class=MsoNormal><o:p>&nbsp;</o:p></p>
+
+<p class=Code>target<span style='mso-tab-count:1'>     </span>objective_1</p>
+
+<p class=Code>targetname<span style='mso-tab-count:1'> </span>big_gun_of_doom</p>
+
+<h3>Entity attributes</h3>
+
+<p class=MsoNormal>All other entity attributes should be in the mixed case
+beginning with lower case format. For example:<span style='font-size:10.0pt;
+font-family:Arial'><o:p></o:p></span></p>
+
+<p class=Code><o:p>&nbsp;</o:p></p>
+
+<p class=Code>$partisan<span style='mso-tab-count:2'>       </span>aMemberOfTheResistance</p>
+
+<p class=Code>$hospitalSide<span style='mso-tab-count:1'>   </span>axis</p>
+
+<p class=Code>$cigarette<span style='mso-tab-count:2'>      </span>dangerousForYourHealth</p>
+
+</div>
+
+</body>
+
+</html>

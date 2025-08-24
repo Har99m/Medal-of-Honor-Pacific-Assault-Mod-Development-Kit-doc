@@ -1,0 +1,3483 @@
+<html xmlns:v="urn:schemas-microsoft-com:vml"
+xmlns:o="urn:schemas-microsoft-com:office:office"
+xmlns:w="urn:schemas-microsoft-com:office:word"
+xmlns:dt="uuid:C2F41010-65B3-11d1-A29F-00AA00C14882"
+xmlns:st1="urn:schemas-microsoft-com:office:smarttags"
+xmlns="http://www.w3.org/TR/REC-html40">
+
+<head>
+<meta http-equiv=Content-Type content="text/html; charset=windows-1252">
+<meta name=ProgId content=Word.Document>
+<meta name=Generator content="Microsoft Word 10">
+<meta name=Originator content="Microsoft Word 10">
+<link rel=File-List href="mohpa_radiant_overview_files/filelist.xml">
+<link rel=Edit-Time-Data href="mohpa_radiant_overview_files/editdata.mso">
+<!--[if !mso]>
+<style>
+v\:* {behavior:url(#default#VML);}
+o\:* {behavior:url(#default#VML);}
+w\:* {behavior:url(#default#VML);}
+.shape {behavior:url(#default#VML);}
+</style>
+<![endif]-->
+<title>MOHPA Radiant</title>
+<o:SmartTagType namespaceuri="urn:schemas-microsoft-com:office:smarttags"
+ name="PersonName" downloadurl="http://www.microsoft.com"/>
+<!--[if gte mso 9]><xml>
+ <o:DocumentProperties>
+  <o:Author>Mark Dochterman</o:Author>
+  <o:LastAuthor>bbilodeau</o:LastAuthor>
+  <o:Revision>2</o:Revision>
+  <o:TotalTime>10704</o:TotalTime>
+  <o:LastPrinted>2004-03-22T22:03:00Z</o:LastPrinted>
+  <o:Created>2004-12-07T19:33:00Z</o:Created>
+  <o:LastSaved>2004-12-07T19:33:00Z</o:LastSaved>
+  <o:Pages>1</o:Pages>
+  <o:Words>6146</o:Words>
+  <o:Characters>35036</o:Characters>
+  <o:Company>EA</o:Company>
+  <o:Lines>291</o:Lines>
+  <o:Paragraphs>82</o:Paragraphs>
+  <o:CharactersWithSpaces>41100</o:CharactersWithSpaces>
+  <o:Version>10.3501</o:Version>
+ </o:DocumentProperties>
+ <o:CustomDocumentProperties>
+  <o:_AdHocReviewCycleID dt:dt="float">-322319502</o:_AdHocReviewCycleID>
+  <o:_EmailSubject dt:dt="string">Radiant Documentation</o:_EmailSubject>
+  <o:_AuthorEmail dt:dt="string">MDochtermann@EA.com</o:_AuthorEmail>
+  <o:_AuthorEmailDisplayName dt:dt="string">Dochtermann, Mark</o:_AuthorEmailDisplayName>
+  <o:_ReviewingToolsShownOnce dt:dt="string"></o:_ReviewingToolsShownOnce>
+ </o:CustomDocumentProperties>
+</xml><![endif]--><!--[if gte mso 9]><xml>
+ <w:WordDocument>
+  <w:Compatibility>
+   <w:BreakWrappedTables/>
+   <w:SnapToGridInCell/>
+   <w:WrapTextWithPunct/>
+   <w:UseAsianBreakRules/>
+  </w:Compatibility>
+  <w:BrowserLevel>MicrosoftInternetExplorer4</w:BrowserLevel>
+ </w:WordDocument>
+</xml><![endif]--><!--[if !mso]><object
+ classid="clsid:38481807-CA0E-42D2-BF39-B33AF135CC4D" id=ieooui></object>
+<style>
+st1\:*{behavior:url(#ieooui) }
+</style>
+<![endif]-->
+<style>
+<!--
+ /* Font Definitions */
+ @font-face
+	{font-family:Tahoma;
+	panose-1:2 11 6 4 3 5 4 4 2 4;
+	mso-font-charset:0;
+	mso-generic-font-family:swiss;
+	mso-font-pitch:variable;
+	mso-font-signature:553679495 -2147483648 8 0 66047 0;}
+@font-face
+	{font-family:"Palatino Linotype";
+	panose-1:2 4 5 2 5 5 5 3 3 4;
+	mso-font-charset:0;
+	mso-generic-font-family:roman;
+	mso-font-pitch:variable;
+	mso-font-signature:-536870009 1073741843 0 0 415 0;}
+ /* Style Definitions */
+ p.MsoNormal, li.MsoNormal, div.MsoNormal
+	{mso-style-parent:"";
+	margin:0in;
+	margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	font-size:12.0pt;
+	font-family:"Times New Roman";
+	mso-fareast-font-family:"Times New Roman";}
+h1
+	{mso-style-next:Normal;
+	margin-top:12.0pt;
+	margin-right:0in;
+	margin-bottom:3.0pt;
+	margin-left:0in;
+	mso-pagination:widow-orphan;
+	page-break-after:avoid;
+	mso-outline-level:1;
+	font-size:16.0pt;
+	font-family:Arial;
+	mso-font-kerning:16.0pt;
+	font-weight:bold;}
+h2
+	{mso-style-link:"Heading 2 Char";
+	mso-style-next:Normal;
+	margin-top:12.0pt;
+	margin-right:0in;
+	margin-bottom:3.0pt;
+	margin-left:0in;
+	mso-pagination:widow-orphan;
+	page-break-after:avoid;
+	mso-outline-level:2;
+	font-size:14.0pt;
+	font-family:Arial;
+	font-weight:bold;
+	font-style:italic;}
+h3
+	{mso-style-next:Normal;
+	margin-top:12.0pt;
+	margin-right:0in;
+	margin-bottom:3.0pt;
+	margin-left:0in;
+	mso-pagination:widow-orphan;
+	page-break-after:avoid;
+	mso-outline-level:3;
+	font-size:13.0pt;
+	font-family:Arial;
+	font-weight:bold;}
+p.MsoListBullet, li.MsoListBullet, div.MsoListBullet
+	{mso-style-update:auto;
+	margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:.25in;
+	margin-bottom:.0001pt;
+	text-indent:-.25in;
+	mso-pagination:widow-orphan;
+	mso-list:l0 level1 lfo3;
+	tab-stops:list .25in;
+	font-size:12.0pt;
+	font-family:"Times New Roman";
+	mso-fareast-font-family:"Times New Roman";}
+p.MsoDocumentMap, li.MsoDocumentMap, div.MsoDocumentMap
+	{mso-style-noshow:yes;
+	margin:0in;
+	margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	background:navy;
+	font-size:12.0pt;
+	font-family:Tahoma;
+	mso-fareast-font-family:"Times New Roman";}
+p
+	{mso-margin-top-alt:auto;
+	margin-right:0in;
+	mso-margin-bottom-alt:auto;
+	margin-left:0in;
+	mso-pagination:widow-orphan;
+	font-size:12.0pt;
+	font-family:"Times New Roman";
+	mso-fareast-font-family:"Times New Roman";}
+span.Heading2Char
+	{mso-style-name:"Heading 2 Char";
+	mso-style-link:"Heading 2";
+	mso-ansi-font-size:14.0pt;
+	mso-bidi-font-size:14.0pt;
+	font-family:Arial;
+	mso-ascii-font-family:Arial;
+	mso-hansi-font-family:Arial;
+	mso-bidi-font-family:Arial;
+	mso-ansi-language:EN-US;
+	mso-fareast-language:EN-US;
+	mso-bidi-language:AR-SA;
+	font-weight:bold;
+	font-style:italic;}
+@page Section1
+	{size:8.5in 11.0in;
+	margin:1.0in 1.25in 1.0in 1.25in;
+	mso-header-margin:.5in;
+	mso-footer-margin:.5in;
+	mso-paper-source:0;}
+div.Section1
+	{page:Section1;}
+ /* List Definitions */
+ @list l0
+	{mso-list-id:-119;
+	mso-list-type:simple;
+	mso-list-template-ids:944133180;}
+@list l0:level1
+	{mso-level-number-format:bullet;
+	mso-level-style-link:"List Bullet";
+	mso-level-text:\F0B7;
+	mso-level-tab-stop:.25in;
+	mso-level-number-position:left;
+	margin-left:.25in;
+	text-indent:-.25in;
+	font-family:Symbol;}
+@list l1
+	{mso-list-id:158927449;
+	mso-list-type:hybrid;
+	mso-list-template-ids:1866869628 67698689 67698691 67698693 67698689 67698691 67698693 67698689 67698691 67698693;}
+@list l1:level1
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0B7;
+	mso-level-tab-stop:.5in;
+	mso-level-number-position:left;
+	text-indent:-.25in;
+	font-family:Symbol;}
+@list l1:level2
+	{mso-level-tab-stop:1.0in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l1:level3
+	{mso-level-tab-stop:1.5in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l1:level4
+	{mso-level-tab-stop:2.0in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l1:level5
+	{mso-level-tab-stop:2.5in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l1:level6
+	{mso-level-tab-stop:3.0in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l1:level7
+	{mso-level-tab-stop:3.5in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l1:level8
+	{mso-level-tab-stop:4.0in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l1:level9
+	{mso-level-tab-stop:4.5in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l2
+	{mso-list-id:173960789;
+	mso-list-type:hybrid;
+	mso-list-template-ids:1678775310 67698705 67698713 67698715 67698703 67698713 67698715 67698703 67698713 67698715;}
+@list l2:level1
+	{mso-level-text:"%1\)";
+	mso-level-tab-stop:.5in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l2:level2
+	{mso-level-tab-stop:1.0in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l2:level3
+	{mso-level-tab-stop:1.5in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l2:level4
+	{mso-level-tab-stop:2.0in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l2:level5
+	{mso-level-tab-stop:2.5in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l2:level6
+	{mso-level-tab-stop:3.0in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l2:level7
+	{mso-level-tab-stop:3.5in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l2:level8
+	{mso-level-tab-stop:4.0in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l2:level9
+	{mso-level-tab-stop:4.5in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l3
+	{mso-list-id:175265888;
+	mso-list-type:hybrid;
+	mso-list-template-ids:1165288788 67698689 -323565940 67698693 67698689 67698691 67698693 67698689 67698691 67698693;}
+@list l3:level1
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0B7;
+	mso-level-tab-stop:.5in;
+	mso-level-number-position:left;
+	text-indent:-.25in;
+	font-family:Symbol;}
+@list l3:level2
+	{mso-level-start-at:3;
+	mso-level-number-format:bullet;
+	mso-level-text:-;
+	mso-level-tab-stop:1.0in;
+	mso-level-number-position:left;
+	text-indent:-.25in;
+	font-family:"Palatino Linotype";
+	mso-fareast-font-family:"Times New Roman";
+	mso-bidi-font-family:"Times New Roman";}
+@list l3:level3
+	{mso-level-tab-stop:1.5in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l3:level4
+	{mso-level-tab-stop:2.0in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l3:level5
+	{mso-level-tab-stop:2.5in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l3:level6
+	{mso-level-tab-stop:3.0in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l3:level7
+	{mso-level-tab-stop:3.5in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l3:level8
+	{mso-level-tab-stop:4.0in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l3:level9
+	{mso-level-tab-stop:4.5in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l4
+	{mso-list-id:189609391;
+	mso-list-type:hybrid;
+	mso-list-template-ids:-1966170232 67698689 67698691 67698693 67698689 67698691 67698693 67698689 67698691 67698693;}
+@list l4:level1
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0B7;
+	mso-level-tab-stop:.5in;
+	mso-level-number-position:left;
+	text-indent:-.25in;
+	font-family:Symbol;}
+@list l4:level2
+	{mso-level-tab-stop:1.0in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l4:level3
+	{mso-level-tab-stop:1.5in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l4:level4
+	{mso-level-tab-stop:2.0in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l4:level5
+	{mso-level-tab-stop:2.5in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l4:level6
+	{mso-level-tab-stop:3.0in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l4:level7
+	{mso-level-tab-stop:3.5in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l4:level8
+	{mso-level-tab-stop:4.0in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l4:level9
+	{mso-level-tab-stop:4.5in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l5
+	{mso-list-id:235677396;
+	mso-list-type:hybrid;
+	mso-list-template-ids:-1680856668 67698689 67698691 67698693 67698689 67698691 67698693 67698689 67698691 67698693;}
+@list l5:level1
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0B7;
+	mso-level-tab-stop:.5in;
+	mso-level-number-position:left;
+	text-indent:-.25in;
+	font-family:Symbol;}
+@list l5:level2
+	{mso-level-tab-stop:1.0in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l5:level3
+	{mso-level-tab-stop:1.5in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l5:level4
+	{mso-level-tab-stop:2.0in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l5:level5
+	{mso-level-tab-stop:2.5in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l5:level6
+	{mso-level-tab-stop:3.0in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l5:level7
+	{mso-level-tab-stop:3.5in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l5:level8
+	{mso-level-tab-stop:4.0in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l5:level9
+	{mso-level-tab-stop:4.5in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l6
+	{mso-list-id:255216396;
+	mso-list-template-ids:-2050430026;}
+@list l6:level1
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0B7;
+	mso-level-tab-stop:.5in;
+	mso-level-number-position:left;
+	text-indent:-.25in;
+	mso-ansi-font-size:10.0pt;
+	font-family:Symbol;}
+@list l7
+	{mso-list-id:299072780;
+	mso-list-template-ids:548276584;}
+@list l7:level1
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0B7;
+	mso-level-tab-stop:.5in;
+	mso-level-number-position:left;
+	text-indent:-.25in;
+	mso-ansi-font-size:10.0pt;
+	font-family:Symbol;}
+@list l8
+	{mso-list-id:369233377;
+	mso-list-template-ids:920152458;}
+@list l8:level1
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0B7;
+	mso-level-tab-stop:.5in;
+	mso-level-number-position:left;
+	text-indent:-.25in;
+	mso-ansi-font-size:10.0pt;
+	font-family:Symbol;}
+@list l9
+	{mso-list-id:416168941;
+	mso-list-template-ids:1927322008;}
+@list l9:level1
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0B7;
+	mso-level-tab-stop:.5in;
+	mso-level-number-position:left;
+	text-indent:-.25in;
+	mso-ansi-font-size:10.0pt;
+	font-family:Symbol;}
+@list l10
+	{mso-list-id:417407735;
+	mso-list-type:hybrid;
+	mso-list-template-ids:666145010 67698689 67698691 67698693 67698689 67698691 67698693 67698689 67698691 67698693;}
+@list l10:level1
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0B7;
+	mso-level-tab-stop:.5in;
+	mso-level-number-position:left;
+	text-indent:-.25in;
+	font-family:Symbol;}
+@list l10:level2
+	{mso-level-tab-stop:1.0in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l10:level3
+	{mso-level-tab-stop:1.5in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l10:level4
+	{mso-level-tab-stop:2.0in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l10:level5
+	{mso-level-tab-stop:2.5in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l10:level6
+	{mso-level-tab-stop:3.0in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l10:level7
+	{mso-level-tab-stop:3.5in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l10:level8
+	{mso-level-tab-stop:4.0in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l10:level9
+	{mso-level-tab-stop:4.5in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l11
+	{mso-list-id:442580623;
+	mso-list-template-ids:1680480356;}
+@list l11:level1
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0B7;
+	mso-level-tab-stop:.5in;
+	mso-level-number-position:left;
+	text-indent:-.25in;
+	mso-ansi-font-size:10.0pt;
+	font-family:Symbol;}
+@list l12
+	{mso-list-id:499272484;
+	mso-list-template-ids:-1150274678;}
+@list l12:level1
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0B7;
+	mso-level-tab-stop:.5in;
+	mso-level-number-position:left;
+	text-indent:-.25in;
+	mso-ansi-font-size:10.0pt;
+	font-family:Symbol;}
+@list l13
+	{mso-list-id:580217442;
+	mso-list-type:hybrid;
+	mso-list-template-ids:-61314828 67698689 67698691 67698693 67698689 67698691 67698693 67698689 67698691 67698693;}
+@list l13:level1
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0B7;
+	mso-level-tab-stop:.5in;
+	mso-level-number-position:left;
+	text-indent:-.25in;
+	font-family:Symbol;}
+@list l13:level2
+	{mso-level-tab-stop:1.0in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l13:level3
+	{mso-level-tab-stop:1.5in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l13:level4
+	{mso-level-tab-stop:2.0in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l13:level5
+	{mso-level-tab-stop:2.5in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l13:level6
+	{mso-level-tab-stop:3.0in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l13:level7
+	{mso-level-tab-stop:3.5in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l13:level8
+	{mso-level-tab-stop:4.0in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l13:level9
+	{mso-level-tab-stop:4.5in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l14
+	{mso-list-id:583417849;
+	mso-list-template-ids:-21314404;}
+@list l14:level1
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0B7;
+	mso-level-tab-stop:.5in;
+	mso-level-number-position:left;
+	text-indent:-.25in;
+	mso-ansi-font-size:10.0pt;
+	font-family:Symbol;}
+@list l15
+	{mso-list-id:625431395;
+	mso-list-template-ids:-1762889936;}
+@list l15:level1
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0B7;
+	mso-level-tab-stop:.5in;
+	mso-level-number-position:left;
+	text-indent:-.25in;
+	mso-ansi-font-size:10.0pt;
+	font-family:Symbol;}
+@list l16
+	{mso-list-id:918683790;
+	mso-list-template-ids:-799607724;}
+@list l16:level1
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0B7;
+	mso-level-tab-stop:.5in;
+	mso-level-number-position:left;
+	text-indent:-.25in;
+	mso-ansi-font-size:10.0pt;
+	font-family:Symbol;}
+@list l17
+	{mso-list-id:938490645;
+	mso-list-template-ids:-987313962;}
+@list l17:level1
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0B7;
+	mso-level-tab-stop:.5in;
+	mso-level-number-position:left;
+	text-indent:-.25in;
+	mso-ansi-font-size:10.0pt;
+	font-family:Symbol;}
+@list l18
+	{mso-list-id:1027215751;
+	mso-list-template-ids:1185478026;}
+@list l18:level1
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0B7;
+	mso-level-tab-stop:.5in;
+	mso-level-number-position:left;
+	text-indent:-.25in;
+	mso-ansi-font-size:10.0pt;
+	font-family:Symbol;}
+@list l19
+	{mso-list-id:1070037770;
+	mso-list-type:hybrid;
+	mso-list-template-ids:103461222 67698689 67698691 67698693 67698689 67698691 67698693 67698689 67698691 67698693;}
+@list l19:level1
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0B7;
+	mso-level-tab-stop:.5in;
+	mso-level-number-position:left;
+	text-indent:-.25in;
+	font-family:Symbol;}
+@list l19:level2
+	{mso-level-tab-stop:1.0in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l19:level3
+	{mso-level-tab-stop:1.5in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l19:level4
+	{mso-level-tab-stop:2.0in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l19:level5
+	{mso-level-tab-stop:2.5in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l19:level6
+	{mso-level-tab-stop:3.0in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l19:level7
+	{mso-level-tab-stop:3.5in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l19:level8
+	{mso-level-tab-stop:4.0in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l19:level9
+	{mso-level-tab-stop:4.5in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l20
+	{mso-list-id:1111361984;
+	mso-list-template-ids:1402788220;}
+@list l20:level1
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0B7;
+	mso-level-tab-stop:.5in;
+	mso-level-number-position:left;
+	text-indent:-.25in;
+	mso-ansi-font-size:10.0pt;
+	font-family:Symbol;}
+@list l21
+	{mso-list-id:1118453771;
+	mso-list-template-ids:1018748842;}
+@list l21:level1
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0B7;
+	mso-level-tab-stop:.5in;
+	mso-level-number-position:left;
+	text-indent:-.25in;
+	mso-ansi-font-size:10.0pt;
+	font-family:Symbol;}
+@list l22
+	{mso-list-id:1128545399;
+	mso-list-template-ids:-975510218;}
+@list l22:level1
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0B7;
+	mso-level-tab-stop:.5in;
+	mso-level-number-position:left;
+	text-indent:-.25in;
+	mso-ansi-font-size:10.0pt;
+	font-family:Symbol;}
+@list l23
+	{mso-list-id:1165436058;
+	mso-list-template-ids:-1352236078;}
+@list l23:level1
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0B7;
+	mso-level-tab-stop:.5in;
+	mso-level-number-position:left;
+	text-indent:-.25in;
+	mso-ansi-font-size:10.0pt;
+	font-family:Symbol;}
+@list l24
+	{mso-list-id:1257782801;
+	mso-list-template-ids:-908138546;}
+@list l24:level1
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0B7;
+	mso-level-tab-stop:.5in;
+	mso-level-number-position:left;
+	text-indent:-.25in;
+	mso-ansi-font-size:10.0pt;
+	font-family:Symbol;}
+@list l25
+	{mso-list-id:1372925119;
+	mso-list-type:hybrid;
+	mso-list-template-ids:2113705532 67698689 67698691 67698693 67698689 67698691 67698693 67698689 67698691 67698693;}
+@list l25:level1
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0B7;
+	mso-level-tab-stop:.5in;
+	mso-level-number-position:left;
+	text-indent:-.25in;
+	font-family:Symbol;}
+@list l25:level2
+	{mso-level-number-format:bullet;
+	mso-level-text:o;
+	mso-level-tab-stop:1.0in;
+	mso-level-number-position:left;
+	text-indent:-.25in;
+	font-family:"Courier New";}
+@list l25:level3
+	{mso-level-tab-stop:1.5in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l25:level4
+	{mso-level-tab-stop:2.0in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l25:level5
+	{mso-level-tab-stop:2.5in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l25:level6
+	{mso-level-tab-stop:3.0in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l25:level7
+	{mso-level-tab-stop:3.5in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l25:level8
+	{mso-level-tab-stop:4.0in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l25:level9
+	{mso-level-tab-stop:4.5in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l26
+	{mso-list-id:1379356167;
+	mso-list-template-ids:1498850598;}
+@list l26:level1
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0B7;
+	mso-level-tab-stop:.5in;
+	mso-level-number-position:left;
+	text-indent:-.25in;
+	mso-ansi-font-size:10.0pt;
+	font-family:Symbol;}
+@list l27
+	{mso-list-id:1395591813;
+	mso-list-template-ids:-1958691690;}
+@list l27:level1
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0B7;
+	mso-level-tab-stop:.5in;
+	mso-level-number-position:left;
+	text-indent:-.25in;
+	mso-ansi-font-size:10.0pt;
+	font-family:Symbol;}
+@list l28
+	{mso-list-id:1445231909;
+	mso-list-template-ids:-1337283280;}
+@list l28:level1
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0B7;
+	mso-level-tab-stop:.5in;
+	mso-level-number-position:left;
+	text-indent:-.25in;
+	mso-ansi-font-size:10.0pt;
+	font-family:Symbol;}
+@list l29
+	{mso-list-id:1518809475;
+	mso-list-template-ids:2098761328;}
+@list l29:level1
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0B7;
+	mso-level-tab-stop:.5in;
+	mso-level-number-position:left;
+	text-indent:-.25in;
+	mso-ansi-font-size:10.0pt;
+	font-family:Symbol;}
+@list l30
+	{mso-list-id:1639188684;
+	mso-list-template-ids:1564912996;}
+@list l30:level1
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0B7;
+	mso-level-tab-stop:.5in;
+	mso-level-number-position:left;
+	text-indent:-.25in;
+	mso-ansi-font-size:10.0pt;
+	font-family:Symbol;}
+@list l31
+	{mso-list-id:1702319783;
+	mso-list-type:hybrid;
+	mso-list-template-ids:-429881808 -1381227298 67698713 67698715 67698703 67698713 67698715 67698703 67698713 67698715;}
+@list l31:level1
+	{mso-level-text:"%1\)";
+	mso-level-tab-stop:.75in;
+	mso-level-number-position:left;
+	margin-left:.75in;
+	text-indent:-.5in;}
+@list l31:level2
+	{mso-level-tab-stop:1.0in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l31:level3
+	{mso-level-tab-stop:1.5in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l31:level4
+	{mso-level-tab-stop:2.0in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l31:level5
+	{mso-level-tab-stop:2.5in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l31:level6
+	{mso-level-tab-stop:3.0in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l31:level7
+	{mso-level-tab-stop:3.5in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l31:level8
+	{mso-level-tab-stop:4.0in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l31:level9
+	{mso-level-tab-stop:4.5in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l32
+	{mso-list-id:1714697680;
+	mso-list-type:hybrid;
+	mso-list-template-ids:1707134960 67698689 67698691 67698693 67698689 67698691 67698693 67698689 67698691 67698693;}
+@list l32:level1
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0B7;
+	mso-level-tab-stop:.5in;
+	mso-level-number-position:left;
+	text-indent:-.25in;
+	font-family:Symbol;}
+@list l32:level2
+	{mso-level-tab-stop:1.0in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l32:level3
+	{mso-level-tab-stop:1.5in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l32:level4
+	{mso-level-tab-stop:2.0in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l32:level5
+	{mso-level-tab-stop:2.5in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l32:level6
+	{mso-level-tab-stop:3.0in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l32:level7
+	{mso-level-tab-stop:3.5in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l32:level8
+	{mso-level-tab-stop:4.0in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l32:level9
+	{mso-level-tab-stop:4.5in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l33
+	{mso-list-id:1771925657;
+	mso-list-type:hybrid;
+	mso-list-template-ids:-1195222944 67698689 67698691 67698693 67698689 67698691 67698693 67698689 67698691 67698693;}
+@list l33:level1
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0B7;
+	mso-level-tab-stop:.5in;
+	mso-level-number-position:left;
+	text-indent:-.25in;
+	font-family:Symbol;}
+@list l33:level2
+	{mso-level-tab-stop:1.0in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l33:level3
+	{mso-level-tab-stop:1.5in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l33:level4
+	{mso-level-tab-stop:2.0in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l33:level5
+	{mso-level-tab-stop:2.5in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l33:level6
+	{mso-level-tab-stop:3.0in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l33:level7
+	{mso-level-tab-stop:3.5in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l33:level8
+	{mso-level-tab-stop:4.0in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l33:level9
+	{mso-level-tab-stop:4.5in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l34
+	{mso-list-id:1821536624;
+	mso-list-type:hybrid;
+	mso-list-template-ids:1094368638 67698689 67698691 67698693 67698689 67698691 67698693 67698689 67698691 67698693;}
+@list l34:level1
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0B7;
+	mso-level-tab-stop:.5in;
+	mso-level-number-position:left;
+	text-indent:-.25in;
+	font-family:Symbol;}
+@list l34:level2
+	{mso-level-tab-stop:1.0in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l34:level3
+	{mso-level-tab-stop:1.5in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l34:level4
+	{mso-level-tab-stop:2.0in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l34:level5
+	{mso-level-tab-stop:2.5in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l34:level6
+	{mso-level-tab-stop:3.0in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l34:level7
+	{mso-level-tab-stop:3.5in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l34:level8
+	{mso-level-tab-stop:4.0in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l34:level9
+	{mso-level-tab-stop:4.5in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l35
+	{mso-list-id:1905526517;
+	mso-list-template-ids:101325338;}
+@list l35:level1
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0B7;
+	mso-level-tab-stop:.5in;
+	mso-level-number-position:left;
+	text-indent:-.25in;
+	mso-ansi-font-size:10.0pt;
+	font-family:Symbol;}
+@list l36
+	{mso-list-id:1967152361;
+	mso-list-template-ids:1216791104;}
+@list l36:level1
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0B7;
+	mso-level-tab-stop:.5in;
+	mso-level-number-position:left;
+	text-indent:-.25in;
+	mso-ansi-font-size:10.0pt;
+	font-family:Symbol;}
+@list l37
+	{mso-list-id:1999189892;
+	mso-list-template-ids:575325680;}
+@list l37:level1
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0B7;
+	mso-level-tab-stop:.5in;
+	mso-level-number-position:left;
+	text-indent:-.25in;
+	mso-ansi-font-size:10.0pt;
+	font-family:Symbol;}
+ol
+	{margin-bottom:0in;}
+ul
+	{margin-bottom:0in;}
+-->
+</style>
+<!--[if gte mso 10]>
+<style>
+ /* Style Definitions */
+ table.MsoNormalTable
+	{mso-style-name:"Table Normal";
+	mso-tstyle-rowband-size:0;
+	mso-tstyle-colband-size:0;
+	mso-style-noshow:yes;
+	mso-style-parent:"";
+	mso-padding-alt:0in 5.4pt 0in 5.4pt;
+	mso-para-margin:0in;
+	mso-para-margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	font-size:10.0pt;
+	font-family:"Times New Roman";}
+table.MsoTableSimple2
+	{mso-style-name:"Table Simple 2";
+	mso-tstyle-rowband-size:0;
+	mso-tstyle-colband-size:0;
+	mso-padding-alt:0in 5.4pt 0in 5.4pt;
+	mso-para-margin:0in;
+	mso-para-margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	font-size:10.0pt;
+	font-family:"Times New Roman";}
+table.MsoTableSimple2FirstRow
+	{mso-style-name:"Table Simple 2";
+	mso-table-condition:first-row;
+	mso-tstyle-border-bottom:1.5pt solid black;
+	mso-tstyle-diagonal-down:0in none windowtext;
+	mso-tstyle-diagonal-up:0in none windowtext;
+	mso-ansi-font-weight:bold;
+	mso-bidi-font-weight:bold;}
+table.MsoTableSimple2LastRow
+	{mso-style-name:"Table Simple 2";
+	mso-table-condition:last-row;
+	mso-tstyle-border-top:.75pt solid black;
+	mso-tstyle-diagonal-down:0in none windowtext;
+	mso-tstyle-diagonal-up:0in none windowtext;
+	color:windowtext;
+	mso-ansi-font-weight:bold;
+	mso-bidi-font-weight:bold;}
+table.MsoTableSimple2FirstCol
+	{mso-style-name:"Table Simple 2";
+	mso-table-condition:first-column;
+	mso-tstyle-border-right:1.5pt solid black;
+	mso-tstyle-diagonal-down:0in none windowtext;
+	mso-tstyle-diagonal-up:0in none windowtext;
+	mso-ansi-font-weight:bold;
+	mso-bidi-font-weight:bold;}
+table.MsoTableSimple2LastCol
+	{mso-style-name:"Table Simple 2";
+	mso-table-condition:last-column;
+	mso-tstyle-border-left:.75pt solid black;
+	mso-tstyle-diagonal-down:0in none windowtext;
+	mso-tstyle-diagonal-up:0in none windowtext;
+	mso-ansi-font-weight:bold;
+	mso-bidi-font-weight:bold;}
+table.MsoTableSimple2NECell
+	{mso-style-name:"Table Simple 2";
+	mso-table-condition:ne-cell;
+	mso-tstyle-border-left:0in none windowtext;
+	mso-tstyle-diagonal-down:0in none windowtext;
+	mso-tstyle-diagonal-up:0in none windowtext;
+	mso-ansi-font-weight:bold;
+	mso-bidi-font-weight:bold;}
+table.MsoTableSimple2SWCell
+	{mso-style-name:"Table Simple 2";
+	mso-table-condition:sw-cell;
+	mso-tstyle-border-top:0in none windowtext;
+	mso-tstyle-diagonal-down:0in none windowtext;
+	mso-tstyle-diagonal-up:0in none windowtext;
+	mso-ansi-font-weight:bold;
+	mso-bidi-font-weight:bold;}
+</style>
+<![endif]--><!--[if gte mso 9]><xml>
+ <o:shapedefaults v:ext="edit" spidmax="5122"/>
+</xml><![endif]--><!--[if gte mso 9]><xml>
+ <o:shapelayout v:ext="edit">
+  <o:idmap v:ext="edit" data="1"/>
+ </o:shapelayout></xml><![endif]-->
+</head>
+
+<body lang=EN-US style='tab-interval:.5in'>
+
+<div class=Section1>
+
+<h1 align=center style='text-align:center'>MOHPA Radiant Overview</h1>
+
+<h3>General</h3>
+
+<p class=MsoListBullet><![if !supportLists]><span style='font-family:Symbol;
+mso-fareast-font-family:Symbol;mso-bidi-font-family:Symbol'><span
+style='mso-list:Ignore'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span></span><![endif]>Patches/Curves have been eliminated</p>
+
+<p class=MsoListBullet><![if !supportLists]><span style='font-family:Symbol;
+mso-fareast-font-family:Symbol;mso-bidi-font-family:Symbol'><span
+style='mso-list:Ignore'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span></span><![endif]>Old MOHAA style terrain has been removed</p>
+
+<p class=MsoListBullet><![if !supportLists]><span style='font-family:Symbol;
+mso-fareast-font-family:Symbol;mso-bidi-font-family:Symbol'><span
+style='mso-list:Ignore'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span></span><![endif]>Rendering is now optimized by efficient use of
+selection groups and hiding geometry</p>
+
+<p class=MsoListBullet><![if !supportLists]><span style='font-family:Symbol;
+mso-fareast-font-family:Symbol;mso-bidi-font-family:Symbol'><span
+style='mso-list:Ignore'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span></span><![endif]>Props Dialog on <b style='mso-bidi-font-weight:
+normal'>‘P’</b> key</p>
+
+<p class=MsoListBullet><![if !supportLists]><span style='font-family:Symbol;
+mso-fareast-font-family:Symbol;mso-bidi-font-family:Symbol'><span
+style='mso-list:Ignore'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span></span><![endif]>Radiant Save times are much improved</p>
+
+<p class=MsoListBullet><![if !supportLists]><span style='font-family:Symbol;
+mso-fareast-font-family:Symbol;mso-bidi-font-family:Symbol'><span
+style='mso-list:Ignore'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span></span><![endif]>Prefabs have been restored</p>
+
+<p class=MsoListBullet><![if !supportLists]><span style='font-family:Symbol;
+mso-fareast-font-family:Symbol;mso-bidi-font-family:Symbol'><span
+style='mso-list:Ignore'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span></span><![endif]>PSD layers are visibile inside the editor using
+the <b style='mso-bidi-font-weight:normal'>Misc-&gt;Info Layer</b> option</p>
+
+<p class=MsoListBullet><![if !supportLists]><span style='font-family:Symbol;
+mso-fareast-font-family:Symbol;mso-bidi-font-family:Symbol'><span
+style='mso-list:Ignore'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span></span><![endif]>Alt-dragging results in SelectCompleteTall</p>
+
+<p class=MsoListBullet><![if !supportLists]><span style='font-family:Symbol;
+mso-fareast-font-family:Symbol;mso-bidi-font-family:Symbol'><span
+style='mso-list:Ignore'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span></span><![endif]>You can select parts of a terrain using a
+brush.<span style='mso-spacerun:yes'>  </span>Create a brush and then choose <b
+style='mso-bidi-font-weight:normal'>Select-&gt;Select Terrain Via Brush</b></p>
+
+<p class=MsoListBullet><![if !supportLists]><span style='font-family:Symbol;
+mso-fareast-font-family:Symbol;mso-bidi-font-family:Symbol'><span
+style='mso-list:Ignore'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span></span><![endif]>Select all of ‘x’ algorithms are now very fast™</p>
+
+<h3>Important Notes</h3>
+
+<p class=MsoListBullet><![if !supportLists]><span style='font-family:Symbol;
+mso-fareast-font-family:Symbol;mso-bidi-font-family:Symbol'><span
+style='mso-list:Ignore'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span></span><![endif]>Your map file is required to have a physical
+brush placed somewhere in the world space to be ran in-game.<span
+style='mso-spacerun:yes'>      </span></p>
+
+<p class=MsoListBullet><![if !supportLists]><span style='font-family:Symbol;
+mso-fareast-font-family:Symbol;mso-bidi-font-family:Symbol'><span
+style='mso-list:Ignore'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span></span><![endif]>Each Quad of your terrain is limited to 2
+additional textures on-top of your base texture</p>
+
+<p class=MsoListBullet><![if !supportLists]><span style='font-family:Symbol;
+mso-fareast-font-family:Symbol;mso-bidi-font-family:Symbol'><span
+style='mso-list:Ignore'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span></span><![endif]>Take caution when using the undo feature.</p>
+
+<p class=MsoNormal><o:p>&nbsp;</o:p></p>
+
+<p class=MsoNormal><span class=Heading2Char><span style='font-size:14.0pt'>Old
+Files</span></span>:</p>
+
+<p class=MsoNormal><b style='mso-bidi-font-weight:normal'>terrainName.ter</b> –
+contains the runtime version of the terrain </p>
+
+<p class=MsoNormal><b style='mso-bidi-font-weight:normal'>terrainName.r32</b> –
+A raw full resolution version of the heightfield </p>
+
+<p class=MsoNormal><b style='mso-bidi-font-weight:normal'>terrainName.lvl</b> –
+the LevelEdit file which contains a native version of the terrain </p>
+
+<p class=MsoNormal><o:p>&nbsp;</o:p></p>
+
+<p class=MsoNormal><span class=Heading2Char><span style='font-size:14.0pt'>New
+Files</span></span>:</p>
+
+<p class=MsoNormal><b style='mso-bidi-font-weight:normal'>terrainName.ter</b> –
+contains the runtime version of the terrain </p>
+
+<p class=MsoNormal><b style='mso-bidi-font-weight:normal'>terrainName.raw</b> –
+A raw full resolution version of the heightfield </p>
+
+<p class=MsoNormal><b style='mso-bidi-font-weight:normal'>terrainName.alpha</b>
+– A file that contains the texture painting values at the heightfield
+resolution.</p>
+
+<p class=MsoNormal><b style='mso-bidi-font-weight:normal'>*.stamp </b>- saved
+heightmap info and the accompanying heightmap mask. These are the saved
+selections</p>
+
+<p class=MsoNormal><o:p>&nbsp;</o:p></p>
+
+<p class=MsoNormal>The new Radiant will export <b style='mso-bidi-font-weight:
+normal'>.R32</b> files for compatibility and world machine</p>
+
+<p class=MsoNormal><o:p>&nbsp;</o:p></p>
+
+<p class=MsoNormal><b style='mso-bidi-font-weight:normal'><u>New Worldspawn
+Parameters<o:p></o:p></u></b></p>
+
+<ul style='margin-top:0in' type=disc>
+ <li class=MsoNormal style='mso-list:l13 level1 lfo6;tab-stops:list .5in'><b
+     style='mso-bidi-font-weight:normal'>Sky </b>– MOHPA no longer uses sky
+     portal brushes for displaying skies, now they are generated procedurally
+     using parameters within Radiant.<span style='mso-spacerun:yes'> 
+     </span>This worldspawn parameter specifies which of the textures in the
+     Game\Main\Textures\Sky folder will be used<u><o:p></o:p></u></li>
+ <li class=MsoNormal style='mso-list:l13 level1 lfo6;tab-stops:list .5in'><b
+     style='mso-bidi-font-weight:normal'>Sky_Altitude</b><u><o:p></o:p></u></li>
+ <li class=MsoNormal style='mso-list:l13 level1 lfo6;tab-stops:list .5in'><b
+     style='mso-bidi-font-weight:normal'>Sky_Extent</b><u><o:p></o:p></u></li>
+</ul>
+
+<p class=MsoNormal><o:p>&nbsp;</o:p></p>
+
+<p class=MsoNormal><b style='mso-bidi-font-weight:normal'><u>Browsing<o:p></o:p></u></b></p>
+
+<p class=MsoNormal>New to Radiant is the ability to use and create Browse
+groups – the purpose of which is to more efficiently organize assets used for
+the different missions.</p>
+
+<p class=MsoNormal><o:p>&nbsp;</o:p></p>
+
+<p class=MsoNormal>After you start Radiant for the first time, you will enter
+in your Radiant Preferences much as before.<span style='mso-spacerun:yes'> 
+</span>After that, you will see the Project Setting Dialogue.<span
+style='mso-spacerun:yes'>  </span>Here you can now add new browse groups,
+remove existing ones, or change the directory that the browse group points to.</p>
+
+<p class=MsoNormal><o:p>&nbsp;</o:p></p>
+
+<p class=MsoNormal>Once you enter Radiant, there is a new Browse menu command,
+which you can use to load in groups of assets designed for each mission.</p>
+
+<p class=MsoNormal><o:p>&nbsp;</o:p></p>
+
+<p class=MsoNormal><!--[if gte vml 1]><v:shapetype id="_x0000_t75" coordsize="21600,21600"
+ o:spt="75" o:preferrelative="t" path="m@4@5l@4@11@9@11@9@5xe" filled="f"
+ stroked="f">
+ <v:stroke joinstyle="miter"/>
+ <v:formulas>
+  <v:f eqn="if lineDrawn pixelLineWidth 0"/>
+  <v:f eqn="sum @0 1 0"/>
+  <v:f eqn="sum 0 0 @1"/>
+  <v:f eqn="prod @2 1 2"/>
+  <v:f eqn="prod @3 21600 pixelWidth"/>
+  <v:f eqn="prod @3 21600 pixelHeight"/>
+  <v:f eqn="sum @0 0 1"/>
+  <v:f eqn="prod @6 1 2"/>
+  <v:f eqn="prod @7 21600 pixelWidth"/>
+  <v:f eqn="sum @8 21600 0"/>
+  <v:f eqn="prod @7 21600 pixelHeight"/>
+  <v:f eqn="sum @10 21600 0"/>
+ </v:formulas>
+ <v:path o:extrusionok="f" gradientshapeok="t" o:connecttype="rect"/>
+ <o:lock v:ext="edit" aspectratio="t"/>
+</v:shapetype><v:shape id="_x0000_i1025" type="#_x0000_t75" style='width:600pt;
+ height:522pt'>
+ <v:imagedata src="mohpa_radiant_overview_files/image001.jpg" o:title="image020"/>
+</v:shape><![endif]--><![if !vml]><img width=800 height=696
+src="mohpa_radiant_overview_files/image002.jpg" v:shapes="_x0000_i1025"><![endif]></p>
+
+<p class=MsoNormal><o:p>&nbsp;</o:p></p>
+
+<p class=MsoNormal><b style='mso-bidi-font-weight:normal'><u>Terrain Creation
+and Manipulation<o:p></o:p></u></b></p>
+
+<p class=MsoNormal style='text-indent:.5in'><st1:PersonName>MOHPA</st1:PersonName>’s
+terrain system is significantly upgraded from the old terrain system.<span
+style='mso-spacerun:yes'>  </span>Terrains are now subdivided into smaller
+subsections called quads that allow the user to selectively increase and
+decrease the resolution on different parts of the terrain.<span
+style='mso-spacerun:yes'>  </span></p>
+
+<p class=MsoNormal style='text-indent:.5in'>Texturing has also been changed
+significantly and allows the user much more flexibility and removes many of the
+rigid constraints involved with applying textures on terrain in the past.</p>
+
+<p class=MsoNormal style='text-indent:.5in'><o:p>&nbsp;</o:p></p>
+
+<ul style='margin-top:0in' type=disc>
+ <li class=MsoNormal style='mso-list:l4 level1 lfo9;tab-stops:list .5in'>To
+     create a new piece of terrain, choose File-&gt;New Terrain</li>
+ <li class=MsoNormal style='mso-list:l4 level1 lfo9;tab-stops:list .5in'>To
+     enter terrain editing mode, hit<b style='mso-bidi-font-weight:normal'>
+     Ctrl+Alt+T</b>, or choose <b style='mso-bidi-font-weight:normal'>Edit-&gt;Terrain
+     Mode</b> from the menu.<span style='mso-spacerun:yes'>  </span>This will
+     bring up the terrain editing toolbox, and remaps a few keys to
+     terrain-specific operations.</li>
+</ul>
+
+<p class=MsoNormal><o:p>&nbsp;</o:p></p>
+
+<p class=MsoNormal><o:p>&nbsp;</o:p></p>
+
+<span style='font-size:12.0pt;font-family:"Times New Roman";mso-fareast-font-family:
+"Times New Roman";mso-ansi-language:EN-US;mso-fareast-language:EN-US;
+mso-bidi-language:AR-SA'><br clear=all style='page-break-before:always'>
+</span>
+
+<p class=MsoNormal><b style='mso-bidi-font-weight:normal'><u>Heightfield Tab<o:p></o:p></u></b></p>
+
+<p class=MsoNormal><b style='mso-bidi-font-weight:normal'><u><o:p><span
+ style='text-decoration:none'>&nbsp;</span></o:p></u></b></p>
+
+<p class=MsoNormal><span style='mso-spacerun:yes'> </span><!--[if gte vml 1]><v:shape
+ id="_x0000_i1026" type="#_x0000_t75" style='width:253.5pt;height:459pt'>
+ <v:imagedata src="mohpa_radiant_overview_files/image003.jpg" o:title="New Radiant Terrain 1"/>
+</v:shape><![endif]--><![if !vml]><img width=338 height=612
+src="mohpa_radiant_overview_files/image004.jpg" v:shapes="_x0000_i1026"><![endif]></p>
+
+<p class=MsoNormal><o:p>&nbsp;</o:p></p>
+
+<p class=MsoNormal style='margin-left:.25in'>When you are in this mode, your
+cursor changes to a disk and you can now modify your terrain with a variety of
+controls.<span style='mso-spacerun:yes'>  </span>Here are descriptions for all
+the Terrain Controls</p>
+
+<p class=MsoNormal><b style='mso-bidi-font-weight:normal'><o:p>&nbsp;</o:p></b></p>
+
+<p class=MsoNormal><b style='mso-bidi-font-weight:normal'><u>Cursor Properties<o:p></o:p></u></b></p>
+
+<p class=MsoNormal style='margin-left:.25in'><b style='mso-bidi-font-weight:
+normal'><o:p>&nbsp;</o:p></b></p>
+
+<p class=MsoNormal style='margin-left:.25in'><b style='mso-bidi-font-weight:
+normal'>Brush Type – </b>Select different terrain operations to modify the
+appearance of your terrain with the cursor.</p>
+
+<p class=MsoNormal style='margin-left:.25in'><b style='mso-bidi-font-weight:
+normal'><o:p>&nbsp;</o:p></b></p>
+
+<ul style='margin-top:0in' type=disc>
+ <li class=MsoNormal style='mso-list:l25 level1 lfo12;tab-stops:list .5in'><b
+     style='mso-bidi-font-weight:normal'>Vertex Height (CTRL+1)<o:p></o:p></b></li>
+</ul>
+
+<p class=MsoNormal style='margin-left:.75in'>Use this command to raise or lower
+your terrain within the cursor in the 3D or 2D windows by clicking the left
+mouse button.<span style='mso-spacerun:yes'>  </span>The amount affects how
+much the terrain will be altered by your mouse click.<span
+style='mso-spacerun:yes'>  </span>Positive Height values raise the terrain,
+negative values lower it.<span style='mso-spacerun:yes'>  </span>A larger inner
+radius will apply the </p>
+
+<ul style='margin-top:0in' type=disc>
+ <li class=MsoNormal style='mso-list:l25 level1 lfo12;tab-stops:list .5in'><b
+     style='mso-bidi-font-weight:normal'>Bring to Height (CTRL+2)<o:p></o:p></b></li>
+</ul>
+
+<p class=MsoNormal style='margin-left:.75in'>As you move the red dot
+representing your cursor across the surface of your terrain, you will see the
+disk representing the inner and outer radius matches the height of the current
+section of the terrain.<span style='mso-spacerun:yes'>  </span>Clicking the
+Left Mouse button in this mode will bring the terrain within the cursor disk to
+the height of the center of the disk.</p>
+
+<ul style='margin-top:0in' type=disc>
+ <li class=MsoNormal style='mso-list:l25 level1 lfo12;tab-stops:list .5in'><a
+     name="OLE_LINK3"><b style='mso-bidi-font-weight:normal'>Set to Height
+     (CTRL+3)<o:p></o:p></b></a></li>
+</ul>
+
+<span style='mso-bookmark:OLE_LINK3'></span>
+
+<p class=MsoNormal style='margin-left:.75in'>This operation will set the
+terrain within the cursor to the value entered in the Height field</p>
+
+<ul style='margin-top:0in' type=disc>
+ <li class=MsoNormal style='mso-list:l25 level1 lfo12;tab-stops:list .5in'><a
+     name="OLE_LINK7"><b style='mso-bidi-font-weight:normal'>Vertex Smooth
+     (CTRL+4)<o:p></o:p></b></a></li>
+</ul>
+
+<p class=MsoNormal style='margin-left:.75in'><span style='mso-bookmark:OLE_LINK7'>This
+will smooth the terrain within the cursor radius.</span></p>
+
+<span style='mso-bookmark:OLE_LINK7'></span>
+
+<ul style='margin-top:0in' type=disc>
+ <li class=MsoNormal style='mso-list:l25 level1 lfo12;tab-stops:list .5in'><b
+     style='mso-bidi-font-weight:normal'>Vertex Noise (CTRL+5)<o:p></o:p></b></li>
+</ul>
+
+<p class=MsoNormal style='margin-left:.75in'>This will add noise to the terrain
+within the cursor radius</p>
+
+<ul style='margin-top:0in' type=disc>
+ <li class=MsoNormal style='mso-list:l25 level1 lfo12;tab-stops:list .5in'><b
+     style='mso-bidi-font-weight:normal'>Cut Area (CTRL+X)<o:p></o:p></b></li>
+</ul>
+
+<p class=MsoNormal style='margin-left:.75in'>This will cut the terrain
+underneath the cursor, leaving the area flat</p>
+
+<ul style='margin-top:0in' type=disc>
+ <li class=MsoNormal style='mso-list:l25 level1 lfo12;tab-stops:list .5in'><b
+     style='mso-bidi-font-weight:normal'>Copy Area (CTRL+C)<o:p></o:p></b></li>
+</ul>
+
+<p class=MsoNormal style='margin-left:.75in'>This will make a copy of the
+terrain underneath the cursor, leaving the area untouched.</p>
+
+<ul style='margin-top:0in' type=disc>
+ <li class=MsoNormal style='mso-list:l25 level1 lfo12;tab-stops:list .5in'><b
+     style='mso-bidi-font-weight:normal'>Paste Area (CTRL+V)<o:p></o:p></b></li>
+</ul>
+
+<p class=MsoNormal style='margin-left:.75in'>This will place a previously cut
+or copied section of terrain into the area under the cursor.<span
+style='mso-spacerun:yes'>  </span>How this is applied to the terrain is
+dependent on the Blend Mode setting.<span style='mso-spacerun:yes'>  </span>See
+the <b style='mso-bidi-font-weight:normal'>Current Material </b>Section for
+more details.</p>
+
+<ul style='margin-top:0in' type=disc>
+ <li class=MsoNormal style='mso-list:l25 level1 lfo12;tab-stops:list .5in'><b
+     style='mso-bidi-font-weight:normal'>Texture Paint (CTRL+6)<o:p></o:p></b></li>
+</ul>
+
+<p class=MsoNormal style='margin-left:.75in'>This will paint the material shown
+in Current Material box to the area within the cursor radius, but only if the
+Material has been added to that quad.<span style='mso-spacerun:yes'> 
+</span>See the <b style='mso-bidi-font-weight:normal'>Current Material </b>section
+for more details.</p>
+
+<ul style='margin-top:0in' type=disc>
+ <li class=MsoNormal style='mso-list:l25 level1 lfo12;tab-stops:list .5in'><b
+     style='mso-bidi-font-weight:normal'>Texture Unpaint(CTRL+7)<o:p></o:p></b></li>
+</ul>
+
+<p class=MsoNormal style='margin-left:.75in'>This will remove the currently
+selected material from the quad and replace it with the base texture.<span
+style='mso-spacerun:yes'>  </span>In order to repaint the material onto the
+quad, you need to re-add the texture to the quad by using Shift Right Click.</p>
+
+<ul style='margin-top:0in' type=disc>
+ <li class=MsoNormal style='mso-list:l25 level1 lfo12;tab-stops:list .5in'><b
+     style='mso-bidi-font-weight:normal'>Increase Resolution<o:p></o:p></b></li>
+</ul>
+
+<p class=MsoNormal style='margin-left:.75in'>This will increase the resolution
+of the quad highlighted in red, forming 4 new, higher resolution quads in the
+same area as the previous quad.</p>
+
+<ul style='margin-top:0in' type=disc>
+ <li class=MsoNormal style='mso-list:l25 level1 lfo12;tab-stops:list .5in'><b
+     style='mso-bidi-font-weight:normal'>Decrease Resolution<o:p></o:p></b></li>
+</ul>
+
+<p class=MsoNormal style='margin-left:.75in'>This will decrease the resolution
+of the quad highlighted in red, creating a larger, lower resolution quad from
+the selected quad and 3 other neighboring quads.</p>
+
+<ul style='margin-top:0in' type=disc>
+ <li class=MsoNormal style='mso-list:l25 level1 lfo12;tab-stops:list .5in'><b
+     style='mso-bidi-font-weight:normal'>Sync Heightfield to Mesh<o:p></o:p></b></li>
+</ul>
+
+<p class=MsoNormal style='margin-left:.75in'>The nature of quadtree terrain is
+that it is defined by continuous data, or a heightfield, that is capable of
+storing the terrain information in greater resolution and detail than what is
+actually displayed in Radiant.<span style='mso-spacerun:yes'>  </span>By
+increasing the resolution on quads, the actual mesh more accurately represents
+the continuous heightfield data.<span style='mso-spacerun:yes'> 
+</span>However, if you wish to discard the high resolution data for a quad on
+your terrain, and instead replace it with the lower resolution that is shown in
+Radiant, you can apply this function.<span style='mso-spacerun:yes'>  </span>By
+doing this, you are, in effect, locking in the lower resolution into your
+heighfield.<span style='mso-spacerun:yes'>    </span></p>
+
+<p class=MsoNormal style='margin-left:.25in'><b style='mso-bidi-font-weight:
+normal'><o:p>&nbsp;</o:p></b></p>
+
+<p class=MsoNormal style='margin-left:.25in'><b style='mso-bidi-font-weight:
+normal'><o:p>&nbsp;</o:p></b></p>
+
+<p class=MsoNormal style='margin-left:.25in'><b style='mso-bidi-font-weight:
+normal'>Inner Radius – </b>all the terrain within the inner radius of the
+cursor, represented on-screen as the red disk, will receive the effect of the
+terrain operation chosen in the Brush Type box uniformly<b style='mso-bidi-font-weight:
+normal'><o:p></o:p></b></p>
+
+<p class=MsoNormal style='margin-left:.25in'><b style='mso-bidi-font-weight:
+normal'><o:p>&nbsp;</o:p></b></p>
+
+<p class=MsoNormal style='margin-left:.25in'><b style='mso-bidi-font-weight:
+normal'>Outer Radius – </b>The effect of the terrain operation will drop off proportionally
+from full affect at the edge of the red inner radius disk to no affect at the
+edge of outer radius disk in blue-green. <b style='mso-bidi-font-weight:normal'><o:p></o:p></b></p>
+
+<p class=MsoNormal style='margin-left:.25in'><b style='mso-bidi-font-weight:
+normal'><o:p>&nbsp;</o:p></b></p>
+
+<p class=MsoNormal style='margin-left:.25in'><b style='mso-bidi-font-weight:
+normal'>Amount</b> – Adjust this to control how quickly the terrain operation
+is applied to the existing terrain.<span style='mso-spacerun:yes'>  </span>High
+values alter terrain quickly, low values change it more subtly.<b
+style='mso-bidi-font-weight:normal'><o:p></o:p></b></p>
+
+<p class=MsoNormal style='margin-left:.25in'><b style='mso-bidi-font-weight:
+normal'><o:p>&nbsp;</o:p></b></p>
+
+<p class=MsoNormal style='margin-left:.25in'><b style='mso-bidi-font-weight:
+normal'>Height – </b>When adjusting the terrain height, positive values will
+make the terrain go up, while negative values will make it go down.<span
+style='mso-spacerun:yes'>  </span>Making this value very big (or very negative)
+will have an effect similar to adjusting the Amount.<span
+style='mso-spacerun:yes'>  </span>For operations that involve sampling the
+current height of your terrain mesh, this will display the current height
+sampled by the cursor.</p>
+
+<p class=MsoNormal style='margin-left:.25in'><o:p>&nbsp;</o:p></p>
+
+<p class=MsoNormal style='margin-left:.25in'><b style='mso-bidi-font-weight:
+normal'>Game Units/Meters</b> – This simply switches the units of the preceding
+4 parameters from Radiant units to real-world meters.</p>
+
+<p class=MsoNormal><b style='mso-bidi-font-weight:normal'><o:p>&nbsp;</o:p></b></p>
+
+<p class=MsoNormal><b style='mso-bidi-font-weight:normal'><u>Current Material</u></b>
+</p>
+
+<p class=MsoNormal>The Current Material section of the interface is where you
+pick and choose terrain textures.<span style='mso-spacerun:yes'>  </span>It
+also has additional tools that govern how the textures are applied to the
+terrain, as well as how cut and copied heightfield selections are reapplied to
+the terrain when pasted</p>
+
+<p class=MsoNormal><o:p>&nbsp;</o:p></p>
+
+<p class=MsoNormal>When you are in Texture Paint or Unpaint modes, you can
+click the square button to the left to access the Material Palette</p>
+
+<p class=MsoNormal><o:p>&nbsp;</o:p></p>
+
+<p class=MsoNormal><!--[if gte vml 1]><v:shape id="_x0000_i1027" type="#_x0000_t75"
+ style='width:431.25pt;height:492pt'>
+ <v:imagedata src="mohpa_radiant_overview_files/image005.jpg" o:title="New Radiant Terrain 3"/>
+</v:shape><![endif]--><![if !vml]><img width=575 height=656
+src="mohpa_radiant_overview_files/image006.jpg" v:shapes="_x0000_i1027"><![endif]></p>
+
+<p class=MsoNormal><b style='mso-bidi-font-weight:normal'><u><o:p><span
+ style='text-decoration:none'>&nbsp;</span></o:p></u></b></p>
+
+<p class=MsoNormal>Initially you will see just the base material of the terrain,
+which has been given the name Material 0.<span style='mso-spacerun:yes'> 
+</span>To add new materials to paint on your terrain, click the Add button to
+create a new material, then choose a Texture in the Material Settings.<span
+style='mso-spacerun:yes'>  </span>Except for the base, Materials can be removed
+from the palette and your terrain here as well.</p>
+
+<p class=MsoNormal><o:p>&nbsp;</o:p></p>
+
+<p class=MsoNormal><b style='mso-bidi-font-weight:normal'>Texture – </b>Use
+this to change the texture used for your material layer.<span
+style='mso-spacerun:yes'>  </span>You can also click the button with the
+ellipsis (…) to access another folder containing custom terrain textures.<span
+style='mso-spacerun:yes'>  </span>These textures must be in .tga format to be
+used by Radiant.</p>
+
+<p class=MsoNormal><o:p>&nbsp;</o:p></p>
+
+<p class=MsoNormal><b style='mso-bidi-font-weight:normal'>Collision</b> - You
+can also adjust the Collision type of the highlighted material.<span
+style='mso-spacerun:yes'>  </span>This will determine the sounds that the
+terrain will make when walked upon or shot, as well as determine the type of particles
+it will spawn when bullets strike it.</p>
+
+<p class=MsoNormal><o:p>&nbsp;</o:p></p>
+
+<p class=MsoNormal><b style='mso-bidi-font-weight:normal'>Texture Scale</b> –
+this will adjust the scaling of the material texture across your terrain.</p>
+
+<p class=MsoNormal><o:p>&nbsp;</o:p></p>
+
+<p class=MsoNormal><b style='mso-bidi-font-weight:normal'>Apply Material to
+Range</b> – this powerful function will allow you to quickly paint a specific
+material across your whole terrain based on height.<span
+style='mso-spacerun:yes'>  </span>You input a minimum and maximum height, then
+specify the amount (which is the opacity of the applied material).<span
+style='mso-spacerun:yes'>  </span>This is a great way to quickly apply muddy
+riverbed textures on the lower parts of terrain, grass in the middle latitude,
+and rock or snow on peaks and mountains.<span style='mso-spacerun:yes'> 
+</span>Also, by clicking the Everything button, you can quickly apply a single
+material to your entire terrain.</p>
+
+<p class=MsoNormal><b style='mso-bidi-font-weight:normal'><u><o:p><span
+ style='text-decoration:none'>&nbsp;</span></o:p></u></b></p>
+
+<p class=MsoNormal><b style='mso-bidi-font-weight:normal'><u>Blend Modes<o:p></o:p></u></b></p>
+
+<p class=MsoNormal><span style='mso-tab-count:1'>            </span>Blend modes
+modify how cut or copied sections of the terrain are reapplied when they are
+pasted onto the terrain.</p>
+
+<p class=MsoNormal><o:p>&nbsp;</o:p></p>
+
+<ul style='margin-top:0in' type=disc>
+ <li class=MsoNormal style='mso-list:l25 level1 lfo12;tab-stops:list .5in'><b
+     style='mso-bidi-font-weight:normal'>Additive</b> – this will sum the
+     height values of the selection with the height values of the terrain
+     underneath it.<span style='mso-spacerun:yes'>   </span></li>
+ <li class=MsoNormal style='mso-list:l25 level1 lfo12;tab-stops:list .5in'><b
+     style='mso-bidi-font-weight:normal'>Subtractive</b> – this will paste the
+     inverse of the selection onto the terrain.<span style='mso-spacerun:yes'> 
+     </span>So if you had a cut or copied a small bump and placed it on a flat
+     surface, it would created an depression.<span style='mso-spacerun:yes'> 
+     </span>Conversely, if you cut or copied a dent, it would create a bump
+     when placed.</li>
+ <li class=MsoNormal style='mso-list:l25 level1 lfo12;tab-stops:list .5in'><b
+     style='mso-bidi-font-weight:normal'>Blend</b> - This will sum the height
+     value of the terrain with the height value of the selection proportional
+     to the value of the Amount field.</li>
+ <li class=MsoNormal style='mso-list:l25 level1 lfo12;tab-stops:list .5in'><b
+     style='mso-bidi-font-weight:normal'>Average</b> – This will average the
+     height value of the terrain with the height value of the selection.<span
+     style='mso-spacerun:yes'>  </span></li>
+ <li class=MsoNormal style='mso-list:l25 level1 lfo12;tab-stops:list .5in'><b
+     style='mso-bidi-font-weight:normal'>Replace</b> – this will completely
+     disregard the current height value of the terrain in favor of the height
+     in the selection</li>
+</ul>
+
+<p class=MsoNormal><b style='mso-bidi-font-weight:normal'><u><o:p><span
+ style='text-decoration:none'>&nbsp;</span></o:p></u></b></p>
+
+<p class=MsoNormal><b style='mso-bidi-font-weight:normal'><u>Materials and
+Quads</u></b><u><o:p></o:p></u></p>
+
+<p class=MsoNormal><span style='mso-tab-count:1'>            </span>Although
+the new terrain system is powerful, it does have limitations.<span
+style='mso-spacerun:yes'>  </span>Within a quad, you can only have <b
+style='mso-bidi-font-weight:normal'>3 textures applied at once</b>.<span
+style='mso-spacerun:yes'>  </span>The terrain editor is designed to not allow
+you to paint in excess of this limit.</p>
+
+<p class=MsoNormal style='text-indent:.5in'>First, create a terrain and add
+several materials to your palette.<span style='mso-spacerun:yes'>  </span>Now,
+select one of your materials other than Material 0.<span
+style='mso-spacerun:yes'>  </span>If you attempt to paint it onto a quad,
+you’ll see a red texture, meaning that the material is locked out from the
+quad.<span style='mso-spacerun:yes'>  </span>In order to paint the material,
+you have to enable it for that quad.<span style='mso-spacerun:yes'> 
+</span>This can be done by holding down SHIFT+RIGHT CLICK, which brings up a
+small list displaying all of the materials in your level palette.<span
+style='mso-spacerun:yes'>  </span>A check mark next to the material means it
+has been enabled in the current quad.<span style='mso-spacerun:yes'> 
+</span>Place a check mark next to your selected material and start painting.</p>
+
+<p class=MsoNormal><span style='mso-tab-count:1'>            </span>Note, you
+can also use this same method to disable materials from a quad.<span
+style='mso-spacerun:yes'>  </span>Keep in mind, however, that the texture data
+is still there, just not displayed (verify this by disabling a quad’s material
+then reenabling it).<span style='mso-spacerun:yes'>  </span>In order to truly
+removed texture data from a quad, you’ll need to use Texture Unpaint.</p>
+
+<p class=MsoNormal><o:p>&nbsp;</o:p></p>
+
+<p class=MsoNormal><b style='mso-bidi-font-weight:normal'><u>Global Modifiers<o:p></o:p></u></b></p>
+
+<p class=MsoNormal><b style='mso-bidi-font-weight:normal'><u><o:p><span
+ style='text-decoration:none'>&nbsp;</span></o:p></u></b></p>
+
+<p class=MsoNormal><b style='mso-bidi-font-weight:normal'>Fix Cracks – </b>As
+the resolutions of individual quads are raised and lowered, discrepancies in
+the resolutions of adjacent quads cause gaps or cracks to appear.<span
+style='mso-spacerun:yes'>  </span>Hitting this button will automatically modify
+height values along quad borders to stitch these gaps up.</p>
+
+<p class=MsoNormal><b style='mso-bidi-font-weight:normal'><u><o:p><span
+ style='text-decoration:none'>&nbsp;</span></o:p></u></b></p>
+
+<p class=MsoNormal><b style='mso-bidi-font-weight:normal'>Smooth</b> – this
+will soften the differences in terrain by the percentage specified</p>
+
+<p class=MsoNormal><o:p>&nbsp;</o:p></p>
+
+<p class=MsoNormal><b style='mso-bidi-font-weight:normal'>Lighting – </b>This
+will allow you to specify how your terrain is lit.<span
+style='mso-spacerun:yes'>  </span>Note that this will also updated the
+worldspawn entity parameters for your level</p>
+
+<p class=MsoNormal><o:p>&nbsp;</o:p></p>
+
+<p class=MsoNormal><b style='mso-bidi-font-weight:normal'><!--[if gte vml 1]><v:shape
+ id="_x0000_i1028" type="#_x0000_t75" style='width:408pt;height:222pt'>
+ <v:imagedata src="mohpa_radiant_overview_files/image007.jpg" o:title="Radiant Terrain Lighting"/>
+</v:shape><![endif]--><![if !vml]><img width=544 height=296
+src="mohpa_radiant_overview_files/image008.jpg" v:shapes="_x0000_i1028"><![endif]><u><o:p></o:p></u></b></p>
+
+<p class=MsoNormal><b style='mso-bidi-font-weight:normal'><u><o:p><span
+ style='text-decoration:none'>&nbsp;</span></o:p></u></b></p>
+
+<ul style='margin-top:0in' type=disc>
+ <li class=MsoNormal style='mso-list:l10 level1 lfo28;tab-stops:list .5in'><b
+     style='mso-bidi-font-weight:normal'>Sun Color</b> – <a name="OLE_LINK4">the
+     RGB values representing the color of the global sunlight.<span
+     style='mso-spacerun:yes'>  </span>Hit the ellipsis button (…) to bring up a
+     color picker dialogue.</a></li>
+ <li class=MsoNormal style='mso-list:l10 level1 lfo28;tab-stops:list .5in'><b
+     style='mso-bidi-font-weight:normal'>Ambient Light Color</b> - the RGB
+     values representing the color of the ambient light.<span
+     style='mso-spacerun:yes'>  </span>Hit the ellipsis button (…) to bring up
+     a color picker dialogue.</li>
+ <li class=MsoNormal style='mso-list:l10 level1 lfo28;tab-stops:list .5in'><b
+     style='mso-bidi-font-weight:normal'>Sun Rotation</b> – What direction the
+     sunlight is coming from </li>
+ <li class=MsoNormal style='mso-list:l10 level1 lfo28;tab-stops:list .5in'><b
+     style='mso-bidi-font-weight:normal'>Sun Elevation</b> – how high (in
+     degrees) above the horizon the sun is pointing (not where the sunlight is
+     coming from).<span style='mso-spacerun:yes'>  </span>A value of 0 means
+     the sunlight is pointing north, which is oriented to the right when you
+     are looking at your terrain from the top view.</li>
+ <li class=MsoNormal style='mso-list:l10 level1 lfo28;tab-stops:list .5in'><b
+     style='mso-bidi-font-weight:normal'>Terrain Shadows</b> – must be enable
+     to apply Gaussian blur to the terrain lightmap (any value more than 0
+     takes more time to process)</li>
+ <li class=MsoNormal style='mso-list:l10 level1 lfo28;tab-stops:list .5in'><b
+     style='mso-bidi-font-weight:normal'>Explain</b> – brings up a dialogue box
+     explaining all the parameters</li>
+ <li class=MsoNormal style='mso-list:l10 level1 lfo28;tab-stops:list .5in'><b
+     style='mso-bidi-font-weight:normal'>Run</b> – process the lightmap (this
+     may take some time)</li>
+ <li class=MsoNormal style='mso-list:l10 level1 lfo28;tab-stops:list .5in'><b
+     style='mso-bidi-font-weight:normal'>Cancel</b> – close the window.</li>
+</ul>
+
+<p class=MsoNormal><b style='mso-bidi-font-weight:normal'><u><o:p><span
+ style='text-decoration:none'>&nbsp;</span></o:p></u></b></p>
+
+<p class=MsoNormal><b style='mso-bidi-font-weight:normal'>Sync Heightfield to
+Mesh – </b>just like the cursor brush type, this will discard the high
+resolution heightmap data used to define the entire terrain and replace it with
+data at the resolution actually displayed in the editor.</p>
+
+<p class=MsoNormal><b style='mso-bidi-font-weight:normal'><u><o:p><span
+ style='text-decoration:none'>&nbsp;</span></o:p></u></b></p>
+
+<p class=MsoNormal><a name="OLE_LINK5"><b style='mso-bidi-font-weight:normal'>Global
+Increase Resolution</b> – Increases the resolution of all quads in the terrain</a></p>
+
+<p class=MsoNormal><o:p>&nbsp;</o:p></p>
+
+<p class=MsoNormal><b style='mso-bidi-font-weight:normal'>Global Decrease
+Resolution</b> – Decreases the resolution of all quads in the terrain</p>
+
+<p class=MsoNormal><b style='mso-bidi-font-weight:normal'>Scale</b> – use this
+to modify the X, Y, and Z dimensions of your terrain.<span
+style='mso-spacerun:yes'>  </span>Use the conversion chart below to determine
+your desired terrain dimensions</p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<table class=MsoTableSimple2 border=0 cellspacing=0 cellpadding=0 width=609
+ style='width:456.4pt;border-collapse:collapse;mso-yfti-tbllook:32;mso-padding-alt:
+ 0in 5.4pt 0in 5.4pt'>
+ <tr style='mso-yfti-irow:-1;height:13.25pt'>
+  <td width=152 valign=top style='width:114.1pt;border:none;border-bottom:solid black 1.5pt;
+  padding:0in 5.4pt 0in 5.4pt;height:13.25pt'>
+  <p class=MsoNormal align=center style='text-align:center;mso-yfti-cnfc:1'><b><span
+  style='font-size:10.0pt;font-family:Arial'>Old Terrain Size<o:p></o:p></span></b></p>
+  </td>
+  <td width=152 valign=top style='width:114.1pt;border:none;border-bottom:solid black 1.5pt;
+  padding:0in 5.4pt 0in 5.4pt;height:13.25pt'>
+  <p class=MsoNormal align=center style='text-align:center;mso-yfti-cnfc:1'><b><span
+  style='font-size:10.0pt;font-family:Arial'>New Terrain Scale<o:p></o:p></span></b></p>
+  </td>
+  <td width=152 valign=top style='width:114.1pt;border:none;border-bottom:solid black 1.5pt;
+  padding:0in 5.4pt 0in 5.4pt;height:13.25pt'>
+  <p class=MsoNormal align=center style='text-align:center;mso-yfti-cnfc:1'><b><span
+  style='font-size:10.0pt;font-family:Arial'>Size in Game Units<o:p></o:p></span></b></p>
+  </td>
+  <td width=152 valign=top style='width:114.1pt;border:none;border-bottom:solid black 1.5pt;
+  padding:0in 5.4pt 0in 5.4pt;height:13.25pt'>
+  <p class=MsoNormal align=center style='text-align:center;mso-yfti-cnfc:1'><b><span
+  style='font-size:10.0pt;font-family:Arial'>Size in Meters<o:p></o:p></span></b></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:0;height:13.25pt'>
+  <td width=152 valign=top style='width:114.1pt;padding:0in 5.4pt 0in 5.4pt;
+  height:13.25pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span
+  style='font-size:10.0pt;font-family:Arial'>512<o:p></o:p></span></p>
+  </td>
+  <td width=152 valign=top style='width:114.1pt;padding:0in 5.4pt 0in 5.4pt;
+  height:13.25pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span
+  style='font-size:10.0pt;font-family:Arial'>4<o:p></o:p></span></p>
+  </td>
+  <td width=152 valign=top style='width:114.1pt;padding:0in 5.4pt 0in 5.4pt;
+  height:13.25pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span
+  style='font-size:10.0pt;font-family:Arial'>8192<o:p></o:p></span></p>
+  </td>
+  <td width=152 valign=top style='width:114.1pt;padding:0in 5.4pt 0in 5.4pt;
+  height:13.25pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span
+  style='font-size:10.0pt;font-family:Arial'>163</span></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:1;height:14.15pt'>
+  <td width=152 valign=top style='width:114.1pt;padding:0in 5.4pt 0in 5.4pt;
+  height:14.15pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span
+  style='font-size:10.0pt;font-family:Arial'>768<o:p></o:p></span></p>
+  </td>
+  <td width=152 valign=top style='width:114.1pt;padding:0in 5.4pt 0in 5.4pt;
+  height:14.15pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span
+  style='font-size:10.0pt;font-family:Arial'>6<o:p></o:p></span></p>
+  </td>
+  <td width=152 valign=top style='width:114.1pt;padding:0in 5.4pt 0in 5.4pt;
+  height:14.15pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span
+  style='font-size:10.0pt;font-family:Arial'>12288<o:p></o:p></span></p>
+  </td>
+  <td width=152 valign=top style='width:114.1pt;padding:0in 5.4pt 0in 5.4pt;
+  height:14.15pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span
+  style='font-size:10.0pt;font-family:Arial'>246</span></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:2;height:13.25pt'>
+  <td width=152 valign=top style='width:114.1pt;padding:0in 5.4pt 0in 5.4pt;
+  height:13.25pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span
+  style='font-size:10.0pt;font-family:Arial'>1024<o:p></o:p></span></p>
+  </td>
+  <td width=152 valign=top style='width:114.1pt;padding:0in 5.4pt 0in 5.4pt;
+  height:13.25pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span
+  style='font-size:10.0pt;font-family:Arial'>8<o:p></o:p></span></p>
+  </td>
+  <td width=152 valign=top style='width:114.1pt;padding:0in 5.4pt 0in 5.4pt;
+  height:13.25pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span
+  style='font-size:10.0pt;font-family:Arial'>16384<o:p></o:p></span></p>
+  </td>
+  <td width=152 valign=top style='width:114.1pt;padding:0in 5.4pt 0in 5.4pt;
+  height:13.25pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span
+  style='font-size:10.0pt;font-family:Arial'>328</span></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:3;height:13.25pt'>
+  <td width=152 valign=top style='width:114.1pt;padding:0in 5.4pt 0in 5.4pt;
+  height:13.25pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span
+  style='font-size:10.0pt;font-family:Arial'>1536<o:p></o:p></span></p>
+  </td>
+  <td width=152 valign=top style='width:114.1pt;padding:0in 5.4pt 0in 5.4pt;
+  height:13.25pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span
+  style='font-size:10.0pt;font-family:Arial'>12<o:p></o:p></span></p>
+  </td>
+  <td width=152 valign=top style='width:114.1pt;padding:0in 5.4pt 0in 5.4pt;
+  height:13.25pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span
+  style='font-size:10.0pt;font-family:Arial'>24576<o:p></o:p></span></p>
+  </td>
+  <td width=152 valign=top style='width:114.1pt;padding:0in 5.4pt 0in 5.4pt;
+  height:13.25pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span
+  style='font-size:10.0pt;font-family:Arial'>491</span></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:4;height:14.15pt'>
+  <td width=152 valign=top style='width:114.1pt;padding:0in 5.4pt 0in 5.4pt;
+  height:14.15pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span
+  style='font-size:10.0pt;font-family:Arial'>2048<o:p></o:p></span></p>
+  </td>
+  <td width=152 valign=top style='width:114.1pt;padding:0in 5.4pt 0in 5.4pt;
+  height:14.15pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span
+  style='font-size:10.0pt;font-family:Arial'>16<o:p></o:p></span></p>
+  </td>
+  <td width=152 valign=top style='width:114.1pt;padding:0in 5.4pt 0in 5.4pt;
+  height:14.15pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span
+  style='font-size:10.0pt;font-family:Arial'>32768<o:p></o:p></span></p>
+  </td>
+  <td width=152 valign=top style='width:114.1pt;padding:0in 5.4pt 0in 5.4pt;
+  height:14.15pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span
+  style='font-size:10.0pt;font-family:Arial'>655<o:p></o:p></span></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:5;height:13.25pt'>
+  <td width=152 valign=top style='width:114.1pt;padding:0in 5.4pt 0in 5.4pt;
+  height:13.25pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span
+  style='font-size:10.0pt;font-family:Arial'>4096<o:p></o:p></span></p>
+  </td>
+  <td width=152 valign=top style='width:114.1pt;padding:0in 5.4pt 0in 5.4pt;
+  height:13.25pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span
+  style='font-size:10.0pt;font-family:Arial'>32<o:p></o:p></span></p>
+  </td>
+  <td width=152 valign=top style='width:114.1pt;padding:0in 5.4pt 0in 5.4pt;
+  height:13.25pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span
+  style='font-size:10.0pt;font-family:Arial'>65536<o:p></o:p></span></p>
+  </td>
+  <td width=152 valign=top style='width:114.1pt;padding:0in 5.4pt 0in 5.4pt;
+  height:13.25pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span
+  style='font-size:10.0pt;font-family:Arial'>1311<o:p></o:p></span></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:6;height:13.25pt'>
+  <td width=152 valign=top style='width:114.1pt;padding:0in 5.4pt 0in 5.4pt;
+  height:13.25pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span
+  style='font-size:10.0pt;font-family:Arial'>8192<o:p></o:p></span></p>
+  </td>
+  <td width=152 valign=top style='width:114.1pt;padding:0in 5.4pt 0in 5.4pt;
+  height:13.25pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span
+  style='font-size:10.0pt;font-family:Arial'>64<o:p></o:p></span></p>
+  </td>
+  <td width=152 valign=top style='width:114.1pt;padding:0in 5.4pt 0in 5.4pt;
+  height:13.25pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span
+  style='font-size:10.0pt;font-family:Arial'>131072<o:p></o:p></span></p>
+  </td>
+  <td width=152 valign=top style='width:114.1pt;padding:0in 5.4pt 0in 5.4pt;
+  height:13.25pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span
+  style='font-size:10.0pt;font-family:Arial'>2621</span></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:7;mso-yfti-lastrow:yes;height:14.15pt'>
+  <td width=152 valign=top style='width:114.1pt;padding:0in 5.4pt 0in 5.4pt;
+  height:14.15pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span
+  style='font-size:10.0pt;font-family:Arial'>16384<o:p></o:p></span></p>
+  </td>
+  <td width=152 valign=top style='width:114.1pt;padding:0in 5.4pt 0in 5.4pt;
+  height:14.15pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span
+  style='font-size:10.0pt;font-family:Arial'>128<o:p></o:p></span></p>
+  </td>
+  <td width=152 valign=top style='width:114.1pt;padding:0in 5.4pt 0in 5.4pt;
+  height:14.15pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span
+  style='font-size:10.0pt;font-family:Arial'>262144<o:p></o:p></span></p>
+  </td>
+  <td width=152 valign=top style='width:114.1pt;padding:0in 5.4pt 0in 5.4pt;
+  height:14.15pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span
+  style='font-size:10.0pt;font-family:Arial'>5243</span></p>
+  </td>
+ </tr>
+</table>
+
+<p class=MsoNormal><o:p>&nbsp;</o:p></p>
+
+<p class=MsoNormal><b style='mso-bidi-font-weight:normal'><u>Terrain Rendering
+Options<o:p></o:p></u></b></p>
+
+<p class=MsoNormal><b style='mso-bidi-font-weight:normal'><o:p>&nbsp;</o:p></b></p>
+
+<p class=MsoNormal><b style='mso-bidi-font-weight:normal'>Textured – </b>Shows
+the terrain with textures</p>
+
+<p class=MsoNormal><b style='mso-bidi-font-weight:normal'>Shaded</b> – Shows
+the current heightmap data</p>
+
+<p class=MsoNormal><b style='mso-bidi-font-weight:normal'>None</b> – Removes
+terrain from the view</p>
+
+<p class=MsoNormal><b style='mso-bidi-font-weight:normal'>Wireframe – </b>Shows
+the wireframe of the terrain</p>
+
+<p class=MsoNormal><b style='mso-bidi-font-weight:normal'>Normals</b> – Shows
+the perpendicular vectors of each vertex of the terrain</p>
+
+<p class=MsoNormal><b style='mso-bidi-font-weight:normal'>Backface Cull</b> –
+Toggles whether polys under the terrain are displayed or not </p>
+
+<p class=MsoNormal><b style='mso-bidi-font-weight:normal'>Quad Tree</b> –
+displays the borders of the terrain quads (useful for enabling and painting materials)</p>
+
+<p class=MsoNormal><b style='mso-bidi-font-weight:normal'><u><o:p><span
+ style='text-decoration:none'>&nbsp;</span></o:p></u></b></p>
+
+<p class=MsoNormal><b style='mso-bidi-font-weight:normal'><u>2D Rendering
+Options</u></b><u><o:p></o:p></u></p>
+
+<p class=MsoNormal>On the toolbar, there is a new button called Terrain in
+2D.<span style='mso-spacerun:yes'>  </span>It looks like this.</p>
+
+<p class=MsoNormal><o:p>&nbsp;</o:p></p>
+
+<p class=MsoNormal><!--[if gte vml 1]><v:shape id="_x0000_i1029" type="#_x0000_t75"
+ style='width:3in;height:33.75pt'>
+ <v:imagedata src="mohpa_radiant_overview_files/image009.jpg" o:title="2DTerrain Button"/>
+</v:shape><![endif]--><![if !vml]><img width=288 height=45
+src="mohpa_radiant_overview_files/image010.jpg" v:shapes="_x0000_i1029"><![endif]></p>
+
+<p class=MsoNormal><o:p>&nbsp;</o:p></p>
+
+<p class=MsoNormal>Clicking it multiple times will toggle the terrain in the 2D
+view between None, Wireframe, Textured, Shaded, and Quad Tree.<span
+style='mso-spacerun:yes'>  </span>It can also be accessed via hotkey
+(CTRL+SHIFT+T)</p>
+
+<p class=MsoNormal><o:p>&nbsp;</o:p></p>
+
+<p class=MsoNormal><b style='mso-bidi-font-weight:normal'><u>3D Rendering
+Options<o:p></o:p></u></b></p>
+
+<p class=MsoNormal><u><o:p><span style='text-decoration:none'>&nbsp;</span></o:p></u></p>
+
+<p class=MsoNormal>You can optimize your 3D Preview window by culling out
+objects within a certain range.<span style='mso-spacerun:yes'>  </span>This is
+accomplished by clicking on the Cubic Clipping button on the toolbar to
+activate the Cubic Clipping mode.<span style='mso-spacerun:yes'>   </span></p>
+
+<p class=MsoNormal><o:p>&nbsp;</o:p></p>
+
+<p class=MsoNormal><!--[if gte vml 1]><v:shape id="_x0000_i1030" type="#_x0000_t75"
+ style='width:135pt;height:30.75pt'>
+ <v:imagedata src="mohpa_radiant_overview_files/image011.jpg" o:title="image021"/>
+</v:shape><![endif]--><![if !vml]><img width=180 height=41
+src="mohpa_radiant_overview_files/image012.jpg" v:shapes="_x0000_i1030"><![endif]></p>
+
+<p class=MsoNormal><o:p>&nbsp;</o:p></p>
+
+<p class=MsoNormal>Now you can adjust the range in which you want objects to be
+clipped out by using the hotkeys SHIFT + pressing [ to decrease the radius or ]
+to increase the radius.</p>
+
+<p class=MsoNormal><o:p>&nbsp;</o:p></p>
+
+<p class=MsoNormal>MOHRadiant now supports collision previewing, which allows
+the user to view collision attached to models used in your level.<span
+style='mso-spacerun:yes'>  </span>To enable this option, go to the toolbar and
+hit the View Collision button.</p>
+
+<p class=MsoNormal><o:p>&nbsp;</o:p></p>
+
+<p class=MsoNormal><!--[if gte vml 1]><v:shape id="_x0000_i1031" type="#_x0000_t75"
+ style='width:135pt;height:30.75pt'>
+ <v:imagedata src="mohpa_radiant_overview_files/image013.jpg" o:title="image022"/>
+</v:shape><![endif]--><![if !vml]><img width=180 height=41
+src="mohpa_radiant_overview_files/image014.jpg" v:shapes="_x0000_i1031"><![endif]></p>
+
+<p class=MsoNormal><o:p>&nbsp;</o:p></p>
+
+<p class=MsoNormal>Static model collision will appear as green in the 3D
+Preview window, and models which have physic attributes attached to them will
+have gray collision.<b style='mso-bidi-font-weight:normal'><u><o:p></o:p></u></b></p>
+
+<p class=MsoNormal><b style='mso-bidi-font-weight:normal'><u><o:p><span
+ style='text-decoration:none'>&nbsp;</span></o:p></u></b></p>
+
+<p class=MsoNormal><b style='mso-bidi-font-weight:normal'><u><o:p><span
+ style='text-decoration:none'>&nbsp;</span></o:p></u></b></p>
+
+<p class=MsoNormal><b style='mso-bidi-font-weight:normal'><u>Selection Tab
+Tools<o:p></o:p></u></b></p>
+
+<p class=MsoNormal><span style='mso-tab-count:1'>            </span>The
+Selection tab of the Terrain Editor allows the user to hide and subsequently
+show individual polygons of the terrain. </p>
+
+<p class=MsoNormal><!--[if gte vml 1]><v:shape id="_x0000_i1032" type="#_x0000_t75"
+ style='width:279.75pt;height:7in'>
+ <v:imagedata src="mohpa_radiant_overview_files/image015.jpg" o:title="New Radiant Terrain 2"/>
+</v:shape><![endif]--><![if !vml]><img width=373 height=672
+src="mohpa_radiant_overview_files/image015.jpg" v:shapes="_x0000_i1032"><![endif]></p>
+
+<p class=MsoNormal><b style='mso-bidi-font-weight:normal'><u><o:p><span
+ style='text-decoration:none'>&nbsp;</span></o:p></u></b></p>
+
+<p class=MsoNormal><b style='mso-bidi-font-weight:normal'><u>Selection Mode
+Functions<o:p></o:p></u></b></p>
+
+<p class=MsoNormal style='text-indent:.5in'>At any time when you are editing
+terrain, you can hold down the SHIFT + Left Mouse Button and drag the mouse
+over the terrain to select individual polygons.<span style='mso-spacerun:yes'> 
+</span>Individually selected vertices will be highlighted in red.<span
+style='mso-spacerun:yes'>  </span>Polys can either be chosen in Triangle or
+Quad mode.<span style='mso-spacerun:yes'>  </span>It should be noted that a quad
+in this context differs from our previous definition of a terrain quad, in this
+instance, it means 2 polygons defined by 4 vertices.<span
+style='mso-spacerun:yes'>   </span></p>
+
+<p class=MsoNormal><b style='mso-bidi-font-weight:normal'><o:p>&nbsp;</o:p></b></p>
+
+<ul style='margin-top:0in' type=disc>
+ <li class=MsoNormal style='mso-list:l1 level1 lfo31;tab-stops:list .5in'><b
+     style='mso-bidi-font-weight:normal'>Hide Quad – </b><a name="OLE_LINK6">This
+     will hide polygons, creating holes in your terrain.<span
+     style='mso-spacerun:yes'>  </span>Only works when polys are selected in
+     Quad Mode.</a></li>
+ <li class=MsoNormal style='mso-list:l1 level1 lfo31;tab-stops:list .5in'><b
+     style='mso-bidi-font-weight:normal'>Show Quad - </b>This will show
+     previously hidden polygons, which can still be selected with SHIFT+Left
+     Mouse Button.<span style='mso-spacerun:yes'>  </span>Only works when
+     hidden polys are selected in Quad Mode.</li>
+ <li class=MsoNormal style='mso-list:l1 level1 lfo31;tab-stops:list .5in'><b
+     style='mso-bidi-font-weight:normal'>Select by Vertices – </b>currently not
+     available<b style='mso-bidi-font-weight:normal'> </b></li>
+ <li class=MsoNormal style='mso-list:l1 level1 lfo31;tab-stops:list .5in'><b
+     style='mso-bidi-font-weight:normal'>Select by Triangles – </b>This will
+     select individual polygons and the 3 vertices that define them.<span
+     style='mso-spacerun:yes'>  </span>Not currently particularly useful as
+     Hide and Show Quad will not work with polys selected using this method.</li>
+ <li class=MsoNormal style='mso-list:l1 level1 lfo31;tab-stops:list .5in'><b
+     style='mso-bidi-font-weight:normal'>Select by Quads – </b>This selects
+     pairs of polys and the 4 vertices that define them.</li>
+</ul>
+
+<p class=MsoNormal><b style='mso-bidi-font-weight:normal'><o:p>&nbsp;</o:p></b></p>
+
+<p class=MsoNormal><b style='mso-bidi-font-weight:normal'><u>Selection Sets
+&amp; Stamping<o:p></o:p></u></b></p>
+
+<p class=MsoNormal><span style='mso-tab-count:1'>            </span>Selection
+Sets are an alternative to choosing areas of terrain for copying and
+pasting.<span style='mso-spacerun:yes'>  </span>Instead of being defined by the
+circular cursor, selection sets are determined by selecting individual
+polygons.<span style='mso-spacerun:yes'>  </span></p>
+
+<p class=MsoNormal style='text-indent:.5in'>First, select an area of polys in
+either the 2D or 3D views using SHIFT + Left Mouse Button.<span
+style='mso-spacerun:yes'>  </span>Then, enter a name in the text field and
+click Create.<span style='mso-spacerun:yes'>  </span>This will create a small
+piece of terrain, called a stamp, in the maximum rectangular dimensions of the
+vertices you have selected. <span style='mso-spacerun:yes'> </span>Move the
+mouse back to your terrain then select the Paste brushtype - you’ll see your
+terrain cursor along with a red rectangle in the shape of your stamp.<span
+style='mso-spacerun:yes'>  </span>Apply the stamp to the terrain by clicking
+the left mouse button.</p>
+
+<p class=MsoNormal><span style='mso-tab-count:1'>            </span>You can
+create as many stamps as you like as they are persistent and associated with
+your mapfile, allowing you to create and maintain a palette of terrain shapes
+for future use.<span style='mso-spacerun:yes'>  </span>However, stamps can only
+be applied additively.</p>
+
+<p class=MsoNormal><o:p>&nbsp;</o:p></p>
+
+<p class=MsoNormal><b style='mso-bidi-font-weight:normal'>Create – </b>Creates
+a stamp with the given name.<span style='mso-spacerun:yes'>  </span>Can be used
+to overwrite the contents of the stamp if the name is unchanged</p>
+
+<p class=MsoNormal><b style='mso-bidi-font-weight:normal'>Delete – </b>Remove a
+stamp from the total group of selection sets</p>
+
+<p class=MsoNormal><b style='mso-bidi-font-weight:normal'>Rename</b> – Rename a
+stamp</p>
+
+<p class=MsoNormal><b style='mso-bidi-font-weight:normal'>Save Current – </b>Saves
+your currently selected stamp</p>
+
+<p class=MsoNormal><o:p>&nbsp;</o:p></p>
+
+<p class=MsoNormal><span style='mso-tab-count:1'>            </span>Also note
+that there is a new selection type called Select Terrain Via Brush.<span
+style='mso-spacerun:yes'>  </span>Simply create a brush then right click, and
+choose Select-&gt;Select Terrain Via Brush.<span style='mso-spacerun:yes'> 
+</span>This will select all the vertices underneath the terrain.<span
+style='mso-spacerun:yes'>  </span>This is a great way to select large areas for
+stamping, but currently it does not allow the terrain to be hidden in this
+fashion</p>
+
+<p class=MsoNormal><o:p>&nbsp;</o:p></p>
+
+<p class=MsoNormal><b style='mso-bidi-font-weight:normal'><u>Undoing Terrain
+Operations (CTRL+SHIFT+Z)<o:p></o:p></u></b></p>
+
+<p class=MsoNormal>Any terrain alteration can be undone by selecting
+Edit-&gt;Undo Terrain Operation or pressing CTRL+SHIFT+Z.</p>
+
+<p class=MsoNormal><o:p>&nbsp;</o:p></p>
+
+<p class=MsoNormal><b style='mso-bidi-font-weight:normal'><u>Other Shortcuts<o:p></o:p></u></b></p>
+
+<p class=MsoNormal>The following keys can be reassigned by overriding them in
+radiant.ini</p>
+
+<p class=MsoNormal>(you can also find these commands listed in the
+Help-&gt;Commands list).</p>
+
+<p class=MsoNormal><o:p>&nbsp;</o:p></p>
+
+<p class=MsoNormal><span style='font-size:10.0pt'><span style='mso-tab-count:
+1'>                </span></span></p>
+
+<table class=MsoTableSimple2 border=0 cellspacing=0 cellpadding=0
+ style='border-collapse:collapse;mso-yfti-tbllook:480;mso-padding-alt:0in 5.4pt 0in 5.4pt'>
+ <tr style='mso-yfti-irow:-1'>
+  <td width=396 valign=top style='width:297.1pt;border-top:none;border-left:
+  none;border-bottom:solid black 1.5pt;border-right:solid black 1.5pt;
+  padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal style='mso-yfti-cnfc:5'><b>FUNCTION<o:p></o:p></b></p>
+  </td>
+  <td width=194 valign=top style='width:145.7pt;border:none;border-bottom:solid black 1.5pt;
+  padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal style='mso-yfti-cnfc:265'><b>SHORTCUT<o:p></o:p></b></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:0'>
+  <td width=396 valign=top style='width:297.1pt;border:none;border-right:solid black 1.5pt;
+  padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal style='mso-yfti-cnfc:4'><b>TerrainSelectHeightCursor <o:p></o:p></b></p>
+  </td>
+  <td width=194 valign=top style='width:145.7pt;border:none;mso-border-left-alt:
+  solid black .75pt;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal style='mso-yfti-cnfc:8'><b>Control + 1<o:p></o:p></b></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:1'>
+  <td width=396 valign=top style='width:297.1pt;border:none;border-right:solid black 1.5pt;
+  padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal style='mso-yfti-cnfc:4'><b>TerrainSelectBringToHeightCursor
+  <span style='mso-tab-count:1'>            </span><o:p></o:p></b></p>
+  </td>
+  <td width=194 valign=top style='width:145.7pt;border:none;mso-border-left-alt:
+  solid black .75pt;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal style='mso-yfti-cnfc:8'><b>Control + 2<o:p></o:p></b></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:2'>
+  <td width=396 valign=top style='width:297.1pt;border:none;border-right:solid black 1.5pt;
+  padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal style='mso-yfti-cnfc:4'><b>TerrainSelectSetToHeightCursor <span
+  style='mso-tab-count:2'>                </span><o:p></o:p></b></p>
+  </td>
+  <td width=194 valign=top style='width:145.7pt;border:none;mso-border-left-alt:
+  solid black .75pt;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal style='mso-yfti-cnfc:8'><b>Control + 3<o:p></o:p></b></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:3'>
+  <td width=396 valign=top style='width:297.1pt;border:none;border-right:solid black 1.5pt;
+  padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal style='mso-yfti-cnfc:4'><b>TerrainSelectSmoothCursor <span
+  style='mso-tab-count:2'>                        </span><o:p></o:p></b></p>
+  </td>
+  <td width=194 valign=top style='width:145.7pt;border:none;mso-border-left-alt:
+  solid black .75pt;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal style='mso-yfti-cnfc:8'><b>Control + 4<o:p></o:p></b></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:4'>
+  <td width=396 valign=top style='width:297.1pt;border:none;border-right:solid black 1.5pt;
+  padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal style='mso-yfti-cnfc:4'><b>TerrainSelectNoiseCursor <span
+  style='mso-tab-count:3'>                           </span><o:p></o:p></b></p>
+  </td>
+  <td width=194 valign=top style='width:145.7pt;border:none;mso-border-left-alt:
+  solid black .75pt;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal style='mso-yfti-cnfc:8'><b>Control + 5<o:p></o:p></b></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:5'>
+  <td width=396 valign=top style='width:297.1pt;border:none;border-right:solid black 1.5pt;
+  padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal style='mso-yfti-cnfc:4'><b>TerrainSelectPaintCursor<span
+  style='mso-spacerun:yes'>  </span><span style='mso-tab-count:3'>                           </span><span
+  style='mso-spacerun:yes'> </span><o:p></o:p></b></p>
+  </td>
+  <td width=194 valign=top style='width:145.7pt;border:none;mso-border-left-alt:
+  solid black .75pt;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal style='mso-yfti-cnfc:8'><b>Control + 6<o:p></o:p></b></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:6'>
+  <td width=396 valign=top style='width:297.1pt;border:none;border-right:solid black 1.5pt;
+  padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal style='mso-yfti-cnfc:4'><b>TerrainSelectUnpainCursor <span
+  style='mso-tab-count:1'> </span><span style='mso-spacerun:yes'> </span><o:p></o:p></b></p>
+  </td>
+  <td width=194 valign=top style='width:145.7pt;border:none;mso-border-left-alt:
+  solid black .75pt;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal style='mso-yfti-cnfc:8'><b>Control + 7<o:p></o:p></b></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:7'>
+  <td width=396 valign=top style='width:297.1pt;border:none;border-right:solid black 1.5pt;
+  padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal style='mso-yfti-cnfc:4'><b>TerrainSelectIncResCursor <span
+  style='mso-tab-count:2'>             </span><span
+  style='mso-spacerun:yes'> </span><o:p></o:p></b></p>
+  </td>
+  <td width=194 valign=top style='width:145.7pt;border:none;mso-border-left-alt:
+  solid black .75pt;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal style='mso-yfti-cnfc:8'><b>Control + 8<o:p></o:p></b></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:8'>
+  <td width=396 valign=top style='width:297.1pt;border:none;border-right:solid black 1.5pt;
+  padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal style='mso-yfti-cnfc:4'><b>TerrainSelectDecResCursor <span
+  style='mso-tab-count:2'>                       </span><span
+  style='mso-spacerun:yes'> </span><o:p></o:p></b></p>
+  </td>
+  <td width=194 valign=top style='width:145.7pt;border:none;mso-border-left-alt:
+  solid black .75pt;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal style='mso-yfti-cnfc:8'><b>Control + 9<o:p></o:p></b></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:9'>
+  <td width=396 valign=top style='width:297.1pt;border:none;border-right:solid black 1.5pt;
+  padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal style='mso-yfti-cnfc:4'><b>TerrainSelectCutCursor<span
+  style='mso-spacerun:yes'>    </span><span style='mso-tab-count:3'>                            </span><span
+  style='mso-spacerun:yes'> </span><o:p></o:p></b></p>
+  </td>
+  <td width=194 valign=top style='width:145.7pt;border:none;mso-border-left-alt:
+  solid black .75pt;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal style='mso-yfti-cnfc:8'><b>Control + X<o:p></o:p></b></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:10'>
+  <td width=396 valign=top style='width:297.1pt;border:none;border-right:solid black 1.5pt;
+  padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal style='mso-yfti-cnfc:4'><b>TerrainSelectCopyCursor<span
+  style='mso-spacerun:yes'>   </span><span style='mso-tab-count:2'>              </span><span
+  style='mso-spacerun:yes'> </span><o:p></o:p></b></p>
+  </td>
+  <td width=194 valign=top style='width:145.7pt;border:none;mso-border-left-alt:
+  solid black .75pt;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal style='mso-yfti-cnfc:8'><b>Control + C<o:p></o:p></b></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:11'>
+  <td width=396 valign=top style='width:297.1pt;border:none;border-right:solid black 1.5pt;
+  padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal style='mso-yfti-cnfc:4'><b>TerrainSelectPasteCursor<span
+  style='mso-spacerun:yes'>  </span><span style='mso-tab-count:3'>                           </span><span
+  style='mso-spacerun:yes'> </span><o:p></o:p></b></p>
+  </td>
+  <td width=194 valign=top style='width:145.7pt;border:none;mso-border-left-alt:
+  solid black .75pt;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal style='mso-yfti-cnfc:8'><b>Control + V<o:p></o:p></b></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:12'>
+  <td width=396 valign=top style='width:297.1pt;border:none;border-right:solid black 1.5pt;
+  padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal style='mso-yfti-cnfc:4'><b><o:p>&nbsp;</o:p></b></p>
+  </td>
+  <td width=194 valign=top style='width:145.7pt;border:none;mso-border-left-alt:
+  solid black .75pt;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal style='mso-yfti-cnfc:8'><b><o:p>&nbsp;</o:p></b></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:13'>
+  <td width=396 valign=top style='width:297.1pt;border:none;border-right:solid black 1.5pt;
+  padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal style='mso-yfti-cnfc:4'><b>TerrainActivateCurrentCursor
+  (this is the same as clicking once, especially handy for the copy/paste
+  cursors)<o:p></o:p></b></p>
+  </td>
+  <td width=194 valign=top style='width:145.7pt;border:none;mso-border-left-alt:
+  solid black .75pt;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal style='mso-yfti-cnfc:8'><b>Enter<o:p></o:p></b></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:14'>
+  <td width=396 valign=top style='width:297.1pt;border:none;border-right:solid black 1.5pt;
+  padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal style='mso-yfti-cnfc:4'><b><o:p>&nbsp;</o:p></b></p>
+  </td>
+  <td width=194 valign=top style='width:145.7pt;border:none;mso-border-left-alt:
+  solid black .75pt;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal style='mso-yfti-cnfc:8'><b><o:p>&nbsp;</o:p></b></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:15'>
+  <td width=396 valign=top style='width:297.1pt;border:none;border-right:solid black 1.5pt;
+  padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal style='mso-yfti-cnfc:4'><b>TerrainIncInnerRadius <span
+  style='mso-tab-count:3'>                                 </span><span
+  style='mso-spacerun:yes'> </span><o:p></o:p></b></p>
+  </td>
+  <td width=194 valign=top style='width:145.7pt;border:none;mso-border-left-alt:
+  solid black .75pt;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal style='mso-yfti-cnfc:8'><b>Shift + ]<o:p></o:p></b></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:16'>
+  <td width=396 valign=top style='width:297.1pt;border:none;border-right:solid black 1.5pt;
+  padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal style='mso-yfti-cnfc:4'><b>TerrainDecInnerRadius <span
+  style='mso-tab-count:3'>                               </span><span
+  style='mso-spacerun:yes'> </span><o:p></o:p></b></p>
+  </td>
+  <td width=194 valign=top style='width:145.7pt;border:none;mso-border-left-alt:
+  solid black .75pt;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal style='mso-yfti-cnfc:8'><b>Shift + [<o:p></o:p></b></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:17'>
+  <td width=396 valign=top style='width:297.1pt;border:none;border-right:solid black 1.5pt;
+  padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal style='mso-yfti-cnfc:4'><b>TerrainIncOuterRadius <span
+  style='mso-tab-count:3'>                                </span><span
+  style='mso-spacerun:yes'> </span><o:p></o:p></b></p>
+  </td>
+  <td width=194 valign=top style='width:145.7pt;border:none;mso-border-left-alt:
+  solid black .75pt;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal style='mso-yfti-cnfc:8'><b>]<o:p></o:p></b></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:18'>
+  <td width=396 valign=top style='width:297.1pt;border:none;border-right:solid black 1.5pt;
+  padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal style='mso-yfti-cnfc:4'><b>TerrainDecOuterRadius <span
+  style='mso-tab-count:3'>                              </span><span
+  style='mso-spacerun:yes'> </span><o:p></o:p></b></p>
+  </td>
+  <td width=194 valign=top style='width:145.7pt;border:none;mso-border-left-alt:
+  solid black .75pt;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal style='mso-yfti-cnfc:8'><b>[<o:p></o:p></b></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:19'>
+  <td width=396 valign=top style='width:297.1pt;border:none;border-right:solid black 1.5pt;
+  padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal style='mso-yfti-cnfc:4'><b><o:p>&nbsp;</o:p></b></p>
+  </td>
+  <td width=194 valign=top style='width:145.7pt;border:none;mso-border-left-alt:
+  solid black .75pt;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal style='mso-yfti-cnfc:8'><b><o:p>&nbsp;</o:p></b></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:20'>
+  <td width=396 valign=top style='width:297.1pt;border:none;border-right:solid black 1.5pt;
+  padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal style='mso-yfti-cnfc:4'><b>TerrainIncAmount <span
+  style='mso-tab-count:3'>                            </span><span
+  style='mso-spacerun:yes'> </span><o:p></o:p></b></p>
+  </td>
+  <td width=194 valign=top style='width:145.7pt;border:none;mso-border-left-alt:
+  solid black .75pt;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal style='mso-yfti-cnfc:8'><b>'<o:p></o:p></b></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:21'>
+  <td width=396 valign=top style='width:297.1pt;border:none;border-right:solid black 1.5pt;
+  padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal style='mso-yfti-cnfc:4'><b>TerrainDecAmount <span
+  style='mso-tab-count:3'>                           </span><span
+  style='mso-spacerun:yes'> </span><o:p></o:p></b></p>
+  </td>
+  <td width=194 valign=top style='width:145.7pt;border:none;mso-border-left-alt:
+  solid black .75pt;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal style='mso-yfti-cnfc:8'><b>;<o:p></o:p></b></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:22'>
+  <td width=396 valign=top style='width:297.1pt;border:none;border-right:solid black 1.5pt;
+  padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal style='mso-yfti-cnfc:4'><b><o:p>&nbsp;</o:p></b></p>
+  </td>
+  <td width=194 valign=top style='width:145.7pt;border:none;mso-border-left-alt:
+  solid black .75pt;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal style='mso-yfti-cnfc:8'><b><o:p>&nbsp;</o:p></b></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:23'>
+  <td width=396 valign=top style='width:297.1pt;border:none;border-right:solid black 1.5pt;
+  padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal style='mso-yfti-cnfc:4'><b>TerrainIncHeight <span
+  style='mso-tab-count:4'>                                          </span><span
+  style='mso-spacerun:yes'> </span><o:p></o:p></b></p>
+  </td>
+  <td width=194 valign=top style='width:145.7pt;border:none;mso-border-left-alt:
+  solid black .75pt;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal style='mso-yfti-cnfc:8'><b>.<o:p></o:p></b></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:24'>
+  <td width=396 valign=top style='width:297.1pt;border:none;border-right:solid black 1.5pt;
+  padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal style='mso-yfti-cnfc:4'><b>TerrainDecHeight <span
+  style='mso-tab-count:3'>                             </span><span
+  style='mso-spacerun:yes'> </span><o:p></o:p></b></p>
+  </td>
+  <td width=194 valign=top style='width:145.7pt;border:none;mso-border-left-alt:
+  solid black .75pt;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal style='mso-yfti-cnfc:8'><b>,<o:p></o:p></b></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:25'>
+  <td width=396 valign=top style='width:297.1pt;border:none;border-right:solid black 1.5pt;
+  padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal style='mso-yfti-cnfc:4'><b>TerrainNegateHeight <span
+  style='mso-tab-count:3'>                                   </span><span
+  style='mso-spacerun:yes'> </span><o:p></o:p></b></p>
+  </td>
+  <td width=194 valign=top style='width:145.7pt;border:none;mso-border-left-alt:
+  solid black .75pt;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal style='mso-yfti-cnfc:8'><b>/<o:p></o:p></b></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:26'>
+  <td width=396 valign=top style='width:297.1pt;border:none;border-right:solid black 1.5pt;
+  padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal style='mso-yfti-cnfc:4'><b><o:p>&nbsp;</o:p></b></p>
+  </td>
+  <td width=194 valign=top style='width:145.7pt;border:none;mso-border-left-alt:
+  solid black .75pt;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal style='mso-yfti-cnfc:8'><b><o:p>&nbsp;</o:p></b></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:27'>
+  <td width=396 valign=top style='width:297.1pt;border:none;border-right:solid black 1.5pt;
+  padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal style='mso-yfti-cnfc:4'><b>TerrainHideQuad<span
+  style='mso-spacerun:yes'>  </span><span style='mso-tab-count:3'>                             </span><span
+  style='mso-spacerun:yes'> </span><o:p></o:p></b></p>
+  </td>
+  <td width=194 valign=top style='width:145.7pt;border:none;mso-border-left-alt:
+  solid black .75pt;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal style='mso-yfti-cnfc:8'><b>H<o:p></o:p></b></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:28'>
+  <td width=396 valign=top style='width:297.1pt;border:none;border-right:solid black 1.5pt;
+  padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal style='mso-yfti-cnfc:4'><b>TerrainShowQuad<span
+  style='mso-tab-count:1'>      </span> <span style='mso-tab-count:2'>                       </span><span
+  style='mso-spacerun:yes'> </span><o:p></o:p></b></p>
+  </td>
+  <td width=194 valign=top style='width:145.7pt;border:none;mso-border-left-alt:
+  solid black .75pt;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal style='mso-yfti-cnfc:8'><b>Shift + H<o:p></o:p></b></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:29'>
+  <td width=396 valign=top style='width:297.1pt;border:none;border-right:solid black 1.5pt;
+  padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal style='mso-yfti-cnfc:4'><b><o:p>&nbsp;</o:p></b></p>
+  </td>
+  <td width=194 valign=top style='width:145.7pt;border:none;mso-border-left-alt:
+  solid black .75pt;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal style='mso-yfti-cnfc:8'><b><o:p>&nbsp;</o:p></b></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:30'>
+  <td width=396 valign=top style='width:297.1pt;border:none;border-right:solid black 1.5pt;
+  padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal style='mso-yfti-cnfc:4'><b>TerrainSelectTriangles <span
+  style='mso-tab-count:3'>                                 </span><span
+  style='mso-spacerun:yes'> </span><o:p></o:p></b></p>
+  </td>
+  <td width=194 valign=top style='width:145.7pt;border:none;mso-border-left-alt:
+  solid black .75pt;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal style='mso-yfti-cnfc:8'><b>2<o:p></o:p></b></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:31'>
+  <td width=396 valign=top style='width:297.1pt;border:none;border-right:solid black 1.5pt;
+  padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal style='mso-yfti-cnfc:4'><b>TerrainSelectQuads<span
+  style='mso-tab-count:3'>                           </span> <o:p></o:p></b></p>
+  </td>
+  <td width=194 valign=top style='width:145.7pt;border:none;mso-border-left-alt:
+  solid black .75pt;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal style='mso-yfti-cnfc:8'><b>3<o:p></o:p></b></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:32'>
+  <td width=396 valign=top style='width:297.1pt;border:none;border-right:solid black 1.5pt;
+  padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal style='mso-yfti-cnfc:4'><b><o:p>&nbsp;</o:p></b></p>
+  </td>
+  <td width=194 valign=top style='width:145.7pt;border:none;mso-border-left-alt:
+  solid black .75pt;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal style='mso-yfti-cnfc:8'><b><o:p>&nbsp;</o:p></b></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:33'>
+  <td width=396 valign=top style='width:297.1pt;border:none;border-right:solid black 1.5pt;
+  padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal style='mso-yfti-cnfc:4'><b>Apply current cursor<o:p></o:p></b></p>
+  </td>
+  <td width=194 valign=top style='width:145.7pt;border:none;mso-border-left-alt:
+  solid black .75pt;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal style='mso-yfti-cnfc:8'><b>Left mouse button<o:p></o:p></b></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:34;mso-yfti-lastrow:yes'>
+  <td width=396 valign=top style='width:297.1pt;border:none;border-right:solid black 1.5pt;
+  padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal style='mso-yfti-cnfc:2054'><b>Paint-Select triangles/quads<o:p></o:p></b></p>
+  </td>
+  <td width=194 valign=top style='width:145.7pt;border:none;border-top:solid black 1.0pt;
+  mso-border-left-alt:solid black .75pt;mso-border-top-alt:solid black .75pt;
+  mso-border-left-alt:solid black .75pt;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal style='mso-yfti-cnfc:10'><b>Shift+Left mouse button<o:p></o:p></b></p>
+  </td>
+ </tr>
+</table>
+
+<p class=MsoNormal><o:p>&nbsp;</o:p></p>
+
+<p class=MsoNormal><b style='mso-bidi-font-weight:normal'><u>Selecting Objects<o:p></o:p></u></b></p>
+
+<p class=MsoNormal><span style='mso-tab-count:1'>            </span>By holding
+down ALT + Left Mouse Button and dragging the mouse, you can now box select
+brushes, entities, and objects in the 2D view.<span style='mso-spacerun:yes'> 
+</span>This replaces the slightly more inconvenient means of selecting multiple
+entities in older versions of Radiant, which required you to create a brush as
+your bounding box, then choose a Selection function like Select Complete Tall,
+etc..<span style='mso-spacerun:yes'>  </span>Although this new selection tool
+functions just like Select Complete Tool, users can still use brushes and the
+old selection commands if they desire. </p>
+
+<p class=MsoNormal><o:p>&nbsp;</o:p></p>
+
+<p class=MsoNormal><b style='mso-bidi-font-weight:normal'><u>Working With
+Objects<o:p></o:p></u></b></p>
+
+<p class=MsoNormal style='text-indent:.5in'>Eventually your level will be
+filled many-many models, and depending on how you placed those models, it can
+be hard to navigate and select certain models.<span style='mso-spacerun:yes'> 
+</span>To help you manage your models, it is advised you make use of the (H)
+Hide and (SHIFT+H) Unhide feature, which will allow you to select an object and
+hide it from view until you need it again.<span style='mso-spacerun:yes'> 
+</span>Additionally, you can use the (J) hotkey to remove the bounding box for
+each object in your level, which can greatly improve your visibility if you
+have a lot of models selected.</p>
+
+<p class=MsoNormal><o:p>&nbsp;</o:p></p>
+
+<p class=MsoNormal><b style='mso-bidi-font-weight:normal'><u><span
+style='color:black'>Regions</span><o:p></o:p></u></b></p>
+
+<p class=MsoNormal style='text-align:justify;text-indent:32.2pt'><span
+style='color:black'>Regions are an important tool to learn and use early on.
+Whether you isolate off a single object, or half a map, you’ll wonder how you
+ever got along without this tool in other editing programs. The selections on
+the Region Menu allow the user to isolate, and work on, a subset of the map.
+There are innumerable benefits to working in a “regioned” area of the map.<span
+style='mso-spacerun:yes'>  </span>It allows you to work with a few map
+components at a time, without the distraction of the rest of the map pieces. <o:p></o:p></span></p>
+
+<p style='text-align:justify'><span style='color:black'>There are several ways
+to select a region, by a group selection, by XY map window dimensions (or the
+corresponding view in YZ and XZ), or by a few selected map components. <o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-align:justify'><strong><span style='color:black'>Off</span></strong><span
+style='color:black'> <o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-align:justify'><span style='color:black'>This
+returns you back to the full map. <o:p></o:p></span></p>
+
+<p><strong><span style='color:black'>Set XY</span></strong> <br>
+Any map components that are inside, or that are touched by the bounds of the XY
+Map window are converted into a region. The size or shape of the window does
+not matter. This is an excellent way to select are larger subset of your map,
+such as a complex room or group of rooms. Any objects selected before regioning
+the map remain selected. <span style='color:black'><o:p></o:p></span></p>
+
+<p><strong><span style='color:black'>Set Tall Brush</span></strong> |<br>
+This functions in a similar manner to the group selection command, Select
+Partial Tall. Any map components contained within the XY bounds, or touching
+the XY bounds of the brush will be regioned off. The selecting brush itself is
+discarded. <span style='color:black'><o:p></o:p></span></p>
+
+<p><strong><span style='color:black'>Set Brush</span></strong><br>
+This functions in a similar manner to the group selection command, Select
+Touching. Any map components contained within the XYZ bounds of the brush, or
+touching the XYZ bounds of the brush will be regioned off. The selecting brush
+itself is discarded. </p>
+
+<p><strong><span style='color:black'>Set Selected Brushes</span></strong> <br>
+If you need to work with just a few objects, this is the option to choose. Select
+the objects to be worked upon then select this option. Only those objects are
+moved to the region. The selected objects are unselected when the region is
+created. <span style='color:black'><o:p></o:p></span></p>
+
+<h3><u><span style='font-family:"Times New Roman"'>Selection Groups<o:p></o:p></span></u></h3>
+
+<p class=MsoNormal>Selection groups are now ‘Photoshop’ style.<span
+style='mso-spacerun:yes'>  </span>To bring them up, select the <b
+style='mso-bidi-font-weight:normal'>‘G’</b> key</p>
+
+<p class=MsoNormal><o:p>&nbsp;</o:p></p>
+
+<p class=MsoNormal><b style='mso-bidi-font-weight:normal'><!--[if gte vml 1]><v:shape
+ id="_x0000_i1033" type="#_x0000_t75" style='width:198pt;height:420pt'>
+ <v:imagedata src="mohpa_radiant_overview_files/image016.jpg" o:title="New Radiant Selection Group"/>
+</v:shape><![endif]--><![if !vml]><img width=264 height=560
+src="mohpa_radiant_overview_files/image017.jpg" v:shapes="_x0000_i1033"><![endif]><u><o:p></o:p></u></b></p>
+
+<p class=MsoNormal><b style='mso-bidi-font-weight:normal'><u><o:p><span
+ style='text-decoration:none'>&nbsp;</span></o:p></u></b></p>
+
+<p class=MsoNormal>This allows users to more effectively organize groups of
+objects and entities</p>
+
+<p class=MsoNormal><o:p>&nbsp;</o:p></p>
+
+<p class=MsoNormal><b style='mso-bidi-font-weight:normal'>*G</b> – Create Group
+- Allows to create a group and give it a name.<span style='mso-spacerun:yes'> 
+</span>Note that this will not automatically create a group from selected
+entities, you must add them manually to the group.</p>
+
+<p class=MsoNormal><b style='mso-bidi-font-weight:normal'>-G</b> – Delete Group
+- Deletes the Highlighted Group</p>
+
+<p class=MsoNormal><b style='mso-bidi-font-weight:normal'>+O</b> – Add Object
+to Group – Adds a selected object to the highlighted group</p>
+
+<p class=MsoNormal><b style='mso-bidi-font-weight:normal'>-O</b> – Remove
+Object from Group – Removes selected objects from the highlighted group.<span
+style='mso-spacerun:yes'>  </span>If the objects are a member of more than one
+group, they will only be removed from the first one in the list.</p>
+
+<p class=MsoNormal><b style='mso-bidi-font-weight:normal'>S – </b>Select
+Objects in a Highlighted Group<b style='mso-bidi-font-weight:normal'><o:p></o:p></b></p>
+
+<p class=MsoNormal><b style='mso-bidi-font-weight:normal'>SV – </b>Select All
+Objects in All Groups<b style='mso-bidi-font-weight:normal'><o:p></o:p></b></p>
+
+<p class=MsoNormal><b style='mso-bidi-font-weight:normal'>D – </b>Deselect
+Objects in a Highlighted Group<b style='mso-bidi-font-weight:normal'><o:p></o:p></b></p>
+
+<p class=MsoNormal><b style='mso-bidi-font-weight:normal'>D – </b>Deselect All
+Objects in All Groups</p>
+
+<p class=MsoNormal><b style='mso-bidi-font-weight:normal'><o:p>&nbsp;</o:p></b></p>
+
+<p class=MsoNormal>The eye icon next to each group name can be clicked to
+toggle whether or not that group is visible.<span style='mso-spacerun:yes'> 
+</span>Click twice on the text of the groupname you can rename it (if you
+double click too quickly it won’t do it, click once per second)</p>
+
+<p class=MsoNormal><b style='mso-bidi-font-weight:normal'><o:p>&nbsp;</o:p></b></p>
+
+<p class=MsoNormal><b style='mso-bidi-font-weight:normal'><u>New Selection Menu
+Functions<o:p></o:p></u></b></p>
+
+<p class=MsoNormal><b style='mso-bidi-font-weight:normal'><o:p>&nbsp;</o:p></b></p>
+
+<p class=MsoNormal><b style='mso-bidi-font-weight:normal'>Parent<o:p></o:p></b></p>
+
+<p class=MsoNormal><b style='mso-bidi-font-weight:normal'>Unparent<o:p></o:p></b></p>
+
+<p class=MsoNormal><b style='mso-bidi-font-weight:normal'>Lock</b> – This will
+prevent a selected entity from being moved.<span style='mso-spacerun:yes'> 
+</span>Other parameters of the entity can be edited in the entity window.</p>
+
+<p class=MsoNormal><b style='mso-bidi-font-weight:normal'>Unlock – </b>This
+will allow a locked entity to be moved again</p>
+
+<p class=MsoNormal><b style='mso-bidi-font-weight:normal'>Randomize Entities – </b>This
+new function is very useful for making vegetation look random and non-uniform.</p>
+
+<p class=MsoNormal><b style='mso-bidi-font-weight:normal'><o:p>&nbsp;</o:p></b></p>
+
+<p class=MsoNormal><b style='mso-bidi-font-weight:normal'><!--[if gte vml 1]><v:shape
+ id="_x0000_i1034" type="#_x0000_t75" style='width:260.25pt;height:167.25pt'>
+ <v:imagedata src="mohpa_radiant_overview_files/image018.jpg" o:title="randomizer"/>
+</v:shape><![endif]--><![if !vml]><img width=347 height=223
+src="mohpa_radiant_overview_files/image019.jpg" v:shapes="_x0000_i1034"><![endif]><o:p></o:p></b></p>
+
+<p class=MsoNormal><b style='mso-bidi-font-weight:normal'><o:p>&nbsp;</o:p></b></p>
+
+<ul style='margin-top:0in' type=disc>
+ <li class=MsoNormal style='mso-list:l33 level1 lfo34;tab-stops:list .5in'><b
+     style='mso-bidi-font-weight:normal'>Rotations – </b>check this box to
+     randomly apply a rotation to your selected entities (this is 1-dimensional
+     about the z axis)<b style='mso-bidi-font-weight:normal'><o:p></o:p></b></li>
+ <li class=MsoNormal style='mso-list:l33 level1 lfo34;tab-stops:list .5in'><b
+     style='mso-bidi-font-weight:normal'>Scale</b> – when checked, you can
+     enter in a scale value and then a percent variance<b style='mso-bidi-font-weight:
+     normal'><o:p></o:p></b></li>
+</ul>
+
+<p class=MsoNormal><b style='mso-bidi-font-weight:normal'><o:p>&nbsp;</o:p></b></p>
+
+<p class=MsoNormal><b style='mso-bidi-font-weight:normal'>Terrain Hug All
+Entities – </b>All Entities can now be specified to hug the terrain.<span
+style='mso-spacerun:yes'>  </span>This can be extremely useful and time saving
+for placement of vegetation </p>
+
+<p class=MsoNormal><b style='mso-bidi-font-weight:normal'>Toggle Terrain Hug on
+Entity – </b>Turn terrain hugging on or off on specific entities<b
+style='mso-bidi-font-weight:normal'><o:p></o:p></b></p>
+
+<p class=MsoNormal><b style='mso-bidi-font-weight:normal'>Toggle Terrain Align
+on Entity – </b>Entities can also align themselves with the normals of a
+terrain poly.<span style='mso-spacerun:yes'>  </span>Use this if you want
+vegetation or other assets to grow out of the terrain, not necessarily up or
+down.<b style='mso-bidi-font-weight:normal'><o:p></o:p></b></p>
+
+<p class=MsoNormal><b style='mso-bidi-font-weight:normal'>Named Group Operations</b>
+– This is similar to the functions provided in the Selection Group
+Browser.<span style='mso-spacerun:yes'>  </span>They include:</p>
+
+<ul style='margin-top:0in' type=disc>
+ <li class=MsoNormal style='mso-list:l32 level1 lfo37;tab-stops:list .5in'><b
+     style='mso-bidi-font-weight:normal'>Select Named Group</b> – Brings up a
+     dialogue to choose one of the named groups in the level</li>
+ <li class=MsoNormal style='mso-list:l32 level1 lfo37;tab-stops:list .5in'><b
+     style='mso-bidi-font-weight:normal'>Add Current Selection to Named Group –
+     </b>Brings up a dialogue to select which of your groups you want to add
+     the selected objects to when you click OK.<span style='mso-spacerun:yes'> 
+     </span>You can also click Add/Create to create a new group and add your
+     selected object to it.</li>
+ <li class=MsoNormal style='mso-list:l32 level1 lfo37;tab-stops:list .5in'><b
+     style='mso-bidi-font-weight:normal'>Remove Current Selection from Named
+     Group - </b></li>
+ <li class=MsoNormal style='mso-list:l32 level1 lfo37;tab-stops:list .5in'><b
+     style='mso-bidi-font-weight:normal'>Create Named Group – </b>This will
+     allow you to create a new selection group</li>
+ <li class=MsoNormal style='mso-list:l32 level1 lfo37;tab-stops:list .5in'><b
+     style='mso-bidi-font-weight:normal'>Delete Named Group </b>– This will
+     allow you to choose a selection group and delete it.</li>
+ <li class=MsoNormal style='mso-list:l32 level1 lfo37;tab-stops:list .5in'><b
+     style='mso-bidi-font-weight:normal'>Show/Delete Empty Groups – </b>This
+     will show all empty groups and </li>
+</ul>
+
+<p class=MsoNormal><b style='mso-bidi-font-weight:normal'><o:p>&nbsp;</o:p></b></p>
+
+<p class=MsoNormal><b style='mso-bidi-font-weight:normal'><u>Scatter Tool<o:p></o:p></u></b></p>
+
+<p class=MsoNormal><b style='mso-bidi-font-weight:normal'><span
+style='mso-tab-count:1'>            </span></b>The Scatter Tool is another new feature
+of Radiant that allows designers to use a Photoshop file (.PSD) to literally
+paint layers of vegetation onto the terrain.<span style='mso-spacerun:yes'> 
+</span>The alpha channels of the layers in Photoshop determines how dense the
+vegetation is.<span style='mso-spacerun:yes'>  </span>Different rules can also
+be applied to the layers to define how the layers are applied relative to one
+another.<span style='mso-spacerun:yes'>  </span>For example, the grass layer
+can be adjusted so that it only paints grass objects close to objects in the
+tree layer, and so forth.<span style='mso-spacerun:yes'>  </span>Using this
+tool can be a very useful way of applying vegetation over a large area quickly.
+</p>
+
+<h1 style='margin-top:24.0pt;margin-right:0in;margin-bottom:3.0pt;margin-left:
+.25in;text-indent:-.25in;tab-stops:list .25in'><u><span style='font-size:12.0pt;
+font-family:"Times New Roman"'>Creating the Density Map File<o:p></o:p></span></u></h1>
+
+<p class=MsoNormal>First you need to generate a snapshot of the map that need
+to be scattered. </p>
+
+<p class=MsoNormal>In Radiant, with map open, select menu “file-&gt;Reference
+Snapshot”. This will generate a snapshot of the top view of the map and ask for
+saving to a “.tga” file. Make sure the terrain texture is enabled by clicking
+the “Ter in 2d” button on the toolbar.</p>
+
+<p class=MsoNormal>Then you open the snapshot file with Photoshop. For each
+group of models, you create a layer, give it a proper name like “trees”,
+“rocks” etc. Then you paint in that layer. The image in that layer will later
+be used as the density map by the scatter. The actual color doesn’t matter, the
+scatter tool only care about the alpha channel. The area with less transparency
+will result denser objects in the map. You may use some filters to generate a
+smooth gradient from different alpha areas. After painting the dense image to
+all the layers, save the file as a “.psd” file.</p>
+
+<h1 style='margin-top:24.0pt;margin-right:0in;margin-bottom:3.0pt;margin-left:
+.25in;text-indent:-.25in;tab-stops:list .25in'><u><span style='font-size:12.0pt;
+font-family:"Times New Roman"'>Configure Scatter<o:p></o:p></span></u></h1>
+
+<p class=MsoNormal>Go back to Radiant. Select the menu “Scatter-&gt;Configure
+Scatter”. This will bring a dialog like this </p>
+
+<p class=MsoNormal><!--[if gte vml 1]><v:shape id="_x0000_i1035" type="#_x0000_t75"
+ style='width:398.25pt;height:231.75pt'>
+ <v:imagedata src="mohpa_radiant_overview_files/image020.jpg" o:title="Scatter 1"/>
+</v:shape><![endif]--><![if !vml]><img width=531 height=309
+src="mohpa_radiant_overview_files/image021.jpg" v:shapes="_x0000_i1035"><![endif]></p>
+
+<p class=MsoNormal><o:p>&nbsp;</o:p></p>
+
+<p class=MsoNormal style='text-indent:.5in'>The rules file and the density map
+file controls how the scatter tool put the models in the map. Set the “rules
+file” field with whatever rule file (“.rul”) you need.<span
+style='mso-spacerun:yes'>  </span>If you do not have a rules file for this map,
+then entering the name of a file which does not exist will force scatter to
+create a new “empty” rules file.</p>
+
+<p class=MsoNormal>Set the “Density map file” field with the psd file you
+created in last section. Fill in proper values to other fields:</p>
+
+<h1 style='margin-top:24.0pt;margin-right:0in;margin-bottom:3.0pt;margin-left:
+.25in;text-indent:-.25in;tab-stops:list .25in'><u><span style='font-size:12.0pt;
+font-family:"Times New Roman"'>Editing Rules<o:p></o:p></span></u></h1>
+
+<p class=MsoNormal>If you have loaded in a new rule, or you want to do some
+changes to the rule, click the “Edit rules” button. It will bring in this
+dialog box. </p>
+
+<p class=MsoNormal><o:p>&nbsp;</o:p></p>
+
+<p class=MsoNormal><!--[if gte vml 1]><v:shape id="_x0000_i1036" type="#_x0000_t75"
+ style='width:431.25pt;height:573.75pt'>
+ <v:imagedata src="mohpa_radiant_overview_files/image022.jpg" o:title="Scatter Edit Rules"/>
+</v:shape><![endif]--><![if !vml]><img width=575 height=765
+src="mohpa_radiant_overview_files/image023.jpg" v:shapes="_x0000_i1036"><![endif]></p>
+
+<p class=MsoNormal><o:p>&nbsp;</o:p></p>
+
+<p class=MsoNormal>One rule file contains multiple rules with different name.
+Use the pull down menu to choose which rule you want to edit, or create new
+rules, or delete the current rule.</p>
+
+<p class=MsoNormal style='margin-top:9.0pt;margin-right:0in;margin-bottom:9.0pt;
+margin-left:0in'><b style='mso-bidi-font-weight:normal'><o:p>&nbsp;</o:p></b></p>
+
+<p class=MsoNormal style='margin-top:9.0pt;margin-right:0in;margin-bottom:9.0pt;
+margin-left:0in'><b style='mso-bidi-font-weight:normal'><u>Basic Scatter
+Properties<o:p></o:p></u></b></p>
+
+<ul style='margin-top:0in' type=disc>
+ <li class=MsoNormal style='margin-top:9.0pt;margin-bottom:9.0pt;mso-list:l3 level1 lfo40;
+     tab-stops:list .5in'><b style='mso-bidi-font-weight:normal'>Layer name</b>:
+     Is the layer you put in the density map with Photoshop.<span
+     style='mso-spacerun:yes'>  </span>When a rule is executed, it uses this <b
+     style='mso-bidi-font-weight:normal'><i style='mso-bidi-font-style:normal'>exact
+     </i></b>name to look up the correct layer in Photoshop.<span
+     style='mso-spacerun:yes'>  </span>The layer name is case sensitive, so the
+     layer name here MUST exactly match the layer name in Photoshop.</li>
+ <li class=MsoNormal style='margin-top:9.0pt;margin-bottom:9.0pt;mso-list:l3 level1 lfo40;
+     tab-stops:list .5in'><b style='mso-bidi-font-weight:normal'>Model/Class</b>:
+     Is the model you want to scatter. This can be either “.gr2” or “.hag”
+     file.<span style='mso-spacerun:yes'>  </span>Use the filespec drop down
+     menu in the file open dialog to select either .gr2 or .hag. You can also
+     put the class name here. For example, put “info_pathnode” without quotes
+     will make the scatter tool scattering pathnodes.<span
+     style='mso-spacerun:yes'>  </span></li>
+ <li class=MsoNormal style='margin-top:9.0pt;margin-bottom:9.0pt;mso-list:l3 level1 lfo40;
+     tab-stops:list .5in'><b style='mso-bidi-font-weight:normal'>Distribution</b>:
+     There are three options: none, square, and hexagon. If set this to square
+     or hexagon, the objects will distribute regularly in square shape or
+     hexagon shape. The distance between adjacent objects will be “Exclusion
+     min” value (see below). This option was designed for scattering path
+     nodes, but can be used for other model/class as well.<span
+     style='mso-spacerun:yes'>  </span>“None” works best for distributing
+     vegetation.</li>
+ <li class=MsoNormal style='margin-top:9.0pt;margin-bottom:9.0pt;mso-list:l3 level1 lfo40;
+     tab-stops:list .5in'><b style='mso-bidi-font-weight:normal'>Exclusion
+     Distance</b>: This controls the valid distance between instances of a
+     scattered model in the map. For example, with the min set to 1, max set to
+     2, each model will be at least 1 units away from any other models and be
+     within 2 unites to at least one model.</li>
+ <li class=MsoNormal style='margin-top:9.0pt;margin-bottom:9.0pt;mso-list:l3 level1 lfo40;
+     tab-stops:list .5in'><b style='mso-bidi-font-weight:normal'>Scale</b>:<span
+     style='mso-spacerun:yes'>  </span>This will allow the user to specify a
+     range of scaling values to apply to scattered entities in the rule.<span
+     style='mso-spacerun:yes'>  </span>Distributed scale differs from random
+     scale in that it is based on a Gaussian function.<span
+     style='mso-spacerun:yes'>  </span>If it is used, there will be more
+     entities with a scale closer to the middle of the range than entities with
+     a scale close to the minimum and maximum values of the range.<span
+     style='mso-spacerun:yes'>  </span>With Random Scale, the possibilities of
+     getting entities with scale values close to the minimum, middle, and
+     maximum is about the same.</li>
+</ul>
+
+<h1 style='margin-top:24.0pt;margin-right:0in;margin-bottom:3.0pt;margin-left:
+.25in;text-indent:-.25in;tab-stops:list .25in'><u><span style='font-size:12.0pt;
+font-family:"Times New Roman"'>Running Scatter Tool<o:p></o:p></span></u></h1>
+
+<p class=MsoNormal>After you configure the scatter tool, you can run the
+scatter tool by selecting menu “Scatter-&gt;Run Scatter Tool”. This will
+actually generate the models based on the rules. Or you can select menu
+“Scatter-&gt;Run Scatter Tool (Selected rules)” to select one or more rule from
+the rule list. Depending on the set up, the running will take several seconds
+to a minute.</p>
+
+<p class=MsoNormal style='margin-top:9.0pt;margin-right:0in;margin-bottom:9.0pt;
+margin-left:0in'><b style='mso-bidi-font-weight:normal'><u>Other Scatter
+Options</u></b> </p>
+
+<p class=MsoNormal style='margin-top:9.0pt;margin-right:0in;margin-bottom:9.0pt;
+margin-left:0in'><b style='mso-bidi-font-weight:normal'>Elevation</b>: These
+values control the distribution of the models regarding to the elevation of the
+terrain. Consider the “inner value” and “outer value” as the inner and outer
+radius of a donut shape. Roughly, all the models will be placed where elevation
+is between “outer min” and “outer max”. See the drawing:</p>
+
+<p class=MsoNormal style='margin-top:9.0pt;margin-right:0in;margin-bottom:9.0pt;
+margin-left:.25in'><!--[if gte vml 1]><v:shape id="_x0000_i1037" type="#_x0000_t75"
+ style='width:306pt;height:240pt'>
+ <v:imagedata src="mohpa_radiant_overview_files/image024.png" o:title=""/>
+</v:shape><![endif]--><![if !vml]><img width=408 height=320
+src="mohpa_radiant_overview_files/image025.jpg" v:shapes="_x0000_i1037"><![endif]><span
+style='mso-spacerun:yes'> </span></p>
+
+<p class=MsoNormal style='margin-top:9.0pt;margin-right:0in;margin-bottom:9.0pt;
+margin-left:0in;text-indent:.25in'>In the area with elevation between inner min
+and inner max, the models distribute with full density; in the area with
+elevation between outer min and inner min or between inner max and outer max,
+the models distribute with density various from 0 to full density.</p>
+
+<ul style='margin-top:0in' type=disc>
+ <li class=MsoNormal style='margin-top:9.0pt;margin-bottom:9.0pt;mso-list:l19 level1 lfo43;
+     tab-stops:list .5in'><b style='mso-bidi-font-weight:normal'>Gradient</b>:
+     Similar to the elevation but the values apply<span style='mso-tab-count:
+     1'>   </span> to the gradient of the terrain.<span
+     style='mso-spacerun:yes'>   </span>These values are measured in degrees.</li>
+ <li class=MsoNormal style='margin-top:9.0pt;margin-bottom:9.0pt;mso-list:l19 level1 lfo43;
+     tab-stops:list .5in'><b style='mso-bidi-font-weight:normal'>Debug color</b>:<span
+     style='mso-spacerun:yes'>  </span>This is used for debugging purposes, and
+     its use is not required.</li>
+ <li class=MsoNormal style='margin-top:9.0pt;margin-bottom:9.0pt;mso-list:l19 level1 lfo43;
+     tab-stops:list .5in'><b style='mso-bidi-font-weight:normal'>Start seed</b>:
+     If you are not satisfied with the result of previous running of scatter
+     tool, change this number to any other integer numbers. The scatter tool
+     will then generate the models with another set of random numbers. </li>
+ <li class=MsoNormal style='margin-top:9.0pt;margin-bottom:9.0pt;mso-list:l19 level1 lfo43;
+     tab-stops:list .5in'><b style='mso-bidi-font-weight:normal'>Density
+     Scale:<span style='mso-spacerun:yes'>  </span></b>The density scale
+     setting is a mechanism for manually scaling the density of scattered
+     objects, without having to modify the density map.</li>
+ <li class=MsoNormal style='margin-top:9.0pt;margin-bottom:9.0pt;mso-list:l19 level1 lfo43;
+     tab-stops:list .5in'><b style='mso-bidi-font-weight:normal'>Align object
+     with surface gradient</b>: Not implemented yet.<span
+     style='mso-spacerun:yes'>  </span></li>
+ <li class=MsoNormal style='margin-top:9.0pt;margin-bottom:9.0pt;mso-list:l19 level1 lfo43;
+     tab-stops:list .5in'><b style='mso-bidi-font-weight:normal'>Light weight
+     entity</b>: Not implemented yet.</li>
+ <li class=MsoNormal style='margin-top:9.0pt;margin-bottom:9.0pt;mso-list:l19 level1 lfo43;
+     tab-stops:list .5in'><b style='mso-bidi-font-weight:normal'>Ignore
+     Preexisting objects</b>: If set, scatter tool will ignore the committed
+     objects when scattering new objects. Be sure to alternate the random seeds
+     if you set this option otherwise two groups of the scattered objects will
+     overlap completely.</li>
+ <li class=MsoNormal style='margin-top:9.0pt;margin-bottom:9.0pt;mso-list:l19 level1 lfo43;
+     tab-stops:list .5in'><b style='mso-bidi-font-weight:normal'>Scatter units
+     per game unit:<span style='mso-spacerun:yes'>  </span></b>Scatter always deals
+     with measurements in meters (except for gradients, which are measured in
+     degrees).<span style='mso-spacerun:yes'>  </span>This field is a scale
+     value for manually converting map measurement units into meters.</li>
+ <li class=MsoNormal style='margin-top:9.0pt;margin-bottom:9.0pt;mso-list:l19 level1 lfo43;
+     tab-stops:list .5in'><b style='mso-bidi-font-weight:normal'>Vertical
+     Scale:</b><span style='mso-spacerun:yes'>  </span>The vertical scale field
+     is a method for manually converting the values held in the .R32 heightmap
+     file (created from the terrain editor) to meters.<span
+     style='mso-spacerun:yes'>  </span>(Note: when running a set of scatter
+     rules, the debug output window will display the min and max values found
+     in the .R32 when it gets loaded.<span style='mso-spacerun:yes'> 
+     </span>This can be used to help you calculate the correct setting for this
+     value.<span style='mso-spacerun:yes'>  </span>It defaults to 1000, but
+     this may not be correct for the map that you are generating.<span
+     style='mso-spacerun:yes'>  </span>If you have any doubts, then contact the
+     artist/designer who generated the terrain, and find out what the min and
+     max heights for the terrain were designed to be)</li>
+</ul>
+
+<p class=MsoNormal style='margin-top:9.0pt;margin-right:0in;margin-bottom:9.0pt;
+margin-left:0in'><b style='mso-bidi-font-weight:normal'><u>Using Sub Rules<o:p></o:p></u></b></p>
+
+<p class=MsoNormal style='margin-top:9.0pt;margin-right:0in;margin-bottom:9.0pt;
+margin-left:0in'><span style='mso-tab-count:1'>            </span>Sub rules are
+a way of scattering entities in relation to other scattered entities.<span
+style='mso-spacerun:yes'>  </span>This is useful, for example, when you want to
+put some small bushes around a tree, or whenever you want to mask the seam
+where a rock meets the terrain with low tufts of grass.<span
+style='mso-spacerun:yes'>  </span>In order to set it up, you need to first
+create your parent rule, then the sub rule.<span style='mso-spacerun:yes'> 
+</span>Both rules will reference the same layer in your .PSD file.</p>
+
+<p class=MsoNormal style='margin-top:9.0pt;margin-right:0in;margin-bottom:9.0pt;
+margin-left:0in;text-indent:.5in'>To set up the sub rule, select the rule of
+the parent objects, then click Add under the Sub Rule header to choose which of
+the rules you’ve created will be your subrule.<span style='mso-spacerun:yes'> 
+</span>The distance parameters under the Subrule header of your parent rule
+will determine the minimum and maximum distances that the children will be from
+the parent, not from other children (that value can be determined in the
+Exclusion Distance parameter of the subrule).</p>
+
+<p class=MsoNormal style='margin-top:9.0pt;margin-right:0in;margin-bottom:9.0pt;
+margin-left:0in;text-indent:.5in'>The total sub-model count will be with in the
+“min object count” and “max object count”.<span style='mso-spacerun:yes'> 
+</span>A random number between these values is chosen to be the maximum number
+of children that will be scattered around a given<span
+style='mso-spacerun:yes'>  </span>parent.<span style='mso-spacerun:yes'> 
+</span>Note, however, that the min/max object count is not a guarantee.<span
+style='mso-spacerun:yes'>  </span>The program may not be able to place the
+specified number of objects because of other considerations (gradients,
+heights, other objects in the way, etc)</p>
+
+<p class=MsoNormal style='margin-top:9.0pt;margin-right:0in;margin-bottom:9.0pt;
+margin-left:0in'><b style='mso-bidi-font-weight:normal'><u>Grouping Options</u></b><u><o:p></o:p></u></p>
+
+<p class=MsoNormal style='margin-top:9.0pt;margin-right:0in;margin-bottom:9.0pt;
+margin-left:0in'>Scattered objects are designed to be easily grouped into
+Selection Sets. </p>
+
+<h1 style='margin-top:24.0pt;margin-right:0in;margin-bottom:3.0pt;margin-left:
+.25in;text-indent:-.25in;tab-stops:list .25in'><u><span style='font-size:12.0pt;
+font-family:"Times New Roman"'>Other commands in Scatter menu<o:p></o:p></span></u></h1>
+
+<ul style='margin-top:0in' type=disc>
+ <li class=MsoNormal style='margin-top:9.0pt;margin-bottom:9.0pt;mso-list:l5 level1 lfo46;
+     tab-stops:list .5in'><b style='mso-bidi-font-weight:normal'>Commit
+     selected entities</b>: Commit the entities so they won’t be removed later
+     by scatter tool. The scatter tool removes all the uncommitted entities
+     before it generate new set of entities.</li>
+ <li class=MsoNormal style='margin-top:9.0pt;margin-bottom:9.0pt;mso-list:l5 level1 lfo46;
+     tab-stops:list .5in'><b style='mso-bidi-font-weight:normal'>Uncommit
+     selected entities</b></li>
+ <li class=MsoNormal style='margin-top:9.0pt;margin-bottom:9.0pt;mso-list:l5 level1 lfo46;
+     tab-stops:list .5in'><b style='mso-bidi-font-weight:normal'>Select all the
+     scattered entities</b>: Select all the entities generated by the scatter
+     tool</li>
+ <li class=MsoNormal style='margin-top:9.0pt;margin-bottom:9.0pt;mso-list:l5 level1 lfo46;
+     tab-stops:list .5in'><b style='mso-bidi-font-weight:normal'>Select only
+     committed entities</b></li>
+ <li class=MsoNormal style='margin-top:9.0pt;margin-bottom:9.0pt;mso-list:l5 level1 lfo46;
+     tab-stops:list .5in'><b style='mso-bidi-font-weight:normal'>Select only
+     uncommitted entities</b></li>
+</ul>
+
+<p class=MsoNormal><b style='mso-bidi-font-weight:normal'><u><o:p><span
+ style='text-decoration:none'>&nbsp;</span></o:p></u></b></p>
+
+<p class=MsoNormal><b style='mso-bidi-font-weight:normal'><u>Info Layers<o:p></o:p></u></b></p>
+
+<p class=MsoNormal><b style='mso-bidi-font-weight:normal'>Overview<o:p></o:p></b></p>
+
+<p class=MsoNormal><o:p>&nbsp;</o:p></p>
+
+<p class=MsoNormal><span style='mso-tab-count:1'>            </span>“Terrain
+Information Layers” are tools used by designers and artists to allow them to
+define a terrain’s regional responses and behaviors based on a 2D bitmap
+created in Adobe Photoshop, much like the Scatter tool layers.<span
+style='mso-spacerun:yes'>  </span>They are designed as a “short cut” or “speed
+optimization” around otherwise expensive game-side computations and also create
+a nice interface to allow visualization of localized environmental effects.
+Artists and designers literally “paint” areas of response on separate Photoshop
+layers and through appropriate naming of these layers, define how that layer
+will affect the in-game environment.<span style='mso-spacerun:yes'> 
+</span>Radiant also has a feature whereby the artist or designer can
+graphically preview these layers (a “PSD” file can be imported) in Radiant’s
+“XY Map” (The top-down view).<span style='mso-spacerun:yes'>  </span>Radiant
+also has the ability to convert a Photoshop “PSD” file into the <st1:PersonName>MOHPA</st1:PersonName>
+“TIL” file format for use by an individual game level.<span
+style='mso-spacerun:yes'>  </span>The exported “TIL” file will assume the name
+(and path) of the current Radiant map being edited. (IE: If one is editing and
+exporting “maps/5_5_foo.bsp”, then the “TIL” exporter will create
+“maps/5_5_foo.TIL”).<span style='mso-spacerun:yes'>  </span>The behavior of the
+currently supported set of layers will be described next.</p>
+
+<p class=MsoNormal><span style='mso-spacerun:yes'>  </span></p>
+
+<p class=MsoNormal><b style='mso-bidi-font-weight:normal'>Supported Layers</b></p>
+
+<p class=MsoNormal><o:p>&nbsp;</o:p></p>
+
+<p class=MsoNormal>“<i style='mso-bidi-font-style:normal'>auto_farplane</i>”</p>
+
+<p class=MsoNormal><o:p>&nbsp;</o:p></p>
+
+<p class=MsoNormal><span style='mso-tab-count:1'>            </span>This layer
+controls the distance of the far plane used for visibility culling of geometry
+in the game. It updates the far plane distance linearly and smoothly in a range
+defined by the key/value pairs of “auto_farplane_near” and “auto_farplane_far”.
+The information of the layer data is defined in the range from 0.0 to 1.0. A
+value of 0.0 is the “All-clear” (no opacity) attribute of a PSD layer pixel. A
+value from the layer near 0.0 will cause the in-game far plane to approach the
+value of the “auto_farplane_near” setting. Similarly, a value of 1.0 is the
+“full bright” (full opacity) attribute of a PSD layer pixel.<span
+style='mso-spacerun:yes'>  </span>Layer values close to 1.0 will cause the in-game
+far plane distance to approach the value of the “auto_farplane_far”
+setting.<span style='mso-spacerun:yes'>  </span>All values from this layer will
+apply a far plane distance within the range of these two values.</p>
+
+<p class=MsoNormal><o:p>&nbsp;</o:p></p>
+
+<p class=MsoNormal>“<i style='mso-bidi-font-style:normal'>obfuscation</i>”</p>
+
+<p class=MsoNormal><o:p>&nbsp;</o:p></p>
+
+<p class=MsoNormal><span style='mso-tab-count:1'>            </span>The values
+in the obfuscation layer serve to attenuate or “dumb down” an AI character’s
+ability to detect other AI characters and the player. The values in the
+obfuscation layer range from 0.0 (No obfuscation…clear L.O.S.) to 1.0 (Complete
+concealment…minimal chance of detection). Calculations to determine “effective
+detectability” of an obfuscated character also consider the distance between
+the 2 characters.<span style='mso-spacerun:yes'>  </span>Characters farther
+away have a higher bias of obfuscation whereas closer characters gain less
+benefit from the values in the obfuscation layer.</p>
+
+<p class=MsoNormal><o:p>&nbsp;</o:p></p>
+
+<p class=MsoNormal>“<i style='mso-bidi-font-style:normal'>particle_filter</i>”</p>
+
+<p class=MsoNormal><o:p>&nbsp;</o:p></p>
+
+<p class=MsoNormal><span style='mso-tab-count:1'>            </span>The
+particle filter layer allows the artist to control the types of particles that
+will be produced in different regions of the map. In the “TIK” file for a
+particle effect, the following directive is issued:</p>
+
+<p class=MsoNormal><o:p>&nbsp;</o:p></p>
+
+<p class=MsoNormal style='mso-layout-grid-align:none;text-autospace:none'><span
+style='font-size:10.0pt;font-family:"Courier New"'><span style='mso-tab-count:
+1'>      </span>originemitter <b style='mso-bidi-font-weight:normal'>a_particle_effect</b><o:p></o:p></span></p>
+
+<p class=MsoNormal style='mso-layout-grid-align:none;text-autospace:none'><span
+style='font-size:10.0pt;font-family:"Courier New"'><span style='mso-tab-count:
+1'>      </span>(<o:p></o:p></span></p>
+
+<p class=MsoNormal style='mso-layout-grid-align:none;text-autospace:none'><span
+style='font-size:10.0pt;font-family:"Courier New"'><span style='mso-tab-count:
+2'>            </span><b style='mso-bidi-font-weight:normal'>particle_filter</b>
+<b style='mso-bidi-font-weight:normal'>128</b><o:p></o:p></span></p>
+
+<p class=MsoNormal style='mso-layout-grid-align:none;text-autospace:none'><span
+style='font-size:10.0pt;font-family:"Courier New"'><span style='mso-tab-count:
+2'>            </span>…<o:p></o:p></span></p>
+
+<p class=MsoNormal style='mso-layout-grid-align:none;text-autospace:none'><span
+style='font-size:10.0pt;font-family:"Courier New"'><span style='mso-tab-count:
+1'>      </span>)<o:p></o:p></span></p>
+
+<p class=MsoNormal><o:p>&nbsp;</o:p></p>
+
+<p class=MsoNormal><span style='mso-tab-count:1'>            </span>This means
+that when the player character traverses over any section of the
+particle-filter layer and the value at that location is “128” (NOTE: This layer
+should be monochromatic), then the particle effect “<b style='mso-bidi-font-weight:
+normal'>a_particle_effect</b>”, will begin emitting. When the player character
+leaves this region, the effect will cease. Using different values for the TIK “<b
+style='mso-bidi-font-weight:normal'><span style='font-size:10.0pt;font-family:
+"Courier New"'>particle_filter</span></b>” directive, a set of up to 256
+different effects can be varied throughout a landscape. </p>
+
+<p class=MsoNormal><o:p>&nbsp;</o:p></p>
+
+<p class=MsoNormal><b style='mso-bidi-font-weight:normal'>Radiant “Terrain Info
+Layer” Dialog Options<o:p></o:p></b></p>
+
+<p class=MsoNormal><o:p>&nbsp;</o:p></p>
+
+<p class=MsoNormal><span style='mso-tab-count:1'>            </span>The
+“Terrain Info Layer” dialog can be invoked from the main menu by selecting
+“Misc-&gt;Info Layer”. The options on this dialog are: </p>
+
+<p class=MsoNormal><o:p>&nbsp;</o:p></p>
+
+<ul style='margin-top:0in' type=disc>
+ <li class=MsoNormal style='mso-list:l34 level1 lfo49;tab-stops:list .5in'><b
+     style='mso-bidi-font-weight:normal'>Load</b><i style='mso-bidi-font-style:
+     normal'> - </i>This allows the artist or designer to load any PSD file for
+     viewing and exporting.<span style='mso-spacerun:yes'>  </span>The filename
+     of the PSD file is not important as the TIL Exporter will use the map name
+     with the “TIL” extension when it creates the resultant output file.<i
+     style='mso-bidi-font-style:normal'><o:p></o:p></i></li>
+ <li class=MsoNormal style='mso-list:l34 level1 lfo49;tab-stops:list .5in'><i
+     style='mso-bidi-font-style:normal'>“Refresh”- </i>This option allows the
+     designer or artist to quickly reload the current PSD file.<span
+     style='mso-spacerun:yes'>  </span>It allows them to bypass the “Open File”
+     dialog altogether.<i style='mso-bidi-font-style:normal'><o:p></o:p></i></li>
+ <li class=MsoNormal style='mso-list:l34 level1 lfo49;tab-stops:list .5in'><i
+     style='mso-bidi-font-style:normal'>“View” - </i>Selecting this option will
+     produce a dropdown box containing the names of ALL the layers contained in
+     the PSD file (Not just TIL layers).<span style='mso-spacerun:yes'> 
+     </span>Selecting any of them will cause that layer to visually overlay in the
+     “XY Map” top-down map.<span style='mso-spacerun:yes'>  </span>Select the
+     “none” entry to suppress this overlay display.<i style='mso-bidi-font-style:
+     normal'><o:p></o:p></i></li>
+ <li class=MsoNormal style='mso-list:l34 level1 lfo49;tab-stops:list .5in'><i
+     style='mso-bidi-font-style:normal'>“Export” - </i>This option creates the
+     output TIL file in the same directory as the BSP file. The resultant file
+     will be of the same filename as the BSP file save for the BSP extension
+     (It will have a “.TIL” extension).<span style='mso-spacerun:yes'> 
+     </span>This step is required if any changes to the PSD layer are to be
+     propagated to the game. Note: Only layers with the “TIL_” prefix and a
+     valid layer name will be exported. The valid layer names to date are “auto_farplane”,
+     “obfuscation”, “particle_filter”, and “contact_sounds”.<i
+     style='mso-bidi-font-style:normal'><o:p></o:p></i></li>
+ <li class=MsoNormal style='mso-list:l34 level1 lfo49;tab-stops:list .5in'><i
+     style='mso-bidi-font-style:normal'>“Clear” - </i>This option completely
+     disassociates (unloads from memory) the current PSD file being used.<span
+     style='mso-spacerun:yes'>   </span>If the “View” option was used
+     previously and is still active, the “XY Map” overlay will disappear as
+     well.<i style='mso-bidi-font-style:normal'><o:p></o:p></i></li>
+ <li class=MsoNormal style='mso-list:l34 level1 lfo49;tab-stops:list .5in'><i
+     style='mso-bidi-font-style:normal'>“Done” - </i>This option hides the
+     “Terrain Info Layer” dialog.<span style='mso-spacerun:yes'>  </span>It can
+     be invoked again from the main menu by selecting “Misc-&gt;Info Layer”.<i
+     style='mso-bidi-font-style:normal'><o:p></o:p></i></li>
+</ul>
+
+<p class=MsoNormal><o:p>&nbsp;</o:p></p>
+
+<b style='mso-bidi-font-weight:normal'><span style='font-size:12.0pt;
+font-family:"Times New Roman";mso-fareast-font-family:"Times New Roman";
+mso-ansi-language:EN-US;mso-fareast-language:EN-US;mso-bidi-language:AR-SA'><br
+clear=all style='page-break-before:always'>
+</span></b>
+
+<p class=MsoNormal><b style='mso-bidi-font-weight:normal'>Operation Checklist<o:p></o:p></b></p>
+
+<p class=MsoNormal><o:p>&nbsp;</o:p></p>
+
+<p class=MsoNormal style='margin-left:.75in;text-indent:-.5in;mso-list:l31 level1 lfo51;
+tab-stops:list .75in'><![if !supportLists]><span style='mso-list:Ignore'>1)<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><![endif]>In Radiant, load a map for editing.<span
+style='mso-spacerun:yes'>  </span>In this example, “foo.map”</p>
+
+<p class=MsoNormal style='margin-left:.75in;text-indent:-.5in;mso-list:l31 level1 lfo51;
+tab-stops:list .75in'><![if !supportLists]><span style='mso-list:Ignore'>2)<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><![endif]>Choose the settings for the “XY Map” that will make it
+easiest to visualize the terrain from a top-down view (“Grid off”,
+“TERin2D”…etc).</p>
+
+<p class=MsoNormal style='margin-left:.75in;text-indent:-.5in;mso-list:l31 level1 lfo51;
+tab-stops:list .75in'><![if !supportLists]><span style='mso-list:Ignore'>3)<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><![endif]>From the “file” menu in Radiant, use the “Reference
+Snapshot” option. You will be prompted to save a TGA file containing an accurate
+full-map top-down image of your level. </p>
+
+<p class=MsoNormal style='margin-left:.75in;text-indent:-.5in;mso-list:l31 level1 lfo51;
+tab-stops:list .75in'><![if !supportLists]><span style='mso-list:Ignore'>4)<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><![endif]>Save this TGA image in your “map_source” folder and
+append the word “ref” to the filename (For clarity).<span
+style='mso-spacerun:yes'>  </span>In this example, save it to “foo_ref.tga”.</p>
+
+<p class=MsoNormal style='margin-left:.75in;text-indent:-.5in;mso-list:l31 level1 lfo51;
+tab-stops:list .75in'><![if !supportLists]><span style='mso-list:Ignore'>5)<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><![endif]>Open up Photoshop and load this TGA file as your
+“background” layer</p>
+
+<p class=MsoNormal style='margin-left:.25in'>OR</p>
+
+<p class=MsoNormal style='margin-left:.75in;text-indent:-.5in;mso-list:l31 level1 lfo51;
+tab-stops:list .75in'><![if !supportLists]><span style='mso-list:Ignore'>6)<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><![endif]>Open the PSD file associated with your level (It is OK
+if it has “scatter” layers in it, these are ignored by the TIL exporter.</p>
+
+<p class=MsoNormal style='margin-left:.75in;text-indent:-.5in;mso-list:l31 level1 lfo51;
+tab-stops:list .75in'><![if !supportLists]><span style='mso-list:Ignore'>7)<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><![endif]>Create a new layer called “TIL_auto_farplane”.<span
+style='mso-spacerun:yes'>  </span>The “TIL_” prefix is how the TIL exporter
+recognizes valid layers.</p>
+
+<p class=MsoNormal style='margin-left:.75in;text-indent:-.5in;mso-list:l31 level1 lfo51;
+tab-stops:list .75in'><![if !supportLists]><span style='mso-list:Ignore'>8)<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><![endif]>Paint an image on this layer (Do not “flatten” the
+image.<span style='mso-spacerun:yes'>  </span>Keep the layers insulated from
+each other). Save the PSD file.</p>
+
+<p class=MsoNormal style='margin-left:.75in;text-indent:-.5in;mso-list:l31 level1 lfo51;
+tab-stops:list .75in'><![if !supportLists]><span style='mso-list:Ignore'>9)<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><![endif]>In Radiant, find the “worldspawn” entity and set the
+key/value pairs for “auto_farplane_near” and “auto_farplane_far” (optional…the
+defaults are 1000 near and 10000 far).</p>
+
+<p class=MsoNormal style='margin-left:.75in;text-indent:-.5in;mso-list:l31 level1 lfo51;
+tab-stops:list .75in'><![if !supportLists]><span style='mso-list:Ignore'>10)<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><![endif]>In Radiant on the main menu, select “Misc-&gt;Info
+Layers” and a dialog box will appear. </p>
+
+<p class=MsoNormal style='margin-left:.75in;text-indent:-.5in;mso-list:l31 level1 lfo51;
+tab-stops:list .75in'><![if !supportLists]><span style='mso-list:Ignore'>11)<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><![endif]>Select the “Load” option and open the PSD file you have
+just edited.</p>
+
+<p class=MsoNormal style='margin-left:.75in;text-indent:-.5in;mso-list:l31 level1 lfo51;
+tab-stops:list .75in'><![if !supportLists]><span style='mso-list:Ignore'>12)<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><![endif]>Optionally, you can select the “View” option and a
+dropdown box will appear. Select the layer you wish to view
+(“TIL_auto_farplane” is this example.).<span style='mso-spacerun:yes'> 
+</span>You will an overlay of that layer on the “XY Map” top-down window.
+Select “View-&gt;none” to clear it again.</p>
+
+<p class=MsoNormal style='margin-left:.75in;text-indent:-.5in;mso-list:l31 level1 lfo51;
+tab-stops:list .75in'><![if !supportLists]><span style='mso-list:Ignore'>13)<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><![endif]>Press the “Export” button.</p>
+
+<p class=MsoNormal style='margin-left:.75in;text-indent:-.5in;mso-list:l31 level1 lfo51;
+tab-stops:list .75in'><![if !supportLists]><span style='mso-list:Ignore'>14)<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><![endif]>Run <st1:PersonName>MOHPA</st1:PersonName>.EXE with
+your map.<span style='mso-spacerun:yes'>  </span>In this example using
+“foo.bsp”, you should see the far plane distance advance and recede
+accordingly.</p>
+
+<p class=MsoNormal style='margin-left:.25in'><o:p>&nbsp;</o:p></p>
+
+<p class=MsoNormal style='margin-left:.25in'><o:p>&nbsp;</o:p></p>
+
+<p class=MsoNormal style='margin-left:.25in'><b style='mso-bidi-font-weight:
+normal'>Final Notes:<o:p></o:p></b></p>
+
+<p class=MsoNormal style='margin-left:.25in'><o:p>&nbsp;</o:p></p>
+
+<p class=MsoNormal style='margin-left:.5in;text-indent:-.25in;mso-list:l2 level1 lfo53;
+tab-stops:list .5in'><![if !supportLists]><span style='mso-list:Ignore'>1)<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></span><![endif]>The
+only PSD layers the TIL exporter will recognize are those with the prefix
+“TIL_” and with a valid layer name.<span style='mso-spacerun:yes'>  </span>At
+the time of this writing, the valid layer names are “auto_farplane”,
+“obfuscation”, “particle_filter”, and “contact_sounds”.</p>
+
+<p class=MsoNormal style='margin-left:.5in;text-indent:-.25in;mso-list:l2 level1 lfo53;
+tab-stops:list .5in'><![if !supportLists]><span style='mso-list:Ignore'>2)<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></span><![endif]>TIL
+files have can have a substantial memory footprint. This will be addressed as a
+memory optimization in the TIL exporter/reader.</p>
+
+<p class=MsoNormal style='margin-left:.5in;text-indent:-.25in;mso-list:l2 level1 lfo53;
+tab-stops:list .5in'><![if !supportLists]><span style='mso-list:Ignore'>3)<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></span><![endif]>All
+“scatter” information and TIL information can coexist safely in the PSD file.
+This method should be employed so as to reduce the number of source assets
+associated with any given level.</p>
+
+<p class=MsoNormal style='margin-left:.25in'><o:p>&nbsp;</o:p></p>
+
+<p class=MsoNormal style='margin-left:.25in'><o:p>&nbsp;</o:p></p>
+
+</div>
+
+</body>
+
+</html>

@@ -1,0 +1,266 @@
+<html xmlns:v="urn:schemas-microsoft-com:vml"
+xmlns:o="urn:schemas-microsoft-com:office:office"
+xmlns:w="urn:schemas-microsoft-com:office:word"
+xmlns="http://www.w3.org/TR/REC-html40">
+
+<head>
+<meta http-equiv=Content-Type content="text/html; charset=windows-1252">
+<meta name=ProgId content=Word.Document>
+<meta name=Generator content="Microsoft Word 10">
+<meta name=Originator content="Microsoft Word 10">
+<link rel=File-List href="mohpa_dappled_shadows_files/filelist.xml">
+<link rel=Edit-Time-Data href="mohpa_dappled_shadows_files/editdata.mso">
+<!--[if !mso]>
+<style>
+v\:* {behavior:url(#default#VML);}
+o\:* {behavior:url(#default#VML);}
+w\:* {behavior:url(#default#VML);}
+.shape {behavior:url(#default#VML);}
+</style>
+<![endif]-->
+<title>Dappled Shadows</title>
+<!--[if gte mso 9]><xml>
+ <o:DocumentProperties>
+  <o:Author>Jay Koottar</o:Author>
+  <o:LastAuthor>bbilodeau</o:LastAuthor>
+  <o:Revision>2</o:Revision>
+  <o:TotalTime>252</o:TotalTime>
+  <o:Created>2004-12-07T18:39:00Z</o:Created>
+  <o:LastSaved>2004-12-07T18:39:00Z</o:LastSaved>
+  <o:Pages>1</o:Pages>
+  <o:Words>309</o:Words>
+  <o:Characters>1765</o:Characters>
+  <o:Company>EALA</o:Company>
+  <o:Lines>14</o:Lines>
+  <o:Paragraphs>4</o:Paragraphs>
+  <o:CharactersWithSpaces>2070</o:CharactersWithSpaces>
+  <o:Version>10.3501</o:Version>
+ </o:DocumentProperties>
+</xml><![endif]--><!--[if gte mso 9]><xml>
+ <w:WordDocument>
+  <w:GrammarState>Clean</w:GrammarState>
+  <w:Compatibility>
+   <w:BreakWrappedTables/>
+   <w:SnapToGridInCell/>
+   <w:WrapTextWithPunct/>
+   <w:UseAsianBreakRules/>
+  </w:Compatibility>
+  <w:BrowserLevel>MicrosoftInternetExplorer4</w:BrowserLevel>
+ </w:WordDocument>
+</xml><![endif]-->
+<style>
+<!--
+ /* Style Definitions */
+ p.MsoNormal, li.MsoNormal, div.MsoNormal
+	{mso-style-parent:"";
+	margin:0in;
+	margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	font-size:12.0pt;
+	font-family:"Times New Roman";
+	mso-fareast-font-family:"Times New Roman";}
+a:link, span.MsoHyperlink
+	{color:blue;
+	text-decoration:underline;
+	text-underline:single;}
+a:visited, span.MsoHyperlinkFollowed
+	{color:purple;
+	text-decoration:underline;
+	text-underline:single;}
+@page Section1
+	{size:8.5in 11.0in;
+	margin:1.0in 1.25in 1.0in 1.25in;
+	mso-header-margin:.5in;
+	mso-footer-margin:.5in;
+	mso-paper-source:0;}
+div.Section1
+	{page:Section1;}
+-->
+</style>
+<!--[if gte mso 10]>
+<style>
+ /* Style Definitions */
+ table.MsoNormalTable
+	{mso-style-name:"Table Normal";
+	mso-tstyle-rowband-size:0;
+	mso-tstyle-colband-size:0;
+	mso-style-noshow:yes;
+	mso-style-parent:"";
+	mso-padding-alt:0in 5.4pt 0in 5.4pt;
+	mso-para-margin:0in;
+	mso-para-margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	font-size:10.0pt;
+	font-family:"Times New Roman";}
+</style>
+<![endif]--><!--[if gte mso 9]><xml>
+ <o:shapedefaults v:ext="edit" spidmax="3074"/>
+</xml><![endif]--><!--[if gte mso 9]><xml>
+ <o:shapelayout v:ext="edit">
+  <o:idmap v:ext="edit" data="1"/>
+ </o:shapelayout></xml><![endif]-->
+</head>
+
+<body lang=EN-US link=blue vlink=purple style='tab-interval:.5in'>
+
+<div class=Section1>
+
+<p class=MsoNormal><o:p>&nbsp;</o:p></p>
+
+<p class=MsoNormal align=right style='text-align:right'><b style='mso-bidi-font-weight:
+normal'><u><span style='font-size:14.0pt;mso-bidi-font-size:12.0pt'>Dappled
+Shadows</span></u></b><span style='font-size:14.0pt;mso-bidi-font-size:12.0pt'><span
+style='mso-tab-count:8'>                                                                            </span>
+<o:p></o:p></span></p>
+
+<p class=MsoNormal><span style='font-size:14.0pt;mso-bidi-font-size:12.0pt'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal><span style='mso-tab-count:1'>            </span>Dappled
+shadows simulate the look of characters being shadowed with a high frequency
+shadow. This is frequently used for giving the impression that a character is being
+shadowed by foliage, and this works in hand with the existing shadow maps.<span
+style='mso-spacerun:yes'>  </span>It is important to note that the dapple map
+feature is bound to two things: terrain and a shader. The shader must support
+the dapple feature, and the worldspawn must call to the dapple texture. If you
+load a level that uses a shader that supports dapple, and your projected shadow
+textures are not set up as defined in this document, you will see various
+rendering bugs, namely anything using the dapple-defined shaders turning black.
+</p>
+
+<p class=MsoNormal><o:p>&nbsp;</o:p></p>
+
+<p class=MsoNormal>The shaders currently defined for dappling are:</p>
+
+<p class=MsoNormal>clothes_highend</p>
+
+<p class=MsoNormal>metallic_lit_20</p>
+
+<p class=MsoNormal>skin</p>
+
+<p class=MsoNormal><o:p>&nbsp;</o:p></p>
+
+<p class=MsoNormal><span style='mso-tab-count:1'>            </span>So, before
+beginning anything, please make sure that if you have a level that uses any of
+these shaders (pretty much every level), you add an alpha layer that is all
+black to the projected shadows before you run the level. </p>
+
+<p class=MsoNormal><o:p>&nbsp;</o:p></p>
+
+<p class=MsoNormal>Here is step by step instruction on how to add dappled
+shadows:</p>
+
+<p class=MsoNormal><!--[if gte vml 1]><v:shapetype id="_x0000_t75" coordsize="21600,21600"
+ o:spt="75" o:preferrelative="t" path="m@4@5l@4@11@9@11@9@5xe" filled="f"
+ stroked="f">
+ <v:stroke joinstyle="miter"/>
+ <v:formulas>
+  <v:f eqn="if lineDrawn pixelLineWidth 0"/>
+  <v:f eqn="sum @0 1 0"/>
+  <v:f eqn="sum 0 0 @1"/>
+  <v:f eqn="prod @2 1 2"/>
+  <v:f eqn="prod @3 21600 pixelWidth"/>
+  <v:f eqn="prod @3 21600 pixelHeight"/>
+  <v:f eqn="sum @0 0 1"/>
+  <v:f eqn="prod @6 1 2"/>
+  <v:f eqn="prod @7 21600 pixelWidth"/>
+  <v:f eqn="sum @8 21600 0"/>
+  <v:f eqn="prod @7 21600 pixelHeight"/>
+  <v:f eqn="sum @10 21600 0"/>
+ </v:formulas>
+ <v:path o:extrusionok="f" gradientshapeok="t" o:connecttype="rect"/>
+ <o:lock v:ext="edit" aspectratio="t"/>
+</v:shapetype><v:shape id="_x0000_s1026" type="#_x0000_t75" style='position:absolute;
+ margin-left:0;margin-top:6.85pt;width:125.25pt;height:125.25pt;z-index:-4;
+ mso-position-horizontal:left' wrapcoords="-129 0 -129 21471 21600 21471 21600 0 -129 0">
+ <v:imagedata src="mohpa_dappled_shadows_files/image001.png" o:title="dappletex"/>
+ <w:wrap type="square"/>
+</v:shape><![endif]--><![if !vml]><img width=167 height=167
+src="mohpa_dappled_shadows_files/image002.jpg" align=left hspace=12 v:shapes="_x0000_s1026"><![endif]></p>
+
+<p class=MsoNormal><o:p>&nbsp;</o:p></p>
+
+<p class=MsoNormal><o:p>&nbsp;</o:p></p>
+
+<p class=MsoNormal>1. Create your dappled shadow texture. Keep in mind that
+while the projected shadow is mapped to a 1:1 ratio, the dapple map is actually
+tiled across the surface 64 times on x and 64 on y. </p>
+
+<p class=MsoNormal><o:p>&nbsp;</o:p></p>
+
+<p class=MsoNormal><o:p>&nbsp;</o:p></p>
+
+<p class=MsoNormal><o:p>&nbsp;</o:p></p>
+
+<p class=MsoNormal><!--[if gte vml 1]><v:shape id="_x0000_s1027" type="#_x0000_t75"
+ style='position:absolute;margin-left:0;margin-top:12.85pt;width:128.25pt;
+ height:128.25pt;z-index:-3;mso-position-horizontal:left' wrapcoords="-126 0 -126 21474 21600 21474 21600 0 -126 0">
+ <v:imagedata src="mohpa_dappled_shadows_files/image003.png" o:title="rgb+a"/>
+ <w:wrap type="square"/>
+</v:shape><![endif]--><![if !vml]><img width=171 height=171
+src="mohpa_dappled_shadows_files/image004.jpg" align=left hspace=12 v:shapes="_x0000_s1027"><![endif]></p>
+
+<p class=MsoNormal><o:p>&nbsp;</o:p></p>
+
+<p class=MsoNormal><o:p>&nbsp;</o:p></p>
+
+<p class=MsoNormal>2. On your projected shadow textures create an alpha map of
+where you want the dapple shadows to fall. Anywhere on the alpha that is 0 (or
+black) will show the dapple map. The more black it is, the more the dapple map
+will show. The image to the left shows an rgb layer with the alpha showing. All
+the area that is human soft tissue pink will show the dappled map. </p>
+
+<p class=MsoNormal><o:p>&nbsp;</o:p></p>
+
+<p class=MsoNormal><o:p>&nbsp;</o:p></p>
+
+<p class=MsoNormal><o:p>&nbsp;</o:p></p>
+
+<p class=MsoNormal><o:p>&nbsp;</o:p></p>
+
+<p class=MsoNormal><o:p>&nbsp;</o:p></p>
+
+<p class=MsoNormal><!--[if gte vml 1]><v:shape id="_x0000_s1028" type="#_x0000_t75"
+ style='position:absolute;margin-left:0;margin-top:-27pt;width:3in;height:172.5pt;
+ z-index:-2;mso-position-horizontal:left' wrapcoords="-75 0 -75 21506 21600 21506 21600 0 -75 0">
+ <v:imagedata src="mohpa_dappled_shadows_files/image005.png" o:title="values"/>
+ <w:wrap type="square"/>
+</v:shape><![endif]--><![if !vml]><img width=288 height=230
+src="mohpa_dappled_shadows_files/image006.jpg" align=left hspace=12 v:shapes="_x0000_s1028"><![endif]></p>
+
+<p class=MsoNormal><o:p>&nbsp;</o:p></p>
+
+<p class=MsoNormal>3. Now, in radiant, you must define a key called “shadow_dapple”
+with the value being the path to the dapple texture. You can only have one
+dapple texture. </p>
+
+<p class=MsoNormal><o:p>&nbsp;</o:p></p>
+
+<p class=MsoNormal><o:p>&nbsp;</o:p></p>
+
+<p class=MsoNormal><o:p>&nbsp;</o:p></p>
+
+<p class=MsoNormal><o:p>&nbsp;</o:p></p>
+
+<p class=MsoNormal><o:p>&nbsp;</o:p></p>
+
+<p class=MsoNormal><o:p>&nbsp;</o:p></p>
+
+<p class=MsoNormal><o:p>&nbsp;</o:p></p>
+
+<p class=MsoNormal><!--[if gte vml 1]><v:shape id="_x0000_s1029" type="#_x0000_t75"
+ style='position:absolute;margin-left:0;margin-top:54.6pt;width:251.25pt;
+ height:251.25pt;z-index:-1;mso-position-horizontal:left' wrapcoords="-64 0 -64 21536 21600 21536 21600 0 -64 0">
+ <v:imagedata src="mohpa_dappled_shadows_files/image007.png" o:title="dapple1"/>
+ <w:wrap type="square"/>
+</v:shape><![endif]--><![if !vml]><img width=335 height=335
+src="mohpa_dappled_shadows_files/image008.jpg" align=left hspace=12 v:shapes="_x0000_s1029"><![endif]>4.
+In order to add it to the material, you must enable the checkbox in the max
+material editor or the maya hypershade per material you want using the dappled
+texture. Once you enter the game, type r_dapple 1 in the console to see dappled
+shadows. </p>
+
+</div>
+
+</body>
+
+</html>

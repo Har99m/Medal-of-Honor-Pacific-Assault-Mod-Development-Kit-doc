@@ -1,0 +1,360 @@
+<html xmlns:v="urn:schemas-microsoft-com:vml"
+xmlns:o="urn:schemas-microsoft-com:office:office"
+xmlns:w="urn:schemas-microsoft-com:office:word"
+xmlns="http://www.w3.org/TR/REC-html40">
+
+<head>
+<meta http-equiv=Content-Type content="text/html; charset=windows-1252">
+<meta name=ProgId content=Word.Document>
+<meta name=Generator content="Microsoft Word 10">
+<meta name=Originator content="Microsoft Word 10">
+<link rel=File-List href="lightmapping_files/filelist.xml">
+<link rel=Edit-Time-Data href="lightmapping_files/editdata.mso">
+<!--[if !mso]>
+<style>
+v\:* {behavior:url(#default#VML);}
+o\:* {behavior:url(#default#VML);}
+w\:* {behavior:url(#default#VML);}
+.shape {behavior:url(#default#VML);}
+</style>
+<![endif]--><!--[if gte mso 9]><xml>
+ <o:DocumentProperties>
+  <o:Author>bbilodeau</o:Author>
+  <o:LastAuthor>bbilodeau</o:LastAuthor>
+  <o:Revision>7</o:Revision>
+  <o:TotalTime>107</o:TotalTime>
+  <o:Created>2004-12-08T00:47:00Z</o:Created>
+  <o:LastSaved>2004-12-22T02:58:00Z</o:LastSaved>
+  <o:Pages>1</o:Pages>
+  <o:Words>1105</o:Words>
+  <o:Characters>6303</o:Characters>
+  <o:Company>TKO Software, Inc.</o:Company>
+  <o:Lines>52</o:Lines>
+  <o:Paragraphs>14</o:Paragraphs>
+  <o:CharactersWithSpaces>7394</o:CharactersWithSpaces>
+  <o:Version>10.3501</o:Version>
+ </o:DocumentProperties>
+</xml><![endif]--><!--[if gte mso 9]><xml>
+ <w:WordDocument>
+  <w:GrammarState>Clean</w:GrammarState>
+  <w:Compatibility>
+   <w:BreakWrappedTables/>
+   <w:SnapToGridInCell/>
+   <w:WrapTextWithPunct/>
+   <w:UseAsianBreakRules/>
+  </w:Compatibility>
+  <w:BrowserLevel>MicrosoftInternetExplorer4</w:BrowserLevel>
+ </w:WordDocument>
+</xml><![endif]-->
+<style>
+<!--
+ /* Style Definitions */
+ p.MsoNormal, li.MsoNormal, div.MsoNormal
+	{mso-style-parent:"";
+	margin:0in;
+	margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	font-size:12.0pt;
+	font-family:"Times New Roman";
+	mso-fareast-font-family:"Times New Roman";}
+@page Section1
+	{size:8.5in 11.0in;
+	margin:1.0in 1.25in 1.0in 1.25in;
+	mso-header-margin:.5in;
+	mso-footer-margin:.5in;
+	mso-paper-source:0;}
+div.Section1
+	{page:Section1;}
+-->
+</style>
+<!--[if gte mso 10]>
+<style>
+ /* Style Definitions */
+ table.MsoNormalTable
+	{mso-style-name:"Table Normal";
+	mso-tstyle-rowband-size:0;
+	mso-tstyle-colband-size:0;
+	mso-style-noshow:yes;
+	mso-style-parent:"";
+	mso-padding-alt:0in 5.4pt 0in 5.4pt;
+	mso-para-margin:0in;
+	mso-para-margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	font-size:10.0pt;
+	font-family:"Times New Roman";}
+</style>
+<![endif]--><!--[if gte mso 9]><xml>
+ <o:shapedefaults v:ext="edit" spidmax="4098"/>
+</xml><![endif]--><!--[if gte mso 9]><xml>
+ <o:shapelayout v:ext="edit">
+  <o:idmap v:ext="edit" data="1"/>
+ </o:shapelayout></xml><![endif]-->
+</head>
+
+<body lang=EN-US style='tab-interval:.5in'>
+
+<div class=Section1>
+
+<p class=MsoNormal align=center style='text-align:center'><b style='mso-bidi-font-weight:
+normal'><span style='font-size:20.0pt'>Light Mapping Guide<o:p></o:p></span></b></p>
+
+<p class=MsoNormal align=center style='text-align:center'><b style='mso-bidi-font-weight:
+normal'><span style='font-size:20.0pt'><o:p>&nbsp;</o:p></span></b></p>
+
+<p class=MsoNormal style='text-indent:.5in'>MOHRadiant can be used to
+automatically create light maps for your level. There are two types of light
+maps uesed in Medal of Honor Pacific assault – planar projection shadow textures,
+and model specific light maps. Planar projection shadow textures are textures
+that represent shadows at different layers in the scene. For example, the
+terrain shadows are at the lowest level, the next level up may be bushes, above
+the bushes would be a layer of trees casting shadows, and above the trees may
+be the tree tops or the tops of hills. They are called planar projections
+because you can think of them as a planes perpendicular with the terrain that
+project shadows down on objects below them. This is how the game is able to
+render the appropriate shadows on to different objects at different levels. A
+special type of planar projection textures are called “insets”. Insets are
+smaller areas of the map where you want to have more detailed shadows. The
+second type of light map, model specific light maps, are just the typical light
+maps you would normally use on walls or other objects. They are model specific
+because they are only used on one specific model and not over the whole scene
+like the planar projection maps. Model specific light maps are used by models
+that would not work well with planar projections. For example a building that
+has vertical walls would not work with a planar projection because the light
+map for the wall would reduce to a single line on the planar projection. For
+this reason, individual light maps are created for the model.</p>
+
+<p class=MsoNormal style='text-indent:.5in'>The modeling program (MilkShape’s
+MDK Material Editor) determines which kind of light map to use. If you set the
+material to default-lit-lightmap, a models specific light map will be expected.
+Also, the model is expected to have a second set of texture coordinates for the
+light map. If another type of material is used, for example, default lit, then
+the planar projection light map will be used. Additional texture coordinates
+are not necessary for this type of light map since the game will automatically
+generate them. For planar projection type light mapping, you need to set the
+shadow map level to use. This can also be set in MilkShape using the MDK Material
+Editor. If you are using assets that are already used in the game, you don’t
+need to do anything, since they already have this information set.</p>
+
+<p class=MsoNormal><span style='mso-tab-count:1'>            </span>MOHRadiant
+can be used to initialize the necessary information for creating light maps. The
+first thing you should do is create the insets for the map. There is a limit of
+3 insets for a map. These are areas where you need to have more shadow detail
+than normal. To create an inset, drag out a brush over the area you want to use
+for the inset, using the 2D XY Top view. Then go to the “Selection” menu, and
+select “Insets”. This will give you the choice of assigning this brush to be
+Inset 0, Inset 1, or Inset 2. The next thing you should intitialize is the
+shadow texture names. This information is stored with the world spawn data. You
+can edit this information by selecting a brush in the scene and typing “n” to
+bring up the entity dialog:</p>
+
+<p class=MsoNormal><o:p>&nbsp;</o:p></p>
+
+<p class=MsoNormal><!--[if gte vml 1]><v:shapetype id="_x0000_t75" coordsize="21600,21600"
+ o:spt="75" o:preferrelative="t" path="m@4@5l@4@11@9@11@9@5xe" filled="f"
+ stroked="f">
+ <v:stroke joinstyle="miter"/>
+ <v:formulas>
+  <v:f eqn="if lineDrawn pixelLineWidth 0"/>
+  <v:f eqn="sum @0 1 0"/>
+  <v:f eqn="sum 0 0 @1"/>
+  <v:f eqn="prod @2 1 2"/>
+  <v:f eqn="prod @3 21600 pixelWidth"/>
+  <v:f eqn="prod @3 21600 pixelHeight"/>
+  <v:f eqn="sum @0 0 1"/>
+  <v:f eqn="prod @6 1 2"/>
+  <v:f eqn="prod @7 21600 pixelWidth"/>
+  <v:f eqn="sum @8 21600 0"/>
+  <v:f eqn="prod @7 21600 pixelHeight"/>
+  <v:f eqn="sum @10 21600 0"/>
+ </v:formulas>
+ <v:path o:extrusionok="f" gradientshapeok="t" o:connecttype="rect"/>
+ <o:lock v:ext="edit" aspectratio="t"/>
+</v:shapetype><v:shape id="_x0000_i1025" type="#_x0000_t75" style='width:353.25pt;
+ height:604.5pt'>
+ <v:imagedata src="lightmapping_files/image001.png" o:title=""/>
+</v:shape><![endif]--><![if !vml]><img width=471 height=806
+src="lightmapping_files/image002.jpg" v:shapes="_x0000_i1025"><![endif]></p>
+
+<p class=MsoNormal><o:p>&nbsp;</o:p></p>
+
+<p class=MsoNormal>Notice that in this example there are the following shadow
+textures:</p>
+
+<p class=MsoNormal><o:p>&nbsp;</o:p></p>
+
+<p class=MsoNormal>shadow1_texture_1, shadow1_texture_2, shadow1_texture_3 …</p>
+
+<p class=MsoNormal><o:p>&nbsp;</o:p></p>
+
+<p class=MsoNormal>The naming convention is: shadow<i style='mso-bidi-font-style:
+normal'>N</i>_texture<i style='mso-bidi-font-style:normal'>M</i>, where <i
+style='mso-bidi-font-style:normal'>N </i>is the layer number, and <i
+style='mso-bidi-font-style:normal'>M</i> is the inset number + 1. These keys an
+values can be added by typing them into the Key and Value fields of the entity
+dialog. The value corrisponding to each of map keys are the texture names that
+the light map generating code will save the light maps to. They are also the
+names that the game will use when rendering the scene with these light maps.
+You should also include the key value pairs for the terrain level light maps:</p>
+
+<p class=MsoNormal><o:p>&nbsp;</o:p></p>
+
+<p class=MsoNormal>terrain, terrain_lightmap_1, terrain_lightmap_2, etc</p>
+
+<p class=MsoNormal><o:p>&nbsp;</o:p></p>
+
+<p class=MsoNormal>To summarize, here is a table that defines all of the
+possible light map layers:</p>
+
+<p class=MsoNormal><o:p>&nbsp;</o:p></p>
+
+<p class=MsoNormal><b style='mso-bidi-font-weight:normal'><u>Lightmap Name<span
+style='mso-tab-count:2'>                     </span>Level<span
+style='mso-tab-count:2'>               </span>Inset<o:p></o:p></u></b></p>
+
+<p class=MsoNormal><b style='mso-bidi-font-weight:normal'><u><o:p><span
+ style='text-decoration:none'>&nbsp;</span></o:p></u></b></p>
+
+<p class=MsoNormal>&quot;terrain_lightmap_1&quot;&nbsp;&nbsp;&nbsp; <span
+style='mso-tab-count:2'>              </span>Level 0&nbsp;&nbsp;<span
+style='mso-tab-count:1'>           </span>Inset 0<o:p></o:p></p>
+
+<p class=MsoNormal>&quot;terrain_lightmap_2&quot;&nbsp;&nbsp;&nbsp; <span
+style='mso-tab-count:2'>              </span>Level 0&nbsp;&nbsp;<span
+style='mso-tab-count:1'>           </span>Inset 1<o:p></o:p></p>
+
+<p class=MsoNormal>&quot;terrain_lightmap_3&quot;&nbsp;&nbsp;&nbsp; <span
+style='mso-tab-count:2'>              </span>Level 0<span style='mso-tab-count:
+2'>             </span>Inset 2<o:p></o:p></p>
+
+<p class=MsoNormal>&nbsp;<o:p></o:p></p>
+
+<p class=MsoNormal>&quot;shadow3_texture_1&quot;&nbsp;&nbsp;&nbsp;&nbsp;<span
+style='mso-tab-count:1'>            </span>Level 1<span style='mso-tab-count:
+2'>             </span>Inset 0<o:p></o:p></p>
+
+<p class=MsoNormal>&quot;shadow3_texture_2&quot;&nbsp;&nbsp;&nbsp;&nbsp; <span
+style='mso-tab-count:1'>           </span>Level 1&nbsp;&nbsp; <span
+style='mso-tab-count:1'>          </span>Inset 1<o:p></o:p></p>
+
+<p class=MsoNormal>&quot;shadow3_texture_3&quot;&nbsp;&nbsp;&nbsp;&nbsp; <span
+style='mso-tab-count:1'>           </span>Level 1&nbsp;&nbsp; <span
+style='mso-tab-count:1'>          </span>Inset 2<o:p></o:p></p>
+
+<p class=MsoNormal>&nbsp;<o:p></o:p></p>
+
+<p class=MsoNormal>&quot;shadow2_texture_1&quot;&nbsp;&nbsp;&nbsp;&nbsp; <span
+style='mso-tab-count:1'>           </span>Level 2&nbsp;&nbsp; <span
+style='mso-tab-count:1'>          </span>Inset 0<o:p></o:p></p>
+
+<p class=MsoNormal>&quot;shadow2_texture_2&quot;&nbsp;&nbsp;&nbsp;&nbsp; <span
+style='mso-tab-count:1'>           </span>Level 2&nbsp;&nbsp; <span
+style='mso-tab-count:1'>          </span>Inset 1<o:p></o:p></p>
+
+<p class=MsoNormal>&quot;shadow2_texture_3&quot;&nbsp;&nbsp;&nbsp;&nbsp; <span
+style='mso-tab-count:1'>           </span>Level 2&nbsp;&nbsp; <span
+style='mso-tab-count:1'>          </span>Inset 2<o:p></o:p></p>
+
+<p class=MsoNormal>&nbsp;<o:p></o:p></p>
+
+<p class=MsoNormal>&quot;shadow1_texture_1&quot;&nbsp;&nbsp;&nbsp;&nbsp; <span
+style='mso-tab-count:1'>           </span>Level 3&nbsp;&nbsp; <span
+style='mso-tab-count:1'>          </span>Inset 0<o:p></o:p></p>
+
+<p class=MsoNormal>&quot;shadow1_texture_2&quot;&nbsp;&nbsp;&nbsp;&nbsp; <span
+style='mso-tab-count:1'>           </span>Level 3&nbsp;&nbsp; <span
+style='mso-tab-count:1'>          </span>Inset 1<o:p></o:p></p>
+
+<p class=MsoNormal>&quot;shadow1_texture_3&quot;&nbsp;&nbsp;&nbsp;&nbsp; <span
+style='mso-tab-count:1'>           </span>Level 3&nbsp;&nbsp; <span
+style='mso-tab-count:1'>          </span>Inset 2<o:p></o:p></p>
+
+<p class=MsoNormal><o:p>&nbsp;</o:p></p>
+
+<p class=MsoNormal><o:p>&nbsp;</o:p></p>
+
+<p class=MsoNormal>Type “n” again when you are done with the entity dialog.</p>
+
+<p class=MsoNormal><o:p>&nbsp;</o:p></p>
+
+<p class=MsoNormal>You can set up the position of the light that will be used
+by the light map generator by using the Terrain editor. Bring up the terrain
+editor by gong to the Edit menu and selecting Terrain Mode, or typing
+Ctrl+Alt+t. In the “Global Modifiers” section of the Terrain dialog click on
+the “Lighting…” button. It will bring up the following dialog:</p>
+
+<p class=MsoNormal><o:p>&nbsp;</o:p></p>
+
+<p class=MsoNormal><!--[if gte vml 1]><v:shape id="_x0000_i1026" type="#_x0000_t75"
+ style='width:303.75pt;height:159pt'>
+ <v:imagedata src="lightmapping_files/image003.png" o:title=""/>
+</v:shape><![endif]--><![if !vml]><img width=405 height=212
+src="lightmapping_files/image004.jpg" v:shapes="_x0000_i1026"><![endif]></p>
+
+<p class=MsoNormal><o:p>&nbsp;</o:p></p>
+
+<p class=MsoNormal>The position of the sun is given by 2 angles. The “Sun
+Rotation” is the rotation relative to North (0 degrees). The “Sun Eleveation”
+is the angle the sun makes with the horizon. The “Sun Color”<span
+style='mso-spacerun:yes'>  </span>and “Ambient Light Color” are not used when
+creating the light maps. However, they are used by the game when rendering
+sunlight and ambient light in real-time. Click on Run to save the changes and
+to create a lighting preview in mohradiant. Note that mohradiant can not
+preview light maps, so you won’t be able to see a preview of how the level will
+look with light maps.</p>
+
+<p class=MsoNormal><u><o:p><span style='text-decoration:none'>&nbsp;</span></o:p></u></p>
+
+<p class=MsoNormal>The light map generator will create light maps for the
+terrain based on either the height field information or the triangle
+information. If the height field information is available, it will use that,
+because it is more accurate than the triangle information. To make sure the
+light map generator uses the height field be sure to save the .r32 terrain
+information. From the File menu, select “Export Terrain As …”. This will bring
+up a save file dialog which will allow you to save the .r32 file to your terrain_source
+folder.</p>
+
+<p class=MsoNormal><o:p>&nbsp;</o:p></p>
+
+<p class=MsoNormal><o:p>&nbsp;</o:p></p>
+
+<p class=MsoNormal><u>Starting the Light Map Generation<o:p></o:p></u></p>
+
+<p class=MsoNormal><o:p>&nbsp;</o:p></p>
+
+<p class=MsoNormal>Now that the above steps are completed, you are now ready to
+create the light maps. From the bsp menu, select “bsp_lightmap”. The following
+dialog is displayed:</p>
+
+<p class=MsoNormal><o:p>&nbsp;</o:p></p>
+
+<p class=MsoNormal><!--[if gte vml 1]><v:shape id="_x0000_i1027" type="#_x0000_t75"
+ style='width:174pt;height:192pt'>
+ <v:imagedata src="lightmapping_files/image005.png" o:title=""/>
+</v:shape><![endif]--><![if !vml]><img width=232 height=256
+src="lightmapping_files/image006.jpg" v:shapes="_x0000_i1027"><![endif]></p>
+
+<p class=MsoNormal><o:p>&nbsp;</o:p></p>
+
+<p class=MsoNormal>Click on the Ambient color box to bring up a dialog for
+selecting the ambient color. For most scenes a dark gray works best. This will
+be the color of the shadows in your scene. Similarly click on the Light Color
+box to select a color for the light. White works well, but you can experiement
+with shades of yellow or orange for different times of day. The qualty
+selection ranges from 1 the quickest, but also the worst quality to 3 the
+slowest but also the best quality. You might want to start with 1 for the quality
+to see if the colors are what you want, then use 2 or 3 for the final light
+maps. The light mapper will place the light maps in the folder specified
+earlier in the worldspawn data. Typically light maps are placed in the terrain
+folder. Click on Start to begin the light map generation. As the warning says,
+the time can vary based on the complexity of the map. This includes the number
+of models and the number of polygons in the level (including the terrain). When
+it’s done, you can then run the map in the game, and see the light maps
+rendered in the level. You can either use the light maps as they are generated,
+or edit them in PhotoShop or another image editing program to improve their
+appearance.</p>
+
+</div>
+
+</body>
+
+</html>

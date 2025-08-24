@@ -1,0 +1,636 @@
+<html xmlns:o="urn:schemas-microsoft-com:office:office"
+xmlns:x="urn:schemas-microsoft-com:office:excel"
+xmlns="http://www.w3.org/TR/REC-html40">
+
+<head>
+<meta http-equiv=Content-Type content="text/html; charset=windows-1252">
+<meta name=ProgId content=Excel.Sheet>
+<meta name=Generator content="Microsoft Excel 10">
+<link rel=File-List href="Multiplayer%20UI%20cvars_files/filelist.xml">
+<link rel=Edit-Time-Data href="Multiplayer%20UI%20cvars_files/editdata.mso">
+<link rel=OLE-Object-Data href="Multiplayer%20UI%20cvars_files/oledata.mso">
+<!--[if gte mso 9]><xml>
+ <o:DocumentProperties>
+  <o:Author>Ian Peters</o:Author>
+  <o:LastAuthor>bbilodeau</o:LastAuthor>
+  <o:Created>2004-03-15T20:23:25Z</o:Created>
+  <o:LastSaved>2004-10-14T01:07:27Z</o:LastSaved>
+  <o:Version>10.3501</o:Version>
+ </o:DocumentProperties>
+ <o:OfficeDocumentSettings>
+  <o:DownloadComponents/>
+  <o:LocationOfComponents HRef="/"/>
+ </o:OfficeDocumentSettings>
+</xml><![endif]-->
+<style>
+<!--table
+	{mso-displayed-decimal-separator:"\.";
+	mso-displayed-thousand-separator:"\,";}
+@page
+	{margin:1.0in .75in 1.0in .75in;
+	mso-header-margin:.5in;
+	mso-footer-margin:.5in;}
+tr
+	{mso-height-source:auto;}
+col
+	{mso-width-source:auto;}
+br
+	{mso-data-placement:same-cell;}
+.style0
+	{mso-number-format:General;
+	text-align:general;
+	vertical-align:bottom;
+	white-space:nowrap;
+	mso-rotate:0;
+	mso-background-source:auto;
+	mso-pattern:auto;
+	color:windowtext;
+	font-size:10.0pt;
+	font-weight:400;
+	font-style:normal;
+	text-decoration:none;
+	font-family:Arial;
+	mso-generic-font-family:auto;
+	mso-font-charset:0;
+	border:none;
+	mso-protection:locked visible;
+	mso-style-name:Normal;
+	mso-style-id:0;}
+td
+	{mso-style-parent:style0;
+	padding-top:1px;
+	padding-right:1px;
+	padding-left:1px;
+	mso-ignore:padding;
+	color:windowtext;
+	font-size:10.0pt;
+	font-weight:400;
+	font-style:normal;
+	text-decoration:none;
+	font-family:Arial;
+	mso-generic-font-family:auto;
+	mso-font-charset:0;
+	mso-number-format:General;
+	text-align:general;
+	vertical-align:bottom;
+	border:none;
+	mso-background-source:auto;
+	mso-pattern:auto;
+	mso-protection:locked visible;
+	white-space:nowrap;
+	mso-rotate:0;}
+.xl24
+	{mso-style-parent:style0;
+	text-align:center;}
+.xl25
+	{mso-style-parent:style0;
+	font-weight:700;
+	font-family:Arial, sans-serif;
+	mso-font-charset:0;}
+.xl26
+	{mso-style-parent:style0;
+	font-weight:700;
+	font-family:Arial, sans-serif;
+	mso-font-charset:0;
+	text-align:center;}
+.xl27
+	{mso-style-parent:style0;
+	font-size:14.0pt;
+	font-weight:700;
+	text-align:center;}
+-->
+</style>
+<!--[if gte mso 9]><xml>
+ <x:ExcelWorkbook>
+  <x:ExcelWorksheets>
+   <x:ExcelWorksheet>
+    <x:Name>Sheet1</x:Name>
+    <x:WorksheetOptions>
+     <x:Print>
+      <x:ValidPrinterInfo/>
+      <x:HorizontalResolution>600</x:HorizontalResolution>
+      <x:VerticalResolution>600</x:VerticalResolution>
+     </x:Print>
+     <x:Selected/>
+     <x:Panes>
+      <x:Pane>
+       <x:Number>3</x:Number>
+       <x:ActiveRow>1</x:ActiveRow>
+       <x:ActiveCol>2</x:ActiveCol>
+      </x:Pane>
+     </x:Panes>
+     <x:ProtectContents>False</x:ProtectContents>
+     <x:ProtectObjects>False</x:ProtectObjects>
+     <x:ProtectScenarios>False</x:ProtectScenarios>
+    </x:WorksheetOptions>
+   </x:ExcelWorksheet>
+   <x:ExcelWorksheet>
+    <x:Name>Sheet2</x:Name>
+    <x:WorksheetOptions>
+     <x:ProtectContents>False</x:ProtectContents>
+     <x:ProtectObjects>False</x:ProtectObjects>
+     <x:ProtectScenarios>False</x:ProtectScenarios>
+    </x:WorksheetOptions>
+   </x:ExcelWorksheet>
+   <x:ExcelWorksheet>
+    <x:Name>Sheet3</x:Name>
+    <x:WorksheetOptions>
+     <x:ProtectContents>False</x:ProtectContents>
+     <x:ProtectObjects>False</x:ProtectObjects>
+     <x:ProtectScenarios>False</x:ProtectScenarios>
+    </x:WorksheetOptions>
+   </x:ExcelWorksheet>
+  </x:ExcelWorksheets>
+  <x:WindowHeight>13425</x:WindowHeight>
+  <x:WindowWidth>20940</x:WindowWidth>
+  <x:WindowTopX>240</x:WindowTopX>
+  <x:WindowTopY>30</x:WindowTopY>
+  <x:ProtectStructure>False</x:ProtectStructure>
+  <x:ProtectWindows>False</x:ProtectWindows>
+ </x:ExcelWorkbook>
+</xml><![endif]-->
+</head>
+
+<body link=blue vlink=purple>
+
+<table x:str border=0 cellpadding=0 cellspacing=0 width=1185 style='border-collapse:
+ collapse;table-layout:fixed;width:891pt'>
+ <col width=160 style='mso-width-source:userset;mso-width-alt:5851;width:120pt'>
+ <col width=221 style='mso-width-source:userset;mso-width-alt:8082;width:166pt'>
+ <col width=222 style='mso-width-source:userset;mso-width-alt:8118;width:167pt'>
+ <col class=xl24 width=121 style='mso-width-source:userset;mso-width-alt:4425;
+ width:91pt'>
+ <col class=xl24 width=85 style='mso-width-source:userset;mso-width-alt:3108;
+ width:64pt'>
+ <col width=174 style='mso-width-source:userset;mso-width-alt:6363;width:131pt'>
+ <col width=202 style='mso-width-source:userset;mso-width-alt:7387;width:152pt'>
+ <tr height=24 style='height:18.0pt'>
+  <td height=24 width=160 style='height:18.0pt;width:120pt'></td>
+  <td width=221 style='width:166pt'></td>
+  <td class=xl27 width=222 style='width:167pt'>Multiplayer UI Console Variables</td>
+  <td class=xl24 width=121 style='width:91pt'></td>
+  <td class=xl24 width=85 style='width:64pt'></td>
+  <td width=174 style='width:131pt'></td>
+  <td width=202 style='width:152pt'></td>
+ </tr>
+ <tr height=17 style='height:12.75pt'>
+  <td height=17 colspan=3 style='height:12.75pt;mso-ignore:colspan'></td>
+  <td colspan=2 class=xl24 style='mso-ignore:colspan'></td>
+  <td colspan=2 style='mso-ignore:colspan'></td>
+ </tr>
+ <tr height=17 style='height:12.75pt'>
+  <td height=17 class=xl25 style='height:12.75pt'>UI Cvar Name</td>
+  <td class=xl25>Location Used</td>
+  <td class=xl25>Purpose</td>
+  <td class=xl26>Init Value</td>
+  <td class=xl26>Archived</td>
+  <td class=xl25>Server Side Equivalent</td>
+  <td class=xl25>Notes</td>
+ </tr>
+ <tr height=17 style='height:12.75pt'>
+  <td height=17 colspan=3 style='height:12.75pt;mso-ignore:colspan'></td>
+  <td colspan=2 class=xl24 style='mso-ignore:colspan'></td>
+  <td colspan=2 style='mso-ignore:colspan'></td>
+ </tr>
+ <tr height=17 style='height:12.75pt'>
+  <td height=17 style='height:12.75pt'>ui_first_time_mp</td>
+  <td>cl_ui.cpp</td>
+  <td>does player need init setup screen?</td>
+  <td class=xl24 x:num>1</td>
+  <td class=xl24>yes</td>
+  <td>none</td>
+  <td>flow</td>
+ </tr>
+ <tr height=17 style='height:12.75pt'>
+  <td height=17 style='height:12.75pt'>ui_use_vet_welcome</td>
+  <td>cl_ui.cpp</td>
+  <td>basic or adv. Welcome?</td>
+  <td class=xl24 x:num>0</td>
+  <td class=xl24>yes</td>
+  <td>none</td>
+  <td>flow</td>
+ </tr>
+ <tr height=17 style='height:12.75pt'>
+  <td height=17 style='height:12.75pt'>ui_player_account</td>
+  <td>cl_ui.cpp</td>
+  <td>does the player have a MOHO act?</td>
+  <td class=xl24 x:num>0</td>
+  <td class=xl24>yes</td>
+  <td>none</td>
+  <td>flow</td>
+ </tr>
+ <tr height=17 style='height:12.75pt'>
+  <td height=17 style='height:12.75pt'>ui_logged_in</td>
+  <td>cl_ui.cpp</td>
+  <td>is the player logged in?</td>
+  <td class=xl24 x:num>0</td>
+  <td class=xl24>no</td>
+  <td>none</td>
+  <td>flow</td>
+ </tr>
+ <tr height=17 style='height:12.75pt'>
+  <td height=17 style='height:12.75pt'>ui_using_advanced_create</td>
+  <td>cl_ui.cpp, some mp_ urc files</td>
+  <td>was the player using wizard || adv?</td>
+  <td class=xl24 x:num>0</td>
+  <td class=xl24>yes</td>
+  <td>none</td>
+  <td>flow</td>
+ </tr>
+ <tr height=17 style='height:12.75pt'>
+  <td height=17 style='height:12.75pt'>ui_using_advanced_find</td>
+  <td>cl_ui.cpp, some mp_ urc files</td>
+  <td>was player using Cus. Play || Adv?</td>
+  <td class=xl24 x:num>0</td>
+  <td class=xl24>yes</td>
+  <td>none</td>
+  <td>flow</td>
+ </tr>
+ <tr height=17 style='height:12.75pt'>
+  <td height=17 style='height:12.75pt'>ui_name</td>
+  <td>cl_ui.cpp, some mp_ urc files</td>
+  <td>player's dm nickname</td>
+  <td class=xl24>UnnamedSoldier</td>
+  <td class=xl24>yes</td>
+  <td>name</td>
+  <td>setup</td>
+ </tr>
+ <tr height=17 style='height:12.75pt'>
+  <td height=17 style='height:12.75pt'>ui_post_enlist_menu</td>
+  <td>cl_ui.cpp, some mp_ urc files</td>
+  <td>what screen to push after login</td>
+  <td class=xl24 x:num>0</td>
+  <td class=xl24>no</td>
+  <td>none</td>
+  <td>flow</td>
+ </tr>
+ <tr height=17 style='height:12.75pt'>
+  <td height=17 style='height:12.75pt'>moho_auto_enlist</td>
+  <td>cl_ui.cpp, some mp_ urc files</td>
+  <td>should the player be auto logged in</td>
+  <td class=xl24 x:num>0</td>
+  <td class=xl24>yes</td>
+  <td>none</td>
+  <td>moho</td>
+ </tr>
+ <tr height=17 style='height:12.75pt'>
+  <td height=17 style='height:12.75pt'>moho_user_email</td>
+  <td>cl_ui.cpp, some mp_ urc files</td>
+  <td>email addy entered by user in UI</td>
+  <td class=xl24>&quot;&quot;</td>
+  <td class=xl24>no</td>
+  <td>moho_email (internal)</td>
+  <td>moho</td>
+ </tr>
+ <tr height=17 style='height:12.75pt'>
+  <td height=17 style='height:12.75pt'>moho_email</td>
+  <td>cl_ui.cpp</td>
+  <td x:str="email addy autosaved by game ">email addy autosaved by game<span
+  style='mso-spacerun:yes'> </span></td>
+  <td class=xl24>&quot;&quot;</td>
+  <td class=xl24>yes</td>
+  <td>none</td>
+  <td>moho</td>
+ </tr>
+ <tr height=17 style='height:12.75pt'>
+  <td height=17 style='height:12.75pt'>moho_user_password</td>
+  <td>cl_ui.cpp, some mp_ urc files</td>
+  <td>password entered by user in UI</td>
+  <td class=xl24>&quot;&quot;</td>
+  <td class=xl24>no</td>
+  <td>moho_password(internal)</td>
+  <td>moho</td>
+ </tr>
+ <tr height=17 style='height:12.75pt'>
+  <td height=17 style='height:12.75pt'>moho_password</td>
+  <td>cl_ui.cpp</td>
+  <td>password autosaved by game</td>
+  <td class=xl24>&quot;&quot;</td>
+  <td class=xl24>yes</td>
+  <td>none</td>
+  <td>moho</td>
+ </tr>
+ <tr height=17 style='height:12.75pt'>
+  <td height=17 style='height:12.75pt'>ui_remember_password</td>
+  <td>cl_ui.cpp, some mp_ urc files</td>
+  <td>whether game saves the acct. psswd</td>
+  <td class=xl24 x:num>0</td>
+  <td class=xl24>yes</td>
+  <td>none</td>
+  <td>moho</td>
+ </tr>
+ <tr height=17 style='height:12.75pt'>
+  <td height=17 style='height:12.75pt'>ui_hostname</td>
+  <td>cl_ui.cpp, some mp_ urc files</td>
+  <td>the name of the server</td>
+  <td class=xl24>Nameless Battle</td>
+  <td class=xl24>yes</td>
+  <td>hostname</td>
+  <td>server setup</td>
+ </tr>
+ <tr height=17 style='height:12.75pt'>
+  <td height=17 style='height:12.75pt'>ui_server_password</td>
+  <td>cl_ui.cpp, some mp_ urc files</td>
+  <td>password lock on server</td>
+  <td class=xl24></td>
+  <td class=xl24>yes</td>
+  <td></td>
+  <td>server setup</td>
+ </tr>
+ <tr height=17 style='height:12.75pt'>
+  <td height=17 style='height:12.75pt'>ui_gametype</td>
+  <td>cl_ui.cpp, some mp_ urc files</td>
+  <td>which gametype will be played</td>
+  <td class=xl24 x:num>6</td>
+  <td class=xl24>yes</td>
+  <td>g_gametype</td>
+  <td>server setup</td>
+ </tr>
+ <tr height=17 style='height:12.75pt'>
+  <td height=17 style='height:12.75pt'>ui_dmmap</td>
+  <td>cl_ui.cpp, some mp_ urc files</td>
+  <td>which map will be played</td>
+  <td class=xl24>dm/gavutu_inv</td>
+  <td class=xl24>yes</td>
+  <td>argument for map command</td>
+  <td>server setup</td>
+ </tr>
+ <tr height=17 style='height:12.75pt'>
+  <td height=17 style='height:12.75pt'>ui_maxclients</td>
+  <td>cl_ui.cpp, some mp_ urc files</td>
+  <td>maximum players in the game</td>
+  <td class=xl24 x:num>16</td>
+  <td class=xl24>yes</td>
+  <td>sv_maxclients</td>
+  <td>server setup</td>
+ </tr>
+ <tr height=17 style='height:12.75pt'>
+  <td height=17 style='height:12.75pt'>ui_timelimmit</td>
+  <td>cl_ui.cpp, some mp_ urc files</td>
+  <td>timelimit on the game</td>
+  <td class=xl24 x:num>0</td>
+  <td class=xl24>yes</td>
+  <td>timelimit</td>
+  <td>server setup</td>
+ </tr>
+ <tr height=17 style='height:12.75pt'>
+  <td height=17 style='height:12.75pt'>ui_punkbuster</td>
+  <td>cl_ui.cpp, some mp_ urc files</td>
+  <td>whether PB is enabled</td>
+  <td class=xl24 x:num>1</td>
+  <td class=xl24>yes</td>
+  <td>punkbuster</td>
+  <td>server setup</td>
+ </tr>
+ <tr height=17 style='height:12.75pt'>
+  <td height=17 style='height:12.75pt'>ui_fraglimit</td>
+  <td>cl_ui.cpp, some mp_ urc files</td>
+  <td>frag limit</td>
+  <td class=xl24 x:num>50</td>
+  <td class=xl24>yes</td>
+  <td>fraglimit</td>
+  <td>server setup</td>
+ </tr>
+ <tr height=17 style='height:12.75pt'>
+  <td height=17 style='height:12.75pt'>ui_teamdamage</td>
+  <td>cl_ui.cpp, some mp_ urc files</td>
+  <td>friendly fire</td>
+  <td class=xl24 x:num>0</td>
+  <td class=xl24>yes</td>
+  <td>g_teamdamage</td>
+  <td>server setup</td>
+ </tr>
+ <tr height=17 style='height:12.75pt'>
+  <td height=17 style='height:12.75pt'>ui_spawnmultiple</td>
+  <td>cl_ui.cpp, some mp_ urc files</td>
+  <td>invader mode life pool</td>
+  <td class=xl24 x:num>-1</td>
+  <td class=xl24>yes</td>
+  <td>g_spawnmultiple</td>
+  <td>server setup</td>
+ </tr>
+ <tr height=17 style='height:12.75pt'>
+  <td height=17 style='height:12.75pt'>ui_dedicated</td>
+  <td>cl_ui.cpp, some mp_ urc files</td>
+  <td>whether the server is dedicated</td>
+  <td class=xl24 x:num>0</td>
+  <td class=xl24></td>
+  <td colspan=2 style='mso-ignore:colspan'></td>
+ </tr>
+ <tr height=17 style='height:12.75pt'>
+  <td height=17 style='height:12.75pt'>ui_propagate_content</td>
+  <td>cl_ui.cpp, some mp_ urc files</td>
+  <td>push news and updates to client?</td>
+  <td class=xl24 x:num>1</td>
+  <td class=xl24></td>
+  <td colspan=2 style='mso-ignore:colspan'></td>
+ </tr>
+ <tr height=17 style='height:12.75pt'>
+  <td height=17 style='height:12.75pt'>ui_stat_tracking</td>
+  <td>cl_ui.cpp, some mp_ urc files</td>
+  <td>whether the game should be tracked</td>
+  <td class=xl24>1*</td>
+  <td class=xl24></td>
+  <td></td>
+  <td>*only if admin is enlisted</td>
+ </tr>
+ <tr height=17 style='height:12.75pt'>
+  <td height=17 style='height:12.75pt'>ui_show_enemy_names</td>
+  <td>cl_ui.cpp, some mp_ urc files</td>
+  <td>whether enemy names &quot;float&quot;</td>
+  <td class=xl24 x:num>0</td>
+  <td class=xl24></td>
+  <td colspan=2 style='mso-ignore:colspan'></td>
+ </tr>
+ <tr height=17 style='height:12.75pt'>
+  <td height=17 style='height:12.75pt'>ui_mute_spectators</td>
+  <td>cl_ui.cpp, some mp_ urc files</td>
+  <td>can spectators speak?</td>
+  <td class=xl24 x:num>1</td>
+  <td class=xl24></td>
+  <td colspan=2 style='mso-ignore:colspan'></td>
+ </tr>
+ <tr height=17 style='height:12.75pt'>
+  <td height=17 style='height:12.75pt'>ui_autobalance</td>
+  <td>cl_ui.cpp, some mp_ urc files</td>
+  <td>auto assign teams?</td>
+  <td class=xl24 x:num>1</td>
+  <td class=xl24></td>
+  <td colspan=2 style='mso-ignore:colspan'></td>
+ </tr>
+ <tr height=17 style='height:12.75pt'>
+  <td height=17 style='height:12.75pt'>ui_warmup_interval</td>
+  <td>cl_ui.cpp, some mp_ urc files</td>
+  <td>how long is period b4 match start</td>
+  <td class=xl24>1*</td>
+  <td class=xl24></td>
+  <td></td>
+  <td>*(1 minute)</td>
+ </tr>
+ <tr height=17 style='height:12.75pt'>
+  <td height=17 style='height:12.75pt'>ui_inactivespectate</td>
+  <td>cl_ui.cpp, some mp_ urc files</td>
+  <td>inactive time b4 spectator mode</td>
+  <td class=xl24>1*</td>
+  <td class=xl24></td>
+  <td></td>
+  <td>*(1 minute)</td>
+ </tr>
+ <tr height=17 style='height:12.75pt'>
+  <td height=17 style='height:12.75pt'>ui_inactivekick</td>
+  <td>cl_ui.cpp, some mp_ urc files</td>
+  <td>inactive time b4 server kick</td>
+  <td colspan=2 class=xl24 style='mso-ignore:colspan'></td>
+  <td></td>
+  <td>does not count as &quot;real&quot; kick</td>
+ </tr>
+ <tr height=17 style='height:12.75pt'>
+  <td height=17 style='height:12.75pt'>ui_nodamage</td>
+  <td>cl_ui.cpp, some mp_ urc files</td>
+  <td>post spawn invulnerable period</td>
+  <td class=xl24 x:num>-1</td>
+  <td class=xl24></td>
+  <td></td>
+  <td x:str="'-1 '= default for map, 0 '= no limit">-1 '= default for map, 0 '=
+  no limit</td>
+ </tr>
+ <tr height=17 style='height:12.75pt'>
+  <td height=17 style='height:12.75pt'>ui_votemajority</td>
+  <td>cl_ui.cpp, some mp_ urc files</td>
+  <td>% needed to pass vote</td>
+  <td class=xl24 x:num>50</td>
+  <td class=xl24></td>
+  <td colspan=2 style='mso-ignore:colspan'></td>
+ </tr>
+ <tr height=17 style='height:12.75pt'>
+  <td height=17 style='height:12.75pt'>ui_percent_soldier</td>
+  <td>cl_ui.cpp, some mp_ urc files</td>
+  <td>max % to play Infantry</td>
+  <td class=xl24 x:num>100</td>
+  <td class=xl24></td>
+  <td>sv_restrict_infantry</td>
+  <td></td>
+ </tr>
+ <tr height=17 style='height:12.75pt'>
+  <td height=17 style='height:12.75pt'>ui_percent_medic</td>
+  <td>cl_ui.cpp, some mp_ urc files</td>
+  <td>max % to play Corpsman</td>
+  <td class=xl24 x:num>100</td>
+  <td class=xl24></td>
+  <td>sv_restrict_corpsman</td>
+  <td></td>
+ </tr>
+ <tr height=17 style='height:12.75pt'>
+  <td height=17 style='height:12.75pt'>ui_percent_munitions</td>
+  <td>cl_ui.cpp, some mp_ urc files</td>
+  <td>max % to play Ammo Tech</td>
+  <td class=xl24 x:num>100</td>
+  <td class=xl24></td>
+  <td>sv_restrict_ammotech</td>
+  <td></td>
+ </tr>
+ <tr height=17 style='height:12.75pt'>
+  <td height=17 style='height:12.75pt'>ui_percent_demolitions</td>
+  <td>cl_ui.cpp, some mp_ urc files</td>
+  <td>max % to play Combat Engineer</td>
+  <td class=xl24 x:num>100</td>
+  <td class=xl24></td>
+  <td>sv_restrict_engineer</td>
+  <td></td>
+ </tr>
+ <tr height=17 style='height:12.75pt'>
+  <td height=17 style='height:12.75pt'>ui_percent_scout</td>
+  <td>cl_ui.cpp, some mp_ urc files</td>
+  <td>max % to play Scout Sniper</td>
+  <td class=xl24 x:num>100</td>
+  <td class=xl24></td>
+  <td>sv_restrict_scout</td>
+  <td></td>
+ </tr>
+ <tr height=17 style='height:12.75pt'>
+  <td height=17 style='height:12.75pt'>ui_percent_closerange</td>
+  <td>cl_ui.cpp, some mp_ urc files</td>
+  <td>max % to use close range wpn</td>
+  <td class=xl24 x:num>100</td>
+  <td class=xl24></td>
+  <td>sv_restrict_closerange</td>
+  <td></td>
+ </tr>
+ <tr height=17 style='height:12.75pt'>
+  <td height=17 style='height:12.75pt'>ui_percent_rifle</td>
+  <td>cl_ui.cpp, some mp_ urc files</td>
+  <td>max % to use rifle</td>
+  <td class=xl24 x:num>100</td>
+  <td class=xl24></td>
+  <td>sv_restrict_rifle</td>
+  <td></td>
+ </tr>
+ <tr height=17 style='height:12.75pt'>
+  <td height=17 style='height:12.75pt'>ui_percent_smg</td>
+  <td>cl_ui.cpp, some mp_ urc files</td>
+  <td>max % to use smg</td>
+  <td class=xl24 x:num>100</td>
+  <td class=xl24></td>
+  <td>sv_restrict_smg</td>
+  <td></td>
+ </tr>
+ <tr height=17 style='height:12.75pt'>
+  <td height=17 style='height:12.75pt'>ui_percent_machinegun</td>
+  <td>cl_ui.cpp, some mp_ urc files</td>
+  <td>max % to use machine gun</td>
+  <td class=xl24 x:num>100</td>
+  <td class=xl24></td>
+  <td>sv_restrict_mg</td>
+  <td></td>
+ </tr>
+ <tr height=17 style='height:12.75pt'>
+  <td height=17 style='height:12.75pt'>ui_percent_sniperrifle</td>
+  <td>cl_ui.cpp, some mp_ urc files</td>
+  <td>max % to use sniper rifle</td>
+  <td class=xl24 x:num>100</td>
+  <td class=xl24></td>
+  <td>sv_restrict_sniperrifle</td>
+  <td></td>
+ </tr>
+ <tr height=17 style='height:12.75pt'>
+  <td height=17 style='height:12.75pt'>ui_noclass</td>
+  <td>cl_ui.cpp, some mp_ urc files</td>
+  <td>whether classes are allowed</td>
+  <td class=xl24 x:num>0</td>
+  <td class=xl24></td>
+  <td colspan=2 style='mso-ignore:colspan'></td>
+ </tr>
+ <tr height=17 style='height:12.75pt'>
+  <td height=17 style='height:12.75pt'>ui_pingrestrict</td>
+  <td>cl_ui.cpp, some mp_ urc files</td>
+  <td>ping at which players are locked out</td>
+  <td class=xl24 x:num>0</td>
+  <td class=xl24></td>
+  <td>sv_restrict_ping</td>
+  <td></td>
+ </tr>
+ <tr height=17 style='height:12.75pt'>
+  <td height=17 style='height:12.75pt'>ui_kickrestrict</td>
+  <td>cl_ui.cpp, some mp_ urc files</td>
+  <td>how many kicks b4 player is banned</td>
+  <td class=xl24 x:num>2</td>
+  <td class=xl24></td>
+  <td>sv_restrict_kicks</td>
+  <td></td>
+ </tr>
+ <![if supportMisalignedColumns]>
+ <tr height=0 style='display:none'>
+  <td width=160 style='width:120pt'></td>
+  <td width=221 style='width:166pt'></td>
+  <td width=222 style='width:167pt'></td>
+  <td width=121 style='width:91pt'></td>
+  <td width=85 style='width:64pt'></td>
+  <td width=174 style='width:131pt'></td>
+  <td width=202 style='width:152pt'></td>
+ </tr>
+ <![endif]>
+</table>
+
+</body>
+
+</html>

@@ -1,0 +1,2208 @@
+<html xmlns:v="urn:schemas-microsoft-com:vml"
+xmlns:o="urn:schemas-microsoft-com:office:office"
+xmlns:w="urn:schemas-microsoft-com:office:word"
+xmlns="http://www.w3.org/TR/REC-html40">
+
+<head>
+<meta http-equiv=Content-Type content="text/html; charset=windows-1252">
+<meta name=ProgId content=Word.Document>
+<meta name=Generator content="Microsoft Word 9">
+<meta name=Originator content="Microsoft Word 9">
+<link rel=File-List href="./MDK_MilkShape_Tools_files/filelist.xml">
+<link rel=Edit-Time-Data href="./MDK_MilkShape_Tools_files/editdata.mso">
+<!--[if !mso]>
+<style>
+v\:* {behavior:url(#default#VML);}
+o\:* {behavior:url(#default#VML);}
+w\:* {behavior:url(#default#VML);}
+.shape {behavior:url(#default#VML);}
+</style>
+<![endif]-->
+<title>MDK MilkShape 3D Tools</title>
+<!--[if gte mso 9]><xml>
+ <o:DocumentProperties>
+  <o:Author>nbrooks</o:Author>
+  <o:LastAuthor>nbrooks</o:LastAuthor>
+  <o:Revision>2</o:Revision>
+  <o:TotalTime>234</o:TotalTime>
+  <o:Created>2004-12-18T06:09:00Z</o:Created>
+  <o:LastSaved>2004-12-18T06:09:00Z</o:LastSaved>
+  <o:Pages>32</o:Pages>
+  <o:Words>6540</o:Words>
+  <o:Characters>37278</o:Characters>
+  <o:Company> </o:Company>
+  <o:Lines>310</o:Lines>
+  <o:Paragraphs>74</o:Paragraphs>
+  <o:CharactersWithSpaces>45780</o:CharactersWithSpaces>
+  <o:Version>9.3821</o:Version>
+ </o:DocumentProperties>
+</xml><![endif]-->
+<style>
+<!--
+ /* Font Definitions */
+@font-face
+	{font-family:Wingdings;
+	panose-1:5 0 0 0 0 0 0 0 0 0;
+	mso-font-charset:2;
+	mso-generic-font-family:auto;
+	mso-font-pitch:variable;
+	mso-font-signature:0 268435456 0 0 -2147483648 0;}
+ /* Style Definitions */
+p.MsoNormal, li.MsoNormal, div.MsoNormal
+	{mso-style-parent:"";
+	margin:0in;
+	margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	font-size:12.0pt;
+	font-family:"Times New Roman";
+	mso-fareast-font-family:"Times New Roman";}
+h1
+	{mso-style-next:Normal;
+	margin:0in;
+	margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	page-break-after:avoid;
+	mso-outline-level:1;
+	font-size:20.0pt;
+	mso-bidi-font-size:12.0pt;
+	font-family:"Times New Roman";
+	mso-font-kerning:0pt;}
+h2
+	{mso-style-next:Normal;
+	margin:0in;
+	margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	page-break-after:avoid;
+	mso-outline-level:2;
+	font-size:12.0pt;
+	font-family:"Times New Roman";}
+h3
+	{mso-style-next:Normal;
+	margin:0in;
+	margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	page-break-after:avoid;
+	mso-outline-level:3;
+	font-size:16.0pt;
+	mso-bidi-font-size:12.0pt;
+	font-family:"Times New Roman";}
+p.MsoCaption, li.MsoCaption, div.MsoCaption
+	{mso-style-next:Normal;
+	margin-top:6.0pt;
+	margin-right:0in;
+	margin-bottom:6.0pt;
+	margin-left:0in;
+	mso-pagination:widow-orphan;
+	font-size:10.0pt;
+	font-family:"Times New Roman";
+	mso-fareast-font-family:"Times New Roman";
+	font-weight:bold;}
+p.MsoBodyText, li.MsoBodyText, div.MsoBodyText
+	{margin:0in;
+	margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	font-size:12.0pt;
+	font-family:"Times New Roman";
+	mso-fareast-font-family:"Times New Roman";
+	font-style:italic;}
+a:link, span.MsoHyperlink
+	{color:blue;
+	text-decoration:underline;
+	text-underline:single;}
+a:visited, span.MsoHyperlinkFollowed
+	{color:purple;
+	text-decoration:underline;
+	text-underline:single;}
+@page Section1
+	{size:8.5in 11.0in;
+	margin:1.0in 1.25in 1.0in 1.25in;
+	mso-header-margin:.5in;
+	mso-footer-margin:.5in;
+	mso-paper-source:0;}
+div.Section1
+	{page:Section1;}
+ /* List Definitions */
+@list l0
+	{mso-list-id:258684890;
+	mso-list-type:hybrid;
+	mso-list-template-ids:-682431356 67698693 67698691 67698693 67698689 67698691 67698693 67698689 67698691 67698693;}
+@list l0:level1
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0A7;
+	mso-level-tab-stop:.5in;
+	mso-level-number-position:left;
+	text-indent:-.25in;
+	font-family:Wingdings;}
+@list l0:level2
+	{mso-level-number-format:bullet;
+	mso-level-text:o;
+	mso-level-tab-stop:1.0in;
+	mso-level-number-position:left;
+	text-indent:-.25in;
+	font-family:"Courier New";
+	mso-bidi-font-family:"Times New Roman";}
+@list l1
+	{mso-list-id:523908507;
+	mso-list-type:hybrid;
+	mso-list-template-ids:1605784178 67698693 67698691 67698693 67698689 67698691 67698693 67698689 67698691 67698693;}
+@list l1:level1
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0A7;
+	mso-level-tab-stop:.5in;
+	mso-level-number-position:left;
+	text-indent:-.25in;
+	font-family:Wingdings;}
+@list l1:level2
+	{mso-level-number-format:bullet;
+	mso-level-text:o;
+	mso-level-tab-stop:1.0in;
+	mso-level-number-position:left;
+	text-indent:-.25in;
+	font-family:"Courier New";
+	mso-bidi-font-family:"Times New Roman";}
+@list l1:level3
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0A7;
+	mso-level-tab-stop:1.5in;
+	mso-level-number-position:left;
+	text-indent:-.25in;
+	font-family:Wingdings;}
+@list l1:level4
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0B7;
+	mso-level-tab-stop:2.0in;
+	mso-level-number-position:left;
+	text-indent:-.25in;
+	font-family:Symbol;}
+@list l2
+	{mso-list-id:865867730;
+	mso-list-type:hybrid;
+	mso-list-template-ids:-21222852 67698703 67698713 67698703 67698703 67698713 67698715 67698703 67698713 67698715;}
+@list l2:level1
+	{mso-level-tab-stop:.5in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l2:level2
+	{mso-level-number-format:alpha-lower;
+	mso-level-tab-stop:1.0in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l2:level3
+	{mso-level-tab-stop:117.0pt;
+	mso-level-number-position:left;
+	margin-left:117.0pt;
+	text-indent:-.25in;}
+ol
+	{margin-bottom:0in;}
+ul
+	{margin-bottom:0in;}
+-->
+</style>
+<!--[if gte mso 9]><xml>
+ <o:shapedefaults v:ext="edit" spidmax="2050"/>
+</xml><![endif]--><!--[if gte mso 9]><xml>
+ <o:shapelayout v:ext="edit">
+  <o:idmap v:ext="edit" data="1"/>
+ </o:shapelayout></xml><![endif]-->
+</head>
+
+<body lang=EN-US link=blue vlink=purple style='tab-interval:.5in'>
+
+<div class=Section1>
+
+<h1><span style='font-size:24.0pt;mso-bidi-font-size:12.0pt'>MDK MilkShape 3D
+Tools – For <i>MOHPA</i><o:p></o:p></span></h1>
+
+<p class=MsoNormal><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></p>
+
+<p class=MsoNormal>Author: Narayan Brooks</p>
+
+<p class=MsoNormal>Company: TKO-Software</p>
+
+<p class=MsoNormal>Date Last Modified: 12/17/04</p>
+
+<p class=MsoNormal><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></p>
+
+<p class=MsoNormal><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></p>
+
+<h2><span style='font-size:20.0pt;mso-bidi-font-size:12.0pt'>Overview<o:p></o:p></span></h2>
+
+<p class=MsoNormal><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></p>
+
+<p class=MsoNormal>The <b>MOHPA Developer Kit MilkShape 3D Tools</b> are a set
+of plugins developed for the MilkShape 3D (hereafter referred to as MilkShape)
+modeling package that allows users to create content for Medal Of Honor:
+Pacific Assault (MOHPA).<span style="mso-spacerun: yes">   </span>The tools
+consist of an MDK Importer, MDK Exporter, MDK Model Manager, and MDK Material
+Editor.<span style="mso-spacerun: yes">  </span>All of these tools are accessed
+through the menus in MilkShape.</p>
+
+<p class=MsoNormal><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></p>
+
+<p class=MsoNormal>The <b>MDK Importer</b> imports existing MOHPA model and
+animation files (.gr2, .MOH) and creates meshes, bones, materials, and
+animations in MilkShape.<span style="mso-spacerun: yes">  </span>MOHPA models
+and animations require extra information, besides their geometry, to run in the
+game.<span style="mso-spacerun: yes">  </span>This “extended data” is stored in
+the MDK Model Manager.<span style="mso-spacerun: yes">  </span></p>
+
+<p class=MsoNormal><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></p>
+
+<p class=MsoNormal>The <b>MDK Model Manager</b> provides access to the
+variables needed by MOHPA to use the model.<span style="mso-spacerun: yes"> 
+</span>Using the Model Manager you can limit what items get exported, determine
+which items are collision and which are visible geometry, and set the
+properties of the MOHPA objects.<span style="mso-spacerun: yes">  </span>The
+importer automatically populates the Model Manager with the necessary
+data.<span style="mso-spacerun: yes">  </span>Models and bone created from scratch
+need to be added to the Model Manager to create the necessary properties needed
+by the exporter.</p>
+
+<p class=MsoNormal><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></p>
+
+<p class=MsoNormal>The <b>MDK Material Editor</b> allows full access to the
+properties of the MOHPA materials.<span style="mso-spacerun: yes">  </span>The
+material editor also allows access to the existing MilkShape material
+functionality.<span style="mso-spacerun: yes">  </span>The editor can be used to
+add new MOHPA materials, which will also add materials to MilkShape.<span
+style="mso-spacerun: yes">  </span>The Material Editor lets existing MilkShape
+materials be converted to MOHPA materials as well. </p>
+
+<p class=MsoNormal><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></p>
+
+<p class=MsoNormal>Models that have been imported or created in MilkShape, and
+added to the Model Manager can be exported as game ready .MOH files using the <b>MDK
+Exporter</b>.<span style="mso-spacerun: yes">  </span>These files can then be
+used just like any other existing game assets.</p>
+
+<p class=MsoNormal><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></p>
+
+<p class=MsoNormal>The <b>MDK Animation Sequencer</b> allows for the import and
+export of animations to and from MilkShape.<span style="mso-spacerun: yes"> 
+</span>The MDK Animation Sequencer Importer imports an existing animation onto
+an existing skeleton.<span style="mso-spacerun: yes">  </span>The MDK Animation
+Sequencer Exporter exports animations created or modified in MilkShape in a
+game ready format.</p>
+
+<p class=MsoNormal><span style="mso-spacerun: yes"> </span></p>
+
+<p class=MsoNormal>Each MilkShape tool in the MDK is described in detail
+below.<span style="mso-spacerun: yes">  </span>Tutorials for the tools can be
+found in Appendix A.<span style="mso-spacerun: yes">  </span>General MilkShape
+3D information, FAQs, forums, and tutorials can be found at: <a
+href="http://www.swissquake.ch/chumbalum-soft/index.html">http://www.swissquake.ch/chumbalum-soft/index.html</a>.</p>
+
+<p class=MsoNormal><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></p>
+
+<p class=MsoNormal><b>NOTE:</b> Windows 2000 users: The tools create dialogs
+with pull down menus in them.<span style="mso-spacerun: yes">  </span>Some
+Windows 2000 systems would not draw the pull down menus when you clicked to
+expand them.<span style="mso-spacerun: yes">  </span>The functionality of the
+drop down menu is still there available even though they may not draw
+correctly.<span style="mso-spacerun: yes">  </span>The menu items can be
+accessed by clicking in the drop down menu, and either using the scroll wheel
+on the mouse, or the up/down arrow keys to select items in the pull downs.</p>
+
+<p class=MsoNormal><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></p>
+
+<b><span style='font-size:20.0pt;mso-bidi-font-size:12.0pt;font-family:"Times New Roman";
+mso-fareast-font-family:"Times New Roman";mso-ansi-language:EN-US;mso-fareast-language:
+EN-US;mso-bidi-language:AR-SA'><br clear=all style='page-break-before:always'>
+</span></b>
+
+<h2><span style='font-size:20.0pt;mso-bidi-font-size:12.0pt'>MDK Model Manager<o:p></o:p></span></h2>
+
+<p class=MsoNormal><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></p>
+
+<p class=MsoNormal>The MDK Model Manager is used to make models created or
+imported into MilkShape usable by MOHPA.<span style="mso-spacerun: yes"> 
+</span>MilkShape does not natively support extra information attached to the
+bones, meshes, and materials in the scene.<span style="mso-spacerun: yes"> 
+</span>The Model Manager is used to create and alter the necessary data for the
+meshes, bones, and animations in the scene.</p>
+
+<p class=MsoNormal><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></p>
+
+<p class=MsoNormal>The Model Manager is accessed through the main menu bar
+under: <i>Tools &gt; MDK Model Manager</i> (<!--[if supportFields]><span
+style='mso-element:field-begin'></span> REF _Ref88879493 \h <span
+style='mso-element:field-separator'></span><![endif]-->Figure 1<!--[if gte mso 9]><xml>
+ <w:data>08D0C9EA79F9BACE118C8200AA004BA90B02000000080000000D0000005F00520065006600380038003800370039003400390033000000</w:data>
+</xml><![endif]--><!--[if supportFields]><span style='mso-element:field-end'></span><![endif]-->).</p>
+
+<p class=MsoNormal><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></p>
+
+<p class=MsoNormal align=center style='text-align:center;page-break-after:avoid'><!--[if gte vml 1]><v:shapetype
+ id="_x0000_t75" coordsize="21600,21600" o:spt="75" o:preferrelative="t"
+ path="m@4@5l@4@11@9@11@9@5xe" filled="f" stroked="f">
+ <v:stroke joinstyle="miter"/>
+ <v:formulas>
+  <v:f eqn="if lineDrawn pixelLineWidth 0"/>
+  <v:f eqn="sum @0 1 0"/>
+  <v:f eqn="sum 0 0 @1"/>
+  <v:f eqn="prod @2 1 2"/>
+  <v:f eqn="prod @3 21600 pixelWidth"/>
+  <v:f eqn="prod @3 21600 pixelHeight"/>
+  <v:f eqn="sum @0 0 1"/>
+  <v:f eqn="prod @6 1 2"/>
+  <v:f eqn="prod @7 21600 pixelWidth"/>
+  <v:f eqn="sum @8 21600 0"/>
+  <v:f eqn="prod @7 21600 pixelHeight"/>
+  <v:f eqn="sum @10 21600 0"/>
+ </v:formulas>
+ <v:path o:extrusionok="f" gradientshapeok="t" o:connecttype="rect"/>
+ <o:lock v:ext="edit" aspectratio="t"/>
+</v:shapetype><v:shape id="_x0000_i1030" type="#_x0000_t75" style='width:342pt;
+ height:230.25pt'>
+ <v:imagedata src="./MDK_MilkShape_Tools_files/image001.jpg" o:title="accessModelManager"/>
+</v:shape><![endif]--><![if !vml]><img border=0 width=456 height=307
+src="./MDK_MilkShape_Tools_files/image001.jpg" v:shapes="_x0000_i1030"><![endif]></p>
+
+<p class=MsoCaption align=center style='text-align:center'><a
+name="_Ref88879493">Figure <span style='mso-field-code:"SEQ Figure \\* ARABIC"'>1</span></a>:
+Accessing the MDK Model Manager from the toolbar.</p>
+
+<p class=MsoNormal align=center style='text-align:center'><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></p>
+
+<p class=MsoNormal>Clicking the MDK Model Manager menu item will open the Model
+Manager GUI.<span style="mso-spacerun: yes">  </span>The GUI provides access to
+all of the functionality of the Model Manager.<span style="mso-spacerun: yes"> 
+</span>If nothing has been added to the scene, you will see the empty Model
+Manager (<span style='mso-field-code:"REF _Ref88903660 \\h"'>Figure 2<!--[if gte mso 9]><xml>
+ <w:data>08D0C9EA79F9BACE118C8200AA004BA90B02000000080000000D0000005F00520065006600380038003900300033003600360030000000</w:data>
+</xml><![endif]--></span>).</p>
+
+<p class=MsoNormal><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></p>
+
+<h2><span style='font-size:16.0pt;mso-bidi-font-size:12.0pt'>Model Manager
+Layout</span><span style='font-size:16.0pt;mso-bidi-font-size:12.0pt;
+font-weight:normal'><o:p></o:p></span></h2>
+
+<p class=MsoNormal><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></p>
+
+<p class=MsoNormal>The Model Manager is set up in two parts.<span
+style="mso-spacerun: yes">  </span>The left side of the Model Manager is the
+Model Tree View (MTV).<span style="mso-spacerun: yes">  </span>The MTV is how
+the user adds/removes items from the Model Manager, as well as select the
+desired item to change the extended data of.<span style="mso-spacerun: yes"> 
+</span>The right side contains context sensitive options for the item selected
+in the MTV.<span style="mso-spacerun: yes">  </span>The Model Manager consists
+of a single skeleton, and at least one (but could be more) renderable.<span
+style="mso-spacerun: yes">  </span>The skeleton is where the bone extended data
+information is kept, and the renderables are where the mesh data is kept.</p>
+
+<p class=MsoNormal><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></p>
+
+<p class=MsoNormal>A <b>renderable</b> contains the mesh information for a
+model.<span style="mso-spacerun: yes">  </span>This includes collision and
+level of detail (LOD) info.<span style="mso-spacerun: yes">  </span>The
+collision is invisible in the game, but is what you walk on and collide
+with.<span style="mso-spacerun: yes">  </span>The LOD is what you see in the
+game.<span style="mso-spacerun: yes">  </span>MOHPA allows up to five levels of
+detail for a model.<span style="mso-spacerun: yes">  </span>This allows for
+lower resolution meshes to replace higher resolution meshes when the player is
+farther away from the item.</p>
+
+<p class=MsoNormal><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></p>
+
+<p class=MsoNormal align=center style='text-align:center;page-break-after:avoid'><!--[if gte vml 1]><v:shape
+ id="_x0000_i1031" type="#_x0000_t75" style='width:346.5pt;height:389.25pt'>
+ <v:imagedata src="./MDK_MilkShape_Tools_files/image002.jpg" o:title="emptyModelManager"/>
+</v:shape><![endif]--><![if !vml]><img border=0 width=462 height=519
+src="./MDK_MilkShape_Tools_files/image002.jpg" v:shapes="_x0000_i1031"><![endif]></p>
+
+<p class=MsoCaption align=center style='text-align:center'><a
+name="_Ref88903660">Figure <span style='mso-field-code:"SEQ Figure \\* ARABIC"'>2</span></a>:
+The empty Mdk Model Manager. <span style="mso-spacerun: yes"> </span>The object
+tree on the right is the Model Tree View, the left side of the dialog contains
+context sensitive properties based on what is selected in the Model Tree View.</p>
+
+<p class=MsoNormal><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></p>
+
+<h2><span style='font-size:16.0pt;mso-bidi-font-size:12.0pt'>Model Manager
+Functionality<o:p></o:p></span></h2>
+
+<p class=MsoNormal><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></p>
+
+<h2><a name="_Ref89854750">Interacting with the Model Manager</a></h2>
+
+<p class=MsoNormal><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></p>
+
+<p class=MsoNormal>Right-clicking items in the MTV access functionality of the
+Model Manager.<span style="mso-spacerun: yes">  </span>This pulls up a context
+sensitive menu based on what you have selected.<span style="mso-spacerun:
+yes">  </span>The primary functionality of the right click menu is to add items
+to and remove items from the different categories in the Model Manager.<span
+style="mso-spacerun: yes">  </span>Once an item is added to the Model Manager,
+the item’s extended data becomes available to change.<span style="mso-spacerun:
+yes">  </span>An item will only get exported if it is in the Model Manager.<span
+style="mso-spacerun: yes">  </span>If an item is removed from the model manger,
+it will not be exported, and the extended data for the item is deleted.<span
+style="mso-spacerun: yes">  </span></p>
+
+<p class=MsoNormal><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></p>
+
+<p class=MsoNormal>To add items to the Model Manager, they must be selected in
+MilkShape before the Model Manager is launched.<span style="mso-spacerun:
+yes">  </span>Then right click on the desired category and select the <i>Add
+Selection to …</i> option (<span style='mso-field-code:"REF _Ref89855448 \\h"'>Figure
+3<!--[if gte mso 9]><xml>
+ <w:data>08D0C9EA79F9BACE118C8200AA004BA90B02000000080000000D0000005F00520065006600380039003800350035003400340038000000</w:data>
+</xml><![endif]--></span>).</p>
+
+<p class=MsoNormal><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></p>
+
+<p class=MsoNormal>Items can be removed from the Model Manager the same way
+they can be added.<span style="mso-spacerun: yes">  </span>Right-click on the
+item (or category to remove all items under it), and choose the <i>Remove…</i>
+option in the popup menu.</p>
+
+<p class=MsoNormal><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></p>
+
+<p class=MsoNormal align=center style='text-align:center'><!--[if gte vml 1]><v:shape
+ id="_x0000_i1032" type="#_x0000_t75" style='width:6in;height:473.25pt'>
+ <v:imagedata src="./MDK_MilkShape_Tools_files/image003.jpg" o:title="fullModelManager"/>
+</v:shape><![endif]--><![if !vml]><img border=0 width=576 height=631
+src="./MDK_MilkShape_Tools_files/image003.jpg" v:shapes="_x0000_i1032"><![endif]></p>
+
+<p class=MsoCaption align=center style='text-align:center'><a
+name="_Ref89855448">Figure <span style='mso-field-code:"SEQ Figure \\* ARABIC"'>3</span></a>:
+Adding pre-selected items to the low-resolution collision of the Model Manager.</p>
+
+<p class=MsoNormal><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></p>
+
+<p class=MsoNormal><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></p>
+
+<p class=MsoNormal><b>NOTE:</b> Because the Model manager is modal (all
+MilkShape functionality pauses until the dialog is closed) the selection of
+items to add needs to be done before the model manger is launched.<span
+style="mso-spacerun: yes">  </span>To change selections, close the Model
+Manager and select different items, then open the Model Manager again.</p>
+
+<p class=MsoNormal><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></p>
+
+<h2>Extended Data Persistency<span style='font-weight:normal'><o:p></o:p></span></h2>
+
+<p class=MsoNormal><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></p>
+
+<p class=MsoNormal>A .MOH file contains all of the geometry for the objects as
+well as the extended data.<span style="mso-spacerun: yes">  </span>When an item
+is imported, the extended data is automatically entered in the Model
+Manager.<span style="mso-spacerun: yes">  </span>When an item is exported, the
+extended data is saved with the item in the same file.<span
+style="mso-spacerun: yes">  </span>When you are working on an item from
+scratch, or modifying an existing item, you may not want to export your <b>.ms3d</b>
+MilkShape as a .MOH file.<span style="mso-spacerun: yes">  </span>If you close
+MilkShape, or open a new file you will lose all of your extended data in the
+Model Manager, even if you have saved your .ms3d file.<span
+style="mso-spacerun: yes">  </span>To save your extended data, use the <i>Save
+As Extended Data</i> button.<span style="mso-spacerun: yes">  </span>This writes
+out the extended data to a <b>.mmd</b> file.<span style="mso-spacerun: yes"> 
+</span>You can then load the extended data using <i>Load Extended Data</i> when
+you reopen your .ms3d file.<span style="mso-spacerun: yes">  </span>This allows
+for your extended data to be persistent so you do not have to redo all your
+work each time you work on a .ms3d file.<span style="mso-spacerun: yes"> 
+</span>The .mmd file is a text file, so you can use it as a (rather cryptic)
+debugging tool if needed to see if you are outputting the correct values.<span
+style="mso-spacerun: yes">  </span>You can also use this to see what properties
+existing models have.<span style="mso-spacerun: yes">  </span></p>
+
+<p class=MsoNormal><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></p>
+
+<p class=MsoNormal><b>NOTE:</b> When you load extended data into the Model
+Manager, you have to close and reopen the Model Manager for the loaded data to
+show up.</p>
+
+<p class=MsoNormal><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></p>
+
+<h2>Collision</h2>
+
+<p class=MsoNormal><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></p>
+
+<p class=MsoNormal>The Model manager lets you specify both high (<i>Collision
+(High-Res)</i>) and low (<i>Collision (Low-res)</i>) resolution collision
+geometry.<span style="mso-spacerun: yes">  </span>For efficiency sake,
+collision geometry is usually a lower resolution version of the visible
+geometry.<span style="mso-spacerun: yes">  </span>The low-res collision is
+required if the item is going to be collidable in the game.<span
+style="mso-spacerun: yes">  </span>The high-res collision is optional and lets
+you specify more accurate collision.<span style="mso-spacerun: yes">  </span>As
+a side note, the developers of MOHPA rarely ever used the higher resolution
+collision.<span style="mso-spacerun: yes">  </span></p>
+
+<p class=MsoNormal><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></p>
+
+<h2>Level Of Detail (LOD)</h2>
+
+<p class=MsoNormal><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></p>
+
+<p class=MsoNormal>A mesh needs to be an LOD if it is going to be visible in
+the game.<span style="mso-spacerun: yes">  </span>LOD allows you to make the
+level more efficient by using fewer resources rendering items that are far
+away.<span style="mso-spacerun: yes">  </span>LOD0 is the highest resolution
+mesh, which you see when you are closest to an item, and LOD4 is the lowest
+resolution version, when the item is farther away.<span style="mso-spacerun:
+yes">  </span>There must be at least an LOD0 mesh, the other LOD levels are
+optional, and usually only the first 3 levels are used.</p>
+
+<p class=MsoNormal><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></p>
+
+<p class=MsoNormal>Which LOD you view in the game is dependent on your
+proximity to the item, and governed by the LOD’s switch distance.<span
+style="mso-spacerun: yes">  </span>Once you are farther than the switch
+distance away from the LOD, if an LOD exists for that distance, it will be
+swapped for the current LOD.<span style="mso-spacerun: yes">  </span>Right
+clicking on the renderable and selecting <i>Edit LOD Switch Distances</i> in
+the pop-up menu sets the LOD switch distance.<span style="mso-spacerun: yes"> 
+</span>This brings up a dialog that lets you set the switch distances for all
+active LODs for the renderable.<span style="mso-spacerun: yes"> 
+</span>Initially there is only one level of detail (LOD0) in the Model Manager,
+but other levels can be added by right clicking on the renderable in the MTV
+and selecting <i>Add LOD</i>.<span style="mso-spacerun: yes">  </span></p>
+
+<p class=MsoNormal><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></p>
+
+<p class=MsoNormal><b>NOTE:</b><span style="mso-spacerun: yes">  </span>The
+default LOD switch value is 0.0; so if you only see the lowest resolution mesh
+in the game, check your LOD levels.</p>
+
+<p class=MsoNormal><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></p>
+
+<h2>Extended Data Properties<span style='font-weight:normal'><o:p></o:p></span></h2>
+
+<p class=MsoNormal><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></p>
+
+<p class=MsoNormal>The dropdown menus, check boxes, and edit boxes on the right
+side of the Model Manager provide access to the extended data.<span
+style="mso-spacerun: yes">  </span>On import, the extended data is filled in
+from the file.<span style="mso-spacerun: yes">  </span>If an item is added to
+the Model Manager manually, default values are assigned.<span
+style="mso-spacerun: yes">  </span>Extended data can also be saved to or loaded
+from a <b>.mmd</b> file.</p>
+
+<p class=MsoNormal><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></p>
+
+<p class=MsoNormal>The properties displayed are context sensitive and only
+change the values of the currently selected item in the MTV.<span
+style="mso-spacerun: yes">  </span>When you select an item in the MTV, all of
+the valid properties for the item are displayed.</p>
+
+<p class=MsoNormal><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></p>
+
+<p class=MsoNormal>The dropdown menus in the Model Manager are populated using
+text files, but the values are hard coded in the game, so changing the text
+files is not advised.<span style="mso-spacerun: yes">  </span></p>
+
+<p class=MsoNormal><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></p>
+
+<h2>Bones and Skeletons</h2>
+
+<p class=MsoNormal><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></p>
+
+<p class=MsoNormal>There can only be one skeleton per scene, meaning there can
+only be one root bone, with other bones attached to it if desired.<span
+style="mso-spacerun: yes">  </span>Bones have a <i>Procedural Animation</i>
+type and a <i>Physics Mode</i>.<span style="mso-spacerun: yes">  </span>The
+procedural animation type is used for grass type swaying effects and requires
+specific bone names and hierarchies to work.<span style="mso-spacerun: yes"> 
+</span>The typical default value is <i>none</i>.<span style="mso-spacerun:
+yes">  </span>The physics mode can be <i>Static</i> (object does not move), <i>Game-Driven</i>
+(the object can be moved around the world through collisions) and <i>Physics-Driven</i>
+(rag-doll type interactions with the world).</p>
+
+<p class=MsoNormal><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></p>
+
+<h2>Synch To Scene</h2>
+
+<p class=MsoNormal><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></p>
+
+<p class=MsoNormal>Every time the Model Manager is opened, it removes model
+manger items that are no longer in the scene.<span style="mso-spacerun: yes"> 
+</span>The data for those items will be lost.<span style="mso-spacerun: yes"> 
+</span>Keep this in mind when you are deleting items in the scene.</p>
+
+<p class=MsoNormal><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></p>
+
+<b><span style='font-size:20.0pt;mso-bidi-font-size:12.0pt;font-family:"Times New Roman";
+mso-fareast-font-family:"Times New Roman";mso-ansi-language:EN-US;mso-fareast-language:
+EN-US;mso-bidi-language:AR-SA'><br clear=all style='page-break-before:always'>
+</span></b>
+
+<h2><span style='font-size:20.0pt;mso-bidi-font-size:12.0pt'>MDK Importer<o:p></o:p></span></h2>
+
+<p class=MsoNormal><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></p>
+
+<p class=MsoNormal>The Mdk Importer is used to bring existing content into
+MilkShape for editing, modification, and/or re-exporting.<span
+style="mso-spacerun: yes">  </span>The importer creates all of the meshes,
+vertices, bones, materials, and animations in MilkShape that are in the source <b>.MOH</b>
+(or <b>.GR2</b>) file.<span style="mso-spacerun: yes">  </span>The importer
+also populates the Model Manager with the extended data in the file.</p>
+
+<p class=MsoNormal><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></p>
+
+<p class=MsoNormal align=center style='text-align:center'><!--[if gte vml 1]><v:shape
+ id="_x0000_i1033" type="#_x0000_t75" style='width:289.5pt;height:210.75pt'>
+ <v:imagedata src="./MDK_MilkShape_Tools_files/image004.jpg" o:title="accessingImporter"/>
+</v:shape><![endif]--><![if !vml]><img border=0 width=386 height=281
+src="./MDK_MilkShape_Tools_files/image004.jpg" v:shapes="_x0000_i1033"><![endif]></p>
+
+<p class=MsoCaption align=center style='text-align:center'><a
+name="_Ref89676185">Figure <span style='mso-field-code:"SEQ Figure \\* ARABIC"'>4</span></a>:
+Accessing the Mdk Importer from the File menu.</p>
+
+<p class=MsoNormal><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></p>
+
+<p class=MsoNormal>The importer is accessed through the MilkShape File menu: <i>File
+&gt; Import &gt; Mdk Importer (.MOH)</i> (<span style='mso-field-code:"REF _Ref89676185 \\h"'>Figure
+4<!--[if gte mso 9]><xml>
+ <w:data>08D0C9EA79F9BACE118C8200AA004BA90B02000000080000000D0000005F00520065006600380039003600370036003100380035000000</w:data>
+</xml><![endif]--></span>).<span style="mso-spacerun: yes">  </span>This
+launches a file chooser dialog that displays all of the <b>.MOH</b> and <b>.GR2</b>
+that can be imported into MilkShape (<span style='mso-field-code:"REF _Ref89676496 \\h"'>Figure
+5<!--[if gte mso 9]><xml>
+ <w:data>08D0C9EA79F9BACE118C8200AA004BA90B02000000080000000D0000005F00520065006600380039003600370036003400390036000000</w:data>
+</xml><![endif]--></span>).<span style="mso-spacerun: yes">  </span>Searching
+the <i>My Documents\EA Games\Medal of Honor Pacific Assault(tm) \moddir\
+&lt;your_mod_name_here&gt; \models</i> directory creates the importer file list
+and it’s sub folders as well as the game install directory.<span
+style="mso-spacerun: yes">  </span>All<span style="mso-spacerun: yes"> 
+</span>.MOH and .GR2 files as well as pre-packed <b>.REZ</b>, and <b>.Pk3</b>
+files are searched as well.<span style="mso-spacerun: yes">  </span>This means
+that the game model files do not need to be unpacked in order to import
+them.<span style="mso-spacerun: yes">  </span>The models in you <i>moddir</i>
+directory will be first in the list.</p>
+
+<p class=MsoNormal><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></p>
+
+<p class=MsoNormal>To import select the file by clicking it and pressing <i>OK</i>.<span
+style="mso-spacerun: yes">  </span>You can double click on a file name as
+well.<span style="mso-spacerun: yes">  </span>There is a “Quick Select” text
+field that can be used to find files in the dialog.<span style="mso-spacerun:
+yes">  </span>Typing in the first part of the file name, or part of it, will
+scroll to and select the file in the dialog.<span style="mso-spacerun: yes"> 
+</span>The Quick Select is case sensitive, so the name needs to be typed
+exactly as it appears.<span style="mso-spacerun: yes">  </span>Then the file
+can be double clicked, or <i>OK</i> pressed to import it.<span
+style="mso-spacerun: yes">  </span>The <i>Scale Bones:</i> check box will make
+the bones fit the mesh being imported if the model has a scale component.<span
+style="mso-spacerun: yes">  </span>This should only apply to character
+models.<span style="mso-spacerun: yes">  </span>Scale Bones should not be
+checked it the imported skeleton is going to be used to export animations.</p>
+
+<p class=MsoNormal><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></p>
+
+<p class=MsoNormal><b>NOTE: </b><span style="mso-spacerun: yes"> </span>If you
+have multiple files with the same name in different directories, all of those
+files will show up in the file importer dialog. </p>
+
+<p class=MsoNormal><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></p>
+
+<p class=MsoNormal align=center style='text-align:center'><!--[if gte vml 1]><v:shape
+ id="_x0000_i1034" type="#_x0000_t75" style='width:6in;height:387.75pt'>
+ <v:imagedata src="./MDK_MilkShape_Tools_files/image005.jpg" o:title="importFilesDialog"/>
+</v:shape><![endif]--><![if !vml]><img border=0 width=576 height=517
+src="./MDK_MilkShape_Tools_files/image006.jpg" v:shapes="_x0000_i1034"><![endif]></p>
+
+<p class=MsoCaption align=center style='text-align:center'><a
+name="_Ref89676496">Figure <span style='mso-field-code:"SEQ Figure \\* ARABIC"'>5</span></a>:
+The Mdk Importer dialog box, displays existing .MOH and .GR2 files that can be
+imported.<span style="mso-spacerun: yes">   </span>The “Quick Select” text box
+can be used for selecting files by name.</p>
+
+<p class=MsoNormal><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></p>
+
+<p class=MsoNormal>The importer can be run multiple times, but all existing
+models will be deleted and the Model Manager will be cleared, resulting in
+losing your extended data.<span style="mso-spacerun: yes">  </span>The importer
+will prompt you if you want to continue. </p>
+
+<p class=MsoNormal><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></p>
+
+<h2>Importing and Names<span style='font-weight:normal'><o:p></o:p></span></h2>
+
+<p class=MsoNormal><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></p>
+
+<p class=MsoNormal>MilkShape limits the name of meshes and bones to 31
+characters long.<span style="mso-spacerun: yes">  </span>The existing content
+was created without this limitation.<span style="mso-spacerun: yes"> 
+</span>Duplicate names are not allowed, and checked for as well.<span
+style="mso-spacerun: yes">  </span>When a name that is too long is encountered
+during import, a dialog will appear allowing you to rename the object to a name
+within MilkShape’s specifications (<span style='mso-field-code:"REF _Ref89680314 \\h"'>Figure
+6<!--[if gte mso 9]><xml>
+ <w:data>08D0C9EA79F9BACE118C8200AA004BA90B02000000080000000D0000005F00520065006600380039003600380030003300310034000000</w:data>
+</xml><![endif]--></span>).<span style="mso-spacerun: yes">  </span>When a name
+is entered, it needs to be unique, and a check is performed.<span
+style="mso-spacerun: yes">  </span>If the check fails, you will be prompted to
+rename the mesh again until a unique name is found (usually not hard to
+do).<span style="mso-spacerun: yes">  </span>The dialog supports copy and paste
+the process can be sped up a little.<span style="mso-spacerun: yes">   </span></p>
+
+<p class=MsoNormal><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></p>
+
+<p class=MsoNormal align=center style='text-align:center'><!--[if gte vml 1]><v:shape
+ id="_x0000_i1035" type="#_x0000_t75" style='width:6in;height:149.25pt'>
+ <v:imagedata src="./MDK_MilkShape_Tools_files/image007.jpg" o:title="renameMesh"/>
+</v:shape><![endif]--><![if !vml]><img border=0 width=576 height=199
+src="./MDK_MilkShape_Tools_files/image008.jpg" v:shapes="_x0000_i1035"><![endif]></p>
+
+<p class=MsoCaption align=center style='text-align:center'><a
+name="_Ref89680314">Figure <span style='mso-field-code:"SEQ Figure \\* ARABIC"'>6</span></a>:
+Renaming meshes with names longer than MilkShape supports.</p>
+
+<p class=MsoNormal><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></p>
+
+<p class=MsoNormal>The extended data relies on the names of objects in the
+scene to associate the data with the object.<span style="mso-spacerun: yes"> 
+</span>If you change the names of objects or materials in the scene, the
+extended data needs to be manually changed as well, or you will lose the data
+when you open the Model Manager (see the note in the Model manager section).</p>
+
+<p class=MsoNormal><b><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></b></p>
+
+<p class=MsoNormal><b>NOTE:</b><span style="mso-spacerun: yes">  </span>Some
+auxiliary files such as HAG files and script files may be looking for a name of
+an object that had to be shortened during import.<span style="mso-spacerun:
+yes">  </span>These files may need to be altered manually to work with the new
+names.</p>
+
+<p class=MsoNormal><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></p>
+
+<h2>Working With Imported Models in MilkShape 3D<span style='font-weight:normal'><o:p></o:p></span></h2>
+
+<p class=MsoNormal><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></p>
+
+<p class=MsoNormal>Once a file is imported, you can use all of the native
+MilkShape tools and features, just as if you had created it from scratch in
+MilkShape.<span style="mso-spacerun: yes">  </span>You can save the file in
+MilkShape’s native <b>.ms3d</b> format but this only saves the mesh, vertices,
+bones, animations, and MilkShape materials, but none of the MDK materials or
+extended data.<span style="mso-spacerun: yes">  </span>You need to open the
+Model Manager, and explicitly save the extended data as a <b>.mmd</b> file, if
+you want to work on the model in <b>.ms3d</b>, but keep the extended data.<span
+style="mso-spacerun: yes">  </span>The <b>.mmd</b> format will save the MDK
+material information in the extended data.<span style="mso-spacerun: yes"> 
+</span></p>
+
+<p class=MsoNormal><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></p>
+
+<p class=MsoNormal>When you want to export the file you can load the extended
+data back into the Model Manager.<span style="mso-spacerun: yes">  </span>The
+Model Manager is only dependent on the names of objects and not their topology
+or structure, so geometry changes will not affect the Model Manager’s extended
+data.<span style="mso-spacerun: yes">  </span>Meshes and bones can always be
+added manually to the Model Manager, allowing complete control over the extended
+data.</p>
+
+<p class=MsoNormal><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></p>
+
+<p class=MsoNormal>MilkShape has limitations in zooming the 2D views.<span
+style="mso-spacerun: yes">  </span>Some of the existing <i>MOHPA</i> models are
+large enough that their extents cannot be viewed in the 2D MilkShape
+viewports.<span style="mso-spacerun: yes">  </span>You may need to adjust the
+near and far clipping planes in the 3D view as well.<span style="mso-spacerun:
+yes">  </span>One solution top the zoom limitation is to select all of the
+objects in the 3D viewport, (using the Alt drag method), and scale them
+uniformly.<span style="mso-spacerun: yes">  </span>Bones should be scaled
+accordingly as well.<span style="mso-spacerun: yes">  </span>When exported,
+these models will be smaller, but you can scale them in <i>MOHRadiant</i>.</p>
+
+<p class=MsoNormal><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></p>
+
+<h2><a name="_Ref89852675">Importing and Materials</a></h2>
+
+<p class=MsoNormal><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></p>
+
+<p class=MsoNormal>For materials to show up on the objects in MilkShape, the
+unpacked .tga or .dds files need to live in a directory structure under the <i>moddir\&lt;your_mod_name_here&gt;\models</i>
+folder that mirrors the original model’s texture directory.<span
+style="mso-spacerun: yes">  </span>For instance the Arisaka.gr2 model textures
+would have to live in:</p>
+
+<p class=MsoNormal><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></p>
+
+<p class=MsoBodyText>\My Documents\EA Games\Medal of Honor Pacific
+Assault(tm)\moddir\ your_mod_name_here \models\weapons\Arisaka</p>
+
+<p class=MsoNormal><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></p>
+
+<p class=MsoNormal>This is only necessary to view the materials in
+MilkShape.<span style="mso-spacerun: yes">  </span>You can always change the
+material paths in the MDK Material Editor and they will show up as long as it
+is under the <i>models</i> directory.<span style="mso-spacerun: yes">  </span><i>MOHPA</i>
+will display existing materials from imported models as long as the material is
+in an existing .REZ file and the paths have not changed, even if the directory
+structure is not mirrored under the <i>moddir\models\</i> directory needed by
+MilkShape.<span style="mso-spacerun: yes">  </span>New materials need to be
+added to the .Pk3 file with your re-exported or newly exported models. </p>
+
+<p class=MsoNormal><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></p>
+
+<p class=MsoNormal><b>NOTE:</b><span style="mso-spacerun: yes">  </span>When
+materials are imported, the model shows up as slightly transparent.<span
+style="mso-spacerun: yes">  </span>If you go under Materials in MilkShape and
+drag the transparency slider all the way to the right, the item will show up as
+solid.</p>
+
+<p class=MsoNormal><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></p>
+
+<p class=MsoNormal><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></p>
+
+<h2>Bones</h2>
+
+<p class=MsoNormal><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></p>
+
+<h2><span style='font-weight:normal'>When you import an existing <i>MOHPA</i>
+file you have the option to scale the bones in the scene based on the scale of
+the root bone in the file.<span style="mso-spacerun: yes">  </span>Scaling the
+bones causes the skeleton to fit the mesh it is attached to.<span
+style="mso-spacerun: yes">  </span>To enable bone scaling, check the <i>Scale
+Bones</i> box in the Import File dialog.<o:p></o:p></span></h2>
+
+<h2><span style='font-weight:normal'><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></span></h2>
+
+<h2><span style='font-weight:normal'>If you are importing a file with a
+skeleton to be used for modifying or creating animations, then you should leave
+the scale button unchecked.<span style="mso-spacerun: yes">  </span>The
+existing model files have the scale coded in them, so they assume that
+animations are created without a scaled skeleton.<o:p></o:p></span></h2>
+
+<h2><span style='font-weight:normal'><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></span></h2>
+
+<p class=MsoNormal><i>MilkShape</i> only allows for one bone per vertex, but the
+programs used to create the model files (<i>Maya</i> and <i>3DS Max</i>) allow
+for multiple bones per vertex and bone weighting.<span style="mso-spacerun:
+yes">  </span>When you import a model with bones into MilkShape, the bone
+indices for the vertices will only take the first bone index and not the other
+indices.<span style="mso-spacerun: yes">  </span>This causes the model to be
+skinned wrong.<span style="mso-spacerun: yes">  </span>If you plan to re-export
+an existing model, then you need to reassign the bone weights using one bone
+per vertex.<span style="mso-spacerun: yes">  </span>Otherwise, the model will
+just use the first bone index it found when importing, which will lead to
+undesired results when you load the file in Radiant or the game (<span
+style='mso-field-code:"REF _Ref90898141 \\h"'>Figure 7<!--[if gte mso 9]><xml>
+ <w:data>08D0C9EA79F9BACE118C8200AA004BA90B02000000080000000D0000005F00520065006600390030003800390038003100340031000000</w:data>
+</xml><![endif]--></span>).</p>
+
+<p class=MsoNormal><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></p>
+
+<p class=MsoNormal><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></p>
+
+<p class=MsoNormal><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></p>
+
+<p class=MsoNormal align=center style='text-align:center'><!--[if gte vml 1]><v:shape
+ id="_x0000_i1036" type="#_x0000_t75" style='width:420pt;height:283.5pt'>
+ <v:imagedata src="./MDK_MilkShape_Tools_files/image009.jpg" o:title="badSkinning"/>
+</v:shape><![endif]--><![if !vml]><img border=0 width=560 height=378
+src="./MDK_MilkShape_Tools_files/image009.jpg" v:shapes="_x0000_i1036"><![endif]></p>
+
+<p class=MsoCaption align=center style='text-align:center'><a
+name="_Ref90898141">Figure <span style='mso-field-code:"SEQ Figure \\* ARABIC"'>7</span></a>:<span
+style="mso-spacerun: yes">  </span>An example of uncorrected vertex bone
+indices on re-export (on the left). The original model with multiple bone
+indices per vertex (on the right) has correct skinning.<span
+style="mso-spacerun: yes">  </span>The model needs to be “re-skinned” to export
+correctly.</p>
+
+<p class=MsoNormal>Animation files are imported using the MDK Animation
+Sequencer.<span style="mso-spacerun: yes">  </span>The MDK Importer will let
+you know if you try to import an animation file that has no meshes in it.</p>
+
+<p class=MsoNormal><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></p>
+
+<h2><span style='font-size:20.0pt;mso-bidi-font-size:12.0pt'>MDK Material
+Editor<o:p></o:p></span></h2>
+
+<p class=MsoNormal><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></p>
+
+<p class=MsoNormal>Like the extended data for models, <i>MOHPA</i> requires
+material properties that do not exist in MilkShape.<span style="mso-spacerun:
+yes">  </span>The Mdk Material manager provides access to properties of MOHPA
+materials not native to MilkShape.<span style="mso-spacerun: yes">  </span>The
+material properties are stored in the extended data section of the models when
+exported, or saved as extended data.</p>
+
+<p class=MsoNormal><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></p>
+
+<p class=MsoNormal>The Material Editor is accessed through: <i>Tools &gt; MDK
+Material Manager</i> (<span style='mso-field-code:"REF _Ref89845864 \\h"'>Figure
+8<!--[if gte mso 9]><xml>
+ <w:data>08D0C9EA79F9BACE118C8200AA004BA90B02000000080000000D0000005F00520065006600380039003800340035003800360034000000</w:data>
+</xml><![endif]--></span>).<span style="mso-spacerun: yes">  </span></p>
+
+<p class=MsoNormal><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></p>
+
+<p class=MsoNormal align=center style='text-align:center'><!--[if gte vml 1]><v:shape
+ id="_x0000_i1037" type="#_x0000_t75" style='width:297.75pt;height:192.75pt'>
+ <v:imagedata src="./MDK_MilkShape_Tools_files/image010.jpg" o:title="accessingMaterialManager"/>
+</v:shape><![endif]--><![if !vml]><img border=0 width=397 height=257
+src="./MDK_MilkShape_Tools_files/image011.jpg" v:shapes="_x0000_i1037"><![endif]></p>
+
+<p class=MsoCaption align=center style='text-align:center'><a
+name="_Ref89845864">Figure <span style='mso-field-code:"SEQ Figure \\* ARABIC"'>8</span></a>:
+Accessing the Mdk Material Editor</p>
+
+<p class=MsoNormal><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></p>
+
+<p class=MsoNormal>The material editor contains both <i>MOHPA</i> material and
+MilkShape material functionality (<span style='mso-field-code:"REF _Ref89847552 \\h"'>Figure
+9<!--[if gte mso 9]><xml>
+ <w:data>08D0C9EA79F9BACE118C8200AA004BA90B02000000080000000D0000005F00520065006600380039003800340037003500350032000000</w:data>
+</xml><![endif]--></span>).</p>
+
+<p class=MsoNormal><span style="mso-spacerun: yes"> </span></p>
+
+<p class=MsoNormal>All of the <i>MOHPA</i> materials in the scene are
+accessible through the topmost pull down menu on the left.<span
+style="mso-spacerun: yes">  </span>Selecting a material in this pull down (<span
+style='mso-field-code:"REF _Ref89847925 \\h"'>Figure 10<!--[if gte mso 9]><xml>
+ <w:data>08D0C9EA79F9BACE118C8200AA004BA90B02000000080000000D0000005F00520065006600380039003800340037003900320035000000</w:data>
+</xml><![endif]--></span>) will update the GUI to reflect the properties for
+that material.<span style="mso-spacerun: yes">  </span>The material properties
+can be changed through buttons, pull downs, check boxes, and text fields.<span
+style="mso-spacerun: yes">   </span>The text fields limit values to those
+recognizable to the game.</p>
+
+<p class=MsoNormal align=center style='text-align:center'><!--[if gte vml 1]><v:shape
+ id="_x0000_i1038" type="#_x0000_t75" style='width:6in;height:358.5pt'>
+ <v:imagedata src="./MDK_MilkShape_Tools_files/image012.jpg" o:title="materialManagerDialog"/>
+</v:shape><![endif]--><![if !vml]><img border=0 width=576 height=478
+src="./MDK_MilkShape_Tools_files/image013.jpg" v:shapes="_x0000_i1038"><![endif]></p>
+
+<p class=MsoCaption align=center style='text-align:center'><a
+name="_Ref89847552">Figure <span style='mso-field-code:"SEQ Figure \\* ARABIC"'>9</span></a>:
+The Material Manager.<span style="mso-spacerun: yes">   </span>The MilkShape
+material functionality is in the top left corner, the rest affects the MDK
+materials.</p>
+
+<p class=MsoNormal><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></p>
+
+<p class=MsoNormal align=center style='text-align:center'><!--[if gte vml 1]><v:shape
+ id="_x0000_i1039" type="#_x0000_t75" style='width:213pt;height:201.75pt'>
+ <v:imagedata src="./MDK_MilkShape_Tools_files/image014.jpg" o:title="matManagerSelect"/>
+</v:shape><![endif]--><![if !vml]><img border=0 width=284 height=269
+src="./MDK_MilkShape_Tools_files/image015.jpg" v:shapes="_x0000_i1039"><![endif]></p>
+
+<p class=MsoCaption align=center style='text-align:center'><a
+name="_Ref89847925">Figure <span style='mso-field-code:"SEQ Figure \\* ARABIC"'>10</span></a>:
+Selecting MDK materials using the pulldown.</p>
+
+<h2>Renaming Materials<span style='font-weight:normal'><o:p></o:p></span></h2>
+
+<p class=MsoNormal><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></p>
+
+<p class=MsoNormal>To rename a material, change the name in the text box (<span
+style='mso-field-code:"REF _Ref89857831 \\h"'>Figure 11<!--[if gte mso 9]><xml>
+ <w:data>08D0C9EA79F9BACE118C8200AA004BA90B02000000080000000D0000005F00520065006600380039003800350037003800330031000000</w:data>
+</xml><![endif]--></span>), and click the rename button.<span
+style="mso-spacerun: yes">  </span>Duplicate names are no allowed.<span
+style="mso-spacerun: yes">  </span>The name of the material will not be changed
+until you click rename.<span style="mso-spacerun: yes">  </span>This will
+rename the material in MilkShape as well as in the Material Editor and the
+extended data. </p>
+
+<p class=MsoNormal><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></p>
+
+<p class=MsoNormal align=center style='text-align:center'><!--[if gte vml 1]><v:shape
+ id="_x0000_i1040" type="#_x0000_t75" style='width:300.75pt;height:90.75pt'>
+ <v:imagedata src="./MDK_MilkShape_Tools_files/image016.jpg" o:title="matlManagerRename"/>
+</v:shape><![endif]--><![if !vml]><img border=0 width=401 height=121
+src="./MDK_MilkShape_Tools_files/image016.jpg" v:shapes="_x0000_i1040"><![endif]></p>
+
+<p class=MsoCaption align=center style='text-align:center'><a
+name="_Ref89857831">Figure <span style='mso-field-code:"SEQ Figure \\* ARABIC"'>11</span></a>:
+Renaming materials.</p>
+
+<p class=MsoNormal><b>NOTE:</b><span style="mso-spacerun: yes"> 
+</span>Renaming materials in MilkShape will not rename MOHPA materials, and
+that material can no longer be edited in the material editor. </p>
+
+<p class=MsoNormal><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></p>
+
+<p class=MsoNormal><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></p>
+
+<h2>Meta Materials</h2>
+
+<p class=MsoNormal><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></p>
+
+<p class=MsoNormal>The rendering of materials in the game is governed by Meta
+Materials.<span style="mso-spacerun: yes">  </span>Meta materials are
+predefined descriptions of a material that include shader properties and
+reference shader programs.<span style="mso-spacerun: yes">  </span>The Meta
+materials available to you are the ones shipped with the game.<span
+style="mso-spacerun: yes">  </span>You can change Meta materials by clicking
+the “Type:” button (<span style='mso-field-code:"REF _Ref89848398 \\h"'>Figure 12<!--[if gte mso 9]><xml>
+ <w:data>08D0C9EA79F9BACE118C8200AA004BA90B02000000080000000D0000005F00520065006600380039003800340038003300390038000000</w:data>
+</xml><![endif]--></span>), which brings up the Meta material browser (<span
+style='mso-field-code:"REF _Ref89848487 \\h"'>Figure 13<!--[if gte mso 9]><xml>
+ <w:data>08D0C9EA79F9BACE118C8200AA004BA90B02000000080000000D0000005F00520065006600380039003800340038003400380037000000</w:data>
+</xml><![endif]--></span>).<span style="mso-spacerun: yes">  </span></p>
+
+<p class=MsoNormal><span style="mso-spacerun: yes"> </span></p>
+
+<p class=MsoNormal align=center style='text-align:center'><!--[if gte vml 1]><v:shape
+ id="_x0000_i1041" type="#_x0000_t75" style='width:300.75pt;height:90.75pt'>
+ <v:imagedata src="./MDK_MilkShape_Tools_files/image017.jpg" o:title="matlManagerMetaMatChange"/>
+</v:shape><![endif]--><![if !vml]><img border=0 width=401 height=121
+src="./MDK_MilkShape_Tools_files/image017.jpg" v:shapes="_x0000_i1041"><![endif]></p>
+
+<p class=MsoCaption align=center style='text-align:center'><a
+name="_Ref89848398">Figure <span style='mso-field-code:"SEQ Figure \\* ARABIC"'>12</span></a>:
+Changing the Meta material type for a MDK material.</p>
+
+<p class=MsoNormal><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></p>
+
+<p class=MsoNormal><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></p>
+
+<p class=MsoNormal align=center style='text-align:center'><!--[if gte vml 1]><v:shape
+ id="_x0000_i1042" type="#_x0000_t75" style='width:250.5pt;height:429pt'>
+ <v:imagedata src="./MDK_MilkShape_Tools_files/image018.jpg" o:title="metaMaterialBrowser"/>
+</v:shape><![endif]--><![if !vml]><img border=0 width=334 height=572
+src="./MDK_MilkShape_Tools_files/image018.jpg" v:shapes="_x0000_i1042"><![endif]></p>
+
+<p class=MsoCaption align=center style='text-align:center'><a
+name="_Ref89848487">Figure <span style='mso-field-code:"SEQ Figure \\* ARABIC"'>13</span></a>:
+The Meta Material Browser shows the available Meta materials for the material.</p>
+
+<p class=MsoNormal><b>NOTE:</b> Changing Meta materials changes the texture
+stages (<span style='mso-field-code:"REF _Ref89857847 \\h"'>Figure 14<!--[if gte mso 9]><xml>
+ <w:data>08D0C9EA79F9BACE118C8200AA004BA90B02000000080000000D0000005F00520065006600380039003800350037003800340037000000</w:data>
+</xml><![endif]--></span>) in the material, which results in the source files
+(.tga or .dds) for the texture stage to be reset to “None”.<span
+style="mso-spacerun: yes">  </span>You will need to set these source files
+before exporting, or your materials will not be rendered correctly.</p>
+
+<p class=MsoNormal><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></p>
+
+<p class=MsoNormal align=center style='text-align:center'><!--[if gte vml 1]><v:shape
+ id="_x0000_i1043" type="#_x0000_t75" style='width:198pt;height:92.25pt'>
+ <v:imagedata src="./MDK_MilkShape_Tools_files/image019.jpg" o:title="matManagerTexStages"/>
+</v:shape><![endif]--><![if !vml]><img border=0 width=264 height=123
+src="./MDK_MilkShape_Tools_files/image019.jpg" v:shapes="_x0000_i1043"><![endif]></p>
+
+<p class=MsoCaption align=center style='text-align:center'><a
+name="_Ref89857847">Figure <span style='mso-field-code:"SEQ Figure \\* ARABIC"'>14</span></a>:
+Texture stages.<span style="mso-spacerun: yes">  </span>You can change the
+source file for a texture stage by clicking the button below it.<span
+style="mso-spacerun: yes">  </span>Texture stages are selected by using the
+pull down.</p>
+
+<p class=MsoNormal><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></p>
+
+<h2>Texture Stages</h2>
+
+<p class=MsoNormal><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></p>
+
+<p class=MsoNormal>Meta Materials contain one or more texture stage.<span
+style="mso-spacerun: yes">  </span>These texture stages are defined in the meta
+material and cannot be added or removed from the material.<span
+style="mso-spacerun: yes">  </span>Changing the material’s meta material will
+change the texture stages.<span style="mso-spacerun: yes">  </span>Each stage
+represents a different rendering process, so a meta material can have a normal
+map, diffuse (the base texture you see), reflection map, etc…<span
+style="mso-spacerun: yes">  </span>MilkShape uses the texture stage with the
+diffuse texture as the texture displayed in the model. </p>
+
+<p class=MsoNormal><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></p>
+
+<p class=MsoNormal>Each texture stage has a source texture file that is either
+a .tga or a .dds.<span style="mso-spacerun: yes">  </span>When you select a
+texture stage in the drop down, the type of texture stage is displayed
+(diffuse, normal, reflect…) as well as the source texture filename.<span
+style="mso-spacerun: yes">  </span>You can change the source file by clicking
+the button and browsing to the desired file.<span style="mso-spacerun: yes"> 
+</span>Changing the source file on the diffuse texture stage will change the
+diffuse material in MilkShape as well. </p>
+
+<p class=MsoNormal><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></p>
+
+<h2><a name="_Ref89854661">New and Converted MDK Materials</a><span
+style='mso-bookmark:_Ref89854661'></span><span style='font-weight:normal'><o:p></o:p></span></h2>
+
+<p class=MsoNormal><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></p>
+
+<p class=MsoNormal>MDK materials are created automatically during import.<span
+style="mso-spacerun: yes">  </span>You can also create new materials using the
+material editor.<span style="mso-spacerun: yes">  </span>The <i>New Mdk
+Material</i> button creates a new, uniquely named, MDK material, and its
+MilkShape counter part.<span style="mso-spacerun: yes">  </span>You can also
+convert existing MilkShape materials to a MDK material by selecting the
+material and in the MDK Materials pull down (<span style='mso-field-code:"REF _Ref89852330 \\h"'>Figure
+15<!--[if gte mso 9]><xml>
+ <w:data>08D0C9EA79F9BACE118C8200AA004BA90B02000000080000000D0000005F00520065006600380039003800350032003300330030000000</w:data>
+</xml><![endif]--></span>), and pressing <i>Convert Existing Material</i>.<span
+style="mso-spacerun: yes">  </span>This will reset the diffuse material to
+“None”.</p>
+
+<p class=MsoNormal><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></p>
+
+<p class=MsoNormal align=center style='text-align:center'><!--[if gte vml 1]><v:shape
+ id="_x0000_i1044" type="#_x0000_t75" style='width:195pt;height:137.25pt'>
+ <v:imagedata src="./MDK_MilkShape_Tools_files/image020.jpg" o:title="matManagerConvertMat"/>
+</v:shape><![endif]--><![if !vml]><img border=0 width=260 height=183
+src="./MDK_MilkShape_Tools_files/image020.jpg" v:shapes="_x0000_i1044"><![endif]></p>
+
+<p class=MsoCaption align=center style='text-align:center'><a
+name="_Ref89852330">Figure <span style='mso-field-code:"SEQ Figure \\* ARABIC"'>15</span></a>:
+Creating new or converting existing materials.</p>
+
+<p class=MsoNormal><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></p>
+
+<p class=MsoNormal>Once a MDK material is created it need to be assigned to
+meshes.<span style="mso-spacerun: yes">  </span>You can assign materials by
+closing the material manager, selecting the group of meshes to assign the
+material to, then opening the material manager and press <i>Assign </i>(<span
+style='mso-field-code:"REF _Ref89852330 \\h"'>Figure 15<!--[if gte mso 9]><xml>
+ <w:data>08D0C9EA79F9BACE118C8200AA004BA90B02000000080000000D0000005F00520065006600380039003800350032003300330030000000</w:data>
+</xml><![endif]--></span>).<span style="mso-spacerun: yes">  </span>The
+material will not show up on the mesh until you close the material editor.<span
+style="mso-spacerun: yes">  </span>The material needs to live under your <i>models
+</i>directory to be visible in MilkShape as described in the <b><i><span
+style='mso-field-code:"REF _Ref89852675 \\h &#1; \\* MERGEFORMAT"'>Importing and
+Materials<!--[if gte mso 9]><xml>
+ <w:data>08D0C9EA79F9BACE118C8200AA004BA90B02000000080000000D0000005F00520065006600380039003800350032003600370035000000</w:data>
+</xml><![endif]--></span></i></b> section.</p>
+
+<p class=MsoNormal><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></p>
+
+<p class=MsoNormal><b>NOTE: </b>You can remove MDK materials using the material
+editor, but the MilkShape counter part needs to be removed using MilkShape’s
+native material tools.</p>
+
+<span style='font-size:12.0pt;font-family:"Times New Roman";mso-fareast-font-family:
+"Times New Roman";mso-ansi-language:EN-US;mso-fareast-language:EN-US;
+mso-bidi-language:AR-SA'><br clear=all style='page-break-before:always'>
+</span>
+
+<p class=MsoNormal><b><span style='font-size:20.0pt;mso-bidi-font-size:12.0pt'>MDK
+Light Mapping</span></b></p>
+
+<p class=MsoNormal><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></p>
+
+<p class=MsoNormal>LOD meshes can be light mapped with unique light map
+textures and coordinates.<span style="mso-spacerun: yes">  </span>In order for
+a mesh to be light mapped, it needs to be assigned a material with a Meta
+material type of <i>default_lit_lightmap</i>, with the light map texture stage
+pointing to the material.</p>
+
+<p class=MsoNormal><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></p>
+
+<h2>Light Map Meshes</h2>
+
+<p class=MsoNormal><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></p>
+
+<p class=MsoNormal>MilkShape only allows one set of texture coordinates per
+vertex in a mesh.<span style="mso-spacerun: yes">  </span>To overcome this
+obstacle, you need to create a copy of the mesh, and name it following the
+naming convention set out below.<span style="mso-spacerun: yes">  </span>This
+new mesh is the <i>Light Map Mesh</i>.<span style="mso-spacerun: yes"> 
+</span>The texture coordinates for this mesh are the ones used as the texture
+coordinates for the light map.<span style="mso-spacerun: yes">  </span>A <i>Light
+Map material</i> can be created to preview the light map on the light map mesh,
+following the naming convention below.</p>
+
+<p class=MsoNormal><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></p>
+
+<p class=MsoNormal>The light map texture coordinates for the LOD mesh can be
+set by using the native MilkShape UV mapping tools on the light map mesh.<span
+style="mso-spacerun: yes">  </span>Changing the light map mesh’s texture
+coordinates does not change the LOD mesh’s normal texture coordinates.<span
+style="mso-spacerun: yes">  </span>The light map materials are only used to
+preview the material on the light map mesh.<span style="mso-spacerun: yes"> 
+</span>The light map material used in the game is the material of the <i>light</i>
+texture stage in the material assigned to the normal LOD mesh.</p>
+
+<p class=MsoNormal><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></p>
+
+<p class=MsoNormal>The light map meshes and light map materials are not
+exported and DO NOT need to be in the model manager.<span style="mso-spacerun:
+yes">  </span>Only the light map mesh’s texture coordinates are combined into
+the actual mesh it represents.</p>
+
+<p class=MsoNormal><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></p>
+
+<h2>Naming Convention for Light Map Meshes and Light Map Materials</h2>
+
+<p class=MsoNormal><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></p>
+
+<p class=MsoNormal>The Light Map mesh and the light map materials used to view
+the light map on that mesh must be named “@&lt;mesh_name&gt;” for meshes and
+“@&lt;material_name&gt;” for materials (<span style='mso-field-code:"REF _Ref90272107 \\h"'>Table
+1<!--[if gte mso 9]><xml>
+ <w:data>08D0C9EA79F9BACE118C8200AA004BA90B02000000080000000D0000005F00520065006600390030003200370032003100300037000000</w:data>
+</xml><![endif]--></span>).<span style="mso-spacerun: yes">  </span>This is how
+the importer and exporter now which light map mesh is linked to which LOD
+mesh.<span style="mso-spacerun: yes">  </span>If the name is more than 30
+characters long, the “@” replaces the first character in the name.<span
+style="mso-spacerun: yes">  </span></p>
+
+<p class=MsoNormal><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></p>
+
+<div align=center>
+
+<table border=1 cellspacing=0 cellpadding=0 style='border-collapse:collapse;
+ border:none;mso-border-alt:solid windowtext .5pt;mso-padding-alt:0in 5.4pt 0in 5.4pt'>
+ <tr style='height:16.6pt'>
+  <td width=294 valign=top style='width:220.7pt;border:solid windowtext .5pt;
+  padding:0in 5.4pt 0in 5.4pt;height:16.6pt'>
+  <p class=MsoNormal><b>Mesh Name<o:p></o:p></b></p>
+  </td>
+  <td width=294 valign=top style='width:220.55pt;border:solid windowtext .5pt;
+  border-left:none;mso-border-left-alt:solid windowtext .5pt;padding:0in 5.4pt 0in 5.4pt;
+  height:16.6pt'>
+  <p class=MsoNormal><b>Light Map Mesh Name <o:p></o:p></b></p>
+  </td>
+ </tr>
+ <tr style='height:15.25pt'>
+  <td width=294 valign=top style='width:220.7pt;border:solid windowtext .5pt;
+  border-top:none;mso-border-top-alt:solid windowtext .5pt;padding:0in 5.4pt 0in 5.4pt;
+  height:15.25pt'>
+  <p class=MsoNormal>Model_LOD_0_metal</p>
+  </td>
+  <td width=294 valign=top style='width:220.55pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext .5pt;border-right:solid windowtext .5pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  padding:0in 5.4pt 0in 5.4pt;height:15.25pt'>
+  <p class=MsoNormal>@Model_LOD_0_metal</p>
+  </td>
+ </tr>
+ <tr style='height:15.25pt'>
+  <td width=294 valign=top style='width:220.7pt;border:solid windowtext .5pt;
+  border-top:none;mso-border-top-alt:solid windowtext .5pt;padding:0in 5.4pt 0in 5.4pt;
+  height:15.25pt'>
+  <p class=MsoNormal>catalina_LOD_1_fuselage_rt_wing</p>
+  </td>
+  <td width=294 valign=top style='width:220.55pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext .5pt;border-right:solid windowtext .5pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  padding:0in 5.4pt 0in 5.4pt;height:15.25pt'>
+  <p class=MsoNormal>@atalina_LOD_1_fuselage_rt_wing</p>
+  </td>
+ </tr>
+ <tr style='height:15.25pt'>
+  <td width=294 valign=top style='width:220.7pt;border:solid windowtext .5pt;
+  border-top:none;mso-border-top-alt:solid windowtext .5pt;padding:0in 5.4pt 0in 5.4pt;
+  height:15.25pt'>
+  <p class=MsoNormal>catalina_LOD_0_fuselage_tail</p>
+  </td>
+  <td width=294 valign=top style='width:220.55pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext .5pt;border-right:solid windowtext .5pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  padding:0in 5.4pt 0in 5.4pt;height:15.25pt'>
+  <p class=MsoNormal>@catalina_LOD_0_fuselage_tail</p>
+  </td>
+ </tr>
+</table>
+
+</div>
+
+<p class=MsoNormal><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></p>
+
+<div align=center>
+
+<table border=1 cellspacing=0 cellpadding=0 width=590 style='width:6.15in;
+ border-collapse:collapse;border:none;mso-border-alt:solid windowtext .5pt;
+ mso-padding-alt:0in 5.4pt 0in 5.4pt'>
+ <tr>
+  <td width=295 valign=top style='width:221.4pt;border:solid windowtext .5pt;
+  padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal><b>Material Name<o:p></o:p></b></p>
+  </td>
+  <td width=295 valign=top style='width:221.4pt;border:solid windowtext .5pt;
+  border-left:none;mso-border-left-alt:solid windowtext .5pt;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal><b>Light Map Material Name<o:p></o:p></b></p>
+  </td>
+ </tr>
+ <tr>
+  <td width=295 valign=top style='width:221.4pt;border:solid windowtext .5pt;
+  border-top:none;mso-border-top-alt:solid windowtext .5pt;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal>dirt_dark</p>
+  </td>
+  <td width=295 valign=top style='width:221.4pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext .5pt;border-right:solid windowtext .5pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal>@dirt_dark</p>
+  </td>
+ </tr>
+ <tr>
+  <td width=295 valign=top style='width:221.4pt;border:solid windowtext .5pt;
+  border-top:none;mso-border-top-alt:solid windowtext .5pt;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal>garage_struct_lt_window_cracked</p>
+  </td>
+  <td width=295 valign=top style='width:221.4pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext .5pt;border-right:solid windowtext .5pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal>@arage_struct_lt_window_cracked</p>
+  </td>
+ </tr>
+</table>
+
+</div>
+
+<p class=MsoCaption align=center style='text-align:center'><a
+name="_Ref90272107">Table <span style='mso-field-code:"SEQ Table \\* ARABIC"'>1</span></a>:
+Example names for light map versions of meshes and materials</p>
+
+<p class=MsoNormal><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></p>
+
+<p class=MsoNormal><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></p>
+
+<h2>Importing Meshes With Light Map Coordinates<span style='font-weight:normal'><o:p></o:p></span></h2>
+
+<p class=MsoNormal><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></p>
+
+<p class=MsoNormal>When the importer encounters a mesh that has light map
+coordinates, a duplicate light map mesh is automatically created in MilkShape (<span
+style='mso-field-code:"REF _Ref90277647 \\h"'>Figure 16<!--[if gte mso 9]><xml>
+ <w:data>08D0C9EA79F9BACE118C8200AA004BA90B02000000080000000D0000005F00520065006600390030003200370037003600340037000000</w:data>
+</xml><![endif]--></span>).<span style="mso-spacerun: yes">  </span>The new
+light map mesh is named using the naming convention above (<span
+style='mso-field-code:"REF _Ref90272107 \\h"'>Table 1<!--[if gte mso 9]><xml>
+ <w:data>08D0C9EA79F9BACE118C8200AA004BA90B02000000080000000D0000005F00520065006600390030003200370032003100300037000000</w:data>
+</xml><![endif]--></span>).<span style="mso-spacerun: yes">  </span>The
+material pointed to by the light map texture stage in the MDK material for the
+mesh is assigned as the diffuse material for the light map mesh (<span
+style='mso-field-code:"REF _Ref90277777 \\h"'>Figure 17<!--[if gte mso 9]><xml>
+ <w:data>08D0C9EA79F9BACE118C8200AA004BA90B02000000080000000D0000005F00520065006600390030003200370037003700370037000000</w:data>
+</xml><![endif]--></span>).<span style="mso-spacerun: yes">  </span>This lets
+you view the light map on the mesh to make sure your light map texture
+coordinates are correct.</p>
+
+<p class=MsoNormal><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></p>
+
+<p class=MsoNormal align=center style='text-align:center'><!--[if gte vml 1]><v:shape
+ id="_x0000_i1045" type="#_x0000_t75" style='width:153pt;height:135pt'>
+ <v:imagedata src="./MDK_MilkShape_Tools_files/image021.jpg" o:title="lm_mesh"/>
+</v:shape><![endif]--><![if !vml]><img border=0 width=204 height=180
+src="./MDK_MilkShape_Tools_files/image021.jpg" v:shapes="_x0000_i1045"><![endif]></p>
+
+<p class=MsoCaption align=center style='text-align:center'><a
+name="_Ref90277647">Figure <span style='mso-field-code:"SEQ Figure \\* ARABIC"'>16</span></a>:
+Light Map Meshes (@XXX) have been added for meshes with light map texture
+coordinates.</p>
+
+<p class=MsoNormal><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></p>
+
+<p class=MsoNormal>The texture coordinates of the light map mesh are taken from
+the light map texture coordinates in the file, and are used on export as the
+light map texture coordinates.<span style="mso-spacerun: yes">  </span>The
+light map mesh itself is not exported.<span style="mso-spacerun: yes"> 
+</span>If you change the original mesh, then you need to delete the existing
+light map mesh, and create a duplicate of the initial mesh, naming it with the
+appropriate name.</p>
+
+<p class=MsoNormal align=center style='text-align:center'><!--[if gte vml 1]><v:shape
+ id="_x0000_i1025" type="#_x0000_t75" style='width:145.5pt;height:321.75pt'>
+ <v:imagedata src="./MDK_MilkShape_Tools_files/image022.jpg" o:title="lm_Mat"/>
+</v:shape><![endif]--><![if !vml]><img border=0 width=194 height=429
+src="./MDK_MilkShape_Tools_files/image022.jpg" v:shapes="_x0000_i1025"><![endif]></p>
+
+<p class=MsoCaption align=center style='text-align:center'><a
+name="_Ref90277777">Figure <span style='mso-field-code:"SEQ Figure \\* ARABIC"'>17</span></a>:
+Light Map materials<span style="mso-spacerun: yes">  </span>(&quot;@XXXX&quot;)
+which are assigned to light map meshes in the scene.</p>
+
+<p class=MsoNormal><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></p>
+
+<h2>Exporting Meshes With Light Map Coordinates<span style='font-weight:normal'><o:p></o:p></span></h2>
+
+<p class=MsoNormal><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></p>
+
+<p class=MsoNormal>On export, if a light map mesh exists for a LOD mesh, the
+light map texture coordinates will be taken from the light map mesh and set as
+the light map texture coordinates in the LOD mesh.<span style="mso-spacerun:
+yes">  </span>The Meta material type for the LOD mesh must be a Meta material
+type that contains a light map texture stage (e.g. <i>default_lit_lightmap</i>).</p>
+
+<p class=MsoNormal><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></p>
+
+<p class=MsoNormal>The light map mesh is found by pre-pending an “@” to the LOD
+mesh name, and finding that mesh in MilkShape.<span style="mso-spacerun: yes"> 
+</span>If a light map mesh does not exist for the LOD mesh, then all of the
+light map texture coordinates will be same as the LOD mesh’s texture
+coordinates.<span style="mso-spacerun: yes">  </span>The light map texture
+coordinates for the meshes are used by the <i>bsp_lightmapper</i> in <i>MOHRadiant</i>
+in the light mapping process.</p>
+
+<p class=MsoNormal><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></p>
+
+<h2>Light Map Materials<span style='font-weight:normal'><o:p></o:p></span></h2>
+
+<p class=MsoNormal><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></p>
+
+<p class=MsoNormal>Light map materials are automatically generated in MilkShape
+when LOD meshes with light map texture coordinates are present (<span
+style='mso-field-code:"REF _Ref90277777 \\h"'>Figure 17<!--[if gte mso 9]><xml>
+ <w:data>08D0C9EA79F9BACE118C8200AA004BA90B02000000080000000D0000005F00520065006600390030003200370037003700370037000000</w:data>
+</xml><![endif]--></span>).<span style="mso-spacerun: yes">  </span>These
+materials are for visualizing the light map mapping and do not play any role in
+the light map process.<span style="mso-spacerun: yes">  </span>They are named
+using the naming convention above so that you know which ones they are.<span
+style="mso-spacerun: yes">  </span><br clear=all style='page-break-before:always'>
+<b><span style='font-size:20.0pt;mso-bidi-font-size:12.0pt'>MDK Exporter</span></b></p>
+
+<p class=MsoNormal><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></p>
+
+<p class=MsoNormal>The MDK Exporter is used to export MilkShape models as <i>MOHPA</i>
+game ready .MOH files.<span style="mso-spacerun: yes">  </span>These files can
+then be used just like any existing game assets.<span style="mso-spacerun:
+yes">   </span>The exporter relies on MilkShape for the geometry of the object,
+and the model manager and material editor for the extended data and MDK
+materials respectively.<span style="mso-spacerun: yes">  </span>The Model
+Manager needs to be opened and then closed at least once before you can export.</p>
+
+<p class=MsoNormal><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></p>
+
+<p class=MsoNormal>The exporter is accessed through the File menu: <i>File &gt;
+Export &gt; MDK Exporter (.MOH) </i>(<span style='mso-field-code:"REF _Ref89753004 \\h &#1; \\* MERGEFORMAT"'>Figure
+18<!--[if gte mso 9]><xml>
+ <w:data>08D0C9EA79F9BACE118C8200AA004BA90B02000000080000000D0000005F00520065006600380039003700350033003000300034000000</w:data>
+</xml><![endif]--></span>). </p>
+
+<p class=MsoNormal align=center style='text-align:center'><!--[if gte vml 1]><v:shape
+ id="_x0000_i1046" type="#_x0000_t75" style='width:294pt;height:191.25pt'>
+ <v:imagedata src="./MDK_MilkShape_Tools_files/image023.jpg" o:title="accessingExporter"/>
+</v:shape><![endif]--><![if !vml]><img border=0 width=392 height=255
+src="./MDK_MilkShape_Tools_files/image023.jpg" v:shapes="_x0000_i1046"><![endif]></p>
+
+<p class=MsoCaption align=center style='text-align:center'><a
+name="_Ref89753004">Figure <span style='mso-field-code:"SEQ Figure \\* ARABIC"'>18</span></a>:
+Accessing the MDK Exporter.</p>
+
+<p class=MsoNormal><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></p>
+
+<p class=MsoNormal>A successful export will result in game ready .MOH files,
+which can then be placed in a <i>MOHPA</i> level using <i>MOHRadiant</i>.<span
+style="mso-spacerun: yes">  </span>The new .MOH files need to be placed in a
+.Pk3 pack file in order to show up in the game. </p>
+
+<p class=MsoNormal><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></p>
+
+<h2>Export Sanity Checks</h2>
+
+<p class=MsoNormal><b><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></b></p>
+
+<p class=MsoNormal>The exporter runs a series of sanity checks to catch some of
+the common errors that could prevent the model from being able to be placed in
+the game.<span style="mso-spacerun: yes">  </span>If a check fails and there is
+an error, the model cannot be exported until that error is fixed.<span
+style="mso-spacerun: yes">  </span>Warnings can be ignored, but it is advisable
+to fix them.<span style="mso-spacerun: yes">  </span>The sanity checker dialog
+box displays the checks, whether they succeeded or failed, and whether the
+failure is a fatal error or just a warning (<span style='mso-field-code:"REF _Ref89761021 \\h"'>Figure
+19<!--[if gte mso 9]><xml>
+ <w:data>08D0C9EA79F9BACE118C8200AA004BA90B02000000080000000D0000005F00520065006600380039003700360031003000320031000000</w:data>
+</xml><![endif]--></span>).</p>
+
+<p class=MsoNormal><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></p>
+
+<p class=MsoNormal><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></p>
+
+<div align=center>
+
+<table border=0 cellspacing=0 cellpadding=0 style='border-collapse:collapse;
+ mso-padding-alt:0in 5.4pt 0in 5.4pt'>
+ <tr>
+  <td valign=top style='padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal align=center style='text-align:center'><!--[if gte vml 1]><v:shape
+   id="_x0000_i1047" type="#_x0000_t75" style='width:202.5pt;height:351pt'>
+   <v:imagedata src="./MDK_MilkShape_Tools_files/image024.jpg" o:title="exportSanityCheckNoErrors"/>
+  </v:shape><![endif]--><![if !vml]><img border=0 width=270 height=468
+  src="./MDK_MilkShape_Tools_files/image025.jpg" v:shapes="_x0000_i1047"><![endif]></p>
+  </td>
+  <td valign=top style='padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal align=center style='text-align:center'><!--[if gte vml 1]><v:shape
+   id="_x0000_i1048" type="#_x0000_t75" style='width:202.5pt;height:351pt'>
+   <v:imagedata src="./MDK_MilkShape_Tools_files/image026.jpg" o:title="exportSanityCheckFatalError"/>
+  </v:shape><![endif]--><![if !vml]><img border=0 width=270 height=468
+  src="./MDK_MilkShape_Tools_files/image027.jpg" v:shapes="_x0000_i1048"><![endif]></p>
+  </td>
+ </tr>
+</table>
+
+</div>
+
+<p class=MsoCaption align=center style='text-align:center'><a
+name="_Ref89761021">Figure <span style='mso-field-code:"SEQ Figure \\* ARABIC"'>19</span></a>:
+Export Sanity Checker without any errors (left) and with fatal errors (right).</p>
+
+<p class=MsoNormal><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></p>
+
+<p class=MsoNormal>A description of the errors and warnings, as well as the
+objects that caused them and possible solutions are displayed in a scrollable
+text box at the bottom of the dialog (<span style='mso-field-code:"REF _Ref89761499 \\h"'>Figure
+20<!--[if gte mso 9]><xml>
+ <w:data>08D0C9EA79F9BACE118C8200AA004BA90B02000000080000000D0000005F00520065006600380039003700360031003400390039000000</w:data>
+</xml><![endif]--></span>).</p>
+
+<p class=MsoNormal><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></p>
+
+<p class=MsoNormal align=center style='text-align:center'><!--[if gte vml 1]><v:shape
+ id="_x0000_i1049" type="#_x0000_t75" style='width:4in;height:141pt'>
+ <v:imagedata src="./MDK_MilkShape_Tools_files/image028.jpg" o:title="exportSanityCheckFatalErrorCloseup"/>
+</v:shape><![endif]--><![if !vml]><img border=0 width=384 height=188
+src="./MDK_MilkShape_Tools_files/image029.jpg" v:shapes="_x0000_i1049"><![endif]></p>
+
+<p class=MsoCaption align=center style='text-align:center'><a
+name="_Ref89761499">Figure <span style='mso-field-code:"SEQ Figure \\* ARABIC"'>20</span></a>:
+Warning and error descriptions and affected objects.</p>
+
+<p class=MsoNormal><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></p>
+
+<p class=MsoNormal><span style="mso-spacerun: yes"> </span></p>
+
+<p class=MsoNormal><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></p>
+
+<p class=MsoNormal>If a MilkShape material exists, and has been assigned to a
+mesh being exported and the material has not been converted to an MDK Material,
+the material will be automatically converted to an MDK material, with a default
+meta material.<span style="mso-spacerun: yes">  </span>This will lose any
+diffuse texture information in the MilkShape file.</p>
+
+<p class=MsoNormal><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></p>
+
+<p class=MsoNormal>The quickest way to test an export is to import your newly
+exported file in MilkShape.<span style="mso-spacerun: yes">  </span>Remember to
+save your current file and extended data before you import because the importer
+will clear the Model Manager and all existing MilkShape items.</p>
+
+<p class=MsoNormal><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></p>
+
+<h2>Exporting Bones<span style='font-weight:normal'><o:p></o:p></span></h2>
+
+<p class=MsoNormal><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></p>
+
+<p class=MsoNormal>It is advisable not to re-export existing models without
+re-skinning (assigning bone indices to vertices) the model (<span
+style='mso-field-code:"REF _Ref90898141 \\h"'>Figure 7<!--[if gte mso 9]><xml>
+ <w:data>08D0C9EA79F9BACE118C8200AA004BA90B02000000080000000D0000005F00520065006600390030003800390038003100340031000000</w:data>
+</xml><![endif]--></span>).<span style="mso-spacerun: yes">  </span>If you
+create a new model with a new skeleton then you will have to re-skin it using
+only one bone index per vertex.<span style="mso-spacerun: yes"> 
+</span>Animations are exported separately using the MDK Animation Sequencer.</p>
+
+<b><span style='font-size:20.0pt;mso-bidi-font-size:12.0pt;font-family:"Times New Roman";
+mso-fareast-font-family:"Times New Roman";mso-ansi-language:EN-US;mso-fareast-language:
+EN-US;mso-bidi-language:AR-SA'><br clear=all style='page-break-before:always'>
+</span></b>
+
+<h2><span style='font-size:20.0pt;mso-bidi-font-size:12.0pt'>MDK Animation
+Sequencer<o:p></o:p></span></h2>
+
+<p class=MsoNormal><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></p>
+
+<p class=MsoNormal>The MDK Animation Sequencer allows you to import existing
+animations into MilkShape and export modified or new animations from MilkShape
+which can then be set up to be used in <i>MOHPA</i> through <i>HAG</i>
+files.<span style="mso-spacerun: yes">  </span>The MDK Animation Sequencer is
+accessed by <i>Tools &gt; Mdk Animation Sequencer</i> (<span style='mso-field-code:
+"REF _Ref90900130 \\h"'>Figure 21<!--[if gte mso 9]><xml>
+ <w:data>08D0C9EA79F9BACE118C8200AA004BA90B02000000080000000D0000005F00520065006600390030003900300030003100330030000000</w:data>
+</xml><![endif]--></span>).</p>
+
+<p class=MsoNormal><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></p>
+
+<p class=MsoNormal align=center style='text-align:center'><!--[if gte vml 1]><v:shape
+ id="_x0000_i1050" type="#_x0000_t75" style='width:266.25pt;height:203.25pt'>
+ <v:imagedata src="./MDK_MilkShape_Tools_files/image030.jpg" o:title="accessingAnimSeq"/>
+</v:shape><![endif]--><![if !vml]><img border=0 width=355 height=271
+src="./MDK_MilkShape_Tools_files/image030.jpg" v:shapes="_x0000_i1050"><![endif]></p>
+
+<p class=MsoCaption align=center style='text-align:center'><a
+name="_Ref90900130">Figure <span style='mso-field-code:"SEQ Figure \\* ARABIC"'>21</span></a>:
+Accessing the MDK Animation Sequencer.</p>
+
+<p class=MsoNormal><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></p>
+
+<p class=MsoNormal>An animation file contains the key-frames for each bone in a
+skeleton.<span style="mso-spacerun: yes">  </span>There are no meshes, bones,
+or skeletons in the animation file.<span style="mso-spacerun: yes">  </span>The
+bones in the animation file are referenced by name so the skeleton they are to
+be imported onto needs to come from another file, with each bone named the same
+as the bones in the animation file.<span style="mso-spacerun: yes">  </span><i>MOHPA</i>
+animations do not require any extended data, just a skeleton with key
+frames.<span style="mso-spacerun: yes">  </span>The key frames are set using
+MilkShape’s keyframe and animation utilities.</p>
+
+<p class=MsoNormal><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></p>
+
+<p class=MsoNormal><b>NOTE:</b><span style="mso-spacerun: yes">  </span>All
+animations are imported and exported at 30 frames per second (fps).</p>
+
+<p class=MsoNormal><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></p>
+
+<h2>MDK Animation Importer</h2>
+
+<p class=MsoNormal><b><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></b></p>
+
+<p class=MsoNormal>To import an existing animation, you need an existing
+skeleton in MilkShape to import the animations onto.<span style="mso-spacerun:
+yes">  </span>All character animations use the same skeletal rig (<span
+style='mso-field-code:"REF _Ref91069165 \\h"'>Figure 22<!--[if gte mso 9]><xml>
+ <w:data>08D0C9EA79F9BACE118C8200AA004BA90B02000000080000000D0000005F00520065006600390031003000360039003100360035000000</w:data>
+</xml><![endif]--></span>), and character animations should be imported onto
+this skeleton.<span style="mso-spacerun: yes">  </span>Animations for other
+items, such as weapons, need to use the weapon’s skeleton.<span
+style="mso-spacerun: yes">  </span></p>
+
+<p class=MsoNormal><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></p>
+
+<p class=MsoNormal>Skeletons are obtained by importing the model file of the
+object you want to make or load animations for, using the MDK Importer, not the
+MDK Animation Importer.<span style="mso-spacerun: yes">  </span>Once the model
+is imported, you can manually remove the mesh and save the skeleton out as an
+.ms3d file.<span style="mso-spacerun: yes">  </span>Saving the skeleton, as
+it’s own MilkShape .ms3d file will allow for convenient access for future
+animation imports or for creating new character animations.</p>
+
+<p class=MsoNormal>The model file <i>models/characters/allied/allied_tommy.gr2</i>
+contains a skeleton you can use as the skeletal rig.</p>
+
+<p class=MsoNormal><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></p>
+
+<p class=MsoNormal>To import animations, make sure there is a valid skeleton in
+the MilkShape scene, open the animation sequencer and click <i>Import</i> (<span
+style='mso-field-code:"REF _Ref91069180 \\h"'>Figure 23<!--[if gte mso 9]><xml>
+ <w:data>08D0C9EA79F9BACE118C8200AA004BA90B02000000080000000D0000005F00520065006600390031003000360039003100380030000000</w:data>
+</xml><![endif]--></span>).<span style="mso-spacerun: yes">  </span>This brings
+up the same file dialog as the MDK Importer gives you (<span style='mso-field-code:
+"REF _Ref89676496 \\h"'>Figure 5<!--[if gte mso 9]><xml>
+ <w:data>08D0C9EA79F9BACE118C8200AA004BA90B02000000080000000D0000005F00520065006600380039003600370036003400390036000000</w:data>
+</xml><![endif]--></span>), so you can load animations directly from .rez
+files, without having to unpack them first.<span style="mso-spacerun: yes"> 
+</span>The selected file will be read in and the transform tracks for the bones
+referenced in the file will be added as keyframes for the bones in the
+MilkShape scene.</p>
+
+<p class=MsoNormal><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></p>
+
+<p class=MsoNormal>Once an animation is imported, it can be viewed and modified
+using MilkShape’s animation and keyframe tools.</p>
+
+<p class=MsoNormal><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></p>
+
+<p class=MsoNormal><b>NOTE:</b><span style="mso-spacerun: yes">  </span>If you
+are going to use a skeleton for exporting an animation, make sure that the <i>Scale
+Bones</i> button in the import files dialog is not checked when you import the
+model file that has the skeleton you want to use. </p>
+
+<p class=MsoNormal><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></p>
+
+<h2>Skipping Frames</h2>
+
+<p class=MsoNormal><b><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></b></p>
+
+<p class=MsoNormal>When you import animations, every time step in that
+animation is converted to a key frame, so you will have one keyframe per time
+step.<span style="mso-spacerun: yes">  </span>If you choose a value n, other
+than 1 (the default, one keyframe per time step) in the <i>By Frame:</i> (<span
+style='mso-field-code:"REF _Ref91069180 \\h"'>Figure 23<!--[if gte mso 9]><xml>
+ <w:data>08D0C9EA79F9BACE118C8200AA004BA90B02000000080000000D0000005F00520065006600390031003000360039003100380030000000</w:data>
+</xml><![endif]--></span>) drop down, the animation will be evaluated every <i>nth</i>
+time step.<span style="mso-spacerun: yes">  </span>Skipping frames usually
+results in animations looking choppier than if every time step was sampled.</p>
+
+<p class=MsoNormal><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></p>
+
+<p class=MsoNormal>The <i>From/To Frame:</i> drop downs have no affect on
+importing animations, and are only used for exporting.</p>
+
+<p class=MsoNormal><b><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></b></p>
+
+<p class=MsoNormal><b>NOTE:</b><span style="mso-spacerun: yes"> 
+</span>Importing an animation removes all meshes, materials, and extended data
+in the scene, so make sure the scene is saved before importing animations. </p>
+
+<p class=MsoNormal><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></p>
+
+<p class=MsoNormal><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></p>
+
+<p class=MsoNormal><!--[if gte vml 1]><v:shape id="_x0000_i1026" type="#_x0000_t75"
+ style='width:405.75pt;height:356.25pt'>
+ <v:imagedata src="./MDK_MilkShape_Tools_files/image031.jpg" o:title="characterAnimationRig"/>
+</v:shape><![endif]--><![if !vml]><img border=0 width=541 height=475
+src="./MDK_MilkShape_Tools_files/image031.jpg" v:shapes="_x0000_i1026"><![endif]></p>
+
+<p class=MsoCaption align=center style='text-align:center'><a
+name="_Ref91069165">Figure <span style='mso-field-code:"SEQ Figure \\* ARABIC"'>22</span></a>:
+Character animation skeletal rig.</p>
+
+<p class=MsoNormal align=center style='text-align:center'><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></p>
+
+<p class=MsoNormal align=center style='text-align:center'><!--[if gte vml 1]><v:shape
+ id="_x0000_i1027" type="#_x0000_t75" style='width:301.5pt;height:166.5pt'>
+ <v:imagedata src="./MDK_MilkShape_Tools_files/image032.jpg" o:title="animationSequencer"/>
+</v:shape><![endif]--><![if !vml]><img border=0 width=402 height=222
+src="./MDK_MilkShape_Tools_files/image032.jpg" v:shapes="_x0000_i1027"><![endif]></p>
+
+<p class=MsoCaption align=center style='text-align:center'><a
+name="_Ref91069180">Figure <span style='mso-field-code:"SEQ Figure \\* ARABIC"'>23</span></a>:
+MDK Animation Sequencer.<span style="mso-spacerun: yes">  </span>The <i>By
+Frame</i> dropdown affects the animation import, and the <i>From/To Frame</i>
+drop downs affect the animation exporter.</p>
+
+<h2><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></h2>
+
+<b><span style='font-size:12.0pt;font-family:"Times New Roman";mso-fareast-font-family:
+"Times New Roman";mso-ansi-language:EN-US;mso-fareast-language:EN-US;
+mso-bidi-language:AR-SA'><br clear=all style='page-break-before:always'>
+</span></b>
+
+<h2>Viewing Animations</h2>
+
+<p class=MsoNormal><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></p>
+
+<p class=MsoNormal>Animations can be viewed in MilkShape by going into <i>Animation
+Mode</i> and using the frame slider bar and the playback tools (<span
+style='mso-field-code:"REF _Ref91071730 \\h"'>Figure 24<!--[if gte mso 9]><xml>
+ <w:data>08D0C9EA79F9BACE118C8200AA004BA90B02000000080000000D0000005F00520065006600390031003000370031003700330030000000</w:data>
+</xml><![endif]--></span>).<span style="mso-spacerun: yes">  </span>The
+animation mode is entered and exited using the Keyframer window (<span
+style='mso-field-code:"REF _Ref91071730 \\h"'>Figure 24<!--[if gte mso 9]><xml>
+ <w:data>08D0C9EA79F9BACE118C8200AA004BA90B02000000080000000D0000005F00520065006600390031003000370031003700330030000000</w:data>
+</xml><![endif]--></span> and <span style='mso-field-code:"REF _Ref91071850 \\h"'>Figure
+25<!--[if gte mso 9]><xml>
+ <w:data>08D0C9EA79F9BACE118C8200AA004BA90B02000000080000000D0000005F00520065006600390031003000370031003800350030000000</w:data>
+</xml><![endif]--></span>).<span style="mso-spacerun: yes">  </span>When you
+import an item, the animation will not be visible until you enter animation
+mode.<span style="mso-spacerun: yes">  </span>As soon as you enter the
+animation mode, the currently activated viewport should display the first frame
+of the animation.</p>
+
+<p class=MsoNormal><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></p>
+
+<p class=MsoNormal><!--[if gte vml 1]><v:shape id="_x0000_i1028" type="#_x0000_t75"
+ style='width:6in;height:61.5pt'>
+ <v:imagedata src="./MDK_MilkShape_Tools_files/image033.jpg" o:title="animationMode"/>
+</v:shape><![endif]--><![if !vml]><img border=0 width=576 height=82
+src="./MDK_MilkShape_Tools_files/image033.jpg" v:shapes="_x0000_i1028"><![endif]></p>
+
+<p class=MsoCaption align=center style='text-align:center'><a
+name="_Ref91071730">Figure <span style='mso-field-code:"SEQ Figure \\* ARABIC"'>24</span></a>:
+The MilkShape Animation tools.<span style="mso-spacerun: yes">  </span>The
+slider bar on the bottom right moves through frames manually, or you can use
+the play back button on the left.<span style="mso-spacerun: yes">  </span>To
+enter/exit animation mode, press the <i>Anim</i> button on the bottom right.</p>
+
+<p class=MsoNormal><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></p>
+
+<p class=MsoNormal align=center style='text-align:center'><!--[if gte vml 1]><v:shape
+ id="_x0000_i1029" type="#_x0000_t75" style='width:171.75pt;height:137.25pt'>
+ <v:imagedata src="./MDK_MilkShape_Tools_files/image034.jpg" o:title="accessingKeyframer"/>
+</v:shape><![endif]--><![if !vml]><img border=0 width=229 height=183
+src="./MDK_MilkShape_Tools_files/image034.jpg" v:shapes="_x0000_i1029"><![endif]></p>
+
+<p class=MsoCaption align=center style='text-align:center'><a
+name="_Ref91071850">Figure <span style='mso-field-code:"SEQ Figure \\* ARABIC"'>25</span></a>:
+Accessing MilkShape's Keyframer tool bar.</p>
+
+<p class=MsoNormal><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></p>
+
+<p class=MsoNormal>Animation frames can be manually viewed by “scrubbing” the
+frame slider by dragging it left or right.<span style="mso-spacerun: yes"> 
+</span>The animation will change in the currently activated viewport only, so
+other viewports need to be clicked in to see the current frame of the animation
+from that view.<span style="mso-spacerun: yes">  </span>The playback tools on
+the bottom right of the Keyframer can be used for automatic playback forwards
+or backwards, as well as to jump to first/last and previous/next frames.</p>
+
+<p class=MsoNormal><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></p>
+
+<h2>Building Animations</h2>
+
+<p class=MsoNormal><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></p>
+
+<p class=MsoNormal>Animations can be built using existing skeletons or new
+skeletons depending on the desired use.<span style="mso-spacerun: yes"> 
+</span>To create an animation that can be used by existing characters or items,
+the existing skeleton for that object needs to be used.<span
+style="mso-spacerun: yes">  </span>New items and characters can have their own
+skeletal rig, but this will need to be set up in the <i>HAG</i> files for the
+item.</p>
+
+<p class=MsoNormal><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></p>
+
+<p class=MsoNormal>To build or modify animations use MilkShape’s keyframe
+animation tools.<span style="mso-spacerun: yes">  </span>MilkShape’s <i>Animate</i>
+menu provides the ability to add, remove, copy, and paste keyframes.<span
+style="mso-spacerun: yes">  </span>Keyframes are set on the currently selected
+joint(s) using the <i>Animate</i> menu, or by pressing <i>Ctrl+k</i>.<span
+style="mso-spacerun: yes">  </span>A keyframe will be added at the current
+frame in the frame slider bar for the selected joint(s).<span
+style="mso-spacerun: yes">  </span>Bones that have a keyframe at the present
+frame in the frame slider will show up as yellow. </p>
+
+<p class=MsoNormal><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></p>
+
+<p class=MsoNormal><span style="mso-spacerun: yes"> </span>If a joint has not
+changed since the last frame, MilkShape will not add a key frame for the joint.
+You can change the number of frames in an animation, and therefore the duration
+of the animation, by changing the number field to the right of the frame
+slider.<span style="mso-spacerun: yes">  </span></p>
+
+<p class=MsoNormal><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></p>
+
+<p class=MsoNormal>Character animations consist of rotating joints and moving
+the <i>character_root</i> bone.<span style="mso-spacerun: yes">  </span>If you
+change the position of the bone by translating it instead of rotating it, you
+may get undesired results in the game.<span style="mso-spacerun: yes"> 
+</span>It is okay to translate bones for item animations.</p>
+
+<p class=MsoNormal><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></p>
+
+<p class=MsoNormal>Keyframes are interpolated, so you do not need a keyframe
+for every time step.<span style="mso-spacerun: yes">  </span>To get a smoother
+animation, you might want to add more keyframes for specific joints.<span
+style="mso-spacerun: yes">  </span>There are a ton of general character
+animation tutorials (not necessarily MOHPA specific) on the web.</p>
+
+<p class=MsoNormal><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></p>
+
+<p class=MsoNormal>Animations and skeletons do not require any extended data so
+they can be saved as .ms3d files until you are ready to export them to the
+game.</p>
+
+<p class=MsoNormal><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></p>
+
+<h2>MDK Animation Exporter</h2>
+
+<p class=MsoNormal><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></p>
+
+<p class=MsoNormal>Once you are finished or want to test an animation in the
+game, you need to export it use using the Animation Sequencer’s Export (<span
+style='mso-field-code:"REF _Ref91069180 \\h"'>Figure 23<!--[if gte mso 9]><xml>
+ <w:data>08D0C9EA79F9BACE118C8200AA004BA90B02000000080000000D0000005F00520065006600390031003000360039003100380030000000</w:data>
+</xml><![endif]--></span>).<span style="mso-spacerun: yes">  </span>The
+resulting animation is stored in a .MOH file, and can be imported and used like
+any existing animation file.<span style="mso-spacerun: yes">  </span>Open the
+animation Sequencer and press <i>Export</i>.<span style="mso-spacerun: yes"> 
+</span>All that is required to export an animation is a skeleton in the
+scene.<span style="mso-spacerun: yes">  </span>One or more keyframes need to be
+set for joints that you want to move in the animation.<span
+style="mso-spacerun: yes">  </span></p>
+
+<p class=MsoNormal><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></p>
+
+<p class=MsoNormal>The animation exporter creates an animation by linearly
+interpolating bone position and rotations between keyframes for the duration of
+the animation.<span style="mso-spacerun: yes">  </span>Using the <i>From/To
+Frame</i> dropdowns (<span style='mso-field-code:"REF _Ref91069180 \\h"'>Figure
+23<!--[if gte mso 9]><xml>
+ <w:data>08D0C9EA79F9BACE118C8200AA004BA90B02000000080000000D0000005F00520065006600390031003000360039003100380030000000</w:data>
+</xml><![endif]--></span>) you can export a subset of the animation.<span
+style="mso-spacerun: yes">  </span>The default frame selections will export the
+whole animation.</p>
+
+<p class=MsoNormal><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></p>
+
+<p class=MsoNormal>Existing models are already skinned so you can just
+re-export using an existing skeleton and it should play on the existing models
+without significant visual discrepancies.<span style="mso-spacerun: yes"> 
+</span>The animation has no ability to alter the skinning of an object.<span
+style="mso-spacerun: yes">  </span>New items will need to have their own
+skeletons, and the model files that use these items will have to be skinned
+appropriately (<span style='mso-field-code:"REF _Ref90898141 \\h"'>Figure 7<!--[if gte mso 9]><xml>
+ <w:data>08D0C9EA79F9BACE118C8200AA004BA90B02000000080000000D0000005F00520065006600390030003800390038003100340031000000</w:data>
+</xml><![endif]--></span>).</p>
+
+<p class=MsoNormal><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></p>
+
+<p class=MsoNormal><b>NOTE:</b> There can only be one skeleton in the scene at
+export time, meaning all bones have to be in some sort of hierarchy with a
+single root bone.<span style="mso-spacerun: yes">  </span></p>
+
+<p class=MsoNormal><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></p>
+
+<b><span style='font-size:12.0pt;font-family:"Times New Roman";mso-fareast-font-family:
+"Times New Roman";mso-ansi-language:EN-US;mso-fareast-language:EN-US;
+mso-bidi-language:AR-SA'><br clear=all style='page-break-before:always'>
+</span></b>
+
+<h2>Playing Animations in <i>MOHPA</i></h2>
+
+<p class=MsoNormal><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></p>
+
+<p class=MsoNormal>Once an animation is exported, it can be viewed in the game
+by setting up .HAG files appropriately.<span style="mso-spacerun: yes"> 
+</span>All animations for characters are referenced by an alias based on what
+state the character is in.<span style="mso-spacerun: yes">  </span>To override
+the default values, you need to change the files that the aliases point to in
+the appropriate .HAG file and store that file in a .Pk3 file with your other
+models.<span style="mso-spacerun: yes">  </span>Overriding animations is a
+little tricky, and this document will not go into depth about it.</p>
+
+<p class=MsoNormal><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></p>
+
+<p class=MsoNormal>Existing character animation .HAG files can be found in <i>models\characters\player\base</i>.<span
+style="mso-spacerun: yes">  </span>There are many different .HAG files for the
+different states the character can be in named <i>anim_xxx.hag</i>.<span
+style="mso-spacerun: yes">  </span>The unarmed animations can be found in <i>anims_unarmed.hag</i>.<span
+style="mso-spacerun: yes">  </span>Just replace the existing <i>&lt;filename&gt;.gr2</i>
+filename with your animation file name <i>&lt;great_animation&gt;.moh</i>.<span
+style="mso-spacerun: yes">  </span>The following (<span style='mso-field-code:
+"REF _Ref91078610 \\h"'>Figure 26<!--[if gte mso 9]><xml>
+ <w:data>08D0C9EA79F9BACE118C8200AA004BA90B02000000080000000D0000005F00520065006600390031003000370038003600310030000000</w:data>
+</xml><![endif]--></span>) shows how you would change <i>anims_unarmed.hag</i>
+file to make the standing idle to play your animation.</p>
+
+<p class=MsoNormal style='mso-layout-grid-align:none;text-autospace:none'><span
+style='font-size:10.0pt;font-family:"Courier New"'><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></span></p>
+
+<p class=MsoNormal style='mso-layout-grid-align:none;text-autospace:none'><span
+style='font-size:10.0pt;font-family:"Courier New"'><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></span></p>
+
+<p class=MsoNormal style='mso-layout-grid-align:none;text-autospace:none'><span
+style='font-size:10.0pt;font-family:"Courier New"'>mupxl_Prone_Left<span
+style='mso-tab-count:1'>  </span>mupxl_Prone_Left.gr2 loop autosteps_walk<o:p></o:p></span></p>
+
+<p class=MsoNormal style='mso-layout-grid-align:none;text-autospace:none'><span
+style='font-size:10.0pt;font-family:"Courier New"'>mupxr_Prone_Right
+mupxr_Prone_Right.gr2 loop autosteps_walk<o:p></o:p></span></p>
+
+<p class=MsoNormal style='mso-layout-grid-align:none;text-autospace:none'><span
+style='font-size:10.0pt;font-family:"Courier New"'><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></span></p>
+
+<p class=MsoNormal style='mso-layout-grid-align:none;text-autospace:none'><b><span
+style='font-size:10.0pt;font-family:"Courier New"'>musxi_Stand_Idle
+&lt;your_idle_anim.moh&gt; loop<o:p></o:p></span></b></p>
+
+<p class=MsoNormal style='mso-layout-grid-align:none;text-autospace:none'><span
+style='font-size:10.0pt;font-family:"Courier New"'><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></span></p>
+
+<p class=MsoNormal style='mso-layout-grid-align:none;text-autospace:none'><span
+style='font-size:10.0pt;font-family:"Courier New"'>musxf_Stand_Walk_Forward
+musxf_Stand_Walk_Forward.gr2 loop autosteps_walk<span style='mso-tab-count:
+2'>           </span><o:p></o:p></span></p>
+
+<p class=MsoCaption align=center style='text-align:center'><a
+name="_Ref91078610">Figure <span style='mso-field-code:"SEQ Figure \\* ARABIC"'>26</span></a>:
+Replacing the existing standing idle with a new animation.</p>
+
+<p class=MsoNormal><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></p>
+
+<p class=MsoNormal>The name on the far left is the alias, followed by the name
+of your animation, followed by whether you want the animation to loop and the
+optional values that follow the loop flag.<span style="mso-spacerun: yes"> 
+</span>Each entry needs to be on its own line.<span style="mso-spacerun: yes"> 
+</span>See the files for examples.</p>
+
+<p class=MsoNormal><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></p>
+
+<p class=MsoNormal>The alias use to call the animation is defined in the state
+(<b>.st</b>) file for the character (<i>player_Torso.st</i> and <i>player_legs.st)</i>.<span
+style="mso-spacerun: yes">  </span>The state files can be found in the <i>global\</i>
+directory, a sibling directory to the <i>models\</i> directory.<span
+style="mso-spacerun: yes">  </span>If you override any of the state or hag
+files, they need to reside in the same directory structure in your .Pk3 file.</p>
+
+<p class=MsoNormal><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></p>
+
+<p class=MsoNormal>To view character animations in <i>MOHPA</i>, override the
+appropriate animation in the .HAG file, and store this new .HAG file in the
+.Pk3 file.<span style="mso-spacerun: yes">  </span>When you run the game, if
+you are not playing multiplayer, you can use a cvar to change the camera into a
+3rd person leash camera: <i>cg_3rd_person 1</i>.</p>
+
+<b><span style='font-size:20.0pt;mso-bidi-font-size:12.0pt;font-family:"Times New Roman";
+mso-fareast-font-family:"Times New Roman";mso-ansi-language:EN-US;mso-fareast-language:
+EN-US;mso-bidi-language:AR-SA'><br clear=all style='page-break-before:always'>
+</span></b>
+
+<h2><span style='font-size:20.0pt;mso-bidi-font-size:12.0pt'>Conclusion<o:p></o:p></span></h2>
+
+<p class=MsoNormal><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></p>
+
+<p class=MsoNormal>With the MDK MilkShape 3D tools, users can create or modify
+content for <i>MOHPA</i>, allowing for complete or partial Mod re-skinning so
+the game.<span style="mso-spacerun: yes">  </span>The exported files can be
+used like any other pre-existing game asset.</p>
+
+<p class=MsoNormal><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></p>
+
+<p class=MsoNormal><span style="mso-spacerun: yes"> </span>The MDK Importer is
+used to bring existing models into MilkShape to be modified and
+re-exported.<span style="mso-spacerun: yes">  </span>The MDK Model Manager is
+used to modify the model’s properties as well as save the extended data separate
+from the MilkShape file.<span style="mso-spacerun: yes">  </span>The MDK
+Material Editor is used to create and modify materials used in the game.<span
+style="mso-spacerun: yes">  </span>The properties for the materials are saved
+in the extended data section in the model manger.<span style="mso-spacerun:
+yes">  </span>The MDK Animation Sequencer is used to import and export
+animation files.<span style="mso-spacerun: yes">  </span>The MDK Exporter
+allows you to export your new or modified asset from MilkShape 3D.<span
+style="mso-spacerun: yes">  </span>See <span style='mso-field-code:"REF _Ref89853782 \\h"'>Figure
+27<!--[if gte mso 9]><xml>
+ <w:data>08D0C9EA79F9BACE118C8200AA004BA90B02000000080000000D0000005F00520065006600380039003800350033003700380032000000</w:data>
+</xml><![endif]--></span> for a diagram of the typical workflow for getting an
+asset into <i>MOHPA</i>.</p>
+
+<p class=MsoNormal><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></p>
+
+<b><span style='font-size:20.0pt;mso-bidi-font-size:12.0pt;font-family:"Times New Roman";
+mso-fareast-font-family:"Times New Roman";mso-ansi-language:EN-US;mso-fareast-language:
+EN-US;mso-bidi-language:AR-SA'><br clear=all style='page-break-before:always'>
+</span></b>
+
+<p class=MsoNormal><b><span style='font-size:20.0pt;mso-bidi-font-size:12.0pt'>Appendix
+A: Tutorials<o:p></o:p></span></b></p>
+
+<p class=MsoNormal><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></p>
+
+<h2><span style='font-size:16.0pt;mso-bidi-font-size:12.0pt'>Creating and
+Exporting Models From Scratch<o:p></o:p></span></h2>
+
+<p class=MsoNormal><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></p>
+
+<ol style='margin-top:0in' start=1 type=1>
+ <li class=MsoNormal style='mso-list:l2 level1 lfo3;tab-stops:list .5in'>Create
+     the mesh and bones in MilkShape.<span style="mso-spacerun: yes">  </span></li>
+</ol>
+
+<p class=MsoNormal><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></p>
+
+<ol style='margin-top:0in' start=2 type=1>
+ <li class=MsoNormal style='mso-list:l2 level1 lfo3;tab-stops:list .5in'>Every
+     vertex in the scene needs to be attached to a bone.<span
+     style="mso-spacerun: yes">  </span>A bone in MilkShape is a “Joint”.<span
+     style="mso-spacerun: yes">  </span>Typically you can assign all vertices
+     to a single root bone.<span style="mso-spacerun: yes">  </span></li>
+</ol>
+
+<p class=MsoNormal><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></p>
+
+<ol style='margin-top:0in' start=3 type=1>
+ <li class=MsoNormal style='mso-list:l2 level1 lfo3;tab-stops:list .5in'>Create
+     materials in the Material Manager.<span style="mso-spacerun: yes"> 
+     </span>If you are going to texture the model, you need to create a new MDK
+     material in the material editor and assign it to the model (see section: <b><i><span
+     style='mso-field-code:"REF _Ref89854661 \\h &#1; \\* MERGEFORMAT"'>New and
+     Converted MDK Materials<!--[if gte mso 9]><xml>
+      <w:data>08D0C9EA79F9BACE118C8200AA004BA90B02000000080000000D0000005F00520065006600380039003800350034003600360031000000</w:data>
+     </xml><![endif]--></span></i></b>). </li>
+</ol>
+
+<p class=MsoNormal><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></p>
+
+<ol style='margin-top:0in' start=4 type=1>
+ <li class=MsoNormal style='mso-list:l2 level1 lfo3;tab-stops:list .5in'>Add
+     the meshes to the renderable section of the Model Manager.<span
+     style="mso-spacerun: yes">  </span>The meshes you want exported will need
+     to be added to the collision or LOD section accordingly (see section: <b><i><span
+     style='mso-field-code:"REF _Ref89854750 \\h &#1; \\* MERGEFORMAT"'>Interacting
+     with the Model Manager<!--[if gte mso 9]><xml>
+      <w:data>08D0C9EA79F9BACE118C8200AA004BA90B02000000080000000D0000005F00520065006600380039003800350034003700350030000000</w:data>
+     </xml><![endif]--></span></i></b>).</li>
+</ol>
+
+<p class=MsoNormal><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></p>
+
+<ol style='margin-top:0in' start=4 type=1>
+ <ol style='margin-top:0in' start=1 type=a>
+  <li class=MsoNormal style='mso-list:l2 level2 lfo3;tab-stops:list 1.0in'>Add
+      visible mesh(es) under the <i>LOD0</i> (or LOD1, LOD2, …) section of the
+      Model Manager.<span style="mso-spacerun: yes">  </span>Add a mesh to a
+      LOD by first selecting the meshes you want to add to the LOD, and then
+      opening the Model Manager.<span style="mso-spacerun: yes">  </span>Once
+      the Model Manager is opened, right-click on the desired LOD level and choose
+      <i>Add Selection To Lod</i>.<span style="mso-spacerun: yes">  </span></li>
+ </ol>
+</ol>
+
+<p class=MsoNormal style='margin-left:.75in'><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></p>
+
+<ol style='margin-top:0in' start=4 type=1>
+ <ol style='margin-top:0in' start=2 type=a>
+  <li class=MsoNormal style='mso-list:l2 level2 lfo3;tab-stops:list 1.0in'>Add
+      collidable mesh(es) under the <i>Collision (Low-Res)</i> section of the
+      Model Manager.<span style="mso-spacerun: yes">  </span>With the Model
+      Manager closed, select the meshes you want to add as collision, and then
+      open the Model Manager.<span style="mso-spacerun: yes">  </span>Once the
+      Model Manager is opened, right-click <i>Collision (Low-Res)</i> and
+      choose <i>Add Selection To Collision.</i><span style="mso-spacerun:
+      yes">  </span></li>
+ </ol>
+</ol>
+
+<p class=MsoNormal><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></p>
+
+<ol style='margin-top:0in' start=4 type=1>
+ <ol style='margin-top:0in' start=3 type=a>
+  <li class=MsoNormal style='mso-list:l2 level2 lfo3;tab-stops:list 1.0in'>The
+      newly added mesh(es) will show up in the model tree view (MTV) pane.</li>
+ </ol>
+</ol>
+
+<p class=MsoNormal><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></p>
+
+<ol style='margin-top:0in' start=5 type=1>
+ <li class=MsoNormal style='mso-list:l2 level1 lfo3;tab-stops:list .5in'>Add
+     the bones to the <i>Skeleton</i> section of the Model Manager.</li>
+ <ol style='margin-top:0in' start=1 type=a>
+  <li class=MsoNormal style='mso-list:l2 level2 lfo3;tab-stops:list 1.0in'>With
+      the Model Manager closed, select the bones (<i>joints</i>) you want
+      added.</li>
+ </ol>
+</ol>
+
+<p class=MsoNormal style='margin-left:.25in'><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></p>
+
+<ol style='margin-top:0in' start=6 type=1>
+ <li class=MsoNormal style='mso-list:l2 level1 lfo3;tab-stops:list .5in'>Close
+     the Model Manager and run the Exporter.</li>
+</ol>
+
+<p class=MsoNormal style='margin-left:.25in'><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></p>
+
+<ol style='margin-top:0in' start=7 type=1>
+ <li class=MsoNormal style='mso-list:l2 level1 lfo3;tab-stops:list .5in'>Fix
+     any fatal errors and review any warnings in the Sanity Checker.</li>
+</ol>
+
+<p class=MsoNormal><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></p>
+
+<ol style='margin-top:0in' start=8 type=1>
+ <li class=MsoNormal style='mso-list:l2 level1 lfo3;tab-stops:list .5in'>Click <i>Continue
+     Export</i>.</li>
+</ol>
+
+<p class=MsoNormal style='margin-left:.25in'><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></p>
+
+<ol style='margin-top:0in' start=9 type=1>
+ <li class=MsoNormal style='mso-list:l2 level1 lfo3;tab-stops:list .5in'>Place
+     your fabulous new asset in <i>MOHRadiant</i>, and in a .Pk3 file.</li>
+</ol>
+
+<p class=MsoNormal><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></p>
+
+<ol style='margin-top:0in' start=10 type=1>
+ <li class=MsoNormal style='mso-list:l2 level1 lfo3;tab-stops:list .5in'>Run
+     the game with your mod enabled and enjoy.</li>
+</ol>
+
+<p class=MsoNormal><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></p>
+
+<p class=MsoNormal><b><span style='font-size:20.0pt;mso-bidi-font-size:12.0pt'>MDK
+MilkShape 3D Workflow: </span></b><b><span style='font-size:16.0pt;mso-bidi-font-size:
+12.0pt'><o:p></o:p></span></b></p>
+
+<p class=MsoNormal><b><span style='font-size:16.0pt;mso-bidi-font-size:12.0pt'><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></span></b></p>
+
+<p class=MsoNormal align=center style='margin-left:.75in;text-align:center'><b><span
+style='font-size:16.0pt;mso-bidi-font-size:12.0pt'><!--[if gte vml 1]><v:shape
+ id="_x0000_i1051" type="#_x0000_t75" style='width:351pt;height:516.75pt'>
+ <v:imagedata src="./MDK_MilkShape_Tools_files/image035.png" o:title="workFlow"/>
+</v:shape><![endif]--><![if !vml]><img border=0 width=468 height=689
+src="./MDK_MilkShape_Tools_files/image036.jpg" v:shapes="_x0000_i1051"><![endif]><o:p></o:p></span></b></p>
+
+<p class=MsoCaption align=center style='text-align:center'><a
+name="_Ref89853782">Figure <span style='mso-field-code:"SEQ Figure \\* ARABIC"'>27</span></a>:
+Workflow for creating or modifying assets from the game.</p>
+
+</div>
+
+</body>
+
+</html>

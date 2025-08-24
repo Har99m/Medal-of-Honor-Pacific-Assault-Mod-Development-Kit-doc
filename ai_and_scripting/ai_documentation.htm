@@ -1,0 +1,690 @@
+<html xmlns:o="urn:schemas-microsoft-com:office:office"
+xmlns:w="urn:schemas-microsoft-com:office:word"
+xmlns="http://www.w3.org/TR/REC-html40">
+
+<head>
+<meta http-equiv=Content-Type content="text/html; charset=windows-1252">
+<meta name=ProgId content=Word.Document>
+<meta name=Generator content="Microsoft Word 10">
+<meta name=Originator content="Microsoft Word 10">
+<link rel=File-List
+href="Pacific%20Assault%20AI%20Documentation_files/filelist.xml">
+<title>Pacific Assault AI Documentation</title>
+<!--[if gte mso 9]><xml>
+ <o:DocumentProperties>
+  <o:Author>JLEGGE</o:Author>
+  <o:LastAuthor>bbilodeau</o:LastAuthor>
+  <o:Revision>3</o:Revision>
+  <o:TotalTime>147</o:TotalTime>
+  <o:Created>2004-10-14T00:08:00Z</o:Created>
+  <o:LastSaved>2004-10-14T00:08:00Z</o:LastSaved>
+  <o:Pages>1</o:Pages>
+  <o:Words>1378</o:Words>
+  <o:Characters>7860</o:Characters>
+  <o:Company>EALA</o:Company>
+  <o:Lines>65</o:Lines>
+  <o:Paragraphs>18</o:Paragraphs>
+  <o:CharactersWithSpaces>9220</o:CharactersWithSpaces>
+  <o:Version>10.3501</o:Version>
+ </o:DocumentProperties>
+</xml><![endif]--><!--[if gte mso 9]><xml>
+ <w:WordDocument>
+  <w:Compatibility>
+   <w:BreakWrappedTables/>
+   <w:SnapToGridInCell/>
+   <w:WrapTextWithPunct/>
+   <w:UseAsianBreakRules/>
+  </w:Compatibility>
+  <w:BrowserLevel>MicrosoftInternetExplorer4</w:BrowserLevel>
+ </w:WordDocument>
+</xml><![endif]-->
+<style>
+<!--
+ /* Font Definitions */
+ @font-face
+	{font-family:Tahoma;
+	panose-1:2 11 6 4 3 5 4 4 2 4;
+	mso-font-charset:0;
+	mso-generic-font-family:swiss;
+	mso-font-pitch:variable;
+	mso-font-signature:553679495 -2147483648 8 0 66047 0;}
+ /* Style Definitions */
+ p.MsoNormal, li.MsoNormal, div.MsoNormal
+	{mso-style-parent:"";
+	margin:0in;
+	margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	font-size:12.0pt;
+	font-family:"Times New Roman";
+	mso-fareast-font-family:"Times New Roman";}
+a:link, span.MsoHyperlink
+	{color:blue;
+	text-decoration:underline;
+	text-underline:single;}
+a:visited, span.MsoHyperlinkFollowed
+	{color:purple;
+	text-decoration:underline;
+	text-underline:single;}
+p.MsoDocumentMap, li.MsoDocumentMap, div.MsoDocumentMap
+	{mso-style-noshow:yes;
+	margin:0in;
+	margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	background:navy;
+	font-size:12.0pt;
+	font-family:Tahoma;
+	mso-fareast-font-family:"Times New Roman";}
+@page Section1
+	{size:8.5in 11.0in;
+	margin:1.0in 45.0pt 1.0in .5in;
+	mso-header-margin:.5in;
+	mso-footer-margin:.5in;
+	mso-paper-source:0;}
+div.Section1
+	{page:Section1;}
+-->
+</style>
+<!--[if gte mso 10]>
+<style>
+ /* Style Definitions */
+ table.MsoNormalTable
+	{mso-style-name:"Table Normal";
+	mso-tstyle-rowband-size:0;
+	mso-tstyle-colband-size:0;
+	mso-style-noshow:yes;
+	mso-style-parent:"";
+	mso-padding-alt:0in 5.4pt 0in 5.4pt;
+	mso-para-margin:0in;
+	mso-para-margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	font-size:10.0pt;
+	font-family:"Times New Roman";}
+</style>
+<![endif]-->
+</head>
+
+<body lang=EN-US link=blue vlink=purple style='tab-interval:.5in'>
+
+<div class=Section1>
+
+<p class=MsoNormal align=center style='text-align:center'><b style='mso-bidi-font-weight:
+normal'><span style='font-size:14.0pt'>Pacific Assault AI Documentation<o:p></o:p></span></b></p>
+
+<p class=MsoNormal><o:p>&nbsp;</o:p></p>
+
+<p class=MsoNormal><o:p>&nbsp;</o:p></p>
+
+<p class=MsoNormal><u>Cover Nodes<o:p></o:p></u></p>
+
+<p class=MsoNormal><o:p>&nbsp;</o:p></p>
+
+<p class=MsoNormal>To help make the AI look smart, we AI needs to take cover
+when in battle.<span style='mso-spacerun:yes'>  </span>The AI relies on
+designers to place appropriate cover nodes around cover.<span
+style='mso-spacerun:yes'>  </span>There are several cover node types that are
+used for different types of cover and each has its own set of animations.<span
+style='mso-spacerun:yes'>    </span>When you place a cover node, have the
+node’s angles face it towards the wall, crate, tree, etc that we’re using for
+cover.</p>
+
+<p class=MsoNormal><o:p>&nbsp;</o:p></p>
+
+<p class=MsoNormal>Cover nodes implemented thus far:</p>
+
+<p class=MsoNormal>Info_cover_left – standing or crouched, shoots to the left
+of the cover </p>
+
+<p class=MsoNormal>Info_cover_leftlow – crouched, shoots to the left of cover</p>
+
+<p class=MsoNormal>Info_cover_right – standing or crouched, shoots to the right
+of the cover</p>
+
+<p class=MsoNormal>Info_cover_rightlow – crouched, shoots to the right of
+cover.</p>
+
+<p class=MsoNormal>Info_cover_crate – assumes there is a crate in front of him.
+Ducks behind and shoots over.<span style='mso-spacerun:yes'>  </span>Good for
+crates and short rocks</p>
+
+<p class=MsoNormal><o:p>&nbsp;</o:p></p>
+
+<p class=MsoNormal>Not implemented yet:<br>
+info_cover_prone<span style='mso-tab-count:2'>                     </span>-
+shoot from the prone position here</p>
+
+<p class=MsoNormal>Info_cover_crouch<span style='mso-tab-count:2'>                   </span>-
+shoot from the crouched position here</p>
+
+<p class=MsoNormal>Info_cover_stand<span style='mso-tab-count:2'>                      </span>-
+shoot from the standing position here</p>
+
+<p class=MsoNormal><o:p>&nbsp;</o:p></p>
+
+<p class=MsoNormal><o:p>&nbsp;</o:p></p>
+
+<p class=MsoNormal><u>AI Areas<o:p></o:p></u></p>
+
+<p class=MsoNormal><u><o:p><span style='text-decoration:none'>&nbsp;</span></o:p></u></p>
+
+<p class=MsoNormal>Cover nodes can be grouped into logical “areas”.<span
+style='mso-spacerun:yes'>  </span>In order for the AI to perform squad tactics,
+you will need to place these areas in your level.<span
+style='mso-spacerun:yes'>  </span>To create an area, first give the appropriate
+cover nodes the same $targetname.<span style='mso-spacerun:yes'>  </span>Then
+put down an info_squadpathnode.<span style='mso-spacerun:yes'>  </span>You may
+optionally give this node an area name so you can reference it in script.<span
+style='mso-spacerun:yes'>  </span>Then connect (control-k) the squadpathnode to
+one of the cover nodes.<span style='mso-spacerun:yes'>  </span>Since the cover
+nodes all have the same name, they will all instantly be connected to the
+squadpathnode.<span style='mso-spacerun:yes'>  </span><span
+style='mso-spacerun:yes'> </span>You’ll want to group these areas in a logical
+manner.<span style='mso-spacerun:yes'>  </span>Squads will attempt to stay in
+the same area.<span style='mso-spacerun:yes'>  </span>If a guy happens to be in
+a different area (or an unassigned cover node) and the rest of his squad is at
+another area, he will try to find cover in the rest of the squad’s area (thus
+attempting to “stay with his squad”).<span style='mso-spacerun:yes'>   
+</span>You’ll want to try to make sure that your areas have enough nodes to support
+the maximum # of guys in a squad.<span style='mso-spacerun:yes'>  </span>You
+can influence the types of squad tactics that are used by proper placement of
+areas.<span style='mso-spacerun:yes'>  </span>(ie: if you want a squad to
+possibly flank their enemy, be sure to put down an area that would be good for
+flanking.</p>
+
+<p class=MsoNormal><o:p>&nbsp;</o:p></p>
+
+<p class=MsoNormal><u>AI Tactics<o:p></o:p></u></p>
+
+<p class=MsoNormal><o:p>&nbsp;</o:p></p>
+
+<p class=MsoNormal>Here’s a list of the squad tactics available so far:</p>
+
+<p class=MsoNormal>Flank<span style='mso-tab-count:4'>                                        </span>-
+Flank the enemy’s position </p>
+
+<p class=MsoNormal>Double Envelopment<span style='mso-tab-count:2'>                 </span>-
+Flank the enemy from two sides</p>
+
+<p class=MsoNormal>Charge<span style='mso-tab-count:4'>                                     </span>-
+Charge the enemy</p>
+
+<p class=MsoNormal>Slow Advance<span style='mso-tab-count:3'>                          </span>-
+Gradually find cover closer to the enemy</p>
+
+<p class=MsoNormal>Give ground<span style='mso-tab-count:3'>                              </span>-
+Gradually find cover farther from the enemy</p>
+
+<p class=MsoNormal>Hold Steady<span style='mso-tab-count:3'>                             </span>-
+Cancel Slow Advance and/or Give Ground</p>
+
+<p class=MsoNormal>Fallback<span style='mso-tab-count:3'>                                   </span>-
+Immediately move to cover farther from the enemy</p>
+
+<p class=MsoNormal>Retreat<span style='mso-tab-count:4'>                                     </span>-
+Immediately move to cover a lot farther from the enemy</p>
+
+<p class=MsoNormal>GetHelp<span style='mso-tab-count:3'>                                   </span>-
+Radio man requests backup</p>
+
+<p class=MsoNormal>Banzai<span style='mso-tab-count:4'>                                      </span>-
+Run towards enemy and use your bayonet/sword attacks</p>
+
+<p class=MsoNormal>Surrender<span style='mso-tab-count:3'>                                 </span>-
+Play surrender animations and drop weapon</p>
+
+<p class=MsoNormal>CoverFire<span style='mso-tab-count:3'>                                 </span>-
+Empties a clip towards all enemies that guy can see</p>
+
+<p class=MsoNormal><o:p>&nbsp;</o:p></p>
+
+<p class=MsoNormal>Unimplemented so far:</p>
+
+<p class=MsoNormal>Hit and Fade</p>
+
+<p class=MsoNormal>Spread Out</p>
+
+<p class=MsoNormal><o:p>&nbsp;</o:p></p>
+
+<p class=MsoNormal><span style='font-size:11.0pt;font-family:Arial'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal style='mso-outline-level:1'><b style='mso-bidi-font-weight:
+normal'><u><span style='font-size:11.0pt;font-family:Arial'>How the “Get Help”
+System Works.<o:p></o:p></span></u></b></p>
+
+<p class=MsoNormal><span style='font-size:11.0pt;font-family:Arial'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal><span style='font-size:11.0pt;font-family:Arial'>A “get
+help” order is issued by the morale system when the appropriate conditions
+exist.<span style='mso-spacerun:yes'>  </span>If the squad has a radioman and
+the squad’s area has been linked to by an aigethelptrigger, the radioman will
+play an animation indicating a radio call for reinforcements.<span
+style='mso-spacerun:yes'>  </span>A few seconds later, the aigethelptrigger is
+tripped.<o:p></o:p></span></p>
+
+<p class=MsoNormal><span style='font-size:11.0pt;font-family:Arial'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal><span style='font-size:11.0pt;font-family:Arial'>A soldier
+can be configured as a radioman by using the appropriate .HAG file
+(allied_radioman.hag, axis_japanese_radioman.hag) in Radiant.<span
+style='mso-spacerun:yes'>  </span>Alternatively, any squad member can be made
+into a radioman by executing the “radioman” event (e.g. $soldiername
+radioman).<span style='mso-spacerun:yes'>  </span>Use care if assigning the
+radioman responsibility manually – the “get help” order is a squad order, so <b
+style='mso-bidi-font-weight:normal'>all</b> radiomen in a squad will perform it
+when the order is issued.<o:p></o:p></span></p>
+
+<p class=MsoNormal><span style='font-size:11.0pt;font-family:Arial'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal><span style='font-size:11.0pt;font-family:Arial'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal style='mso-outline-level:1'><b style='mso-bidi-font-weight:
+normal'><u><span style='font-size:11.0pt;font-family:Arial'>Radiant Set-up.<o:p></o:p></span></u></b></p>
+
+<p class=MsoNormal><span style='font-size:11.0pt;font-family:Arial'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal><span style='font-size:11.0pt;font-family:Arial'>Place a
+trigger_multiple and associate it to the area by linking it to the
+squadpathnode for the area.<span style='mso-spacerun:yes'>  </span>The trigger
+need not have any particular dimension or position as it is disabled from
+“normal” triggering methods when it is processed during level startup.<o:p></o:p></span></p>
+
+<p class=MsoNormal><span style='font-size:11.0pt;font-family:Arial'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal><span style='font-size:11.0pt;font-family:Arial'>Assign a
+$targetname key of “aigethelptrigger”.<span style='mso-spacerun:yes'> 
+</span>This allows the gethelp.scr global script to identify all gethelp
+triggers.<o:p></o:p></span></p>
+
+<p class=MsoNormal><span style='font-size:11.0pt;font-family:Arial'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal><span style='font-size:11.0pt;font-family:Arial'>If you want
+the trigger to spawn a spawnset when tripped, assign a #set key to the value of
+the spawnset.<span style='mso-spacerun:yes'>  </span>When the trigger is
+tripped, the spawnset is spawned in and assigned to the same squad as the
+radioman who issued the call for help.<o:p></o:p></span></p>
+
+<p class=MsoNormal><span style='font-size:11.0pt;font-family:Arial'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal><span style='font-size:11.0pt;font-family:Arial'>Optionally,
+if the trigger is assigned a $triggername key, the trigger will rename itself
+to that key once it has been processed during level startup.<span
+style='mso-spacerun:yes'>  </span>This allows you to uniquely identify a
+trigger, if you want to write script that explicitly waits for a trigger to be
+tripped.<o:p></o:p></span></p>
+
+<p class=MsoNormal><span style='font-size:11.0pt;font-family:Arial'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal><span style='font-size:11.0pt;font-family:Arial'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal style='mso-outline-level:1'><b style='mso-bidi-font-weight:
+normal'><u><span style='font-size:11.0pt;font-family:Arial'>Important Note(s).<o:p></o:p></span></u></b></p>
+
+<p class=MsoNormal><span style='font-size:11.0pt;font-family:Arial'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal><span style='font-size:11.0pt;font-family:Arial'>If you
+choose to manage any gethelp triggers yourself, it is important to understand
+that you must not remove/delete these triggers from the level.<span
+style='mso-spacerun:yes'>  </span>This is because the gethelp triggers are
+placed into an internal list that is used by the squads.<span
+style='mso-spacerun:yes'>  </span>If you remove a trigger from the level
+without first removing from this internal list, very bad things happen.<span
+style='mso-spacerun:yes'>  </span>Currently, there is no way to first remove a
+trigger from the internal list.<o:p></o:p></span></p>
+
+<p class=MsoNormal><span style='font-size:11.0pt;font-family:Arial'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal><span style='font-size:11.0pt;font-family:Arial'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal><o:p>&nbsp;</o:p></p>
+
+<p class=MsoNormal><u>AI Squad commands<o:p></o:p></u></p>
+
+<p class=MsoNormal><u><o:p><span style='text-decoration:none'>&nbsp;</span></o:p></u></p>
+
+<p class=MsoNormal>With the AI squad commands, you can assign a guy to a squad,
+remove a guy from a squad, set a guy as the squad leader, enable or disable the
+squad morale system.<span style='mso-spacerun:yes'>  </span>In addition, you
+may force a squad to perform a tactic via script.<span
+style='mso-spacerun:yes'>  </span>For most of these commands, you may
+optionally pass the name of the area you want to perform the tactic on.<span
+style='mso-spacerun:yes'>  </span>If you don’t pass the area, the AI will
+attempt to find an appropriate area to perform the tactic.<span
+style='mso-spacerun:yes'>  </span>If it doesn’t find one, it will just not do
+the tactic.<span style='mso-spacerun:yes'>  </span>If you pass the area, the AI
+will perform the tactic without checking whether it “thinks” the area is
+appropriate, it will just do it.<span style='mso-spacerun:yes'>   </span>If the
+squad has a leader, the leader will jester with a hand or vocal signal
+first.<span style='mso-spacerun:yes'>  </span>After the signal, the squad will
+perform the tactic. Additional information can be found in the <a
+href="AI%20Squads%20-%20How%20to%20Use.htm">AI Squads Documentation</a>.</p>
+
+<p class=MsoNormal><o:p>&nbsp;</o:p></p>
+
+<p class=MsoNormal><o:p>&nbsp;</o:p></p>
+
+<p class=MsoNormal style='mso-layout-grid-align:none;text-autospace:none'><span
+style='font-size:10.0pt;font-family:"Courier New";color:aqua;background:black;
+mso-highlight:black'>squad_name<span style='mso-tab-count:2'>        </span></span><span
+style='font-size:10.0pt;font-family:"Courier New";color:lime;background:black;
+mso-highlight:black'>&quot;Adds sentient to passed squad.&quot;<o:p></o:p></span></p>
+
+<p class=MsoNormal style='mso-layout-grid-align:none;text-autospace:none'><span
+style='font-size:10.0pt;font-family:"Courier New";color:aqua;background:black;
+mso-highlight:black'>squad_leave<span style='mso-tab-count:2'>       </span></span><span
+style='font-size:10.0pt;font-family:"Courier New";color:lime;background:black;
+mso-highlight:black'>&quot;Removes sentient from his squad.&quot;<o:p></o:p></span></p>
+
+<p class=MsoNormal style='mso-layout-grid-align:none;text-autospace:none'><span
+style='font-size:10.0pt;font-family:"Courier New";color:aqua;background:black;
+mso-highlight:black'>squad_leader<span style='mso-tab-count:1'>      </span></span><span
+style='font-size:10.0pt;font-family:"Courier New";color:lime;background:black;
+mso-highlight:black'>&quot;Sets sentient as the leader of his squad. &quot;<o:p></o:p></span></p>
+
+<p class=MsoNormal style='mso-layout-grid-align:none;text-autospace:none'><span
+style='font-size:10.0pt;font-family:"Courier New";color:aqua;background:black;
+mso-highlight:black'>squad_morale<span style='mso-tab-count:1'>      </span></span><span
+style='font-size:10.0pt;font-family:"Courier New";color:lime;background:black;
+mso-highlight:black'>&quot;Sets the morale of this sentient's squad.&quot;<o:p></o:p></span></p>
+
+<p class=MsoNormal style='mso-layout-grid-align:none;text-autospace:none'><span
+style='font-size:10.0pt;font-family:"Courier New";color:aqua;background:black;
+mso-highlight:black'>squad_usemorale<span style='mso-tab-count:1'>   </span></span><span
+style='font-size:10.0pt;font-family:"Courier New";color:lime;background:black;
+mso-highlight:black'>&quot;Enable/Disable auto-squad tactics based on
+morale.&quot;<o:p></o:p></span></p>
+
+<p class=MsoNormal style='mso-layout-grid-align:none;text-autospace:none'><span
+style='font-size:10.0pt;font-family:"Courier New";color:aqua;background:black;
+mso-highlight:black'>squad_advance<span style='mso-tab-count:1'>     </span></span><span
+style='font-size:10.0pt;font-family:"Courier New";color:lime;background:black;
+mso-highlight:black'>&quot;Tells squad to advance (optionally pass area to
+advance to.)&quot;<o:p></o:p></span></p>
+
+<p class=MsoNormal style='mso-layout-grid-align:none;text-autospace:none'><span
+style='font-size:10.0pt;font-family:"Courier New";color:aqua;background:black;
+mso-highlight:black'>squad_retreat<span style='mso-tab-count:1'>     </span></span><span
+style='font-size:10.0pt;font-family:"Courier New";color:lime;background:black;
+mso-highlight:black'>&quot;Tells squad to retreat (optionally pass area to
+retreat to.)&quot;<o:p></o:p></span></p>
+
+<p class=MsoNormal style='mso-layout-grid-align:none;text-autospace:none'><span
+style='font-size:10.0pt;font-family:"Courier New";color:aqua;background:black;
+mso-highlight:black'>squad_fallback<span style='mso-tab-count:1'>    </span></span><span
+style='font-size:10.0pt;font-family:"Courier New";color:lime;background:black;
+mso-highlight:black'>&quot;Tells squad to fallback (optionally pass area to
+fallback to.)&quot;<o:p></o:p></span></p>
+
+<p class=MsoNormal style='mso-layout-grid-align:none;text-autospace:none'><span
+style='font-size:10.0pt;font-family:"Courier New";color:aqua;background:black;
+mso-highlight:black'>squad_charge<span style='mso-tab-count:1'>      </span></span><span
+style='font-size:10.0pt;font-family:"Courier New";color:lime;background:black;
+mso-highlight:black'>&quot;Tells squad to charge (optionally pass area to
+charge to.)&quot;<o:p></o:p></span></p>
+
+<p class=MsoNormal style='mso-layout-grid-align:none;text-autospace:none'><span
+style='font-size:10.0pt;font-family:"Courier New";color:aqua;background:black;
+mso-highlight:black'>squad_banzai<span style='mso-tab-count:1'>      </span></span><span
+style='font-size:10.0pt;font-family:"Courier New";color:lime;background:black;
+mso-highlight:black'>&quot;Tells squad to banzai (optionally pass area to
+banzai to.)&quot;<o:p></o:p></span></p>
+
+<p class=MsoNormal style='mso-layout-grid-align:none;text-autospace:none'><span
+style='font-size:10.0pt;font-family:"Courier New";color:aqua;background:black;
+mso-highlight:black'>squad_flank<span style='mso-tab-count:2'>       </span></span><span
+style='font-size:10.0pt;font-family:"Courier New";color:lime;background:black;
+mso-highlight:black'>&quot;Tells squad to flank (optionally pass area to flank
+to.)&quot;<o:p></o:p></span></p>
+
+<p class=MsoNormal style='mso-layout-grid-align:none;text-autospace:none'><span
+style='font-size:10.0pt;font-family:"Courier New";color:aqua;background:black;
+mso-highlight:black'>squad_flankX2<span style='mso-tab-count:1'>     </span></span><span
+style='font-size:10.0pt;font-family:"Courier New";color:lime;background:black;
+mso-highlight:black'>&quot;Tells squad to double flank (optionally pass areas
+to double flank to.)&quot;<o:p></o:p></span></p>
+
+<p class=MsoNormal style='mso-layout-grid-align:none;text-autospace:none'><span
+style='font-size:10.0pt;font-family:"Courier New";color:aqua;background:black;
+mso-highlight:black'>squad_holdsteady<span style='mso-tab-count:1'>  </span></span><span
+style='font-size:10.0pt;font-family:"Courier New";color:lime;background:black;
+mso-highlight:black'>&quot;Tells squad to hold steady&quot;<o:p></o:p></span></p>
+
+<p class=MsoNormal style='mso-layout-grid-align:none;text-autospace:none'><span
+style='font-size:10.0pt;font-family:"Courier New";color:aqua;background:black;
+mso-highlight:black'>squad_slowadvance<span style='mso-tab-count:1'> </span></span><span
+style='font-size:10.0pt;font-family:"Courier New";color:lime;background:black;
+mso-highlight:black'>&quot;Tells squad to slow advance&quot;<o:p></o:p></span></p>
+
+<p class=MsoNormal style='mso-layout-grid-align:none;text-autospace:none'><span
+style='font-size:10.0pt;font-family:"Courier New";color:aqua;background:black;
+mso-highlight:black'>squad_giveground<span style='mso-tab-count:1'>  </span></span><span
+style='font-size:10.0pt;font-family:"Courier New";color:lime;background:black;
+mso-highlight:black'>&quot;Tells squad to give ground&quot;<o:p></o:p></span></p>
+
+<p class=MsoNormal style='mso-layout-grid-align:none;text-autospace:none'><span
+style='font-size:10.0pt;font-family:"Courier New";color:aqua;background:black;
+mso-highlight:black'>squad_coverfire<span style='mso-tab-count:1'>   </span></span><span
+style='font-size:10.0pt;font-family:"Courier New";color:lime;background:black;
+mso-highlight:black'>&quot;Tells squad to perform covering fire.&quot;<o:p></o:p></span></p>
+
+<p class=MsoNormal><o:p>&nbsp;</o:p></p>
+
+<p class=MsoNormal><o:p>&nbsp;</o:p></p>
+
+<p class=MsoNormal><o:p>&nbsp;</o:p></p>
+
+<p class=MsoNormal><u>AI console vars<o:p></o:p></u></p>
+
+<p class=MsoNormal><o:p>&nbsp;</o:p></p>
+
+<p class=MsoNormal><span style='mso-tab-count:2'>                        </span>Squad
+console vars</p>
+
+<p class=MsoNormal style='mso-layout-grid-align:none;text-autospace:none'><span
+style='font-size:10.0pt;font-family:"Courier New";color:aqua;background:black;
+mso-highlight:black'>g_AISquadFallbackMinDist<span style='mso-tab-count:2'>            </span></span><span
+style='font-size:10.0pt;font-family:"Courier New";color:yellow;background:black;
+mso-highlight:black'>// min dist of valid fallback area<o:p></o:p></span></p>
+
+<p class=MsoNormal style='mso-layout-grid-align:none;text-autospace:none'><span
+style='font-size:10.0pt;font-family:"Courier New";color:aqua;background:black;
+mso-highlight:black'>g_AISquadFallbackMaxDist<span style='mso-tab-count:2'>            </span></span><span
+style='font-size:10.0pt;font-family:"Courier New";color:yellow;background:black;
+mso-highlight:black'>// max dist of valid fallback area<o:p></o:p></span></p>
+
+<p class=MsoNormal style='mso-layout-grid-align:none;text-autospace:none'><span
+style='font-size:10.0pt;font-family:"Courier New";color:aqua;background:black;
+mso-highlight:black'>g_AISquadFallbackMaxAngle<span style='mso-tab-count:2'>           </span></span><span
+style='font-size:10.0pt;font-family:"Courier New";color:yellow;background:black;
+mso-highlight:black'>// max angle of valid fallback area<o:p></o:p></span></p>
+
+<p class=MsoNormal style='mso-layout-grid-align:none;text-autospace:none'><span
+style='font-size:10.0pt;font-family:"Courier New";color:aqua;background:black;
+mso-highlight:black'>g_AISquadRetreatMinDist<span style='mso-tab-count:3'>             </span></span><span
+style='font-size:10.0pt;font-family:"Courier New";color:yellow;background:black;
+mso-highlight:black'>// min dist of valid retreat area<o:p></o:p></span></p>
+
+<p class=MsoNormal style='mso-layout-grid-align:none;text-autospace:none'><span
+style='font-size:10.0pt;font-family:"Courier New";color:aqua;background:black;
+mso-highlight:black'>g_AISquadRetreatMaxDist<span style='mso-tab-count:3'>             </span></span><span
+style='font-size:10.0pt;font-family:"Courier New";color:yellow;background:black;
+mso-highlight:black'>// max dist of valid retreat area<o:p></o:p></span></p>
+
+<p class=MsoNormal style='mso-layout-grid-align:none;text-autospace:none'><span
+style='font-size:10.0pt;font-family:"Courier New";color:aqua;background:black;
+mso-highlight:black'>g_AISquadRetreatMaxAngle<span style='mso-tab-count:2'>            </span></span><span
+style='font-size:10.0pt;font-family:"Courier New";color:yellow;background:black;
+mso-highlight:black'>// max angle of valid retreat area<o:p></o:p></span></p>
+
+<p class=MsoNormal style='mso-layout-grid-align:none;text-autospace:none'><span
+style='font-size:10.0pt;font-family:"Courier New";color:aqua;background:black;
+mso-highlight:black'>g_AISquadAdvanceMinDist<span style='mso-tab-count:3'>             </span></span><span
+style='font-size:10.0pt;font-family:"Courier New";color:yellow;background:black;
+mso-highlight:black'>// min dist of valid advance area<o:p></o:p></span></p>
+
+<p class=MsoNormal style='mso-layout-grid-align:none;text-autospace:none'><span
+style='font-size:10.0pt;font-family:"Courier New";color:aqua;background:black;
+mso-highlight:black'>g_AISquadAdvanceMaxDist<span style='mso-tab-count:3'>             </span></span><span
+style='font-size:10.0pt;font-family:"Courier New";color:yellow;background:black;
+mso-highlight:black'>// max dist of valid advance area<o:p></o:p></span></p>
+
+<p class=MsoNormal style='mso-layout-grid-align:none;text-autospace:none'><span
+style='font-size:10.0pt;font-family:"Courier New";color:aqua;background:black;
+mso-highlight:black'>g_AISquadAdvanceMinEnemyDist<span style='mso-tab-count:
+1'>  </span></span><span style='font-size:10.0pt;font-family:"Courier New";
+color:yellow;background:black;mso-highlight:black'>// min dist from enemy of
+valid advance area<o:p></o:p></span></p>
+
+<p class=MsoNormal style='mso-layout-grid-align:none;text-autospace:none'><span
+style='font-size:10.0pt;font-family:"Courier New";color:aqua;background:black;
+mso-highlight:black'>g_AISquadFlankMinDist<span style='mso-tab-count:3'>               </span></span><span
+style='font-size:10.0pt;font-family:"Courier New";color:yellow;background:black;
+mso-highlight:black'>// min dist of valid flank area<o:p></o:p></span></p>
+
+<p class=MsoNormal style='mso-layout-grid-align:none;text-autospace:none'><span
+style='font-size:10.0pt;font-family:"Courier New";color:aqua;background:black;
+mso-highlight:black'>g_AISquadFlankMaxDist<span style='mso-tab-count:3'>               </span></span><span
+style='font-size:10.0pt;font-family:"Courier New";color:yellow;background:black;
+mso-highlight:black'>// max dist of valid flank area<o:p></o:p></span></p>
+
+<p class=MsoNormal style='mso-layout-grid-align:none;text-autospace:none'><span
+style='font-size:10.0pt;font-family:"Courier New";color:aqua;background:black;
+mso-highlight:black'>g_AISquadFlankMinAngle<span style='mso-tab-count:3'>              </span></span><span
+style='font-size:10.0pt;font-family:"Courier New";color:yellow;background:black;
+mso-highlight:black'>// min angle of valid flank area<o:p></o:p></span></p>
+
+<p class=MsoNormal style='mso-layout-grid-align:none;text-autospace:none'><span
+style='font-size:10.0pt;font-family:"Courier New";color:aqua;background:black;
+mso-highlight:black'>g_AISquadFlankMaxAngle<span style='mso-tab-count:3'>              </span></span><span
+style='font-size:10.0pt;font-family:"Courier New";color:yellow;background:black;
+mso-highlight:black'>// max angle of valid flank area<o:p></o:p></span></p>
+
+<p class=MsoNormal style='mso-layout-grid-align:none;text-autospace:none'><span
+style='font-size:10.0pt;font-family:"Courier New";color:aqua;background:black;
+mso-highlight:black'>g_AISquadFlankMinEnemyDist<span style='mso-tab-count:2'>          </span></span><span
+style='font-size:10.0pt;font-family:"Courier New";color:yellow;background:black;
+mso-highlight:black'>// min dist from enemy of valid flank area<o:p></o:p></span></p>
+
+<p class=MsoNormal style='mso-layout-grid-align:none;text-autospace:none'><span
+style='font-size:10.0pt;font-family:"Courier New";color:aqua;background:black;
+mso-highlight:black'>g_AISquadFlankMaxEnemyDist<span style='mso-tab-count:2'>          </span></span><span
+style='font-size:10.0pt;font-family:"Courier New";color:yellow;background:black;
+mso-highlight:black'>// max dist from enemy of valid flank area<o:p></o:p></span></p>
+
+<p class=MsoNormal style='mso-layout-grid-align:none;text-autospace:none'><o:p>&nbsp;</o:p></p>
+
+<p class=MsoNormal style='mso-layout-grid-align:none;text-autospace:none'><span
+style='mso-tab-count:2'>                        </span>Morale console vars</p>
+
+<p class=MsoNormal style='mso-layout-grid-align:none;text-autospace:none'><span
+style='font-size:10.0pt;font-family:"Courier New";color:aqua;background:black;
+mso-highlight:black'>g_AIMoraleDebug<span style='mso-tab-count:1'>   </span></span><span
+style='font-size:10.0pt;font-family:"Courier New";color:yellow;background:black;
+mso-highlight:black'>// 1 enables debug strings to print to console window, 2
+to dprintln<o:p></o:p></span></p>
+
+<p class=MsoNormal style='mso-layout-grid-align:none;text-autospace:none'><span
+style='font-size:10.0pt;font-family:"Courier New";color:aqua;background:black;
+mso-highlight:black'>g_AIMoraleDropCaptainDied </span><span style='font-size:
+10.0pt;font-family:"Courier New";color:yellow;background:black;mso-highlight:
+black'>// how much morale will drop if the squad’s captain died<o:p></o:p></span></p>
+
+<p class=MsoNormal style='mso-layout-grid-align:none;text-autospace:none'><span
+style='font-size:10.0pt;font-family:"Courier New";color:aqua;background:black;
+mso-highlight:black'>g_AIMoraleDropFriendlyDied </span><span style='font-size:
+10.0pt;font-family:"Courier New";color:yellow;background:black;mso-highlight:
+black'>// how much morale will drop if a non-squadmate friendly dies</span><span
+style='font-size:10.0pt;font-family:"Courier New";color:aqua;background:black;
+mso-highlight:black'><o:p></o:p></span></p>
+
+<p class=MsoNormal style='mso-layout-grid-align:none;text-autospace:none'><span
+style='font-size:10.0pt;font-family:"Courier New";color:aqua;background:black;
+mso-highlight:black'>g_AIMoraleDropSquadmateDied </span><span style='font-size:
+10.0pt;font-family:"Courier New";color:yellow;background:black;mso-highlight:
+black'>// how much morale will drop if a squadmate dies</span><span
+style='font-size:10.0pt;font-family:"Courier New";color:aqua;background:black;
+mso-highlight:black'><o:p></o:p></span></p>
+
+<p class=MsoNormal style='mso-layout-grid-align:none;text-autospace:none'><span
+style='font-size:10.0pt;font-family:"Courier New";color:aqua;background:black;
+mso-highlight:black'>g_AIMoraleLiftKilledCaptain </span><span style='font-size:
+10.0pt;font-family:"Courier New";color:yellow;background:black;mso-highlight:
+black'>// how much morale will raise if squad kills an enemy cap</span><span
+style='font-size:10.0pt;font-family:"Courier New";color:aqua;background:black;
+mso-highlight:black'><o:p></o:p></span></p>
+
+<p class=MsoNormal style='mso-layout-grid-align:none;text-autospace:none'><span
+style='font-size:10.0pt;font-family:"Courier New";color:aqua;background:black;
+mso-highlight:black'>g_AIMoraleLiftKilledEnemy </span><span style='font-size:
+10.0pt;font-family:"Courier New";color:yellow;background:black;mso-highlight:
+black'>// how much morale will raise if squad kills an enemy</span><span
+style='font-size:10.0pt;font-family:"Courier New";color:aqua;background:black;
+mso-highlight:black'><o:p></o:p></span></p>
+
+<p class=MsoNormal style='mso-layout-grid-align:none;text-autospace:none'><span
+style='font-size:10.0pt;font-family:"Courier New";color:aqua;background:black;
+mso-highlight:black'>g_AIMoraleLiftKilledSquad </span><span style='font-size:
+10.0pt;font-family:"Courier New";color:yellow;background:black;mso-highlight:
+black'>// how much morale will raise if squad kills an entire squad</span><span
+style='font-size:10.0pt;font-family:"Courier New";color:aqua;background:black;
+mso-highlight:black'><o:p></o:p></span></p>
+
+<p class=MsoNormal style='mso-layout-grid-align:none;text-autospace:none'><span
+style='font-size:10.0pt;font-family:"Courier New";color:aqua;background:black;
+mso-highlight:black'>g_AIMoraleLiftCoverReached </span><span style='font-size:
+10.0pt;font-family:"Courier New";color:yellow;background:black;mso-highlight:
+black'>// how much morale will raise if cover is reached</span><span
+style='font-size:10.0pt;font-family:"Courier New";color:aqua;background:black;
+mso-highlight:black'><o:p></o:p></span></p>
+
+<p class=MsoNormal style='mso-layout-grid-align:none;text-autospace:none'><span
+style='font-size:10.0pt;font-family:"Courier New";color:aqua;background:black;
+mso-highlight:black'>g_AIMoraleLiftRetreatComplete </span><span
+style='font-size:10.0pt;font-family:"Courier New";color:yellow;background:black;
+mso-highlight:black'>// how much morale will raise if a retreat was completed</span><span
+style='font-size:10.0pt;font-family:"Courier New";color:aqua;background:black;
+mso-highlight:black'><o:p></o:p></span></p>
+
+<p class=MsoNormal style='mso-layout-grid-align:none;text-autospace:none'><span
+style='font-size:10.0pt;font-family:"Courier New";color:aqua;background:black;
+mso-highlight:black'>g_AIMoraleLiftFriendKilledEnemy </span><span
+style='font-size:10.0pt;font-family:"Courier New";color:yellow;background:black;
+mso-highlight:black'>// how much morale will raise if a non-squad friend kills
+an enemy</span><span style='font-size:10.0pt;font-family:"Courier New";
+color:aqua;background:black;mso-highlight:black'><o:p></o:p></span></p>
+
+<p class=MsoNormal style='mso-layout-grid-align:none;text-autospace:none'><span
+style='font-size:10.0pt;font-family:"Courier New";color:aqua;background:black;
+mso-highlight:black'>g_AIMoraleInitialWaitAggressive </span><span
+style='font-size:10.0pt;font-family:"Courier New";color:yellow;background:black;
+mso-highlight:black'>// how long (seconds)squad will wait before making initial
+morale decision</span><span style='font-size:10.0pt;font-family:"Courier New";
+color:aqua;background:black;mso-highlight:black'><o:p></o:p></span></p>
+
+<p class=MsoNormal style='mso-layout-grid-align:none;text-autospace:none'><span
+style='font-size:10.0pt;font-family:"Courier New";color:aqua;background:black;
+mso-highlight:black'>g_AIMoraleInitialWaitTimid </span><span style='font-size:
+10.0pt;font-family:"Courier New";color:yellow;background:black;mso-highlight:
+black'>// same as above, but for timid personality (disabled)</span><span
+style='font-size:10.0pt;font-family:"Courier New";color:aqua;background:black;
+mso-highlight:black'><o:p></o:p></span></p>
+
+<p class=MsoNormal style='mso-layout-grid-align:none;text-autospace:none'><span
+style='font-size:10.0pt;font-family:"Courier New";color:aqua;background:black;
+mso-highlight:black'>g_AIMoraleInitialWaitNormal </span><span style='font-size:
+10.0pt;font-family:"Courier New";color:yellow;background:black;mso-highlight:
+black'>// same as above, but for normal personality (disabled)</span><span
+style='font-size:10.0pt;font-family:"Courier New";color:aqua;background:black;
+mso-highlight:black'><o:p></o:p></span></p>
+
+<p class=MsoNormal style='mso-layout-grid-align:none;text-autospace:none'><o:p>&nbsp;</o:p></p>
+
+<p class=MsoNormal style='mso-layout-grid-align:none;text-autospace:none'><o:p>&nbsp;</o:p></p>
+
+<p class=MsoNormal style='mso-layout-grid-align:none;text-autospace:none'><o:p>&nbsp;</o:p></p>
+
+<p class=MsoNormal style='mso-layout-grid-align:none;text-autospace:none'><o:p>&nbsp;</o:p></p>
+
+</div>
+
+</body>
+
+</html>

@@ -1,0 +1,427 @@
+<html xmlns:o="urn:schemas-microsoft-com:office:office"
+xmlns:w="urn:schemas-microsoft-com:office:word"
+xmlns="http://www.w3.org/TR/REC-html40">
+
+<head>
+<meta http-equiv=Content-Type content="text/html; charset=windows-1252">
+<meta name=ProgId content=Word.Document>
+<meta name=Generator content="Microsoft Word 10">
+<meta name=Originator content="Microsoft Word 10">
+<link rel=File-List href="MakePack_files/filelist.xml">
+<title>The MakePack program will create a resource data file using a script:</title>
+<!--[if gte mso 9]><xml>
+ <o:DocumentProperties>
+  <o:Author>bbilodeau</o:Author>
+  <o:LastAuthor>bbilodeau</o:LastAuthor>
+  <o:Revision>5</o:Revision>
+  <o:TotalTime>256</o:TotalTime>
+  <o:Created>2004-12-14T18:58:00Z</o:Created>
+  <o:LastSaved>2004-12-15T01:20:00Z</o:LastSaved>
+  <o:Pages>1</o:Pages>
+  <o:Words>733</o:Words>
+  <o:Characters>4181</o:Characters>
+  <o:Company>TKO Software, Inc.</o:Company>
+  <o:Lines>34</o:Lines>
+  <o:Paragraphs>9</o:Paragraphs>
+  <o:CharactersWithSpaces>4905</o:CharactersWithSpaces>
+  <o:Version>10.3501</o:Version>
+ </o:DocumentProperties>
+</xml><![endif]--><!--[if gte mso 9]><xml>
+ <w:WordDocument>
+  <w:GrammarState>Clean</w:GrammarState>
+  <w:Compatibility>
+   <w:BreakWrappedTables/>
+   <w:SnapToGridInCell/>
+   <w:WrapTextWithPunct/>
+   <w:UseAsianBreakRules/>
+  </w:Compatibility>
+  <w:BrowserLevel>MicrosoftInternetExplorer4</w:BrowserLevel>
+ </w:WordDocument>
+</xml><![endif]-->
+<style>
+<!--
+ /* Style Definitions */
+ p.MsoNormal, li.MsoNormal, div.MsoNormal
+	{mso-style-parent:"";
+	margin:0in;
+	margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	font-size:12.0pt;
+	font-family:"Times New Roman";
+	mso-fareast-font-family:"Times New Roman";}
+@page Section1
+	{size:8.5in 11.0in;
+	margin:1.0in 1.25in 1.0in 1.25in;
+	mso-header-margin:.5in;
+	mso-footer-margin:.5in;
+	mso-paper-source:0;}
+div.Section1
+	{page:Section1;}
+-->
+</style>
+<!--[if gte mso 10]>
+<style>
+ /* Style Definitions */
+ table.MsoNormalTable
+	{mso-style-name:"Table Normal";
+	mso-tstyle-rowband-size:0;
+	mso-tstyle-colband-size:0;
+	mso-style-noshow:yes;
+	mso-style-parent:"";
+	mso-padding-alt:0in 5.4pt 0in 5.4pt;
+	mso-para-margin:0in;
+	mso-para-margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	font-size:10.0pt;
+	font-family:"Times New Roman";}
+</style>
+<![endif]-->
+</head>
+
+<body lang=EN-US style='tab-interval:.5in'>
+
+<div class=Section1>
+
+<p class=MsoNormal align=center style='text-align:center'><b style='mso-bidi-font-weight:
+normal'><span style='font-size:18.0pt'><o:p>&nbsp;</o:p></span></b></p>
+
+<p class=MsoNormal align=center style='text-align:center'><b style='mso-bidi-font-weight:
+normal'><span style='font-size:18.0pt'>MakePack<o:p></o:p></span></b></p>
+
+<p class=MsoNormal><o:p>&nbsp;</o:p></p>
+
+<p class=MsoNormal>The MakePack program can be used for creating .rez files, an
+alternative to the .pk3 files created by pakscape. One advantage of .rez files
+is that you can store streaming media, such as sounds and movies in this
+format. MakePack is a command line program that can be run from the Windows
+cmd.ex program. MakePack is installed in your MDK/bin folder (typically Program
+Files\EA Games\Medal of Honor Pacific Assault(tm)\MDK\bin).</p>
+
+<p class=MsoNormal><o:p>&nbsp;</o:p></p>
+
+<p class=MsoNormal><b style='mso-bidi-font-weight:normal'>Usage</b>: MakePack <i
+style='mso-bidi-font-style:normal'>infile</i> </p>
+
+<p class=MsoNormal><span style='mso-tab-count:1'>            </span>where <i
+style='mso-bidi-font-style:normal'>infile</i> is the name of either the .rez
+file (for extracting) or the script file (for creating .rez files).<o:p></o:p></p>
+
+<p class=MsoNormal><b style='mso-bidi-font-weight:normal'>Switches</b> : </p>
+
+<p class=MsoNormal style='text-indent:.5in'>-Z <span style='mso-tab-count:1'>       </span><span
+style='mso-tab-count:1'>            </span>Do not save the .h </p>
+
+<p class=MsoNormal style='text-indent:.5in'>-V<span style='mso-tab-count:1'>        </span><span
+style='mso-tab-count:1'>            </span>Verbose output</p>
+
+<p class=MsoNormal style='text-indent:.5in'>-M<span style='mso-tab-count:1'>       </span><span
+style='mso-tab-count:1'>            </span>Create a manifest file (outfile.csv)</p>
+
+<p class=MsoNormal style='text-indent:.5in'>-L<span style='mso-tab-count:1'>        </span><span
+style='mso-tab-count:1'>            </span>Dump a file list to
+&quot;FileList.txt&quot; </p>
+
+<p class=MsoNormal style='text-indent:.5in'>-S<span style='mso-tab-count:1'>        </span><span
+style='mso-tab-count:1'>            </span>Suppress output, useful for
+debugging input scripts </p>
+
+<p class=MsoNormal style='text-indent:.5in'>-X <i style='mso-bidi-font-style:
+normal'>*.ext</i><span style='mso-tab-count:1'>           </span>Extract
+file(s) with a wildcard, where <i style='mso-bidi-font-style:normal'>ext</i> is
+the file name extension.<o:p></o:p></p>
+
+<p class=MsoNormal style='text-indent:.5in'><o:p>&nbsp;</o:p></p>
+
+<p class=MsoNormal><o:p>&nbsp;</o:p></p>
+
+<p class=MsoNormal><b style='mso-bidi-font-weight:normal'><u>Script Commands<o:p></o:p></u></b></p>
+
+<p class=MsoNormal><o:p>&nbsp;</o:p></p>
+
+<p class=MsoNormal>For filename operands, quotes are optional, but recommended.
+Spaces are accepted inside quotes, but discouraged. Environment variables are
+invoked by using the form %<i style='mso-bidi-font-style:normal'>PATH</i>%
+where the word <i style='mso-bidi-font-style:normal'>PATH</i> is replaced with
+the variable to be used. Comments are C++ double slash style. </p>
+
+<p class=MsoNormal><o:p>&nbsp;</o:p></p>
+
+<p class=MsoNormal><b style='mso-bidi-font-weight:normal'>outputname<o:p></o:p></b></p>
+
+<p class=MsoNormal>Specify the name of the output file. This command should
+occur only once and near the beginning of the script. If found a second time,
+it will trigger an error. </p>
+
+<p class=MsoNormal><o:p>&nbsp;</o:p></p>
+
+<p class=MsoNormal>Examples: </p>
+
+<p class=MsoNormal style='text-indent:.5in'>outputname
+&quot;Outputfilename.pak&quot; </p>
+
+<p class=MsoNormal style='text-indent:.5in'>outputname
+&quot;z:\data\foo\data.pak&quot; </p>
+
+<p class=MsoNormal><o:p>&nbsp;</o:p></p>
+
+<p class=MsoNormal><b style='mso-bidi-font-weight:normal'>compress</b></p>
+
+<p class=MsoNormal>Specify the compression algorithms to use on the data if
+compression is allowed. The <b style='mso-bidi-font-weight:normal'>dontpack</b>
+command will take precidence on a file, but if compression is allowed, attempt
+to use these codecs. </p>
+
+<p class=MsoNormal><o:p>&nbsp;</o:p></p>
+
+<p class=MsoNormal>Codecs supported (use a maximum of three):<o:p></o:p></p>
+
+<p class=MsoNormal style='text-indent:.5in'>lzss <span style='mso-tab-count:
+1'>      </span><span style='mso-tab-count:1'>            </span>A custom lzss
+codec, not compatible with the one that's out on the 'net, extremely fast
+decoding<o:p></o:p></p>
+
+<p class=MsoNormal style='text-indent:.5in'>rle <span style='mso-tab-count:
+1'>       </span><span style='mso-tab-count:1'>            </span>A simple run
+length encoder, extremely fast decoding<o:p></o:p></p>
+
+<p class=MsoNormal style='text-indent:.5in'>inflate<span style='mso-tab-count:
+1'>   </span><span style='mso-tab-count:1'>            </span>ZLib compression,
+slow decoding.<o:p></o:p></p>
+
+<p class=MsoNormal style='text-indent:.5in'>lz77 <span style='mso-tab-count:
+1'>     </span><span style='mso-tab-count:1'>            </span>LZW. Decent
+compression, but not as good as inflate<o:p></o:p></p>
+
+<p class=MsoNormal style='text-indent:.5in'>huffman <span style='mso-tab-count:
+1'>           </span>Straight huffman compression. Moderate decoding speed, and
+great for high concentrations of few numbers<o:p></o:p></p>
+
+<p class=MsoNormal style='text-indent:.5in'>lzari <span style='mso-tab-count:
+2'>                 </span>Great compression, sucks at decoding time<o:p></o:p></p>
+
+<p class=MsoNormal><o:p>&nbsp;</o:p></p>
+
+<p class=MsoNormal>Examples:<o:p></o:p></p>
+
+<p class=MsoNormal style='text-indent:.5in'>compress none<span
+style='mso-tab-count:3'>                         </span>// Completely shut off
+ALL compression<o:p></o:p></p>
+
+<p class=MsoNormal style='text-indent:.5in'>compress inflate,lzss,rle<span
+style='mso-tab-count:1'> </span><span style='mso-tab-count:1'>            </span>//
+Use these three codecs<o:p></o:p></p>
+
+<p class=MsoNormal style='text-indent:.5in'>compress lzss<span
+style='mso-tab-count:2'>               </span><span style='mso-tab-count:1'>            </span>//
+Use lzss only.<o:p></o:p></p>
+
+<p class=MsoNormal><o:p>&nbsp;</o:p></p>
+
+<p class=MsoNormal><b style='mso-bidi-font-weight:normal'>basedirectory</b></p>
+
+<p class=MsoNormal>Specify the base directory for where all subsequent file
+operations will work from. The default is the same directory that the script
+file itself exists. This command will allow the script file to be placed anywhere
+on the hard drive and import data from any other directory. Note: This should
+be a fully qualified pathname with a drive letter. </p>
+
+<p class=MsoNormal><o:p>&nbsp;</o:p></p>
+
+<p class=MsoNormal>Examples: </p>
+
+<p class=MsoNormal style='text-indent:.5in'>basedirectory &quot;Z:\mohpa\data\demo&quot;</p>
+
+<p class=MsoNormal style='text-indent:.5in'>basedirectory &quot;Z:\mohpa\data\release&quot;
+</p>
+
+<p class=MsoNormal><o:p>&nbsp;</o:p></p>
+
+<p class=MsoNormal><o:p>&nbsp;</o:p></p>
+
+<p class=MsoNormal><b style='mso-bidi-font-weight:normal'>add</b></p>
+
+<p class=MsoNormal>Filename to include into the pack file. Wildcards are
+acceptable.<o:p></o:p></p>
+
+<p class=MsoNormal><o:p>&nbsp;</o:p></p>
+
+<p class=MsoNormal>Examples:<o:p></o:p></p>
+
+<p class=MsoNormal style='text-indent:.5in'>add &quot;*.tga&quot;<span
+style='mso-tab-count:2'>                   </span>// Include tga files in this
+directory only<o:p></o:p></p>
+
+<p class=MsoNormal style='text-indent:.5in'>add &quot;data\*.*&quot;<span
+style='mso-tab-count:1'>  </span><span style='mso-tab-count:1'>            </span>//
+Include all files in the directory &quot;data&quot;<o:p></o:p></p>
+
+<p class=MsoNormal><o:p>&nbsp;</o:p></p>
+
+<p class=MsoNormal><b style='mso-bidi-font-weight:normal'>addrecursive</b></p>
+
+<p class=MsoNormal>Filename to include into the pack file. Wildcards are
+acceptable. If any directories are found, they will be recursively searched and
+all their matching contents will be included.<o:p></o:p></p>
+
+<p class=MsoNormal><o:p>&nbsp;</o:p></p>
+
+<p class=MsoNormal>Examples:<o:p></o:p></p>
+
+<p class=MsoNormal style='text-indent:.5in'>addrecursive &quot;*.tga&quot;<span
+style='mso-tab-count:2'>                  </span>// Include all tga files<o:p></o:p></p>
+
+<p class=MsoNormal style='text-indent:.5in'>addrecursive &quot;data\*.*&quot;<span
+style='mso-tab-count:2'>             </span>// Include all files in the data folder<o:p></o:p></p>
+
+<p class=MsoNormal style='text-indent:.5in'>addrecursive &quot;*.*&quot;<span
+style='mso-tab-count:1'>        </span><span style='mso-tab-count:1'>            </span>//
+Include everything<o:p></o:p></p>
+
+<p class=MsoNormal><o:p>&nbsp;</o:p></p>
+
+<p class=MsoNormal><b style='mso-bidi-font-weight:normal'>remove</b></p>
+
+<p class=MsoNormal>Filename to explictly exclude from the pack file. Wildcards are
+acceptable.<o:p></o:p></p>
+
+<p class=MsoNormal><o:p>&nbsp;</o:p></p>
+
+<p class=MsoNormal>Examples:<o:p></o:p></p>
+
+<p class=MsoNormal style='text-indent:.5in'>remove &quot;*.bmp&quot;<span
+style='mso-tab-count:2'>                        </span>// Remove all bmp files
+from the root folder<o:p></o:p></p>
+
+<p class=MsoNormal style='text-indent:.5in'>remove &quot;temp\*.*&quot;<span
+style='mso-tab-count:2'>                    </span>// Remove all files in the
+temp folder<o:p></o:p></p>
+
+<p class=MsoNormal><o:p>&nbsp;</o:p></p>
+
+<p class=MsoNormal><b style='mso-bidi-font-weight:normal'>removerecursive</b></p>
+
+<p class=MsoNormal>Filename to explictly exclude from the pack file. Wildcards are
+acceptable. If any directories are found, they will be recursively searched and
+all their matching contents will be removed.<o:p></o:p></p>
+
+<p class=MsoNormal><o:p>&nbsp;</o:p></p>
+
+<p class=MsoNormal>Examples:<o:p></o:p></p>
+
+<p class=MsoNormal style='text-indent:.5in'>removerecursive &quot;*.gif&quot;<span
+style='mso-tab-count:2'>             </span>// Exclude all gif files<o:p></o:p></p>
+
+<p class=MsoNormal style='text-indent:.5in'>removerecursive
+&quot;logfile\*.*&quot;<span style='mso-tab-count:1'>     </span>// Exclude all
+files in the logfile folder<o:p></o:p></p>
+
+<p class=MsoNormal style='text-indent:.5in'>removerecursive &quot;*.*&quot;<span
+style='mso-tab-count:2'>               </span>// Remove everything (Why? But then,
+you can do it if you want to)<o:p></o:p></p>
+
+<p class=MsoNormal><o:p>&nbsp;</o:p></p>
+
+<p class=MsoNormal><b style='mso-bidi-font-weight:normal'>pack</b></p>
+
+<p class=MsoNormal>Filenames that are allowed to be compressed. The default is
+no compression.</p>
+
+<p class=MsoNormal><o:p>&nbsp;</o:p></p>
+
+<p class=MsoNormal>Examples:<o:p></o:p></p>
+
+<p class=MsoNormal style='text-indent:.5in'>pack &quot;*.*&quot;<span
+style='mso-tab-count:3'>                                </span>// Pack
+everything<o:p></o:p></p>
+
+<p class=MsoNormal style='text-indent:.5in'>pack &quot;*.tga&quot;<span
+style='mso-tab-count:3'>                              </span>// Pack tga files<o:p></o:p></p>
+
+<p class=MsoNormal style='text-indent:.5in'>pack &quot;data\*.*&quot;<span
+style='mso-tab-count:2'>             </span><span style='mso-tab-count:1'>            </span>//
+Pack everything in the data folder<o:p></o:p></p>
+
+<p class=MsoNormal><o:p>&nbsp;</o:p></p>
+
+<p class=MsoNormal><b style='mso-bidi-font-weight:normal'>dontpack<o:p></o:p></b></p>
+
+<p class=MsoNormal>Filenames that are explictily barred from being compressed.
+Useful in hinting that movie and compress audio files do not need to be
+compressed a second time. </p>
+
+<p class=MsoNormal><o:p>&nbsp;</o:p></p>
+
+<p class=MsoNormal>Examples:<o:p></o:p></p>
+
+<p class=MsoNormal style='text-indent:.5in'>dontpack &quot;*.mp3&quot;<span
+style='mso-tab-count:2'>                     </span>// Don't pack mp3s<o:p></o:p></p>
+
+<p class=MsoNormal style='text-indent:.5in'>dontpack &quot;*.avi&quot;<span
+style='mso-tab-count:2'>                       </span>// Don't pack movie
+files.<o:p></o:p></p>
+
+<p class=MsoNormal><o:p>&nbsp;</o:p></p>
+
+<p class=MsoNormal><o:p>&nbsp;</o:p></p>
+
+<p class=MsoNormal><b style='mso-bidi-font-weight:normal'><u>Example Script<o:p></o:p></u></b></p>
+
+<p class=MsoNormal><o:p>&nbsp;</o:p></p>
+
+<p class=MsoNormal style='text-indent:.5in'>// Preflight<o:p></o:p></p>
+
+<p class=MsoNormal style='text-indent:.5in'>compress inflate,lzss,rle<span
+style='mso-tab-count:2'>             </span><span style='mso-tab-count:1'>            </span>//
+Enable these codecs<o:p></o:p></p>
+
+<p class=MsoNormal style='text-indent:.5in'>basedirectory
+&quot;Z:\PackFileTest\demo&quot;<span style='mso-tab-count:1'>   </span>//
+Working data folder<o:p></o:p></p>
+
+<p class=MsoNormal style='text-indent:.5in'>cachename &quot;DemoCache&quot;<span
+style='mso-tab-count:2'>                     </span>// Save the cache here<o:p></o:p></p>
+
+<p class=MsoNormal style='text-indent:.5in'>outputname &quot;pak0.rez&quot;<span
+style='mso-tab-count:3'>                          </span>// Output file<o:p></o:p></p>
+
+<p class=MsoNormal><o:p>&nbsp;</o:p></p>
+
+<p class=MsoNormal style='text-indent:.5in'>// Grab the files<o:p></o:p></p>
+
+<p class=MsoNormal style='text-indent:.5in'>addrecursive &quot;*.*&quot;<span
+style='mso-tab-count:3'>                                </span>// Grab
+everything<o:p></o:p></p>
+
+<p class=MsoNormal style='text-indent:.5in'>removerecursive &quot;*.tmp&quot;<span
+style='mso-tab-count:2'>                       </span>// Don't add the temp
+files<o:p></o:p></p>
+
+<p class=MsoNormal style='text-indent:.5in'>remove &quot;settings.ini&quot;<span
+style='mso-tab-count:3'>                              </span>// Don't include
+this into the<o:p></o:p></p>
+
+<p class=MsoNormal style='text-indent:.5in'>pack file<o:p></o:p></p>
+
+<p class=MsoNormal><o:p>&nbsp;</o:p></p>
+
+<p class=MsoNormal style='text-indent:.5in'>// Twiddle compression<o:p></o:p></p>
+
+<p class=MsoNormal style='text-indent:.5in'>pack &quot;*.*&quot;<span
+style='mso-tab-count:4'>                                            </span>//
+This is the default<o:p></o:p></p>
+
+<p class=MsoNormal style='text-indent:.5in'>dontpack &quot;*.bik&quot;<span
+style='mso-tab-count:3'>                                   </span>// Yeah,
+right<o:p></o:p></p>
+
+<p class=MsoNormal style='text-indent:.5in'>dontpack &quot;*.mp3&quot;<span
+style='mso-tab-count:3'>                                 </span>// Nope, no
+need to waste my time on this<o:p></o:p></p>
+
+<p class=MsoNormal><o:p>&nbsp;</o:p></p>
+
+</div>
+
+</body>
+
+</html>

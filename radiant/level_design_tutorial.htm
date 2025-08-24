@@ -1,0 +1,1994 @@
+<html xmlns:v="urn:schemas-microsoft-com:vml"
+xmlns:o="urn:schemas-microsoft-com:office:office"
+xmlns:w="urn:schemas-microsoft-com:office:word"
+xmlns:st1="urn:schemas-microsoft-com:office:smarttags"
+xmlns="http://www.w3.org/TR/REC-html40">
+
+<head>
+<meta http-equiv=Content-Type content="text/html; charset=windows-1252">
+<meta name=ProgId content=Word.Document>
+<meta name=Generator content="Microsoft Word 10">
+<meta name=Originator content="Microsoft Word 10">
+<link rel=File-List href="level_design_tutorial_files/filelist.xml">
+<link rel=Edit-Time-Data href="level_design_tutorial_files/editdata.mso">
+<link rel=OLE-Object-Data href="level_design_tutorial_files/oledata.mso">
+<!--[if !mso]>
+<style>
+v\:* {behavior:url(#default#VML);}
+o\:* {behavior:url(#default#VML);}
+w\:* {behavior:url(#default#VML);}
+.shape {behavior:url(#default#VML);}
+</style>
+<![endif]-->
+<title>Level Design Tutorial</title>
+<o:SmartTagType namespaceuri="urn:schemas-microsoft-com:office:smarttags"
+ name="PersonName" downloadurl="http://www.microsoft.com"/>
+<!--[if gte mso 9]><xml>
+ <o:DocumentProperties>
+  <o:Author>Darren Korman</o:Author>
+  <o:LastAuthor>bbilodeau</o:LastAuthor>
+  <o:Revision>3</o:Revision>
+  <o:TotalTime>679</o:TotalTime>
+  <o:Created>2004-12-07T19:32:00Z</o:Created>
+  <o:LastSaved>2004-12-22T02:28:00Z</o:LastSaved>
+  <o:Pages>1</o:Pages>
+  <o:Words>2933</o:Words>
+  <o:Characters>16722</o:Characters>
+  <o:Company> </o:Company>
+  <o:Lines>139</o:Lines>
+  <o:Paragraphs>39</o:Paragraphs>
+  <o:CharactersWithSpaces>19616</o:CharactersWithSpaces>
+  <o:Version>10.3501</o:Version>
+ </o:DocumentProperties>
+</xml><![endif]--><!--[if gte mso 9]><xml>
+ <w:WordDocument>
+  <w:BrowserLevel>MicrosoftInternetExplorer4</w:BrowserLevel>
+ </w:WordDocument>
+</xml><![endif]--><!--[if !mso]><object
+ classid="clsid:38481807-CA0E-42D2-BF39-B33AF135CC4D" id=ieooui></object>
+<style>
+st1\:*{behavior:url(#ieooui) }
+</style>
+<![endif]-->
+<style>
+<!--
+ /* Style Definitions */
+ p.MsoNormal, li.MsoNormal, div.MsoNormal
+	{mso-style-parent:"";
+	margin:0in;
+	margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	font-size:12.0pt;
+	font-family:"Times New Roman";
+	mso-fareast-font-family:"Times New Roman";}
+h1
+	{mso-style-next:Normal;
+	margin:0in;
+	margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	page-break-after:avoid;
+	mso-outline-level:1;
+	font-size:12.0pt;
+	font-family:"Times New Roman";
+	mso-font-kerning:0pt;}
+p.MsoBodyTextIndent, li.MsoBodyTextIndent, div.MsoBodyTextIndent
+	{margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:.5in;
+	margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	font-size:12.0pt;
+	font-family:"Times New Roman";
+	mso-fareast-font-family:"Times New Roman";}
+p.MsoBodyTextIndent2, li.MsoBodyTextIndent2, div.MsoBodyTextIndent2
+	{margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:.75in;
+	margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	font-size:12.0pt;
+	font-family:"Times New Roman";
+	mso-fareast-font-family:"Times New Roman";}
+p.MsoBodyTextIndent3, li.MsoBodyTextIndent3, div.MsoBodyTextIndent3
+	{margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:2.0in;
+	margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	font-size:12.0pt;
+	font-family:"Times New Roman";
+	mso-fareast-font-family:"Times New Roman";}
+@page Section1
+	{size:8.5in 11.0in;
+	margin:1.0in 1.25in 1.0in 1.25in;
+	mso-header-margin:.5in;
+	mso-footer-margin:.5in;
+	mso-paper-source:0;}
+div.Section1
+	{page:Section1;}
+@page Section2
+	{size:8.5in 11.0in;
+	margin:1.0in 1.25in 1.0in 1.25in;
+	mso-header-margin:.5in;
+	mso-footer-margin:.5in;
+	mso-columns:2 even .5in;
+	mso-paper-source:0;}
+div.Section2
+	{page:Section2;}
+@page Section3
+	{size:8.5in 11.0in;
+	margin:1.0in 1.25in 1.0in 1.25in;
+	mso-header-margin:.5in;
+	mso-footer-margin:.5in;
+	mso-paper-source:0;}
+div.Section3
+	{page:Section3;}
+@page Section4
+	{size:8.5in 11.0in;
+	margin:1.0in 1.25in 1.0in 1.25in;
+	mso-header-margin:.5in;
+	mso-footer-margin:.5in;
+	mso-paper-source:0;}
+div.Section4
+	{page:Section4;}
+@page Section5
+	{size:8.5in 11.0in;
+	margin:1.0in 1.25in 1.0in 1.25in;
+	mso-header-margin:.5in;
+	mso-footer-margin:.5in;
+	mso-columns:3 even .5in;
+	mso-paper-source:0;}
+div.Section5
+	{page:Section5;}
+@page Section6
+	{size:8.5in 11.0in;
+	margin:1.0in 1.25in 1.0in 1.25in;
+	mso-header-margin:.5in;
+	mso-footer-margin:.5in;
+	mso-paper-source:0;}
+div.Section6
+	{page:Section6;}
+ /* List Definitions */
+ @list l0
+	{mso-list-id:226385593;
+	mso-list-template-ids:1166992516;}
+@list l0:level1
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0B7;
+	mso-level-tab-stop:.5in;
+	mso-level-number-position:left;
+	text-indent:-.25in;
+	mso-ansi-font-size:10.0pt;
+	font-family:Symbol;}
+@list l1
+	{mso-list-id:938761604;
+	mso-list-type:hybrid;
+	mso-list-template-ids:-682033164 67698689 67698691 67698693 67698689 67698691 67698693 67698689 67698691 67698693;}
+@list l1:level1
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0B7;
+	mso-level-tab-stop:.5in;
+	mso-level-number-position:left;
+	text-indent:-.25in;
+	font-family:Symbol;}
+@list l1:level2
+	{mso-level-tab-stop:1.0in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l1:level3
+	{mso-level-tab-stop:1.5in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l1:level4
+	{mso-level-tab-stop:2.0in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l1:level5
+	{mso-level-tab-stop:2.5in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l1:level6
+	{mso-level-tab-stop:3.0in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l1:level7
+	{mso-level-tab-stop:3.5in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l1:level8
+	{mso-level-tab-stop:4.0in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l1:level9
+	{mso-level-tab-stop:4.5in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l2
+	{mso-list-id:1140926872;
+	mso-list-type:hybrid;
+	mso-list-template-ids:-1473345604 67698689 67698691 67698693 67698689 67698691 67698693 67698689 67698691 67698693;}
+@list l2:level1
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0B7;
+	mso-level-tab-stop:.5in;
+	mso-level-number-position:left;
+	text-indent:-.25in;
+	font-family:Symbol;}
+@list l2:level2
+	{mso-level-tab-stop:1.0in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l2:level3
+	{mso-level-tab-stop:1.5in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l2:level4
+	{mso-level-tab-stop:2.0in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l2:level5
+	{mso-level-tab-stop:2.5in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l2:level6
+	{mso-level-tab-stop:3.0in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l2:level7
+	{mso-level-tab-stop:3.5in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l2:level8
+	{mso-level-tab-stop:4.0in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l2:level9
+	{mso-level-tab-stop:4.5in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l3
+	{mso-list-id:1494099739;
+	mso-list-template-ids:49580814;}
+@list l3:level1
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0B7;
+	mso-level-tab-stop:.5in;
+	mso-level-number-position:left;
+	text-indent:-.25in;
+	mso-ansi-font-size:10.0pt;
+	font-family:Symbol;}
+ol
+	{margin-bottom:0in;}
+ul
+	{margin-bottom:0in;}
+-->
+</style>
+<!--[if gte mso 10]>
+<style>
+ /* Style Definitions */
+ table.MsoNormalTable
+	{mso-style-name:"Table Normal";
+	mso-tstyle-rowband-size:0;
+	mso-tstyle-colband-size:0;
+	mso-style-noshow:yes;
+	mso-style-parent:"";
+	mso-padding-alt:0in 5.4pt 0in 5.4pt;
+	mso-para-margin:0in;
+	mso-para-margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	font-size:10.0pt;
+	font-family:"Times New Roman";}
+</style>
+<![endif]--><!--[if gte mso 9]><xml>
+ <o:shapedefaults v:ext="edit" spidmax="3074"/>
+</xml><![endif]--><!--[if gte mso 9]><xml>
+ <o:shapelayout v:ext="edit">
+  <o:idmap v:ext="edit" data="1"/>
+ </o:shapelayout></xml><![endif]-->
+</head>
+
+<body lang=EN-US style='tab-interval:.5in'>
+
+<div class=Section1>
+
+<p class=MsoNormal align=center style='text-align:center'><b><span
+style='font-size:16.0pt'>Level Design Tutorial<o:p></o:p></span></b></p>
+
+<p class=MsoNormal align=center style='text-align:center'><b><span
+style='font-size:16.0pt'><o:p>&nbsp;</o:p></span></b></p>
+
+<p class=MsoNormal align=center style='text-align:center'><b><span
+style='font-size:16.0pt'><o:p>&nbsp;</o:p></span></b></p>
+
+<p class=MsoNormal><b>Designing your level</b>:</p>
+
+<p class=MsoNormal><o:p>&nbsp;</o:p></p>
+
+<p class=MsoNormal>Things to do before you begin working in MOHRadiant.</p>
+
+<p class=MsoNormal><o:p>&nbsp;</o:p></p>
+
+<p class=MsoNormal>Do a quick write up on your level. Describe in writing how
+you want objectives to work. Identify things in your level other than objectives
+that will require scripting such as barricades and machine guns.</p>
+
+<p class=MsoNormal><o:p>&nbsp;</o:p></p>
+
+<p class=MsoNormal><span style='mso-tab-count:1'>            </span>Some of the
+primary types of invader objectives in <st1:PersonName>MOHPA</st1:PersonName>
+are...</p>
+
+<p class=MsoNormal><o:p>&nbsp;</o:p></p>
+
+<ul style='margin-top:0in' type=disc>
+ <li class=MsoNormal style='mso-list:l2 level1 lfo3;tab-stops:list .5in'>Occupy:
+     Attackers must remain in a designated space for a certain amount of time.</li>
+ <li class=MsoNormal style='mso-list:l2 level1 lfo3;tab-stops:list .5in'>Destroy:
+     Attackers must “destroy” something at the objective area.</li>
+ <li class=MsoNormal style='mso-list:l2 level1 lfo3;tab-stops:list .5in'>Trigger
+     and Hold: an attacker must hold down the use key at a designated space for
+     a certain amount of time.</li>
+ <li class=MsoNormal style='mso-list:l2 level1 lfo3;tab-stops:list .5in'>Trigger
+     and Defend: an attacker must trigger an event at the objective area. A
+     scripted timer will then begin to count down. Defenders have the duration
+     of the timer to switch off the event or else the objective is taken.</li>
+</ul>
+
+<p class=MsoNormal><o:p>&nbsp;</o:p></p>
+
+<p class=MsoNormal>Make a rough top-down sketch of your level.<span
+style='mso-spacerun:yes'>  </span>Your map will go through many revisions so
+its important to think things out on paper before you begin editing terrain.
+Identify where you want objectives to be placed, where you want spawn areas to
+be and where transition will be.<br clear=all style='page-break-before:always'>
+<st1:PersonName>MOHPA</st1:PersonName> uses a Quad Tree method for terrain. </p>
+
+<p class=MsoNormal><o:p>&nbsp;</o:p></p>
+
+<p class=MsoNormal style='text-indent:.5in'>This is a view of an in-progress
+terrain from the radiant 2d window. Each blue square is a Quad. Each Quad can
+be sub-divided into 4 equal, smaller Quads. (Clicking on the “TER in2d” button
+on the upper right button bar will cycle how the terrain is rendered between
+None, Wireframe, Textured, Shaded, and Quad Tree.) The Increase Resolution and
+Decrease Resolution terrain brushes described below can control the resolution
+of the quads.</p>
+
+<p class=MsoNormal><o:p>&nbsp;</o:p></p>
+
+<p class=MsoNormal align=center style='text-align:center'><!--[if gte vml 1]><v:shapetype
+ id="_x0000_t75" coordsize="21600,21600" o:spt="75" o:preferrelative="t"
+ path="m@4@5l@4@11@9@11@9@5xe" filled="f" stroked="f">
+ <v:stroke joinstyle="miter"/>
+ <v:formulas>
+  <v:f eqn="if lineDrawn pixelLineWidth 0"/>
+  <v:f eqn="sum @0 1 0"/>
+  <v:f eqn="sum 0 0 @1"/>
+  <v:f eqn="prod @2 1 2"/>
+  <v:f eqn="prod @3 21600 pixelWidth"/>
+  <v:f eqn="prod @3 21600 pixelHeight"/>
+  <v:f eqn="sum @0 0 1"/>
+  <v:f eqn="prod @6 1 2"/>
+  <v:f eqn="prod @7 21600 pixelWidth"/>
+  <v:f eqn="sum @8 21600 0"/>
+  <v:f eqn="prod @7 21600 pixelHeight"/>
+  <v:f eqn="sum @10 21600 0"/>
+ </v:formulas>
+ <v:path o:extrusionok="f" gradientshapeok="t" o:connecttype="rect"/>
+ <o:lock v:ext="edit" aspectratio="t"/>
+</v:shapetype><v:shape id="_x0000_i1025" type="#_x0000_t75" style='width:6in;
+ height:441.75pt'>
+ <v:imagedata src="level_design_tutorial_files/image001.jpg" o:title="terrain2D"/>
+</v:shape><![endif]--><![if !vml]><img width=576 height=589
+src="level_design_tutorial_files/image002.jpg" v:shapes="_x0000_i1025"><![endif]></p>
+
+</div>
+
+<span style='font-size:12.0pt;font-family:"Times New Roman";mso-fareast-font-family:
+"Times New Roman";mso-ansi-language:EN-US;mso-fareast-language:EN-US;
+mso-bidi-language:AR-SA'><br clear=all style='page-break-before:auto;
+mso-break-type:section-break'>
+</span>
+
+<div class=Section2><br clear=all style='page-break-before:always'>
+
+<p class=MsoNormal><b>Setting up your Terrain</b>: </p>
+
+<p class=MsoNormal><o:p>&nbsp;</o:p></p>
+
+<p class=MsoNormal>The first thing you will want to do for your map is create a
+new terrain and set an appropriate scale (size) for the terrain.</p>
+
+<p class=MsoNormal><o:p>&nbsp;</o:p></p>
+
+<p class=MsoNormal>File -&gt; New Terrain<b> </b>creates a new terrain.</p>
+
+<p class=MsoNormal><o:p>&nbsp;</o:p></p>
+
+<p class=MsoNormal>Ctrl-Alt-T or Edit -&gt; Terrain Mode brings up the terrain-editing
+window.</p>
+
+<p class=MsoNormal><o:p>&nbsp;</o:p></p>
+
+<p class=MsoBodyTextIndent style='margin-left:0in'>In the middle right of the
+terrain Editing window there are 3 fields for scale.<span
+style='mso-spacerun:yes'>  </span>For an average Pacific Assault size
+multiplayer map (bougainville, gavutu), a scale of 12 12 12 should be adequate.
+A scale of 16 16 16 works well for a larger map like Matanikau or Gifu. </p>
+
+<p class=MsoNormal style='margin-left:.5in'><o:p>&nbsp;</o:p></p>
+
+<p class=MsoNormal>Enter the 3 values in the fields and then click “Scale” to
+update the size of your terrain.</p>
+
+<p class=MsoNormal><!--[if gte vml 1]><v:shape id="_x0000_i1026" type="#_x0000_t75"
+ style='width:198pt;height:393.75pt' o:ole="">
+ <v:imagedata src="level_design_tutorial_files/image029.wmz" o:title=""/>
+</v:shape><![endif]--><![if !vml]><img width=264 height=525
+src="level_design_tutorial_files/image004.gif" v:shapes="_x0000_i1026"><![endif]><!--[if gte mso 9]><xml>
+ <o:OLEObject Type="Embed" ProgID="Word.Picture.8" ShapeID="_x0000_i1026"
+  DrawAspect="Content" ObjectID="_1165158909">
+ </o:OLEObject>
+</xml><![endif]--></p>
+
+</div>
+
+<span style='font-size:12.0pt;font-family:"Times New Roman";mso-fareast-font-family:
+"Times New Roman";mso-ansi-language:EN-US;mso-fareast-language:EN-US;
+mso-bidi-language:AR-SA'><br clear=all style='page-break-before:auto;
+mso-break-type:section-break'>
+</span>
+
+<div class=Section3>
+
+<p class=MsoNormal><o:p>&nbsp;</o:p></p>
+
+<p class=MsoNormal><o:p>&nbsp;</o:p></p>
+
+<p class=MsoNormal><b><o:p>&nbsp;</o:p></b></p>
+
+<p class=MsoNormal><b><o:p>&nbsp;</o:p></b></p>
+
+<p class=MsoNormal><b><o:p>&nbsp;</o:p></b></p>
+
+<p class=MsoNormal><b><o:p>&nbsp;</o:p></b></p>
+
+<p class=MsoNormal><b><o:p>&nbsp;</o:p></b></p>
+
+<p class=MsoNormal><b><o:p>&nbsp;</o:p></b></p>
+
+<p class=MsoNormal><b>A few things to keep in mind…<o:p></o:p></b></p>
+
+</div>
+
+<b><span style='font-size:12.0pt;font-family:"Times New Roman";mso-fareast-font-family:
+"Times New Roman";mso-ansi-language:EN-US;mso-fareast-language:EN-US;
+mso-bidi-language:AR-SA'><br clear=all style='page-break-before:auto;
+mso-break-type:section-break'>
+</span></b>
+
+<div class=Section4>
+
+<p class=MsoNormal style='margin-right:.25in'><o:p>&nbsp;</o:p></p>
+
+<ul style='margin-top:0in' type=disc>
+ <li class=MsoNormal style='mso-list:l1 level1 lfo6;tab-stops:list .5in'>Its
+     better to have too big of a terrain than too small.<span
+     style='mso-spacerun:yes'>  </span>You can always later decrease the
+     resolution on non-visible terrain quads to increase framerate.</li>
+ <li class=MsoNormal style='mso-list:l1 level1 lfo6;tab-stops:list .5in'>You
+     can only have up to 3 textures on any 1 quad.</li>
+ <li class=MsoNormal style='mso-list:l1 level1 lfo6;tab-stops:list .5in'>A
+     good, framerate friendly quad size is between 1024x1024 to 2048x2048 units
+     per quad. </li>
+ <li class=MsoNormal style='mso-list:l1 level1 lfo6;tab-stops:list .5in'>Ctrl-Shift-Z
+     is undo for terrain operations.</li>
+</ul>
+
+<span style='font-size:12.0pt;font-family:"Times New Roman";mso-fareast-font-family:
+"Times New Roman";mso-ansi-language:EN-US;mso-fareast-language:EN-US;
+mso-bidi-language:AR-SA'><br clear=all style='page-break-before:always'>
+</span>
+
+<p class=MsoNormal><b>Working With Terrain</b>:</p>
+
+<p class=MsoNormal><o:p>&nbsp;</o:p></p>
+
+<p class=MsoNormal>There are a few primary Brush Types in the terrain editor
+that do most of the work. They all use the Cursor Properties values at the top
+of the Terrain Edit window to modify how they work.</p>
+
+<p class=MsoNormal><o:p>&nbsp;</o:p></p>
+
+<p class=MsoNormal style='margin-left:.25in'><b style='mso-bidi-font-weight:
+normal'>Inner Radius – </b>all the terrain within the inner radius of the
+cursor, represented on-screen as the red disk, will receive the effect of the
+terrain operation chosen in the Brush Type box uniformly<b style='mso-bidi-font-weight:
+normal'><o:p></o:p></b></p>
+
+<p class=MsoNormal style='margin-left:.25in'><b style='mso-bidi-font-weight:
+normal'>&nbsp;<o:p></o:p></b></p>
+
+<p class=MsoNormal style='margin-left:.25in'><b style='mso-bidi-font-weight:
+normal'>Outer Radius – </b>The effect of the terrain operation will drop off
+proportionally from full affect at the edge of the red inner radius disk to no
+affect at the edge of outer radius disk in blue-green. <b style='mso-bidi-font-weight:
+normal'><o:p></o:p></b></p>
+
+<p class=MsoNormal style='margin-left:.25in'><b style='mso-bidi-font-weight:
+normal'>&nbsp;<o:p></o:p></b></p>
+
+<p class=MsoNormal style='margin-left:.25in'><b style='mso-bidi-font-weight:
+normal'>Amount</b> – Adjust this to control how quickly the terrain operation
+is applied to the existing terrain.<span style='mso-spacerun:yes'>  </span>High
+values alter terrain quickly, low values change it more subtly.</p>
+
+<p class=MsoNormal style='margin-left:.25in'><b style='mso-bidi-font-weight:
+normal'><o:p>&nbsp;</o:p></b></p>
+
+<p class=MsoNormal style='text-indent:.25in'>For the terrain painting brush,
+think of the Amount as the % that you will be </p>
+
+<p class=MsoNormal style='text-indent:.25in'>painting your new texture on top
+of the previous terrain textures. A value of 10 would </p>
+
+<p class=MsoNormal style='text-indent:.25in'>be a slow 10% sprinkle. 90 would
+be a quick 90% solid spray of texture.<b style='mso-bidi-font-weight:normal'><o:p></o:p></b></p>
+
+<p class=MsoNormal style='margin-left:.25in'><b style='mso-bidi-font-weight:
+normal'>&nbsp;<o:p></o:p></b></p>
+
+<p class=MsoNormal style='margin-left:.25in'><b style='mso-bidi-font-weight:
+normal'>Height – </b>When adjusting the terrain height, positive values will
+make the terrain go up, while negative values will make it go down.<span
+style='mso-spacerun:yes'>  </span>Making this value very big (or very negative)
+will have an effect similar to adjusting the Amount.<span
+style='mso-spacerun:yes'>  </span>For operations that involve sampling the
+current height of your terrain mesh, this will display the current height
+sampled by the cursor.</p>
+
+<p class=MsoNormal style='margin-left:.25in'>&nbsp;</p>
+
+<p class=MsoNormal style='margin-left:.25in'><b style='mso-bidi-font-weight:
+normal'>Game Units/Meters</b> – This simply switches the units of the preceding
+4 parameters from Radiant units to real-world meters.</p>
+
+<p class=MsoNormal><o:p>&nbsp;</o:p></p>
+
+<p class=MsoNormal><o:p>&nbsp;</o:p></p>
+
+<p class=MsoNormal><b>The Brush Types</b>:</p>
+
+<p class=MsoNormal><o:p>&nbsp;</o:p></p>
+
+<p class=MsoNormal style='margin-left:.25in'><b style='mso-bidi-font-weight:
+normal'>Vertex Height (CTRL+1)</b> <b style='mso-bidi-font-weight:normal'><o:p></o:p></b></p>
+
+<p class=MsoNormal style='margin-left:.75in'>Use this command to raise or lower
+your terrain within the cursor in the 3D or 2D windows by clicking the left
+mouse button.<span style='mso-spacerun:yes'>  </span>The amount affects how
+much the terrain will be altered by your mouse click.<span
+style='mso-spacerun:yes'>  </span>Positive Height values raise the terrain,
+negative values lower it.<span style='mso-spacerun:yes'>  </span>A larger inner
+radius will apply the </p>
+
+<p class=MsoNormal style='margin-left:.25in'><b style='mso-bidi-font-weight:
+normal'>Bring to Height (CTRL+2)</b> <b style='mso-bidi-font-weight:normal'><o:p></o:p></b></p>
+
+<p class=MsoNormal style='margin-left:.75in'>As you move the red dot
+representing your cursor across the surface of your terrain, you will see the
+disk representing the inner and outer radius matches the height of the current
+section of the terrain.<span style='mso-spacerun:yes'>  </span>Clicking the
+Left Mouse button in this mode will bring the terrain within the cursor disk to
+the height of the center of the disk.</p>
+
+<p class=MsoNormal style='margin-left:.25in'><b style='mso-bidi-font-weight:
+normal'>Set to Height (CTRL+3)</b> <b style='mso-bidi-font-weight:normal'><o:p></o:p></b></p>
+
+<p class=MsoNormal style='margin-left:.75in'>This operation will set the
+terrain within the cursor to the value entered in the Height field</p>
+
+<p class=MsoNormal style='margin-left:.25in'><b style='mso-bidi-font-weight:
+normal'>Vertex Smooth (CTRL+4)</b> <b style='mso-bidi-font-weight:normal'><o:p></o:p></b></p>
+
+<p class=MsoNormal style='margin-left:.75in'>This will smooth the terrain
+within the cursor radius.</p>
+
+<p class=MsoNormal style='margin-left:.25in'><b style='mso-bidi-font-weight:
+normal'>Vertex Noise (CTRL+5)</b> <b style='mso-bidi-font-weight:normal'><o:p></o:p></b></p>
+
+<p class=MsoNormal style='margin-left:.75in'>This will add noise to the terrain
+within the cursor radius</p>
+
+<p class=MsoNormal style='margin-left:.25in'><b style='mso-bidi-font-weight:
+normal'>Cut Area (CTRL+X)</b> <b style='mso-bidi-font-weight:normal'><o:p></o:p></b></p>
+
+<p class=MsoNormal style='margin-left:.75in'>This will cut the terrain
+underneath the cursor, leaving the area flat</p>
+
+<p class=MsoNormal style='margin-left:.25in'><b style='mso-bidi-font-weight:
+normal'>Copy Area (CTRL+C)</b> <b style='mso-bidi-font-weight:normal'><o:p></o:p></b></p>
+
+<p class=MsoNormal style='margin-left:.75in'>This will make a copy of the
+terrain underneath the cursor, leaving the area untouched.</p>
+
+<p class=MsoNormal style='margin-left:.25in'><b style='mso-bidi-font-weight:
+normal'>Paste Area (CTRL+V)</b> <b style='mso-bidi-font-weight:normal'><o:p></o:p></b></p>
+
+<p class=MsoNormal style='margin-left:.75in'>This will place a previously cut
+or copied section of terrain into the area under the cursor.<span
+style='mso-spacerun:yes'>  </span>How this is applied to the terrain is
+dependent on the Blend Mode setting.<span style='mso-spacerun:yes'>  </span>See
+the <b style='mso-bidi-font-weight:normal'>Current Material </b>Section for
+more details.</p>
+
+<p class=MsoNormal style='margin-left:.25in'><b style='mso-bidi-font-weight:
+normal'>Texture Paint (CTRL+6)</b> <b style='mso-bidi-font-weight:normal'><o:p></o:p></b></p>
+
+<p class=MsoNormal style='margin-left:.75in'>This will paint the material shown
+in Current Material box to the area within the cursor radius, but only if the
+Material has been added to that quad.<span style='mso-spacerun:yes'> 
+</span>See the <b style='mso-bidi-font-weight:normal'>Current Material </b>section
+for more details.</p>
+
+<p class=MsoNormal style='margin-left:.75in'><o:p>&nbsp;</o:p></p>
+
+<p class=MsoNormal style='margin-left:.75in'>To directly set what available
+textures are being used on a particular Quad, in the 3d window shift-Right
+Click on a Quad to bring up a list of<span style='mso-spacerun:yes'> 
+</span>textures. On this list, textures that are checked can be painted on that
+particular Quad. There can be only 3 textures per Quad!!!</p>
+
+<p class=MsoNormal style='margin-left:.25in'><b style='mso-bidi-font-weight:
+normal'>Texture Unpaint(CTRL+7)</b> <b style='mso-bidi-font-weight:normal'><o:p></o:p></b></p>
+
+<p class=MsoNormal style='margin-left:.75in'>This will remove the currently
+selected material from the quad and replace it with the base texture.<span
+style='mso-spacerun:yes'>  </span>In order to repaint the material onto the
+quad, you need to re-add the texture to the quad by using Shift Right Click.</p>
+
+<p class=MsoNormal style='margin-left:.25in'><b style='mso-bidi-font-weight:
+normal'>Increase Resolution</b> <b style='mso-bidi-font-weight:normal'><o:p></o:p></b></p>
+
+<p class=MsoNormal style='margin-left:.75in'>This will increase the resolution
+of the quad highlighted in red, forming 4 new, higher resolution quads in the
+same area as the previous quad.</p>
+
+<p class=MsoNormal style='margin-left:.25in'><b style='mso-bidi-font-weight:
+normal'>Decrease Resolution</b> <b style='mso-bidi-font-weight:normal'><o:p></o:p></b></p>
+
+<p class=MsoBodyTextIndent2>This will decrease the resolution of the quad
+highlighted in red, creating a larger, lower resolution quad from the selected
+quad and 3 other neighboring quads.</p>
+
+<p class=MsoNormal style='margin-left:.25in'><b style='mso-bidi-font-weight:
+normal'>Sync Heightfield to Mesh</b> <b style='mso-bidi-font-weight:normal'><o:p></o:p></b></p>
+
+<p class=MsoNormal style='margin-left:.75in'>The nature of quadtree terrain is
+that it is defined by continuous data, or a heightfield, that is capable of
+storing the terrain information in greater resolution and detail than what is
+actually displayed in Radiant.<span style='mso-spacerun:yes'>  </span>By
+increasing the resolution on quads, the actual mesh more accurately represents
+the continuous heightfield data.<span style='mso-spacerun:yes'> 
+</span>However, if you wish to discard the high-resolution data for a quad on
+your terrain, and instead replace it with the lower resolution that is shown in
+Radiant, you can apply this function.<span style='mso-spacerun:yes'>  </span>By
+doing this, you are, in effect, locking in the lower resolution into your
+heighfield.<span style='mso-spacerun:yes'>    </span></p>
+
+<span style='font-size:12.0pt;font-family:"Times New Roman";mso-fareast-font-family:
+"Times New Roman";mso-ansi-language:EN-US;mso-fareast-language:EN-US;
+mso-bidi-language:AR-SA'><br clear=all style='mso-special-character:line-break;
+page-break-before:always'>
+</span>
+
+<p class=MsoNormal><o:p>&nbsp;</o:p></p>
+
+<p class=MsoNormal><b>Model Placement</b>:</p>
+
+<p class=MsoNormal><o:p>&nbsp;</o:p></p>
+
+<p class=MsoNormal><span style='mso-tab-count:1'>            </span>100% of what
+you see for level Geometry in Pacific Assault is now statically placed models.
+Brushes, as they have been traditionally used, are now obsolete and should not
+be used for level geometry.</p>
+
+<p class=MsoNormal><o:p>&nbsp;</o:p></p>
+
+<p class=MsoNormal><span style='mso-tab-count:1'>            </span>Getting
+started with placing models is very simple. Just right Click on the 2d top down
+view and navigate in the menu to “models” and the pull-out menus from there.
+The majority of the vegetation assets are under “models/mission4/naturals” and
+“models/mission5/naturals”.</p>
+
+<p class=MsoNormal><o:p>&nbsp;</o:p></p>
+
+<p class=MsoNormal><b>Useful commands for working with Models</b>:</p>
+
+<p class=MsoNormal><o:p>&nbsp;</o:p></p>
+
+<p class=MsoNormal>Shift-left Mouse<span style='mso-tab-count:2'>                        </span>Selects
+what you are clicking on.</p>
+
+<p class=MsoNormal>H<span style='mso-tab-count:4'>                                             </span>Hides
+selected entity.</p>
+
+<p class=MsoNormal>Shift-H<span style='mso-tab-count:3'>                         </span>Un-hides
+all hidden entities.</p>
+
+<p class=MsoNormal>Spacebar<span style='mso-tab-count:3'>                                  </span>Duplicates
+selected entity.</p>
+
+<p class=MsoNormal>Ctrl-Spacebar<span style='mso-tab-count:3'>                          </span>Duplicates
+selected entity with same key-values.</p>
+
+<p class=MsoNormal style='margin-left:2.0in;text-indent:-2.0in'>R<span
+style='mso-tab-count:1'>                                              </span>Toggles
+rotate. Instead of moving when the model is dragged, the model will now rotate.</p>
+
+<p class=MsoNormal style='margin-left:2.0in;text-indent:-2.0in'>Ctrl-Shift-E<span
+style='mso-tab-count:1'>                              </span>Toggles “Terrain
+Hug” on selected entity. Useful for roughly placing a model on the terrain.</p>
+
+<p class=MsoNormal style='margin-left:2.0in;text-indent:-2.0in'>Select-&gt;Randomize
+Entities<span style='mso-tab-count:1'>       </span>Opens a window that will
+allow you to “randomize” the selected entity’s rotation and scale. Very useful
+for randomizing large amounts of models.</p>
+
+<span style='font-size:12.0pt;font-family:"Times New Roman";mso-fareast-font-family:
+"Times New Roman";mso-ansi-language:EN-US;mso-fareast-language:EN-US;
+mso-bidi-language:AR-SA'><br clear=all style='page-break-before:always'>
+</span>
+
+<p class=MsoNormal><b>Trigger Volumes</b>:</p>
+
+<p class=MsoNormal><o:p>&nbsp;</o:p></p>
+
+<p class=MsoNormal><span style='mso-tab-count:1'>            </span>For every
+objective in an Invader map, there is an event that happens when players move
+to a designated place and do an action. The game uses volumes called Triggers
+that are placed in the level to determine when a player is at the right place,
+performing the action for an objective.</p>
+
+<p class=MsoNormal><o:p>&nbsp;</o:p></p>
+
+<p class=MsoNormal style='text-indent:.5in'>For some objectives like an
+occupation, players merely have to stand in a trigger volume. Other objectives
+have more complicated game play such as planting a bomb or activating a radio.
+Complicated objectives may have several trigger volumes that are placed in
+order to facilitate the game play.</p>
+
+<p class=MsoNormal style='text-indent:.5in'><o:p>&nbsp;</o:p></p>
+
+<p class=MsoNormal style='text-indent:.5in'>Making a trigger volume is very
+simple. Create a brush volume by left clicking on the 2d window and dragging
+out the appropriate sized box. Make sure the trigger has is slightly taller
+than the player. Give your box the “trigger” texture by selecting your box,
+pressing “S” for the surface editor and then in the Texture Name field, type in
+“common/trigger” and then hit OK. Your box should now have a green transparent
+texture with the word “trigger” tiled across it. Lastly, to convert your brush
+to an entity, select your brush, right click and in the menu select
+classes-&gt;Trigger-&gt;Multiple. Most all of the triggers in invader are
+Trigger_Multiple. A few triggers are Trigger_Use.</p>
+
+<p class=MsoNormal style='text-indent:.5in'><o:p>&nbsp;</o:p></p>
+
+<p class=MsoNormal style='text-indent:.5in'>Below are some guides as to how to
+make machine guns and barricades work.<br clear=all style='page-break-before:
+always'>
+<b><span style='mso-spacerun:yes'> </span>Machine Guns</b>:</p>
+
+<p class=MsoNormal><o:p>&nbsp;</o:p></p>
+
+<p class=MsoNormal><span style='mso-tab-count:1'>            </span>There are 4
+things you need for a static machine gun. The machine gun .hag model. A
+trigger_use entity for using the machine gun. The model for the ammo-box. A
+trigger_multiple for reloading the machine gun.</p>
+
+<p class=MsoNormal><o:p>&nbsp;</o:p></p>
+
+<p class=MsoNormal><span style='mso-tab-count:1'>            </span><b>The Base
+model</b>. This is going to be the tripod model on which the machine gun will
+operate. For the TKO maps, we used models/statweapons/model92mp_base_stand.hag.
+Place this model where you want the base of the machine gun to be.</p>
+
+<p class=MsoNormal align=center style='text-align:center'><!--[if gte vml 1]><v:shape
+ id="_x0000_i1027" type="#_x0000_t75" style='width:294pt;height:126.75pt'>
+ <v:imagedata src="level_design_tutorial_files/image005.png" o:title=""/>
+</v:shape><![endif]--><![if !vml]><img width=392 height=169
+src="level_design_tutorial_files/image006.jpg" v:shapes="_x0000_i1027"><![endif]></p>
+
+<p class=MsoNormal align=center style='text-align:center'><o:p>&nbsp;</o:p></p>
+
+<p class=MsoNormal>Key <span style='mso-tab-count:2'>                 </span>Value</p>
+
+<p class=MsoNormal>#set<span style='mso-tab-count:2'>                  </span>number<span
+style='mso-tab-count:1'> </span>this is an identifier for the particular
+machine gun you are </p>
+
+<p class=MsoBodyTextIndent3>setting up. In this example, this machine gun is
+the only machine gun in the map so I have given it “#set 1”. A second machine
+gun elsewhere in the map would have a key value of “#set 2”, ECT.</p>
+
+<p class=MsoNormal><o:p>&nbsp;</o:p></p>
+
+<p class=MsoNormal>target<span style='mso-tab-count:2'>                </span>reload_trigger<span
+style='mso-tab-count:1'>   </span>the machine gun model targets the
+triggerl_multiple you </p>
+
+<p class=MsoNormal style='margin-left:2.0in'>will set up for the reload_trigger.
+In this case, the reload trigger for this machine gun is named
+“model92_1_reload”.</p>
+
+<p class=MsoNormal><o:p>&nbsp;</o:p></p>
+
+<p class=MsoNormal>targetname<span style='mso-tab-count:1'>        </span>model92_1<span
+style='mso-tab-count:1'>       </span>the unique name for the machine gun base
+model.</p>
+
+<p class=MsoNormal><o:p>&nbsp;</o:p></p>
+
+<p class=MsoNormal><span style='mso-tab-count:1'>            </span><b>A
+trigger_use</b>. This is the volume that players can operate the machine gun
+from within. Make a brush the size that you want for the trigger and convert it
+to the appropriate entity by right clicking on the brush and selecting
+classes-&gt;trigger-&gt;use. Place this trigger right behind the machine gun
+where you’d want players to use the machine gun from. The trigger should also
+be taller than the player.</p>
+
+<p class=MsoNormal align=center style='text-align:center'><!--[if gte vml 1]><v:shape
+ id="_x0000_i1028" type="#_x0000_t75" style='width:294pt;height:127.5pt'>
+ <v:imagedata src="level_design_tutorial_files/image007.png" o:title=""/>
+</v:shape><![endif]--><![if !vml]><img width=392 height=170
+src="level_design_tutorial_files/image008.jpg" v:shapes="_x0000_i1028"><![endif]></p>
+
+<p class=MsoNormal align=center style='text-align:center'><o:p>&nbsp;</o:p></p>
+
+<p class=MsoNormal>Key <span style='mso-tab-count:2'>                 </span>Value</p>
+
+<p class=MsoNormal>#set<span style='mso-tab-count:2'>                  </span>number<span
+style='mso-tab-count:1'> </span>this is the same value that was set on machine
+gun base </p>
+
+<p class=MsoNormal style='margin-left:1.5in;text-indent:.5in'>model. </p>
+
+<p class=MsoNormal><o:p>&nbsp;</o:p></p>
+
+<p class=MsoNormal><span style='mso-tab-count:1'>            </span><b>The
+Ammo-box</b>. Place the model models/weapons/mg_ammostack/mg_ammostack_axis.hag
+where you want the ammo-box for the machine gun to be.</p>
+
+<p class=MsoNormal align=center style='text-align:center'><!--[if gte vml 1]><v:shape
+ id="_x0000_i1029" type="#_x0000_t75" style='width:295.5pt;height:128.25pt'>
+ <v:imagedata src="level_design_tutorial_files/image009.png" o:title=""/>
+</v:shape><![endif]--><![if !vml]><img width=394 height=171
+src="level_design_tutorial_files/image010.jpg" v:shapes="_x0000_i1029"><![endif]></p>
+
+<p class=MsoNormal align=center style='text-align:center'><o:p>&nbsp;</o:p></p>
+
+<p class=MsoNormal>Key <span style='mso-tab-count:2'>                 </span>Value</p>
+
+<p class=MsoNormal>#gunammo<span style='mso-tab-count:1'>        </span>1</p>
+
+<p class=MsoNormal>target<span style='mso-tab-count:2'>                </span>machine_gun_base<span
+style='mso-tab-count:1'>        </span>the ammo_box model targets the machine
+gun base </p>
+
+<p class=MsoNormal style='margin-left:2.0in;text-indent:.5in'>targetname.</p>
+
+<p class=MsoNormal><o:p>&nbsp;</o:p></p>
+
+<p class=MsoNormal><span style='mso-tab-count:1'>            </span><b>A
+trigger_multiple</b> for reloading the gun. Make another brush that covers the
+ammo-box model you placed. Convert this brush by right clicking and selecting
+classes-&gt;trigger-&gt;multiple. *Important* this trigger cannot touch the
+trigger_use that was set up behind the machine gun. This trigger volume should
+also be taller than the player.</p>
+
+<p class=MsoNormal align=center style='text-align:center'><!--[if gte vml 1]><v:shape
+ id="_x0000_i1030" type="#_x0000_t75" style='width:294pt;height:126.75pt'>
+ <v:imagedata src="level_design_tutorial_files/image011.png" o:title=""/>
+</v:shape><![endif]--><![if !vml]><img width=392 height=169
+src="level_design_tutorial_files/image012.jpg" v:shapes="_x0000_i1030"><![endif]></p>
+
+<p class=MsoNormal align=center style='text-align:center'><o:p>&nbsp;</o:p></p>
+
+<p class=MsoNormal>Key <span style='mso-tab-count:2'>                 </span>Value</p>
+
+<p class=MsoNormal>targetname<span style='mso-tab-count:1'>        </span>reload_trigger_name<span
+style='mso-tab-count:1'>     </span>the targetname for the reload trigger needs
+to be </p>
+
+<p class=MsoNormal style='margin-left:2.0in;text-indent:.5in'>unique.</p>
+
+<p class=MsoNormal><o:p>&nbsp;</o:p></p>
+
+<b><span style='font-size:12.0pt;font-family:"Times New Roman";mso-fareast-font-family:
+"Times New Roman";mso-ansi-language:EN-US;mso-fareast-language:EN-US;
+mso-bidi-language:AR-SA'><br clear=all style='page-break-before:always'>
+</span></b>
+
+<h1>Barricades<span style='font-weight:normal'>:<o:p></o:p></span></h1>
+
+<p class=MsoNormal><o:p>&nbsp;</o:p></p>
+
+<p class=MsoNormal><span style='mso-tab-count:1'>            </span>There are 4
+things you need in order to make a working destructible barricade.<span
+style='mso-spacerun:yes'>  </span>The Barricade Model, the bomb model, a
+trigger_multiple that players stand in to arm/disarm the bomb, a
+trigger_multiple to take damage for the barricade from explosions.</p>
+
+<p class=MsoNormal><o:p>&nbsp;</o:p></p>
+
+<p class=MsoNormal><b>The Barricade Model</b> like
+models/mp_common/manmade/tank_barricade_med.hag. </p>
+
+<p class=MsoNormal align=center style='text-align:center'><!--[if gte vml 1]><v:shape
+ id="_x0000_i1031" type="#_x0000_t75" style='width:294pt;height:126.75pt'>
+ <v:imagedata src="level_design_tutorial_files/image013.png" o:title=""/>
+</v:shape><![endif]--><![if !vml]><img width=392 height=169
+src="level_design_tutorial_files/image014.jpg" v:shapes="_x0000_i1031"><![endif]></p>
+
+<p class=MsoNormal align=center style='text-align:center'><o:p>&nbsp;</o:p></p>
+
+<p class=MsoNormal>Key <span style='mso-tab-count:2'>                 </span>Value</p>
+
+<p class=MsoNormal>targetname<span style='mso-tab-count:1'>        </span>unique_targetname<span
+style='mso-tab-count:1'>        </span>The barricade needs a unique targetname.</p>
+
+<p class=MsoNormal><o:p>&nbsp;</o:p></p>
+
+<p class=MsoNormal><b>The c4-bomb model</b>, which is
+models/mp_common/manmade/us_demolitionpack_nologic.hag. </p>
+
+<p class=MsoNormal align=center style='text-align:center'><!--[if gte vml 1]><v:shape
+ id="_x0000_i1032" type="#_x0000_t75" style='width:294pt;height:126.75pt'>
+ <v:imagedata src="level_design_tutorial_files/image015.png" o:title=""/>
+</v:shape><![endif]--><![if !vml]><img width=392 height=169
+src="level_design_tutorial_files/image016.jpg" v:shapes="_x0000_i1032"><![endif]></p>
+
+<p class=MsoNormal align=center style='text-align:center'><o:p>&nbsp;</o:p></p>
+
+<p class=MsoNormal>Key <span style='mso-tab-count:2'>                 </span>Value</p>
+
+<p class=MsoNormal>target<span style='mso-tab-count:2'>                </span>bomb_plant_trigger<span
+style='mso-tab-count:1'>       </span>The bomb model must target the trigger
+volume that </p>
+
+<p class=MsoNormal style='margin-left:2.0in;text-indent:.5in'>players will arm
+the bomb from.</p>
+
+<p class=MsoNormal>targetname <span style='mso-tab-count:1'>       </span>unique_targetname<span
+style='mso-tab-count:1'>        </span>The bomb model must have a unique
+targetname.</p>
+
+<p class=MsoNormal><o:p>&nbsp;</o:p></p>
+
+<p class=MsoNormal><b>A trigger_multiple </b>from which players will be able to
+plant the bomb. </p>
+
+<p class=MsoNormal align=center style='text-align:center'><!--[if gte vml 1]><v:shape
+ id="_x0000_i1033" type="#_x0000_t75" style='width:294pt;height:126.75pt'>
+ <v:imagedata src="level_design_tutorial_files/image017.png" o:title=""/>
+</v:shape><![endif]--><![if !vml]><img width=392 height=169
+src="level_design_tutorial_files/image018.jpg" v:shapes="_x0000_i1033"><![endif]></p>
+
+<p class=MsoNormal><o:p>&nbsp;</o:p></p>
+
+<p class=MsoNormal>Key <span style='mso-tab-count:2'>                 </span>Value</p>
+
+<p class=MsoNormal>setthread<span style='mso-tab-count:1'>          </span>global/mp_defuse_bomb.scr::proximity</p>
+
+<p class=MsoNormal>targetname<span style='mso-tab-count:1'>        </span>unique_targetname<span
+style='mso-tab-count:1'>        </span>the trigger_multiple volume must have a
+unique </p>
+
+<p class=MsoNormal style='margin-left:2.0in;text-indent:.5in'>targetname.</p>
+
+<p class=MsoNormal><o:p>&nbsp;</o:p></p>
+
+<p class=MsoNormal><b>A trigger multiple</b> that will take damage from
+grenades and satchel charges.</p>
+
+<p class=MsoNormal align=center style='text-align:center'><!--[if gte vml 1]><v:shape
+ id="_x0000_i1034" type="#_x0000_t75" style='width:294pt;height:184.5pt'>
+ <v:imagedata src="level_design_tutorial_files/image019.png" o:title=""/>
+</v:shape><![endif]--><![if !vml]><img width=392 height=246
+src="level_design_tutorial_files/image020.jpg" v:shapes="_x0000_i1034"><![endif]></p>
+
+<p class=MsoNormal align=center style='text-align:center'><o:p>&nbsp;</o:p></p>
+
+<p class=MsoNormal>Key <span style='mso-tab-count:2'>                 </span>Value</p>
+
+<p class=MsoNormal>“Not_players” and “Damage” must be checked.</p>
+
+<p class=MsoNormal>targetname <span style='mso-tab-count:1'>       </span>unique_targetname<span
+style='mso-tab-count:1'>        </span>the targetname must be unique.</p>
+
+<p class=MsoNormal><o:p>&nbsp;</o:p></p>
+
+<span style='font-size:12.0pt;font-family:"Times New Roman";mso-fareast-font-family:
+"Times New Roman";mso-ansi-language:EN-US;mso-fareast-language:EN-US;
+mso-bidi-language:AR-SA'><br clear=all style='page-break-before:always'>
+</span>
+
+<p class=MsoNormal><b>Water</b>:</p>
+
+<p class=MsoNormal><o:p>&nbsp;</o:p></p>
+
+<p class=MsoNormal><span style='mso-tab-count:1'>            </span>Setting up
+water in <st1:PersonName>MOHPA</st1:PersonName> is similar to what other games
+have. First, create a brush the size of the water volume you want. Next, Right
+Click on your brush an make it into a water entity by selecting
+classes-&gt;water.</p>
+
+<p class=MsoNormal><o:p>&nbsp;</o:p></p>
+
+<p class=MsoNormal><span style='mso-tab-count:1'>            </span>Here’s an
+example of the ocean from bougainville.</p>
+
+<p class=MsoNormal align=center style='text-align:center'><!--[if gte vml 1]><v:shape
+ id="_x0000_i1035" type="#_x0000_t75" style='width:295.5pt;height:190.5pt'>
+ <v:imagedata src="level_design_tutorial_files/image021.png" o:title=""/>
+</v:shape><![endif]--><![if !vml]><img width=394 height=254
+src="level_design_tutorial_files/image022.jpg" v:shapes="_x0000_i1035"><![endif]></p>
+
+<p class=MsoNormal><o:p>&nbsp;</o:p></p>
+
+<p class=MsoNormal style='text-indent:.5in'>As far as what type of water to check,
+you’re best to stay with “Ocean” to begin with. It’s the most efficient of what
+is available. Interactive water will do fancy interactive water type behavior
+when shot but is expensive to render. Reflective water will reflect the
+environment around it but it’s basically like rendering your scene twice.<span
+style='mso-spacerun:yes'>  </span>The FFT water types do not work.</p>
+
+<p class=MsoNormal style='text-indent:.5in'><o:p>&nbsp;</o:p></p>
+
+<p class=MsoNormal>Key<span style='mso-tab-count:2'>                  </span>Value</p>
+
+<p class=MsoNormal>Num_nodes<span style='mso-tab-count:1'>      </span>even_integer<span
+style='mso-tab-count:1'>     </span>Num_nodes is a key that allows you to set
+how </p>
+
+<p class=MsoNormal style='margin-left:2.0in'>many vertices will be in your
+water. A lower num_nodes value will result in a lower detail but faster
+rendering water.</p>
+
+<p class=MsoNormal>Materialname<span style='mso-tab-count:1'>    </span>material<span
+style='mso-tab-count:1'>            </span>materialname will assign a specific
+material to be rendered </p>
+
+<p class=MsoNormal style='margin-left:1.5in;text-indent:.5in'>on your water.<span
+style='mso-tab-count:1'>  </span></p>
+
+<p class=MsoNormal><o:p>&nbsp;</o:p></p>
+
+<span style='font-size:12.0pt;font-family:"Times New Roman";mso-fareast-font-family:
+"Times New Roman";mso-ansi-language:EN-US;mso-fareast-language:EN-US;
+mso-bidi-language:AR-SA'><br clear=all style='page-break-before:always'>
+</span>
+
+<p class=MsoNormal><b>Visual Effects</b>:</p>
+
+<p class=MsoNormal><o:p>&nbsp;</o:p></p>
+
+<p class=MsoNormal><span style='mso-tab-count:1'>            </span>In
+multiplayer, the TKO scripters have given level builders a simple method to play
+visual effects such as battle smoke and ambient explosions.</p>
+
+<p class=MsoNormal><o:p>&nbsp;</o:p></p>
+
+<p class=MsoNormal><span style='mso-tab-count:1'>            </span>First, your
+level must have a working level script. Take the example script and modify it
+to match your level. Make sure that the following line is being called at the
+beginning of your script.</p>
+
+<p class=MsoNormal><o:p>&nbsp;</o:p></p>
+
+<p class=MsoNormal><span style='mso-tab-count:1'>            </span>exec
+global/mp_fx.scr</p>
+
+<p class=MsoNormal><o:p>&nbsp;</o:p></p>
+
+<p class=MsoNormal><span style='mso-tab-count:1'>            </span>To place a
+visual effect, first create a script_origin at the location you want the effect
+to play at. To set what effect to play give your script origin a targetname
+selected from the list of effects below. Here is an example of a battle smoke
+effect from Bougainville.</p>
+
+<p class=MsoNormal align=center style='text-align:center'><!--[if gte vml 1]><v:shape
+ id="_x0000_i1036" type="#_x0000_t75" style='width:294pt;height:126.75pt'>
+ <v:imagedata src="level_design_tutorial_files/image023.png" o:title=""/>
+</v:shape><![endif]--><![if !vml]><img width=392 height=169
+src="level_design_tutorial_files/image024.jpg" v:shapes="_x0000_i1036"><![endif]></p>
+
+<p class=MsoNormal><o:p>&nbsp;</o:p></p>
+
+<p class=MsoNormal><span style='mso-tab-count:1'>            </span>There are
+also some special parameters used for explosion effects. Here is an example of
+an explosion effect from Bougainville.</p>
+
+<p class=MsoNormal><o:p>&nbsp;</o:p></p>
+
+<p class=MsoNormal align=center style='text-align:center'><!--[if gte vml 1]><v:shape
+ id="_x0000_i1037" type="#_x0000_t75" style='width:294pt;height:124.5pt'>
+ <v:imagedata src="level_design_tutorial_files/image025.png" o:title=""/>
+</v:shape><![endif]--><![if !vml]><img width=392 height=166
+src="level_design_tutorial_files/image026.jpg" v:shapes="_x0000_i1037"><![endif]></p>
+
+<p class=MsoNormal><o:p>&nbsp;</o:p></p>
+
+<p class=MsoNormal><o:p>&nbsp;</o:p></p>
+
+<p class=MsoNormal>Key<span style='mso-tab-count:2'>                  </span>Value</p>
+
+<p class=MsoNormal>#delay<span style='mso-tab-count:2'>              </span>integer
+delay<span style='mso-tab-count:1'>     </span>this is the delay between
+volleys. There is some </p>
+
+<p class=MsoNormal style='margin-left:1.5in;text-indent:.5in'>randomization
+built in so this delay will not be constant.</p>
+
+<p class=MsoNormal>#minVolley<span style='mso-tab-count:1'>       </span>integer<span
+style='mso-tab-count:2'>              </span>this is the minimum amount of
+explosions that will happen </p>
+
+<p class=MsoNormal style='margin-left:1.5in;text-indent:.5in'>each time the
+effect goes off.</p>
+
+<p class=MsoNormal>#maxVolley<span style='mso-tab-count:1'>      </span>integer<span
+style='mso-tab-count:2'>              </span>this is the maximum amount of
+explosions that will happen </p>
+
+<p class=MsoNormal style='margin-left:1.5in;text-indent:.5in'>each time the
+effect goes off.</p>
+
+<p class=MsoNormal>#minRange<span style='mso-tab-count:1'>       </span>integer<span
+style='mso-tab-count:2'>              </span>this is the minimum range (in
+units) that explosions will be </p>
+
+<p class=MsoNormal style='margin-left:1.5in;text-indent:.5in'>spaced from each
+other in each volley.</p>
+
+<p class=MsoNormal>#maxRange<span style='mso-tab-count:1'>      </span>integer<span
+style='mso-tab-count:2'>              </span>this is the maximum range (in
+units) that explosions will be </p>
+
+<p class=MsoNormal style='margin-left:1.5in;text-indent:.5in'>spaced from each
+other in each volley.</p>
+
+<p class=MsoNormal>#spacing<span style='mso-tab-count:1'>           </span>decimal<span
+style='mso-tab-count:1'> </span>this value controls the time between explosions
+in a volley.</p>
+
+<span style='font-size:12.0pt;font-family:"Times New Roman";mso-fareast-font-family:
+"Times New Roman";mso-ansi-language:EN-US;mso-fareast-language:EN-US;
+mso-bidi-language:AR-SA'><br clear=all style='page-break-before:always'>
+</span>
+
+<p class=MsoNormal>Effects available in MP_FX.scr</p>
+
+<p class=MsoNormal><o:p>&nbsp;</o:p></p>
+
+</div>
+
+<span style='font-size:12.0pt;font-family:"Times New Roman";mso-fareast-font-family:
+"Times New Roman";mso-ansi-language:EN-US;mso-fareast-language:EN-US;
+mso-bidi-language:AR-SA'><br clear=all style='page-break-before:auto;
+mso-break-type:section-break'>
+</span>
+
+<div class=Section5>
+
+<p class=MsoNormal>godray_north</p>
+
+<p class=MsoNormal>godray_south</p>
+
+<p class=MsoNormal>godray_east</p>
+
+<p class=MsoNormal>godray_west</p>
+
+<p class=MsoNormal>godray_northwest</p>
+
+<p class=MsoNormal>godray_north_wide</p>
+
+<p class=MsoNormal>godray_south_wide</p>
+
+<p class=MsoNormal>godray_east_wide</p>
+
+<p class=MsoNormal>godray_west_wide</p>
+
+<p class=MsoNormal>godray_downward1</p>
+
+<p class=MsoNormal>gifu_bunker_light1</p>
+
+<p class=MsoNormal>gifu_bunker_light2</p>
+
+<p class=MsoNormal>gifu_bunker_light3</p>
+
+<p class=MsoNormal>battle_smoke_light_west</p>
+
+<p class=MsoNormal>river_splash_big</p>
+
+<p class=MsoNormal>river_splash_med</p>
+
+<p class=MsoNormal>river_splash_small</p>
+
+<p class=MsoNormal>river_splash_tiny</p>
+
+<p class=MsoNormal>water_bubbles</p>
+
+<p class=MsoNormal>overhead_explosion_2</p>
+
+<p class=MsoNormal>overhead_explosion_mixed</p>
+
+<p class=MsoNormal>large_water_explosion</p>
+
+<p class=MsoNormal>med_water_explosion</p>
+
+<p class=MsoNormal>distant_flash_1</p>
+
+<p class=MsoNormal>distant_flash_2</p>
+
+<p class=MsoNormal>battleship_shot</p>
+
+<p class=MsoNormal>wide_flash</p>
+
+<p class=MsoNormal>mortar_beach</p>
+
+<p class=MsoNormal>mortar_earth_1</p>
+
+<p class=MsoNormal>mortar_earth_2</p>
+
+<p class=MsoNormal>aa_guns_tko1</p>
+
+<p class=MsoNormal>jungle_steam</p>
+
+<p class=MsoNormal>jungle_steam2</p>
+
+<p class=MsoNormal>smoke_fire</p>
+
+<p class=MsoNormal>small_oil_fire</p>
+
+<p class=MsoNormal>smokepillar_grey</p>
+
+<p class=MsoNormal>camp_fire1</p>
+
+<p class=MsoNormal>railcart_smoke1</p>
+
+<p class=MsoNormal>light1</p>
+
+<p class=MsoNormal>light2</p>
+
+<p class=MsoNormal>light1_cone</p>
+
+<p class=MsoNormal>light2</p>
+
+<p class=MsoNormal>light1_flicker</p>
+
+<p class=MsoNormal>light_green</p>
+
+<p class=MsoNormal>light_latern</p>
+
+<p class=MsoNormal>light_red</p>
+
+<p class=MsoNormal>runway</p>
+
+<p class=MsoNormal>sparks_small</p>
+
+<p class=MsoNormal>sparks_big</p>
+
+<p class=MsoNormal>sparks_emit</p>
+
+<p class=MsoNormal>battle_smoke</p>
+
+<p class=MsoNormal>battle_smoke_north</p>
+
+<p class=MsoNormal>battle_smoke_south</p>
+
+<p class=MsoNormal>battle_smoke_east</p>
+
+<p class=MsoNormal>battle_smoke_west</p>
+
+<p class=MsoNormal>dustdrop1</p>
+
+<p class=MsoNormal>water_trickle_thin</p>
+
+<p class=MsoNormal>water_trickle_thin_north</p>
+
+<p class=MsoNormal>water_trickle_thin_south</p>
+
+<p class=MsoNormal>water_trickle_thin_east</p>
+
+<p class=MsoNormal>water_trickle_thin_west</p>
+
+<p class=MsoNormal>water_trickle_N</p>
+
+<p class=MsoNormal>water_trickle_S</p>
+
+<p class=MsoNormal>water_trickle_W</p>
+
+<p class=MsoNormal>water_trickle_E</p>
+
+<p class=MsoNormal>water_trickle_NW</p>
+
+<p class=MsoNormal>water_trickle_NE</p>
+
+<p class=MsoNormal>water_trickle_SE</p>
+
+<p class=MsoNormal>water_trickle_SW</p>
+
+<p class=MsoNormal>water_trickle_AF1</p>
+
+<p class=MsoNormal>low_fog</p>
+
+<p class=MsoNormal>water_mist</p>
+
+<p class=MsoNormal>water_trickle</p>
+
+<p class=MsoNormal>water_bubblestream</p>
+
+<p class=MsoNormal>water_drip</p>
+
+<p class=MsoNormal>light_cone</p>
+
+<p class=MsoNormal>cloudflash4_far</p>
+
+<p class=MsoNormal>cloudflash3_far</p>
+
+<p class=MsoNormal>cloudflash2</p>
+
+<p class=MsoNormal>cloudflash1</p>
+
+<p class=MsoNormal>cloudflash1_wake</p>
+
+<p class=MsoNormal>cloudflash2_wake</p>
+
+<p class=MsoNormal>cloudflash3_wake</p>
+
+<p class=MsoNormal>cloudflash4_wake</p>
+
+<p class=MsoNormal>cloudflash5_wake</p>
+
+<p class=MsoNormal>lightning_strike</p>
+
+<p class=MsoNormal>birds_trigger</p>
+
+<p class=MsoNormal>beach_mortar_dark</p>
+
+<p class=MsoNormal>beach_mortar_sand</p>
+
+<p class=MsoNormal>water_splash_heavy</p>
+
+<p class=MsoNormal>water_splash_light</p>
+
+<p class=MsoNormal>matan_waterfall1</p>
+
+<p class=MsoNormal>matan_waterfall2</p>
+
+<p class=MsoNormal>bridge_waterfall1</p>
+
+<p class=MsoNormal>fuel_tank_expl</p>
+
+<p class=MsoNormal>smoke_pillar_black</p>
+
+<p class=MsoNormal>smolder_artillery</p>
+
+<p class=MsoNormal>smolder</p>
+
+<p class=MsoNormal>debris</p>
+
+<p class=MsoNormal>flash_dust</p>
+
+<p class=MsoNormal>explosion_bridge</p>
+
+<p class=MsoNormal>smokeFire_bridge</p>
+
+<p class=MsoNormal>red_light</p>
+
+</div>
+
+<span style='font-size:12.0pt;font-family:"Times New Roman";mso-fareast-font-family:
+"Times New Roman";mso-ansi-language:EN-US;mso-fareast-language:EN-US;
+mso-bidi-language:AR-SA'><br clear=all style='page-break-before:auto;
+mso-break-type:section-break'>
+</span>
+
+<div class=Section6><br clear=all style='page-break-before:always'>
+
+<p class=MsoNormal><b>Audio Effects</b>:</p>
+
+<p class=MsoNormal><o:p>&nbsp;</o:p></p>
+
+<p class=MsoNormal><span style='mso-tab-count:1'>            </span>Like Visual
+effects, ambient audio is also handled through a script_origin.</p>
+
+<p class=MsoNormal><o:p>&nbsp;</o:p></p>
+
+<p class=MsoNormal align=center style='text-align:center'><!--[if gte vml 1]><v:shape
+ id="_x0000_i1038" type="#_x0000_t75" style='width:294pt;height:126.75pt'>
+ <v:imagedata src="level_design_tutorial_files/image027.png" o:title=""/>
+</v:shape><![endif]--><![if !vml]><img width=392 height=169
+src="level_design_tutorial_files/image028.jpg" v:shapes="_x0000_i1038"><![endif]></p>
+
+<p class=MsoNormal align=center style='text-align:center'><o:p>&nbsp;</o:p></p>
+
+<p class=MsoNormal>Key<span style='mso-tab-count:3'>                              </span>Value</p>
+
+<p class=MsoNormal>targetname<span style='mso-tab-count:2'>                    </span>speaker</p>
+
+<p class=MsoNormal style='margin-left:1.5in;text-indent:-1.5in'>$alias<span
+style='mso-tab-count:1'>                            </span>the name of the
+audio alias from ubersound/ubersound.scr or ubersound/ubersound_mp.scr.</p>
+
+<p class=MsoNormal style='margin-left:1.5in;text-indent:-1.5in'>$wait<span
+style='mso-tab-count:1'>                            </span>the amount of time to
+wait before playing the audio again. There is some randomization built in so
+the effect will not always play at the same interval.</p>
+
+<span style='font-size:12.0pt;font-family:"Times New Roman";mso-fareast-font-family:
+"Times New Roman";mso-ansi-language:EN-US;mso-fareast-language:EN-US;
+mso-bidi-language:AR-SA'><br clear=all style='page-break-before:always'>
+</span>
+
+<p class=MsoNormal style='margin-left:2.0in;text-indent:-2.0in'>Gifu Worldspan
+Settings</p>
+
+<p class=MsoNormal><o:p>&nbsp;</o:p></p>
+
+<p class=MsoNormal><span style='mso-tab-count:1'>            </span>Here is a
+table of the worldspawn settings for the mp_gifu_inv.map. you can modify the
+worldspawn settings by selecting a brush (shift-left-click) and opening the
+entity window (n).</p>
+
+<p class=MsoNormal><o:p>&nbsp;</o:p></p>
+
+<table class=MsoNormalTable border=0 cellspacing=0 cellpadding=0
+ style='border-collapse:collapse;mso-padding-alt:0in 5.4pt 0in 5.4pt'>
+ <tr style='mso-yfti-irow:0'>
+  <td width=200 valign=top style='width:150.05pt;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal>Key</p>
+  </td>
+  <td width=219 valign=top style='width:164.45pt;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal>Value (examples)</p>
+  </td>
+  <td width=171 valign=top style='width:128.3pt;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal>Description</p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:1'>
+  <td width=200 valign=top style='width:150.05pt;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal><span style='font-size:8.0pt;mso-bidi-font-size:12.0pt;
+  font-family:"Courier New"'><o:p>&nbsp;</o:p></span></p>
+  </td>
+  <td width=219 valign=top style='width:164.45pt;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal><span style='font-size:8.0pt;mso-bidi-font-size:12.0pt;
+  font-family:"Courier New"'><o:p>&nbsp;</o:p></span></p>
+  </td>
+  <td width=171 valign=top style='width:128.3pt;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal><span style='font-size:8.0pt;mso-bidi-font-size:12.0pt;
+  font-family:"Courier New"'><o:p>&nbsp;</o:p></span></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:2'>
+  <td width=200 valign=top style='width:150.05pt;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal><span style='font-size:8.0pt;mso-bidi-font-size:12.0pt;
+  font-family:"Courier New"'>farplane<o:p></o:p></span></p>
+  </td>
+  <td width=219 valign=top style='width:164.45pt;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal><span style='font-size:8.0pt;mso-bidi-font-size:12.0pt;
+  font-family:"Courier New"'>3000<o:p></o:p></span></p>
+  </td>
+  <td width=171 valign=top style='width:128.3pt;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal><span style='font-size:8.0pt;mso-bidi-font-size:12.0pt;
+  font-family:"Courier New"'>The distance from the player to 100% fog. Anything
+  more than the farplane distance from the player will not be rendered.<o:p></o:p></span></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:3'>
+  <td width=200 valign=top style='width:150.05pt;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal><span style='font-size:8.0pt;mso-bidi-font-size:12.0pt;
+  font-family:"Courier New"'>farplane_bias <o:p></o:p></span></p>
+  </td>
+  <td width=219 valign=top style='width:164.45pt;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal><span style='font-size:8.0pt;mso-bidi-font-size:12.0pt;
+  font-family:"Courier New"'>1500<o:p></o:p></span></p>
+  </td>
+  <td width=171 valign=top style='width:128.3pt;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal><span style='font-size:8.0pt;mso-bidi-font-size:12.0pt;
+  font-family:"Courier New"'><o:p>&nbsp;</o:p></span></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:4'>
+  <td width=200 valign=top style='width:150.05pt;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal><span style='font-size:8.0pt;mso-bidi-font-size:12.0pt;
+  font-family:"Courier New"'>farplane_color <o:p></o:p></span></p>
+  </td>
+  <td width=219 valign=top style='width:164.45pt;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal><span style='font-size:8.0pt;mso-bidi-font-size:12.0pt;
+  font-family:"Courier New"'>85 91 97<o:p></o:p></span></p>
+  </td>
+  <td width=171 valign=top style='width:128.3pt;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal><span style='font-size:8.0pt;mso-bidi-font-size:12.0pt;
+  font-family:"Courier New"'>The color of the farplane fog.<o:p></o:p></span></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:5'>
+  <td width=200 valign=top style='width:150.05pt;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal><span style='font-size:8.0pt;mso-bidi-font-size:12.0pt;
+  font-family:"Courier New"'>shadow_dapple <o:p></o:p></span></p>
+  </td>
+  <td width=219 valign=top style='width:164.45pt;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal><span style='font-size:8.0pt;mso-bidi-font-size:12.0pt;
+  font-family:"Courier New"'>terrain/dappletex.tga<o:p></o:p></span></p>
+  </td>
+  <td width=171 valign=top style='width:128.3pt;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal><span style='font-size:8.0pt;mso-bidi-font-size:12.0pt;
+  font-family:"Courier New"'>The dapple texture that is applied to player models
+  when the player is in shadow.<o:p></o:p></span></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:6'>
+  <td width=200 valign=top style='width:150.05pt;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal><span style='font-size:8.0pt;mso-bidi-font-size:12.0pt;
+  font-family:"Courier New"'>northyaw <span style='mso-tab-count:2'>            </span><o:p></o:p></span></p>
+  </td>
+  <td width=219 valign=top style='width:164.45pt;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal><span style='font-size:8.0pt;mso-bidi-font-size:12.0pt;
+  font-family:"Courier New"'>90<o:p></o:p></span></p>
+  </td>
+  <td width=171 valign=top style='width:128.3pt;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal><span style='font-size:8.0pt;mso-bidi-font-size:12.0pt;
+  font-family:"Courier New"'>the northyaw key value sets what direction will be
+  north on the in-game compass.<o:p></o:p></span></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:7'>
+  <td width=200 valign=top style='width:150.05pt;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal><span style='font-size:8.0pt;mso-bidi-font-size:12.0pt;
+  font-family:"Courier New"'>sky_model <o:p></o:p></span></p>
+  </td>
+  <td width=219 valign=top style='width:164.45pt;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal><span style='font-size:8.0pt;mso-bidi-font-size:12.0pt;
+  font-family:"Courier New"'>models\SkyBoxes\gifu_skybox1.gr2<o:p></o:p></span></p>
+  </td>
+  <td width=171 valign=top style='width:128.3pt;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal><span style='font-size:8.0pt;mso-bidi-font-size:12.0pt;
+  font-family:"Courier New"'>The model used for the sky.<o:p></o:p></span></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:8'>
+  <td width=200 valign=top style='width:150.05pt;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal><span style='font-size:8.0pt;mso-bidi-font-size:12.0pt;
+  font-family:"Courier New"'>sky_extent <o:p></o:p></span></p>
+  </td>
+  <td width=219 valign=top style='width:164.45pt;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal><span style='font-size:8.0pt;mso-bidi-font-size:12.0pt;
+  font-family:"Courier New"'>6000<o:p></o:p></span></p>
+  </td>
+  <td width=171 valign=top style='width:128.3pt;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal><span style='font-size:8.0pt;mso-bidi-font-size:12.0pt;
+  font-family:"Courier New"'><o:p>&nbsp;</o:p></span></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:9'>
+  <td width=200 valign=top style='width:150.05pt;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal><span style='font-size:8.0pt;mso-bidi-font-size:12.0pt;
+  font-family:"Courier New"'>sky_altitude <o:p></o:p></span></p>
+  </td>
+  <td width=219 valign=top style='width:164.45pt;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal><span style='font-size:8.0pt;mso-bidi-font-size:12.0pt;
+  font-family:"Courier New"'>2400<o:p></o:p></span></p>
+  </td>
+  <td width=171 valign=top style='width:128.3pt;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal><span style='font-size:8.0pt;mso-bidi-font-size:12.0pt;
+  font-family:"Courier New"'><o:p>&nbsp;</o:p></span></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:10'>
+  <td width=200 valign=top style='width:150.05pt;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal><span style='font-size:8.0pt;mso-bidi-font-size:12.0pt;
+  font-family:"Courier New"'>sunflare <o:p></o:p></span></p>
+  </td>
+  <td width=219 valign=top style='width:164.45pt;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal><span style='font-size:8.0pt;mso-bidi-font-size:12.0pt;
+  font-family:"Courier New"'>Gifu_sunflare<o:p></o:p></span></p>
+  </td>
+  <td width=171 valign=top style='width:128.3pt;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal><span style='font-size:8.0pt;mso-bidi-font-size:12.0pt;
+  font-family:"Courier New"'><o:p>&nbsp;</o:p></span></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:11'>
+  <td width=200 valign=top style='width:150.05pt;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal><span style='font-size:8.0pt;mso-bidi-font-size:12.0pt;
+  font-family:"Courier New"'>global_light_shadow_direction <o:p></o:p></span></p>
+  </td>
+  <td width=219 valign=top style='width:164.45pt;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal><span style='font-size:8.0pt;mso-bidi-font-size:12.0pt;
+  font-family:"Courier New"'>70 88<o:p></o:p></span></p>
+  </td>
+  <td width=171 valign=top style='width:128.3pt;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal><span style='font-size:8.0pt;mso-bidi-font-size:12.0pt;
+  font-family:"Courier New"'><o:p>&nbsp;</o:p></span></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:12'>
+  <td width=200 valign=top style='width:150.05pt;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal><span style='font-size:8.0pt;mso-bidi-font-size:12.0pt;
+  font-family:"Courier New"'>global_light_dosmooth <o:p></o:p></span></p>
+  </td>
+  <td width=219 valign=top style='width:164.45pt;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal><span style='font-size:8.0pt;mso-bidi-font-size:12.0pt;
+  font-family:"Courier New"'>0<o:p></o:p></span></p>
+  </td>
+  <td width=171 valign=top style='width:128.3pt;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal><span style='font-size:8.0pt;mso-bidi-font-size:12.0pt;
+  font-family:"Courier New"'><o:p>&nbsp;</o:p></span></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:13'>
+  <td width=200 valign=top style='width:150.05pt;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal><span style='font-size:8.0pt;mso-bidi-font-size:12.0pt;
+  font-family:"Courier New"'>global_light_smoothamount <span style='mso-tab-count:
+  1'> </span><o:p></o:p></span></p>
+  </td>
+  <td width=219 valign=top style='width:164.45pt;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal><span style='font-size:8.0pt;mso-bidi-font-size:12.0pt;
+  font-family:"Courier New"'>4<o:p></o:p></span></p>
+  </td>
+  <td width=171 valign=top style='width:128.3pt;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal><span style='font-size:8.0pt;mso-bidi-font-size:12.0pt;
+  font-family:"Courier New"'><o:p>&nbsp;</o:p></span></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:14'>
+  <td width=200 valign=top style='width:150.05pt;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal><span style='font-size:8.0pt;mso-bidi-font-size:12.0pt;
+  font-family:"Courier New"'>global_light_direction <o:p></o:p></span></p>
+  </td>
+  <td width=219 valign=top style='width:164.45pt;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal><span style='font-size:8.0pt;mso-bidi-font-size:12.0pt;
+  font-family:"Courier New"'>54 88<o:p></o:p></span></p>
+  </td>
+  <td width=171 valign=top style='width:128.3pt;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal><span style='font-size:8.0pt;mso-bidi-font-size:12.0pt;
+  font-family:"Courier New"'>Rotation and elevation of the global light (sun).<o:p></o:p></span></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:15'>
+  <td width=200 valign=top style='width:150.05pt;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal><span style='font-size:8.0pt;mso-bidi-font-size:12.0pt;
+  font-family:"Courier New"'>global_light_ambientcolor <o:p></o:p></span></p>
+  </td>
+  <td width=219 valign=top style='width:164.45pt;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal><span style='font-size:8.0pt;mso-bidi-font-size:12.0pt;
+  font-family:"Courier New"'>55 55 60<o:p></o:p></span></p>
+  </td>
+  <td width=171 valign=top style='width:128.3pt;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal><span style='font-size:8.0pt;mso-bidi-font-size:12.0pt;
+  font-family:"Courier New"'>The ambient color for the level.<o:p></o:p></span></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:16'>
+  <td width=200 valign=top style='width:150.05pt;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal><span style='font-size:8.0pt;mso-bidi-font-size:12.0pt;
+  font-family:"Courier New"'>global_light_color <o:p></o:p></span></p>
+  </td>
+  <td width=219 valign=top style='width:164.45pt;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal><span style='font-size:8.0pt;mso-bidi-font-size:12.0pt;
+  font-family:"Courier New"'>230 205 200<o:p></o:p></span></p>
+  </td>
+  <td width=171 valign=top style='width:128.3pt;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal><span style='font-size:8.0pt;mso-bidi-font-size:12.0pt;
+  font-family:"Courier New"'>The color projected by the global light (sun)<o:p></o:p></span></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:17'>
+  <td width=200 valign=top style='width:150.05pt;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal><span style='font-size:8.0pt;mso-bidi-font-size:12.0pt;
+  font-family:"Courier New"'>terrain <span style='mso-tab-count:1'>      </span><o:p></o:p></span></p>
+  </td>
+  <td width=219 valign=top style='width:164.45pt;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal><span style='font-size:8.0pt;mso-bidi-font-size:12.0pt;
+  font-family:"Courier New"'>mp_gifu_inv.ter<o:p></o:p></span></p>
+  </td>
+  <td width=171 valign=top style='width:128.3pt;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal><span style='font-size:8.0pt;mso-bidi-font-size:12.0pt;
+  font-family:"Courier New"'>Your terrain.<o:p></o:p></span></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:18'>
+  <td width=200 valign=top style='width:150.05pt;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal><span style='font-size:8.0pt;mso-bidi-font-size:12.0pt;
+  font-family:"Courier New"'><o:p>&nbsp;</o:p></span></p>
+  </td>
+  <td width=219 valign=top style='width:164.45pt;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal><span style='font-size:8.0pt;mso-bidi-font-size:12.0pt;
+  font-family:"Courier New"'><o:p>&nbsp;</o:p></span></p>
+  </td>
+  <td width=171 valign=top style='width:128.3pt;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal><span style='font-size:8.0pt;mso-bidi-font-size:12.0pt;
+  font-family:"Courier New"'><o:p>&nbsp;</o:p></span></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:19'>
+  <td width=200 valign=top style='width:150.05pt;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal><span style='font-size:8.0pt;mso-bidi-font-size:12.0pt;
+  font-family:"Courier New"'>inset3_<span style='mso-tab-count:1'>       </span>extents<o:p></o:p></span></p>
+  </td>
+  <td width=219 valign=top style='width:164.45pt;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal><span style='font-size:8.0pt;mso-bidi-font-size:12.0pt;
+  font-family:"Courier New"'>31 -837 10750 15242<o:p></o:p></span></p>
+  </td>
+  <td width=171 valign=top style='width:128.3pt;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal><span style='font-size:8.0pt;mso-bidi-font-size:12.0pt;
+  font-family:"Courier New"'><o:p>&nbsp;</o:p></span></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:20'>
+  <td width=200 valign=top style='width:150.05pt;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal><span style='font-size:8.0pt;mso-bidi-font-size:12.0pt;
+  font-family:"Courier New"'>inset2_<span style='mso-tab-count:1'>       </span>extents
+  <o:p></o:p></span></p>
+  </td>
+  <td width=219 valign=top style='width:164.45pt;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal><span style='font-size:8.0pt;mso-bidi-font-size:12.0pt;
+  font-family:"Courier New"'>-8187 -13293 1068 1672<o:p></o:p></span></p>
+  </td>
+  <td width=171 valign=top style='width:128.3pt;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal><span style='font-size:8.0pt;mso-bidi-font-size:12.0pt;
+  font-family:"Courier New"'><o:p>&nbsp;</o:p></span></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:21'>
+  <td width=200 valign=top style='width:150.05pt;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal><span style='font-size:8.0pt;mso-bidi-font-size:12.0pt;
+  font-family:"Courier New"'>inset1_<span style='mso-tab-count:1'>       </span>extents<o:p></o:p></span></p>
+  </td>
+  <td width=219 valign=top style='width:164.45pt;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal><span style='font-size:8.0pt;mso-bidi-font-size:12.0pt;
+  font-family:"Courier New"'>-16384 -16384 16384 16384<o:p></o:p></span></p>
+  </td>
+  <td width=171 valign=top style='width:128.3pt;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal><span style='font-size:8.0pt;mso-bidi-font-size:12.0pt;
+  font-family:"Courier New"'><o:p>&nbsp;</o:p></span></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:22'>
+  <td width=200 valign=top style='width:150.05pt;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal><span style='font-size:8.0pt;mso-bidi-font-size:12.0pt;
+  font-family:"Courier New"'>shadow1_texture_1 <o:p></o:p></span></p>
+  </td>
+  <td width=219 valign=top style='width:164.45pt;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal><span style='font-size:8.0pt;mso-bidi-font-size:12.0pt;
+  font-family:"Courier New"'>terrain/mp_gifu_inv_i1_proj1.tga<o:p></o:p></span></p>
+  </td>
+  <td width=171 valign=top style='width:128.3pt;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal><span style='font-size:8.0pt;mso-bidi-font-size:12.0pt;
+  font-family:"Courier New"'><o:p>&nbsp;</o:p></span></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:23'>
+  <td width=200 valign=top style='width:150.05pt;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal><span style='font-size:8.0pt;mso-bidi-font-size:12.0pt;
+  font-family:"Courier New"'>shadow1_texture_2 <span style='mso-tab-count:1'>   </span><o:p></o:p></span></p>
+  </td>
+  <td width=219 valign=top style='width:164.45pt;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal><span style='font-size:8.0pt;mso-bidi-font-size:12.0pt;
+  font-family:"Courier New"'>terrain/mp_gifu_inv_i2_proj1.tga<o:p></o:p></span></p>
+  </td>
+  <td width=171 valign=top style='width:128.3pt;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal><span style='font-size:8.0pt;mso-bidi-font-size:12.0pt;
+  font-family:"Courier New"'><o:p>&nbsp;</o:p></span></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:24'>
+  <td width=200 valign=top style='width:150.05pt;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal><span style='font-size:8.0pt;mso-bidi-font-size:12.0pt;
+  font-family:"Courier New"'>shadow1_texture_3 <o:p></o:p></span></p>
+  </td>
+  <td width=219 valign=top style='width:164.45pt;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal><span style='font-size:8.0pt;mso-bidi-font-size:12.0pt;
+  font-family:"Courier New"'>terrain/mp_gifu_inv_i3_proj1.tga<o:p></o:p></span></p>
+  </td>
+  <td width=171 valign=top style='width:128.3pt;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal><span style='font-size:8.0pt;mso-bidi-font-size:12.0pt;
+  font-family:"Courier New"'><o:p>&nbsp;</o:p></span></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:25'>
+  <td width=200 valign=top style='width:150.05pt;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal><span style='font-size:8.0pt;mso-bidi-font-size:12.0pt;
+  font-family:"Courier New"'>shadow2_texture_1 <o:p></o:p></span></p>
+  </td>
+  <td width=219 valign=top style='width:164.45pt;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal><span style='font-size:8.0pt;mso-bidi-font-size:12.0pt;
+  font-family:"Courier New"'>terrain/mp_gifu_inv_i1_proj2.tga<o:p></o:p></span></p>
+  </td>
+  <td width=171 valign=top style='width:128.3pt;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal><span style='font-size:8.0pt;mso-bidi-font-size:12.0pt;
+  font-family:"Courier New"'><o:p>&nbsp;</o:p></span></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:26'>
+  <td width=200 valign=top style='width:150.05pt;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal><span style='font-size:8.0pt;mso-bidi-font-size:12.0pt;
+  font-family:"Courier New"'>shadow2_texture_2<o:p></o:p></span></p>
+  </td>
+  <td width=219 valign=top style='width:164.45pt;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal><span style='font-size:8.0pt;mso-bidi-font-size:12.0pt;
+  font-family:"Courier New"'>terrain/mp_gifu_inv_i2_proj2.tga<o:p></o:p></span></p>
+  </td>
+  <td width=171 valign=top style='width:128.3pt;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal><span style='font-size:8.0pt;mso-bidi-font-size:12.0pt;
+  font-family:"Courier New"'><o:p>&nbsp;</o:p></span></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:27'>
+  <td width=200 valign=top style='width:150.05pt;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal><span style='font-size:8.0pt;mso-bidi-font-size:12.0pt;
+  font-family:"Courier New"'>shadow2_texture_3<o:p></o:p></span></p>
+  </td>
+  <td width=219 valign=top style='width:164.45pt;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal><span style='font-size:8.0pt;mso-bidi-font-size:12.0pt;
+  font-family:"Courier New"'>terrain/mp_gifu_inv_i3_proj2.tga<o:p></o:p></span></p>
+  </td>
+  <td width=171 valign=top style='width:128.3pt;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal><span style='font-size:8.0pt;mso-bidi-font-size:12.0pt;
+  font-family:"Courier New"'><o:p>&nbsp;</o:p></span></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:28'>
+  <td width=200 valign=top style='width:150.05pt;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal><span style='font-size:8.0pt;mso-bidi-font-size:12.0pt;
+  font-family:"Courier New"'>shadow3_texture_1<o:p></o:p></span></p>
+  </td>
+  <td width=219 valign=top style='width:164.45pt;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal><span style='font-size:8.0pt;mso-bidi-font-size:12.0pt;
+  font-family:"Courier New"'>terrain/mp_gifu_inv_i1_proj3.tga<o:p></o:p></span></p>
+  </td>
+  <td width=171 valign=top style='width:128.3pt;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal><span style='font-size:8.0pt;mso-bidi-font-size:12.0pt;
+  font-family:"Courier New"'><o:p>&nbsp;</o:p></span></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:29'>
+  <td width=200 valign=top style='width:150.05pt;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal><span style='font-size:8.0pt;mso-bidi-font-size:12.0pt;
+  font-family:"Courier New"'>shadow3_texture_2<o:p></o:p></span></p>
+  </td>
+  <td width=219 valign=top style='width:164.45pt;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal><span style='font-size:8.0pt;mso-bidi-font-size:12.0pt;
+  font-family:"Courier New"'>terrain/mp_gifu_inv_i2_proj3.tga<o:p></o:p></span></p>
+  </td>
+  <td width=171 valign=top style='width:128.3pt;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal><span style='font-size:8.0pt;mso-bidi-font-size:12.0pt;
+  font-family:"Courier New"'><o:p>&nbsp;</o:p></span></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:30'>
+  <td width=200 valign=top style='width:150.05pt;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal><span style='font-size:8.0pt;mso-bidi-font-size:12.0pt;
+  font-family:"Courier New"'>shadow3_texture_3<o:p></o:p></span></p>
+  </td>
+  <td width=219 valign=top style='width:164.45pt;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal><span style='font-size:8.0pt;mso-bidi-font-size:12.0pt;
+  font-family:"Courier New"'>terrain/mp_gifu_inv_i3_proj3.tga<o:p></o:p></span></p>
+  </td>
+  <td width=171 valign=top style='width:128.3pt;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal><span style='font-size:8.0pt;mso-bidi-font-size:12.0pt;
+  font-family:"Courier New"'><o:p>&nbsp;</o:p></span></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:31'>
+  <td width=200 valign=top style='width:150.05pt;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal><span style='font-size:8.0pt;mso-bidi-font-size:12.0pt;
+  font-family:"Courier New"'>terrain_lightmap_1<o:p></o:p></span></p>
+  </td>
+  <td width=219 valign=top style='width:164.45pt;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal><span style='font-size:8.0pt;mso-bidi-font-size:12.0pt;
+  font-family:"Courier New"'>terrain/mp_gifu_inv.tga<o:p></o:p></span></p>
+  </td>
+  <td width=171 valign=top style='width:128.3pt;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal><span style='font-size:8.0pt;mso-bidi-font-size:12.0pt;
+  font-family:"Courier New"'><o:p>&nbsp;</o:p></span></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:32'>
+  <td width=200 valign=top style='width:150.05pt;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal><span style='font-size:8.0pt;mso-bidi-font-size:12.0pt;
+  font-family:"Courier New"'>terrain_lightmap_2<o:p></o:p></span></p>
+  </td>
+  <td width=219 valign=top style='width:164.45pt;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal><span style='font-size:8.0pt;mso-bidi-font-size:12.0pt;
+  font-family:"Courier New"'>terrain/mp_gifu_inv_i2.tga<o:p></o:p></span></p>
+  </td>
+  <td width=171 valign=top style='width:128.3pt;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal><span style='font-size:8.0pt;mso-bidi-font-size:12.0pt;
+  font-family:"Courier New"'><o:p>&nbsp;</o:p></span></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:33'>
+  <td width=200 valign=top style='width:150.05pt;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal><span style='font-size:8.0pt;mso-bidi-font-size:12.0pt;
+  font-family:"Courier New"'>terrain_lightmap_3<o:p></o:p></span></p>
+  </td>
+  <td width=219 valign=top style='width:164.45pt;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal><span style='font-size:8.0pt;mso-bidi-font-size:12.0pt;
+  font-family:"Courier New"'>terrain/mp_gifu_inv_i3.tga<o:p></o:p></span></p>
+  </td>
+  <td width=171 valign=top style='width:128.3pt;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal><span style='font-size:8.0pt;mso-bidi-font-size:12.0pt;
+  font-family:"Courier New"'><o:p>&nbsp;</o:p></span></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:34'>
+  <td width=200 valign=top style='width:150.05pt;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal><span style='font-size:8.0pt;mso-bidi-font-size:12.0pt;
+  font-family:"Courier New"'>shadow3_height<o:p></o:p></span></p>
+  </td>
+  <td width=219 valign=top style='width:164.45pt;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal><span style='font-size:8.0pt;mso-bidi-font-size:12.0pt;
+  font-family:"Courier New"'>77<o:p></o:p></span></p>
+  </td>
+  <td width=171 valign=top style='width:128.3pt;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal><span style='font-size:8.0pt;mso-bidi-font-size:12.0pt;
+  font-family:"Courier New"'><o:p>&nbsp;</o:p></span></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:35'>
+  <td width=200 valign=top style='width:150.05pt;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal><span style='font-size:8.0pt;mso-bidi-font-size:12.0pt;
+  font-family:"Courier New"'>shadow2_height<o:p></o:p></span></p>
+  </td>
+  <td width=219 valign=top style='width:164.45pt;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal><span style='font-size:8.0pt;mso-bidi-font-size:12.0pt;
+  font-family:"Courier New"'>77<o:p></o:p></span></p>
+  </td>
+  <td width=171 valign=top style='width:128.3pt;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal><span style='font-size:8.0pt;mso-bidi-font-size:12.0pt;
+  font-family:"Courier New"'><o:p>&nbsp;</o:p></span></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:36'>
+  <td width=200 valign=top style='width:150.05pt;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal><span style='font-size:8.0pt;mso-bidi-font-size:12.0pt;
+  font-family:"Courier New"'>shadow1_height<o:p></o:p></span></p>
+  </td>
+  <td width=219 valign=top style='width:164.45pt;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal><span style='font-size:8.0pt;mso-bidi-font-size:12.0pt;
+  font-family:"Courier New"'>77<o:p></o:p></span></p>
+  <p class=MsoNormal><span style='font-size:8.0pt;mso-bidi-font-size:12.0pt;
+  font-family:"Courier New"'><o:p>&nbsp;</o:p></span></p>
+  </td>
+  <td width=171 valign=top style='width:128.3pt;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal><span style='font-size:8.0pt;mso-bidi-font-size:12.0pt;
+  font-family:"Courier New"'><o:p>&nbsp;</o:p></span></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:37;mso-yfti-lastrow:yes'>
+  <td width=200 valign=top style='width:150.05pt;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal><span style='font-size:8.0pt;mso-bidi-font-size:12.0pt;
+  font-family:"Courier New"'><o:p>&nbsp;</o:p></span></p>
+  </td>
+  <td width=219 valign=top style='width:164.45pt;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal><span style='font-size:8.0pt;mso-bidi-font-size:12.0pt;
+  font-family:"Courier New"'><o:p>&nbsp;</o:p></span></p>
+  </td>
+  <td width=171 valign=top style='width:128.3pt;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal><span style='font-size:8.0pt;mso-bidi-font-size:12.0pt;
+  font-family:"Courier New"'><o:p>&nbsp;</o:p></span></p>
+  </td>
+ </tr>
+</table>
+
+<p class=MsoNormal><o:p>&nbsp;</o:p></p>
+
+</div>
+
+</body>
+
+</html>

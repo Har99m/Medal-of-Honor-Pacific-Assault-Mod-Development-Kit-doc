@@ -1,0 +1,719 @@
+<html xmlns:o="urn:schemas-microsoft-com:office:office"
+xmlns:w="urn:schemas-microsoft-com:office:word"
+xmlns:st1="urn:schemas-microsoft-com:office:smarttags"
+xmlns="http://www.w3.org/TR/REC-html40">
+
+<head>
+<meta http-equiv=Content-Type content="text/html; charset=windows-1252">
+<meta name=ProgId content=Word.Document>
+<meta name=Generator content="Microsoft Word 10">
+<meta name=Originator content="Microsoft Word 10">
+<link rel=File-List href="ScriptingStandard_files/filelist.xml">
+<title>Medal of Honor: Pacific Assault Scripting Standard</title>
+<o:SmartTagType namespaceuri="urn:schemas-microsoft-com:office:smarttags"
+ name="PersonName"/>
+<!--[if gte mso 9]><xml>
+ <o:DocumentProperties>
+  <o:Author>JLEGGE</o:Author>
+  <o:LastAuthor>bbilodeau</o:LastAuthor>
+  <o:Revision>3</o:Revision>
+  <o:TotalTime>3</o:TotalTime>
+  <o:Created>2004-10-14T00:14:00Z</o:Created>
+  <o:LastSaved>2004-10-14T00:14:00Z</o:LastSaved>
+  <o:Pages>1</o:Pages>
+  <o:Words>1038</o:Words>
+  <o:Characters>5918</o:Characters>
+  <o:Company>EALA</o:Company>
+  <o:Lines>49</o:Lines>
+  <o:Paragraphs>13</o:Paragraphs>
+  <o:CharactersWithSpaces>6943</o:CharactersWithSpaces>
+  <o:Version>10.3501</o:Version>
+ </o:DocumentProperties>
+</xml><![endif]--><!--[if gte mso 9]><xml>
+ <w:WordDocument>
+  <w:GrammarState>Clean</w:GrammarState>
+  <w:Compatibility>
+   <w:BreakWrappedTables/>
+   <w:SnapToGridInCell/>
+   <w:WrapTextWithPunct/>
+   <w:UseAsianBreakRules/>
+  </w:Compatibility>
+  <w:BrowserLevel>MicrosoftInternetExplorer4</w:BrowserLevel>
+ </w:WordDocument>
+</xml><![endif]--><!--[if !mso]><object
+ classid="clsid:38481807-CA0E-42D2-BF39-B33AF135CC4D" id=ieooui></object>
+<style>
+st1\:*{behavior:url(#ieooui) }
+</style>
+<![endif]-->
+<style>
+<!--
+ /* Font Definitions */
+ @font-face
+	{font-family:Tahoma;
+	panose-1:2 11 6 4 3 5 4 4 2 4;
+	mso-font-charset:0;
+	mso-generic-font-family:swiss;
+	mso-font-pitch:variable;
+	mso-font-signature:553679495 -2147483648 8 0 66047 0;}
+ /* Style Definitions */
+ p.MsoNormal, li.MsoNormal, div.MsoNormal
+	{mso-style-parent:"";
+	margin:0in;
+	margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	font-size:12.0pt;
+	font-family:"Times New Roman";
+	mso-fareast-font-family:"Times New Roman";}
+p.MsoDocumentMap, li.MsoDocumentMap, div.MsoDocumentMap
+	{mso-style-noshow:yes;
+	margin:0in;
+	margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	background:navy;
+	font-size:12.0pt;
+	font-family:Tahoma;
+	mso-fareast-font-family:"Times New Roman";}
+p.MsoPlainText, li.MsoPlainText, div.MsoPlainText
+	{margin:0in;
+	margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	font-size:10.0pt;
+	font-family:"Courier New";
+	mso-fareast-font-family:"Times New Roman";}
+@page Section1
+	{size:8.5in 11.0in;
+	margin:1.0in 65.95pt 1.0in 65.95pt;
+	mso-header-margin:.5in;
+	mso-footer-margin:.5in;
+	mso-paper-source:0;}
+div.Section1
+	{page:Section1;}
+-->
+</style>
+<!--[if gte mso 10]>
+<style>
+ /* Style Definitions */
+ table.MsoNormalTable
+	{mso-style-name:"Table Normal";
+	mso-tstyle-rowband-size:0;
+	mso-tstyle-colband-size:0;
+	mso-style-noshow:yes;
+	mso-style-parent:"";
+	mso-padding-alt:0in 5.4pt 0in 5.4pt;
+	mso-para-margin:0in;
+	mso-para-margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	font-size:10.0pt;
+	font-family:"Times New Roman";}
+</style>
+<![endif]-->
+</head>
+
+<body lang=EN-US style='tab-interval:.5in'>
+
+<div class=Section1>
+
+<p class=MsoPlainText align=center style='text-align:center'><b
+style='mso-bidi-font-weight:normal'><u><o:p><span style='text-decoration:none'>&nbsp;</span></o:p></u></b></p>
+
+<p class=MsoPlainText align=center style='text-align:center'><b
+style='mso-bidi-font-weight:normal'><span style='font-size:14.0pt'>Medal of
+Honor: Pacific Assault Scripting Standard<o:p></o:p></span></b></p>
+
+<p class=MsoPlainText><o:p>&nbsp;</o:p></p>
+
+<p class=MsoPlainText><o:p>&nbsp;</o:p></p>
+
+<p class=MsoPlainText><span style='mso-tab-count:1'>      </span>The <st1:PersonName>MOHPA</st1:PersonName>
+scripting language is a very large and powerful language.<span
+style='mso-spacerun:yes'>  </span>It <o:p></o:p></p>
+
+<p class=MsoPlainText>is also difficult to debug due to the lack of debugging
+tools.<span style='mso-spacerun:yes'>  </span>Te goal of this document is to
+make scripts easier to read, more readily understandable, and therefore easier
+to debug by you and whoever is going to end up trying to understand<span
+style='mso-tab-count:1'>     </span>your script.<span
+style='mso-spacerun:yes'>  </span>Please use this document and map 5_6_village
+as a guide when creating your scripts.<o:p></o:p></p>
+
+<p class=MsoPlainText><o:p>&nbsp;</o:p></p>
+
+<p class=MsoPlainText><o:p>&nbsp;</o:p></p>
+
+<p class=MsoPlainText><o:p>&nbsp;</o:p></p>
+
+<p class=MsoPlainText><o:p>&nbsp;</o:p></p>
+
+<p class=MsoPlainText>1) Header at the top of every script file containing the
+following information:<o:p></o:p></p>
+
+<p class=MsoPlainText><o:p>&nbsp;</o:p></p>
+
+<p class=MsoPlainText>//-----------------------------------------------------------------------------<o:p></o:p></p>
+
+<p class=MsoPlainText>//<o:p></o:p></p>
+
+<p class=MsoPlainText>//<span style='mso-spacerun:yes'>  </span>scriptname.scr<o:p></o:p></p>
+
+<p class=MsoPlainText>//<o:p></o:p></p>
+
+<p class=MsoPlainText>//<span style='mso-spacerun:yes'>  </span>&lt;description
+here&gt;<o:p></o:p></p>
+
+<p class=MsoPlainText>//<o:p></o:p></p>
+
+<p class=MsoPlainText>//-----------------------------------------------------------------------------<o:p></o:p></p>
+
+<p class=MsoPlainText><o:p>&nbsp;</o:p></p>
+
+<p class=MsoPlainText>===============================<o:p></o:p></p>
+
+<p class=MsoPlainText>===============================<o:p></o:p></p>
+
+<p class=MsoPlainText><o:p>&nbsp;</o:p></p>
+
+<p class=MsoPlainText><o:p>&nbsp;</o:p></p>
+
+<p class=MsoPlainText>2) Function blocks should start like this:<o:p></o:p></p>
+
+<p class=MsoPlainText><o:p>&nbsp;</o:p></p>
+
+<p class=MsoPlainText>//-----------------------------------------------------------------------------<o:p></o:p></p>
+
+<p class=MsoPlainText>FunctionNameHere:<o:p></o:p></p>
+
+<p class=MsoPlainText>//<o:p></o:p></p>
+
+<p class=MsoPlainText>// description of the functions purpose<o:p></o:p></p>
+
+<p class=MsoPlainText>//<o:p></o:p></p>
+
+<p class=MsoPlainText>//-----------------------------------------------------------------------------<o:p></o:p></p>
+
+<p class=MsoPlainText><span style='mso-tab-count:1'>      </span>waitthread
+DoStuff<o:p></o:p></p>
+
+<p class=MsoPlainText><span style='mso-tab-count:1'>      </span>end<o:p></o:p></p>
+
+<p class=MsoPlainText><o:p>&nbsp;</o:p></p>
+
+<p class=MsoPlainText><o:p>&nbsp;</o:p></p>
+
+<p class=MsoPlainText>===============================<o:p></o:p></p>
+
+<p class=MsoPlainText>===============================<o:p></o:p></p>
+
+<p class=MsoPlainText><o:p>&nbsp;</o:p></p>
+
+<p class=MsoPlainText>3) A function that has parameters passed into it should
+start like this:<o:p></o:p></p>
+
+<p class=MsoPlainText><o:p>&nbsp;</o:p></p>
+
+<p class=MsoPlainText>//-----------------------------------------------------------------------------<o:p></o:p></p>
+
+<p class=MsoPlainText>FunctionNameHere local.parm1 local.parm2 local.parm3:<o:p></o:p></p>
+
+<p class=MsoPlainText>//<o:p></o:p></p>
+
+<p class=MsoPlainText>// description of the functions purpose<o:p></o:p></p>
+
+<p class=MsoPlainText>//<o:p></o:p></p>
+
+<p class=MsoPlainText>// parm1 - comment defining parm1 and what it is<o:p></o:p></p>
+
+<p class=MsoPlainText>// parm2 - comment defining parm2 and what it is<o:p></o:p></p>
+
+<p class=MsoPlainText>// parm3 - comment defining parm3 and what it is<o:p></o:p></p>
+
+<p class=MsoPlainText>//<o:p></o:p></p>
+
+<p class=MsoPlainText>//-----------------------------------------------------------------------------<o:p></o:p></p>
+
+<p class=MsoPlainText><o:p>&nbsp;</o:p></p>
+
+<p class=MsoPlainText><span style='mso-tab-count:1'>      </span>waitthread
+DoStuff local.parm1 local.parm2 local.parm3<o:p></o:p></p>
+
+<p class=MsoPlainText><o:p>&nbsp;</o:p></p>
+
+<p class=MsoPlainText><span style='mso-tab-count:1'>      </span>end<o:p></o:p></p>
+
+<p class=MsoPlainText><o:p>&nbsp;</o:p></p>
+
+<p class=MsoPlainText><o:p>&nbsp;</o:p></p>
+
+<p class=MsoPlainText>===============================<o:p></o:p></p>
+
+<p class=MsoPlainText>===============================<o:p></o:p></p>
+
+<p class=MsoPlainText><o:p>&nbsp;</o:p></p>
+
+<p class=MsoPlainText>3) Bracing style should be with the braces lined up with
+its corresponding if/while command<o:p></o:p></p>
+
+<p class=MsoPlainText><o:p>&nbsp;</o:p></p>
+
+<p class=MsoPlainText>//-----------------------------------------------------------------------------<o:p></o:p></p>
+
+<p class=MsoPlainText>FunctionNameHere:<o:p></o:p></p>
+
+<p class=MsoPlainText>//<o:p></o:p></p>
+
+<p class=MsoPlainText>// description of the functions purpose<o:p></o:p></p>
+
+<p class=MsoPlainText>//<o:p></o:p></p>
+
+<p class=MsoPlainText>//-----------------------------------------------------------------------------<o:p></o:p></p>
+
+<p class=MsoPlainText><span style='mso-tab-count:1'>      </span>if( condition
+)<o:p></o:p></p>
+
+<p class=MsoPlainText><span style='mso-tab-count:1'>      </span>{<o:p></o:p></p>
+
+<p class=MsoPlainText><span style='mso-tab-count:2'>            </span>while (
+condition2 )<o:p></o:p></p>
+
+<p class=MsoPlainText><span style='mso-tab-count:2'>            </span>{<o:p></o:p></p>
+
+<p class=MsoPlainText><span style='mso-tab-count:3'>                  </span>waitthread
+DoStuff<o:p></o:p></p>
+
+<p class=MsoPlainText><span style='mso-tab-count:3'>                  </span>waitthread
+DoMoreStuff<o:p></o:p></p>
+
+<p class=MsoPlainText><span style='mso-tab-count:3'>                  </span>waitthread
+DoEvenMoreStuff<o:p></o:p></p>
+
+<p class=MsoPlainText><span style='mso-tab-count:2'>            </span>}<o:p></o:p></p>
+
+<p class=MsoPlainText><span style='mso-tab-count:1'>      </span>}<o:p></o:p></p>
+
+<p class=MsoPlainText><span style='mso-tab-count:1'>      </span>end<o:p></o:p></p>
+
+<p class=MsoPlainText><o:p>&nbsp;</o:p></p>
+
+<p class=MsoPlainText><o:p>&nbsp;</o:p></p>
+
+<p class=MsoPlainText>===============================<o:p></o:p></p>
+
+<p class=MsoPlainText>===============================<o:p></o:p></p>
+
+<p class=MsoPlainText><o:p>&nbsp;</o:p></p>
+
+<p class=MsoPlainText><o:p>&nbsp;</o:p></p>
+
+<p class=MsoPlainText>4) NO ASSIGNMENTS are to be done inside of if(), while(),
+or for() statments.<span style='mso-spacerun:yes'>  </span>This is to help
+prevent the common typo of '=' vs. '=='.<span style='mso-spacerun:yes'> 
+</span>So for example:<o:p></o:p></p>
+
+<p class=MsoPlainText><o:p>&nbsp;</o:p></p>
+
+<p class=MsoPlainText>Legal:<o:p></o:p></p>
+
+<p class=MsoPlainText><o:p>&nbsp;</o:p></p>
+
+<p class=MsoPlainText>if( checkForCondition == TRUE )<o:p></o:p></p>
+
+<p class=MsoPlainText>{<o:p></o:p></p>
+
+<p class=MsoPlainText><span style='mso-tab-count:1'>      </span>waitthread
+DoStuffHere<o:p></o:p></p>
+
+<p class=MsoPlainText>}<o:p></o:p></p>
+
+<p class=MsoPlainText><o:p>&nbsp;</o:p></p>
+
+<p class=MsoPlainText><o:p>&nbsp;</o:p></p>
+
+<p class=MsoPlainText style='mso-outline-level:1'>NOT LEGAL:<o:p></o:p></p>
+
+<p class=MsoPlainText><o:p>&nbsp;</o:p></p>
+
+<p class=MsoPlainText>if( (someVariable = X + 10) == TRUE )<o:p></o:p></p>
+
+<p class=MsoPlainText>{<o:p></o:p></p>
+
+<p class=MsoPlainText><span style='mso-tab-count:1'>      </span>waitthread
+DoStuffHere();<o:p></o:p></p>
+
+<p class=MsoPlainText>}<o:p></o:p></p>
+
+<p class=MsoPlainText><o:p>&nbsp;</o:p></p>
+
+<p class=MsoPlainText>===============================<o:p></o:p></p>
+
+<p class=MsoPlainText>===============================<o:p></o:p></p>
+
+<p class=MsoPlainText><o:p>&nbsp;</o:p></p>
+
+<p class=MsoPlainText>5) When naming functions, capitalize each logical word in
+the name.<span style='mso-spacerun:yes'>  </span><o:p></o:p></p>
+
+<p class=MsoPlainText><o:p>&nbsp;</o:p></p>
+
+<p class=MsoPlainText>Example:<o:p></o:p></p>
+
+<p class=MsoPlainText><o:p>&nbsp;</o:p></p>
+
+<p class=MsoPlainText>(less desirable)<o:p></o:p></p>
+
+<p class=MsoPlainText><o:p>&nbsp;</o:p></p>
+
+<p class=MsoPlainText>my_function_name:<o:p></o:p></p>
+
+<p class=MsoPlainText>myfunctionname:</p>
+
+<p class=MsoPlainText>myFunctionName:<o:p></o:p></p>
+
+<p class=MsoPlainText><o:p></o:p></p>
+
+<p class=MsoPlainText><o:p>&nbsp;</o:p></p>
+
+<p class=MsoPlainText>(more desirable)<o:p></o:p></p>
+
+<p class=MsoPlainText><o:p>&nbsp;</o:p></p>
+
+<p class=MsoPlainText>MyFunctionName:<o:p></o:p></p>
+
+<p class=MsoPlainText><o:p>&nbsp;</o:p></p>
+
+<p class=MsoPlainText>===============================<o:p></o:p></p>
+
+<p class=MsoPlainText>===============================<o:p></o:p></p>
+
+<p class=MsoPlainText><o:p>&nbsp;</o:p></p>
+
+<p class=MsoPlainText>6) When naming variables, the first letter of the
+variable should be lowercase.<span style='mso-spacerun:yes'>  </span>Each
+subsequent logical word in the name should be capitalized.<o:p></o:p></p>
+
+<p class=MsoPlainText><o:p>&nbsp;</o:p></p>
+
+<p class=MsoPlainText>Example:<o:p></o:p></p>
+
+<p class=MsoPlainText><o:p>&nbsp;</o:p></p>
+
+<p class=MsoPlainText>(less desirable)<o:p></o:p></p>
+
+<p class=MsoPlainText><o:p>&nbsp;</o:p></p>
+
+<p class=MsoPlainText>level.SuperCoolVariable<o:p></o:p></p>
+
+<p class=MsoPlainText>level.supercoolvariable<o:p></o:p></p>
+
+<p class=MsoPlainText>level.super_cool_variable<o:p></o:p></p>
+
+<p class=MsoPlainText><o:p>&nbsp;</o:p></p>
+
+<p class=MsoPlainText>(more desirable)<o:p></o:p></p>
+
+<p class=MsoPlainText><o:p>&nbsp;</o:p></p>
+
+<p class=MsoPlainText>level.superCoolVariable<o:p></o:p></p>
+
+<p class=MsoPlainText><o:p>&nbsp;</o:p></p>
+
+<p class=MsoPlainText><o:p>&nbsp;</o:p></p>
+
+<p class=MsoPlainText>===============================<o:p></o:p></p>
+
+<p class=MsoPlainText>===============================<o:p></o:p></p>
+
+<p class=MsoPlainText><o:p>&nbsp;</o:p></p>
+
+<p class=MsoPlainText>7) Comment your code.<span style='mso-spacerun:yes'>  
+</span>Good commenting is the key to team collaboration when multiple people
+are going to be handing off scripts to one another.<span
+style='mso-spacerun:yes'>  </span><o:p></o:p></p>
+
+<p class=MsoPlainText><o:p>&nbsp;</o:p></p>
+
+<p class=MsoPlainText><o:p>&nbsp;</o:p></p>
+
+<p class=MsoPlainText>===============================<o:p></o:p></p>
+
+<p class=MsoPlainText>===============================<o:p></o:p></p>
+
+<p class=MsoPlainText><o:p>&nbsp;</o:p></p>
+
+<p class=MsoPlainText><o:p>&nbsp;</o:p></p>
+
+<p class=MsoPlainText>8) When naming variables and functions, pick descriptive
+names that make sense and are understandable in terms of reading the code and
+finding out what that function / variable does.<span style='mso-spacerun:yes'> 
+</span>One should almost be able to understand and read the script just from
+the variable and function names along.<span style='mso-spacerun:yes'> 
+</span>It is much better to write a sentence for a name, than to have a simple
+'e1' for a variable name.<span style='mso-spacerun:yes'>  </span><o:p></o:p></p>
+
+<p class=MsoPlainText><o:p>&nbsp;</o:p></p>
+
+<p class=MsoPlainText>===============================<o:p></o:p></p>
+
+<p class=MsoPlainText>===============================<o:p></o:p></p>
+
+<p class=MsoPlainText><o:p>&nbsp;</o:p></p>
+
+<p class=MsoPlainText>9) Old C style block comments using - /* */ - should only
+be done when temporarily commenting out blocks of actual code.<span
+style='mso-spacerun:yes'>  </span>This method should NOT be used for the
+permanent comments<o:p></o:p></p>
+
+<p class=MsoPlainText><o:p>&nbsp;</o:p></p>
+
+<p class=MsoPlainText style='mso-outline-level:1'>CORRECT METHOD:<o:p></o:p></p>
+
+<p class=MsoPlainText>/*<o:p></o:p></p>
+
+<p class=MsoPlainText><span style='mso-tab-count:1'>      </span>//--- spawn an
+explosioin<o:p></o:p></p>
+
+<p class=MsoPlainText><span style='mso-tab-count:1'>      </span>$plasma4_spawn.modelname
+( &quot;fx/fx-sml-exp.tik&quot; );<o:p></o:p></p>
+
+<p class=MsoPlainText><span style='mso-tab-count:1'>      </span>$plasma4_spawn.spawntargetname
+( &quot;plasma4_boom&quot; );<o:p></o:p></p>
+
+<p class=MsoPlainText><span style='mso-tab-count:1'>      </span>trigger (
+&quot;$plasma4_spawn&quot; );<o:p></o:p></p>
+
+<p class=MsoPlainText><span style='mso-tab-count:1'>      </span>$plasma4_spawn.remove
+();<o:p></o:p></p>
+
+<p class=MsoPlainText>*/<o:p></o:p></p>
+
+<p class=MsoPlainText><o:p>&nbsp;</o:p></p>
+
+<p class=MsoPlainText style='mso-outline-level:1'>WRONG METHOD:<o:p></o:p></p>
+
+<p class=MsoPlainText>/*<o:p></o:p></p>
+
+<p class=MsoPlainText>this function is used to move the elevator between m1l1 and
+m1l2<o:p></o:p></p>
+
+<p class=MsoPlainText>*/<o:p></o:p></p>
+
+<p class=MsoPlainText><o:p>&nbsp;</o:p></p>
+
+<p class=MsoPlainText><o:p>&nbsp;</o:p></p>
+
+<p class=MsoPlainText>===============================<o:p></o:p></p>
+
+<p class=MsoPlainText>===============================<o:p></o:p></p>
+
+<p class=MsoPlainText><o:p>&nbsp;</o:p></p>
+
+<p class=MsoPlainText>10) Only leave commented out code in the code if it needs
+to be visible for some reason.<o:p></o:p></p>
+
+<p class=MsoPlainText><o:p>&nbsp;</o:p></p>
+
+<p class=MsoPlainText><o:p>&nbsp;</o:p></p>
+
+<p class=MsoPlainText>===============================<o:p></o:p></p>
+
+<p class=MsoPlainText>===============================<o:p></o:p></p>
+
+<p class=MsoPlainText><o:p>&nbsp;</o:p></p>
+
+<p class=MsoPlainText>11) Do not swear/cuss/use &quot;bad words&quot; in your
+scripts.<span style='mso-spacerun:yes'>  </span>Players have access to and will
+read whatever we write in the script. <span style='mso-spacerun:yes'> </span><o:p></o:p></p>
+
+<p class=MsoPlainText><o:p>&nbsp;</o:p></p>
+
+<p class=MsoPlainText><o:p>&nbsp;</o:p></p>
+
+<p class=MsoPlainText>===============================<o:p></o:p></p>
+
+<p class=MsoPlainText>===============================<o:p></o:p></p>
+
+<p class=MsoPlainText><o:p>&nbsp;</o:p></p>
+
+<p class=MsoPlainText><o:p>&nbsp;</o:p></p>
+
+<p class=MsoPlainText>12)<span style='mso-spacerun:yes'>  </span>The main
+script should have minimal code in it.<span style='mso-spacerun:yes'> 
+</span>Its main responsibility is to setup all the sub-scripts (scripts in the
+map's sub-folder), initialize global variables, and start the level.<span
+style='mso-spacerun:yes'>  </span><o:p></o:p></p>
+
+<p class=MsoPlainText><o:p>&nbsp;</o:p></p>
+
+<p class=MsoPlainText><o:p>&nbsp;</o:p></p>
+
+<p class=MsoPlainText>===============================<o:p></o:p></p>
+
+<p class=MsoPlainText>===============================<o:p></o:p></p>
+
+<p class=MsoPlainText><o:p>&nbsp;</o:p></p>
+
+<p class=MsoPlainText>13)<span style='mso-spacerun:yes'>  </span>Whenever
+possible, use the thread or waithread command instead of a for loop.<span
+style='mso-spacerun:yes'>  </span>It makes the code easier to read (and write
+for that matter).<o:p></o:p></p>
+
+<p class=MsoPlainText><o:p>&nbsp;</o:p></p>
+
+<p class=MsoPlainText>// example:<o:p></o:p></p>
+
+<p class=MsoPlainText><o:p>&nbsp;</o:p></p>
+
+<p class=MsoPlainText><o:p>&nbsp;</o:p></p>
+
+<p class=MsoPlainText>// less desireable<o:p></o:p></p>
+
+<p class=MsoPlainText><o:p>&nbsp;</o:p></p>
+
+<p class=MsoPlainText><span style='mso-tab-count:1'>      </span>for
+(local.i=1;local.i&lt;=$squad.size;local.i++)<o:p></o:p></p>
+
+<p class=MsoPlainText><span style='mso-tab-count:1'>      </span>{<o:p></o:p></p>
+
+<p class=MsoPlainText><span style='mso-tab-count:2'>            </span>$squad[local.i].var1
+= 5<o:p></o:p></p>
+
+<p class=MsoPlainText><span style='mso-tab-count:2'>            </span>$squad[local.i].var2
+= 7<o:p></o:p></p>
+
+<p class=MsoPlainText><span style='mso-tab-count:1'>      </span>}<o:p></o:p></p>
+
+<p class=MsoPlainText><o:p>&nbsp;</o:p></p>
+
+<p class=MsoPlainText>// more desireable:<o:p></o:p></p>
+
+<p class=MsoPlainText><o:p>&nbsp;</o:p></p>
+
+<p class=MsoPlainText><span style='mso-tab-count:1'>      </span>$squad
+waitthread InitSquad<o:p></o:p></p>
+
+<p class=MsoPlainText><span style='mso-tab-count:1'>      </span>end<o:p></o:p></p>
+
+<p class=MsoPlainText><o:p>&nbsp;</o:p></p>
+
+<p class=MsoPlainText>//
+------------------------------------------------------------<o:p></o:p></p>
+
+<p class=MsoPlainText>InitSquad:<o:p></o:p></p>
+
+<p class=MsoPlainText>//
+------------------------------------------------------------<o:p></o:p></p>
+
+<p class=MsoPlainText><o:p>&nbsp;</o:p></p>
+
+<p class=MsoPlainText><span style='mso-tab-count:1'>      </span>self.var1 = 5<o:p></o:p></p>
+
+<p class=MsoPlainText><span style='mso-tab-count:1'>      </span>self.var2 = 7<o:p></o:p></p>
+
+<p class=MsoPlainText><span style='mso-tab-count:1'>      </span>end<o:p></o:p></p>
+
+<p class=MsoPlainText><o:p>&nbsp;</o:p></p>
+
+<p class=MsoPlainText><o:p>&nbsp;</o:p></p>
+
+<p class=MsoPlainText>===============================<o:p></o:p></p>
+
+<p class=MsoPlainText>===============================<o:p></o:p></p>
+
+<p class=MsoPlainText><o:p>&nbsp;</o:p></p>
+
+<p class=MsoPlainText><o:p>&nbsp;</o:p></p>
+
+<p class=MsoPlainText>14) Use the &quot;waitthread&quot; command over the &quot;thread&quot;
+command whenever possible.<span style='mso-spacerun:yes'>  </span>The thread
+command creates a new thread that is put on the queue to be executed later. The
+waitthread command executes the thread and returns immediately.<o:p></o:p></p>
+
+<p class=MsoPlainText><o:p>&nbsp;</o:p></p>
+
+<p class=MsoPlainText><span style='mso-tab-count:1'>      </span>- Valid uses
+for thread over waitthread is where the thread you're creating is intended on
+sticking around for a while or implements code that will do a &quot;wait&quot;
+of some sort.<o:p></o:p></p>
+
+<p class=MsoPlainText><o:p>&nbsp;</o:p></p>
+
+<p class=MsoPlainText>// Example:<o:p></o:p></p>
+
+<p class=MsoPlainText><o:p>&nbsp;</o:p></p>
+
+<p class=MsoPlainText>// bad thread command<o:p></o:p></p>
+
+<p class=MsoPlainText><o:p>&nbsp;</o:p></p>
+
+<p class=MsoPlainText><span style='mso-tab-count:1'>      </span>$squad thread
+InitSquad<o:p></o:p></p>
+
+<p class=MsoPlainText><span style='mso-tab-count:1'>      </span>$squad
+waitthread DoSomethingElse.<o:p></o:p></p>
+
+<p class=MsoPlainText><o:p>&nbsp;</o:p></p>
+
+<p class=MsoPlainText><span style='mso-tab-count:1'>      </span>// this is bad
+because the code inside of InitSquad actually executes AFTER the code in
+DoSomethingElse.<o:p></o:p></p>
+
+<p class=MsoPlainText><o:p>&nbsp;</o:p></p>
+
+<p class=MsoPlainText><o:p>&nbsp;</o:p></p>
+
+<p class=MsoPlainText>// Valid use of the thread command:<o:p></o:p></p>
+
+<p class=MsoPlainText><o:p>&nbsp;</o:p></p>
+
+<p class=MsoPlainText><span style='mso-tab-count:1'>      </span>$squad thread
+TrackDeath<o:p></o:p></p>
+
+<p class=MsoPlainText><span style='mso-tab-count:1'>      </span>end<o:p></o:p></p>
+
+<p class=MsoPlainText><o:p>&nbsp;</o:p></p>
+
+<p class=MsoPlainText>//
+------------------------------------------------------------<o:p></o:p></p>
+
+<p class=MsoPlainText>TrackDeath:<o:p></o:p></p>
+
+<p class=MsoPlainText>// ------------------------------------------------------------<o:p></o:p></p>
+
+<p class=MsoPlainText><span style='mso-tab-count:1'>      </span>level.count ++<o:p></o:p></p>
+
+<p class=MsoPlainText><span style='mso-tab-count:1'>      </span>self waittill
+death<o:p></o:p></p>
+
+<p class=MsoPlainText><span style='mso-tab-count:1'>      </span>level.count --<o:p></o:p></p>
+
+<p class=MsoPlainText><span style='mso-tab-count:1'>      </span>end<o:p></o:p></p>
+
+<p class=MsoPlainText><span style='mso-tab-count:1'>      </span><o:p></o:p></p>
+
+<p class=MsoPlainText>===============================<o:p></o:p></p>
+
+<p class=MsoPlainText>===============================<o:p></o:p></p>
+
+<p class=MsoPlainText><o:p>&nbsp;</o:p></p>
+
+<p class=MsoPlainText><o:p>&nbsp;</o:p></p>
+
+<p class=MsoPlainText><o:p>&nbsp;</o:p></p>
+
+<p class=MsoPlainText>15) Keep tabs instead of spaces.<span
+style='mso-spacerun:yes'>  </span>Tabs should be set to 4.<span
+style='mso-spacerun:yes'>  </span>In whatever text editor program you use, you
+should be able to set this under preferences.<span style='mso-spacerun:yes'> 
+</span>If you are using notepad or wordpad, come see me and we'll get you setup
+with a proper text / code editing program.</p>
+
+<p class=MsoPlainText><o:p>&nbsp;</o:p></p>
+
+<p class=MsoPlainText><o:p>&nbsp;</o:p></p>
+
+<p class=MsoPlainText><o:p>&nbsp;</o:p></p>
+
+</div>
+
+</body>
+
+</html>

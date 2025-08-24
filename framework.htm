@@ -1,0 +1,581 @@
+<html xmlns:v="urn:schemas-microsoft-com:vml"
+xmlns:o="urn:schemas-microsoft-com:office:office"
+xmlns:w="urn:schemas-microsoft-com:office:word"
+xmlns="http://www.w3.org/TR/REC-html40">
+
+<head>
+<meta http-equiv=Content-Type content="text/html; charset=windows-1252">
+<meta name=ProgId content=Word.Document>
+<meta name=Generator content="Microsoft Word 10">
+<meta name=Originator content="Microsoft Word 10">
+<link rel=File-List href="framework_files/filelist.xml">
+<link rel=Edit-Time-Data href="framework_files/editdata.mso">
+<!--[if !mso]>
+<style>
+v\:* {behavior:url(#default#VML);}
+o\:* {behavior:url(#default#VML);}
+w\:* {behavior:url(#default#VML);}
+.shape {behavior:url(#default#VML);}
+</style>
+<![endif]-->
+<title>Using the Medal of Honor Pacific Assault Mod Developer’s Kit</title>
+<!--[if gte mso 9]><xml>
+ <o:DocumentProperties>
+  <o:Author>bbilodeau</o:Author>
+  <o:LastAuthor>bbilodeau</o:LastAuthor>
+  <o:Revision>8</o:Revision>
+  <o:TotalTime>339</o:TotalTime>
+  <o:Created>2004-12-07T03:38:00Z</o:Created>
+  <o:LastSaved>2005-01-18T03:19:00Z</o:LastSaved>
+  <o:Pages>1</o:Pages>
+  <o:Words>1645</o:Words>
+  <o:Characters>9381</o:Characters>
+  <o:Company>TKO Software, Inc.</o:Company>
+  <o:Lines>78</o:Lines>
+  <o:Paragraphs>22</o:Paragraphs>
+  <o:CharactersWithSpaces>11004</o:CharactersWithSpaces>
+  <o:Version>10.3501</o:Version>
+ </o:DocumentProperties>
+</xml><![endif]--><!--[if gte mso 9]><xml>
+ <w:WordDocument>
+  <w:Compatibility>
+   <w:BreakWrappedTables/>
+   <w:SnapToGridInCell/>
+   <w:WrapTextWithPunct/>
+   <w:UseAsianBreakRules/>
+  </w:Compatibility>
+  <w:BrowserLevel>MicrosoftInternetExplorer4</w:BrowserLevel>
+ </w:WordDocument>
+</xml><![endif]-->
+<style>
+<!--
+ /* Style Definitions */
+ p.MsoNormal, li.MsoNormal, div.MsoNormal
+	{mso-style-parent:"";
+	margin:0in;
+	margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	font-size:12.0pt;
+	font-family:"Times New Roman";
+	mso-fareast-font-family:"Times New Roman";}
+a:link, span.MsoHyperlink
+	{color:blue;
+	text-decoration:underline;
+	text-underline:single;}
+a:visited, span.MsoHyperlinkFollowed
+	{color:purple;
+	text-decoration:underline;
+	text-underline:single;}
+@page Section1
+	{size:8.5in 11.0in;
+	margin:1.0in 1.25in 1.0in 1.25in;
+	mso-header-margin:.5in;
+	mso-footer-margin:.5in;
+	mso-paper-source:0;}
+div.Section1
+	{page:Section1;}
+ /* List Definitions */
+ @list l0
+	{mso-list-id:476149983;
+	mso-list-template-ids:-1937587662;}
+@list l1
+	{mso-list-id:1343778927;
+	mso-list-type:hybrid;
+	mso-list-template-ids:545027528 67698703 67698713 67698715 67698703 67698713 67698715 67698703 67698713 67698715;}
+@list l1:level1
+	{mso-level-tab-stop:.5in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l1:level2
+	{mso-level-tab-stop:1.0in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l1:level3
+	{mso-level-tab-stop:1.5in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l1:level4
+	{mso-level-tab-stop:2.0in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l1:level5
+	{mso-level-tab-stop:2.5in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l1:level6
+	{mso-level-tab-stop:3.0in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l1:level7
+	{mso-level-tab-stop:3.5in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l1:level8
+	{mso-level-tab-stop:4.0in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l1:level9
+	{mso-level-tab-stop:4.5in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l2
+	{mso-list-id:1695418483;
+	mso-list-template-ids:-1754886946;}
+@list l3
+	{mso-list-id:2061709274;
+	mso-list-type:hybrid;
+	mso-list-template-ids:-661065872 1449288888 67698713 67698715 67698703 67698713 67698715 67698703 67698713 67698715;}
+@list l3:level1
+	{mso-level-tab-stop:.5in;
+	mso-level-number-position:left;
+	text-indent:-.25in;
+	mso-ansi-font-weight:normal;}
+@list l3:level2
+	{mso-level-number-format:alpha-lower;
+	mso-level-tab-stop:1.0in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l3:level3
+	{mso-level-tab-stop:1.5in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l3:level4
+	{mso-level-tab-stop:2.0in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l3:level5
+	{mso-level-tab-stop:2.5in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l3:level6
+	{mso-level-tab-stop:3.0in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l3:level7
+	{mso-level-tab-stop:3.5in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l3:level8
+	{mso-level-tab-stop:4.0in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l3:level9
+	{mso-level-tab-stop:4.5in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+ol
+	{margin-bottom:0in;}
+ul
+	{margin-bottom:0in;}
+-->
+</style>
+<!--[if gte mso 10]>
+<style>
+ /* Style Definitions */
+ table.MsoNormalTable
+	{mso-style-name:"Table Normal";
+	mso-tstyle-rowband-size:0;
+	mso-tstyle-colband-size:0;
+	mso-style-noshow:yes;
+	mso-style-parent:"";
+	mso-padding-alt:0in 5.4pt 0in 5.4pt;
+	mso-para-margin:0in;
+	mso-para-margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	font-size:10.0pt;
+	font-family:"Times New Roman";}
+</style>
+<![endif]--><!--[if gte mso 9]><xml>
+ <o:shapedefaults v:ext="edit" spidmax="13314"/>
+</xml><![endif]--><!--[if gte mso 9]><xml>
+ <o:shapelayout v:ext="edit">
+  <o:idmap v:ext="edit" data="1"/>
+ </o:shapelayout></xml><![endif]-->
+</head>
+
+<body lang=EN-US link=blue vlink=purple style='tab-interval:.5in'>
+
+<div class=Section1>
+
+<p class=MsoNormal align=center style='text-align:center'><b style='mso-bidi-font-weight:
+normal'><span style='font-size:14.0pt'>Getting Started with the <o:p></o:p></span></b></p>
+
+<p class=MsoNormal align=center style='text-align:center'><b style='mso-bidi-font-weight:
+normal'><span style='font-size:14.0pt'>Medal of Honor Pacific Assault <o:p></o:p></span></b></p>
+
+<p class=MsoNormal align=center style='text-align:center'><b style='mso-bidi-font-weight:
+normal'><span style='font-size:14.0pt'>Mod Developer’s Kit (v1.1)<o:p></o:p></span></b></p>
+
+<p class=MsoNormal align=center style='text-align:center'><b style='mso-bidi-font-weight:
+normal'><span style='font-size:14.0pt'><o:p>&nbsp;</o:p></span></b></p>
+
+<p class=MsoNormal align=center style='text-align:center'><b style='mso-bidi-font-weight:
+normal'><span style='font-size:14.0pt'><o:p>&nbsp;</o:p></span></b></p>
+
+<p class=MsoNormal style='margin-left:.25in;text-indent:-.25in'><span
+style='mso-tab-count:1'>      </span>The Medal of Honor Pacific Assault Mod
+Developer’s Kit (MDK) includes a suite of tools to help the mod developer
+create mods for the game. The starting point for your mod creation is the MDK
+Launcher application. When the MDK is installed, a shortcut to the Launcher is
+placed on the desktop and in the start menu. When you start the Launcher the
+following screen appears:</p>
+
+<p class=MsoNormal style='margin-left:.25in;text-indent:-.25in'><o:p>&nbsp;</o:p></p>
+
+<p class=MsoNormal style='margin-left:.25in'><!--[if gte vml 1]><v:shapetype
+ id="_x0000_t75" coordsize="21600,21600" o:spt="75" o:preferrelative="t"
+ path="m@4@5l@4@11@9@11@9@5xe" filled="f" stroked="f">
+ <v:stroke joinstyle="miter"/>
+ <v:formulas>
+  <v:f eqn="if lineDrawn pixelLineWidth 0"/>
+  <v:f eqn="sum @0 1 0"/>
+  <v:f eqn="sum 0 0 @1"/>
+  <v:f eqn="prod @2 1 2"/>
+  <v:f eqn="prod @3 21600 pixelWidth"/>
+  <v:f eqn="prod @3 21600 pixelHeight"/>
+  <v:f eqn="sum @0 0 1"/>
+  <v:f eqn="prod @6 1 2"/>
+  <v:f eqn="prod @7 21600 pixelWidth"/>
+  <v:f eqn="sum @8 21600 0"/>
+  <v:f eqn="prod @7 21600 pixelHeight"/>
+  <v:f eqn="sum @10 21600 0"/>
+ </v:formulas>
+ <v:path o:extrusionok="f" gradientshapeok="t" o:connecttype="rect"/>
+ <o:lock v:ext="edit" aspectratio="t"/>
+</v:shapetype><v:shape id="_x0000_i1025" type="#_x0000_t75" style='width:4in;
+ height:205.5pt'>
+ <v:imagedata src="framework_files/image001.png" o:title=""/>
+</v:shape><![endif]--><![if !vml]><img width=384 height=274
+src="framework_files/image015.jpg" v:shapes="_x0000_i1025"><![endif]></p>
+
+<p class=MsoNormal style='margin-left:.25in;text-indent:-.25in'><o:p>&nbsp;</o:p></p>
+
+<p class=MsoNormal style='margin-left:.25in;text-indent:-.25in'><span
+style='mso-tab-count:1'>      </span>The Launcher buttons correspond to the
+steps you will take to create a valid mod for the game. Conceptually, the steps
+are as follows: </p>
+
+<ol style='margin-top:0in' start=1 type=1>
+ <li class=MsoNormal style='mso-list:l1 level1 lfo3;tab-stops:list .5in'>Create
+     a mod directory and the necessary files and folders for a valid mod.</li>
+ <li class=MsoNormal style='mso-list:l1 level1 lfo3;tab-stops:list .5in'>Create
+     and edit the 3D models</li>
+ <li class=MsoNormal style='mso-list:l1 level1 lfo3;tab-stops:list .5in'>Assemble
+     the map</li>
+ <li class=MsoNormal style='mso-list:l1 level1 lfo3;tab-stops:list .5in'>Create
+     any other assets for the game, such as scripts or sounds.</li>
+ <li class=MsoNormal style='mso-list:l1 level1 lfo3;tab-stops:list .5in'>Package
+     the mod assets into pak files.</li>
+ <li class=MsoNormal style='mso-list:l1 level1 lfo3;tab-stops:list .5in'>Enable
+     the mod in the game.</li>
+</ol>
+
+<p class=MsoNormal><o:p>&nbsp;</o:p></p>
+
+<p class=MsoNormal style='margin-left:.25in'>The MDK assists in these steps
+with the following tools that can be started from the Launcher:</p>
+
+<p class=MsoNormal style='margin-left:.25in'><o:p>&nbsp;</o:p></p>
+
+<ol style='margin-top:0in' start=1 type=1>
+ <li class=MsoNormal style='mso-list:l3 level1 lfo6;tab-stops:list .5in'><b
+     style='mso-bidi-font-weight:normal'>New Mod</b> - Launches the Mod Wizard
+     which will take you through the process of creating a mod directory and
+     initializing a mod description file (moddesc.xml). Folders will be created
+     in the mod directory to hold the assets you will be modifying. For
+     example, there is a “models” folder which will contain the 3D models your
+     mod will use.</li>
+ <li class=MsoNormal style='mso-list:l3 level1 lfo6;tab-stops:list .5in'><b
+     style='mso-bidi-font-weight:normal'>Model Editor</b> – The model editor
+     button starts the MDK supported 3D model editor. MilkShape3D is the editor
+     supported by the MDK. Using the MDK MilkShape plug-ins, you will be able
+     to create and modify 3D models that are used in the game with this tool. </li>
+ <li class=MsoNormal style='mso-list:l3 level1 lfo6;tab-stops:list .5in'><b
+     style='mso-bidi-font-weight:normal'>Map Editor</b> – This button launches
+     the MDK supported map editor, which is Mohradiant. Mohradiant is a version
+     of Radiant that has been modified to create maps that can be used with
+     Medal of Honor Pacific Assault. Mohradiant will be used primarily for
+     assembling maps and creating terrain. Mohradiant<i style='mso-bidi-font-style:
+     normal'> </i>is<i style='mso-bidi-font-style:normal'> not </i>Radiant -
+     some of the brush creating capabilities have been disabled, since model
+     building should be done in the model editor. Models from your mod model
+     directory and from the game assets can be used to create new game levels.
+     This version of Mohradiant also includes a terrain generating program for
+     creating new map terrain. It also has a light map generating feature for
+     automatically creating lightmaps for the level.</li>
+ <li class=MsoNormal style='mso-list:l3 level1 lfo6;tab-stops:list .5in'><b
+     style='mso-bidi-font-weight:normal'>Script Editor </b>– The script editor
+     is a simple text editor which can be used for viewing game scripts and hag
+     files, making simple changes, and saving them to your mod directory. The
+     Script Editor reads directly out of the .rez files, so you don’t need to
+     unpack the game data to edit scripts.</li>
+ <li class=MsoNormal style='mso-list:l3 level1 lfo6;tab-stops:list .5in'><b
+     style='mso-bidi-font-weight:normal'>Configure Mod – </b>The mod
+     configuration utility can be used to enable a mod so that the game will
+     recognize it. It can also be used for adding pak files and modifying the
+     information about the mod. It is important to note that mods can not be
+     used by the game without enabling them first. There are two places you can
+     do this. One is the Configure Mod utility, the other is in the game using
+     the Mod Browser, which is located in the multiplayer menu.<b
+     style='mso-bidi-font-weight:normal'><o:p></o:p></b></li>
+ <li class=MsoNormal style='mso-list:l3 level1 lfo6;tab-stops:list .5in'><b
+     style='mso-bidi-font-weight:normal'>Test Mod – </b>The Test Mod button
+     will bring up a dialog that can be used for running the game with your
+     mod.<b style='mso-bidi-font-weight:normal'><o:p></o:p></b></li>
+</ol>
+
+<p class=MsoNormal><o:p>&nbsp;</o:p></p>
+
+<p class=MsoNormal style='margin-left:.25in'>The second tab of the Launcher
+contains some important utilities:</p>
+
+<p class=MsoNormal style='margin-left:.25in'><o:p>&nbsp;</o:p></p>
+
+<p class=MsoNormal style='margin-left:.25in'><b style='mso-bidi-font-weight:
+normal'><!--[if gte vml 1]><v:shape id="_x0000_i1026" type="#_x0000_t75"
+ style='width:4in;height:205.5pt'>
+ <v:imagedata src="framework_files/image003.png" o:title=""/>
+</v:shape><![endif]--><![if !vml]><img width=384 height=274
+src="framework_files/image016.jpg" v:shapes="_x0000_i1026"><![endif]></b></p>
+
+<p class=MsoNormal style='margin-left:.25in'><o:p>&nbsp;</o:p></p>
+
+<p class=MsoNormal style='margin-left:.5in'>1. The <b style='mso-bidi-font-weight:
+normal'>Pak File Utility</b> button will bring up an application for packaging
+your mod’s assets into pak (.pk3) files. The pak file utility the MDK uses is
+the familiar PakScape program. When the mod wizard runs, it sets up asset
+folders in your mod directory. Mod directories will always be in:</p>
+
+<p class=MsoNormal style='margin-left:.5in;text-indent:.25in'><o:p>&nbsp;</o:p></p>
+
+<p class=MsoNormal style='margin-left:.5in;text-indent:.25in'>MyDocuments\EA
+Games\Medal of Honor Pacific Assault(tm)\moddir\<i style='mso-bidi-font-style:
+normal'>modname</i></p>
+
+<p class=MsoNormal style='margin-left:.5in;text-indent:.25in'><o:p>&nbsp;</o:p></p>
+
+<p class=MsoNormal style='margin-left:.5in;text-indent:.25in'>Where “<i
+style='mso-bidi-font-style:normal'>modname” </i><span
+style='mso-spacerun:yes'> </span>is the ID you gave your mod when you ran the
+wizard. Pak files should be created in this folder and given the name “pak<i
+style='mso-bidi-font-style:normal'>n</i>.pk3” where n is a number greater than
+the current pakfiles used by the game. Game pak files are located in “Program
+Files\EA Games\Medal of Honor Pacific Assault(tm)\main” and “Program Files\EA
+Games\Medal of Honor Pacific Assault(tm)\mainmp”.<span
+style='mso-spacerun:yes'>  </span>Instead of using .pk3 format, they use .rez
+format. You can still override data in a .rez file with a .pak file. For
+example, if the highest rez file in those directories is pak8.rez, you should
+name your pak file pak9.pk3 or greater. This will ensure that any assets you
+create with the same name as those stored in the game pak files will be used
+instead of the game assets. By creating your pak files inside the mod
+directory, the assets will automatically have the correct paths since the game
+will look for models in the “models” directory, and maps in the “maps” directory,
+etc.</p>
+
+<p class=MsoNormal style='margin-left:.5in;text-indent:.25in'>You may find it
+necessary to see what is in a game .rez file. Rez files can be opened with the <b
+style='mso-bidi-font-weight:normal'>MakePack</b> utility, located in the
+MDK/bin folder. To get a list of all the files in a pack file run the following
+command line: “MakePack –m <i style='mso-bidi-font-style:normal'>filename</i>.rez”.
+To extract a specific file type “MakePack –x<span style='mso-spacerun:yes'> 
+</span><i style='mso-bidi-font-style:normal'>filename</i>.rez <i
+style='mso-bidi-font-style:normal'>file, </i>where <i style='mso-bidi-font-style:
+normal'>file </i>is the name of the file to be extracted. To extract all of the
+files in a .rez file just type “MakePack <i style='mso-bidi-font-style:normal'>filename.</i>rez.</p>
+
+<p class=MsoNormal><o:p>&nbsp;</o:p></p>
+
+<p class=MsoNormal style='margin-left:.5in'>2. The <b style='mso-bidi-font-weight:
+normal'>Rez File Utility </b>is used for extracting individual or the entire
+.rez file. All of the MDK tools are capable of reading directly from the .rez
+files so you shouldn’t need to use this tool too often. You probably want to
+avoid extracting all of the .rez file contents since they take up lots of disk
+space.</p>
+
+<p class=MsoNormal style='margin-left:.5in'><o:p>&nbsp;</o:p></p>
+
+<p class=MsoNormal style='margin-left:.5in'>3. The <b style='mso-bidi-font-weight:
+normal'>Decal Tool</b> is used for creating your own decal materials. See the
+art section of the Users Guide for details.</p>
+
+<p class=MsoNormal style='margin-left:.5in'><o:p>&nbsp;</o:p></p>
+
+<p class=MsoNormal style='margin-left:.5in'>4. The <b style='mso-bidi-font-weight:
+normal'>Texture Utility</b> button will launch the DirectX 9 texture tool. This
+tool can be used for creating .dds files used by the game. It will convert
+other texture formats like .tga into DirectX compressed textures. The
+compressed texture formats used by the game are listed in the tool as “Four CC
+8-bit: DXT3” and “Four CC 8-bit DXT5”. Compressed textures allow you to use
+higher resolution textures without a performance penalty. See Microsoft’s
+Direct X documentation for details.</p>
+
+<p class=MsoNormal><o:p>&nbsp;</o:p></p>
+
+<p class=MsoNormal><o:p>&nbsp;</o:p></p>
+
+<p class=MsoNormal style='margin-left:.5in'><b style='mso-bidi-font-weight:
+normal'><u>Mod Configuration Utility </u></b></p>
+
+<p class=MsoNormal style='margin-left:.5in'><o:p>&nbsp;</o:p></p>
+
+<p class=MsoNormal style='margin-left:.5in'><span style='mso-tab-count:1'>            </span>The
+Mod Configuration utility is an important part of mod creation, and may need
+some further explanation the first time you use it. When the Mod Configure
+utility is launched the first screen is as follows:</p>
+
+<p class=MsoNormal style='margin-left:.5in'><o:p>&nbsp;</o:p></p>
+
+<p class=MsoNormal style='margin-left:.5in'><!--[if gte vml 1]><v:shape id="_x0000_i1030"
+ type="#_x0000_t75" style='width:246pt;height:302.25pt'>
+ <v:imagedata src="framework_files/image002.png" o:title=""/>
+</v:shape><![endif]--><![if !vml]><img width=328 height=403
+src="framework_files/image004.jpg" v:shapes="_x0000_i1030"><![endif]></p>
+
+<p class=MsoNormal style='margin-left:.5in'><o:p>&nbsp;</o:p></p>
+
+<p class=MsoNormal style='margin-left:.5in'><span style='mso-tab-count:1'>            </span>On
+the right, is a list of Mods that currently exist. They correspond to the mods
+stored in “MyDocuments\EA Games\Medal of Honor Pacific Assault(tm)\moddir”.
+Mods that have a check mark next to them are enabled. That is, they will be
+used by the game. Mods that are not enabled, will be ignored by the game. If
+more than one mod is enabled and they conflict, the one with the highest
+priority will be used.<span style='mso-spacerun:yes'>  </span>Below the list of
+mods is the “Current Mod” name. The current mod is used by the MDK tools to
+determine which mod to save and load files from. Click on the “Set Current Mod”
+button to select the current mod from a list. To enable a mod, select<i
+style='mso-bidi-font-style:normal'> </i>one in the mod list<i style='mso-bidi-font-style:
+normal'>,</i> then click on the Enable button:</p>
+
+<p class=MsoNormal style='margin-left:.5in'><o:p>&nbsp;</o:p></p>
+
+<p class=MsoNormal style='margin-left:.5in'><!--[if gte vml 1]><v:shape id="_x0000_i1027"
+ type="#_x0000_t75" style='width:138pt;height:126pt'>
+ <v:imagedata src="framework_files/image007.png" o:title=""/>
+</v:shape><![endif]--><![if !vml]><img width=184 height=168
+src="framework_files/image019.jpg" v:shapes="_x0000_i1027"><![endif]></p>
+
+<p class=MsoNormal style='margin-left:.5in'><o:p>&nbsp;</o:p></p>
+
+<p class=MsoNormal style='margin-left:.5in'>The EnableMod dialog will enable
+the mod, and allow you to set a priority for the mod. If you set a priority
+that is already used by another mod, that mod’s priority will increase by one.
+If that mod’s priority is also in use, it will increase the other mod’s
+priority that is in use and so on. This insures that no two mods will ever have
+the same priority. If you click the Downloadable box, servers will make this
+mod available for download directly from the server. The EnableMod dialog can
+be used for examining the current state of the mod without making changes by
+clicking the cancel button when you’re done. The Disable button, as expected,
+simply disables the selected mod in the list. Note that clicking on the check
+boxes in the Mod List have the same effect as clicking on the Enable and
+Disable buttons.</p>
+
+<p class=MsoNormal style='margin-left:.5in'><o:p>&nbsp;</o:p></p>
+
+<p class=MsoNormal style='margin-left:.5in'><span style='mso-tab-count:1'>            </span>The
+Add/Remove Pak Files button is another necessary feature that you need to use
+to make your mod usable by the game. When you click on the button it will bring
+up the following dialog:</p>
+
+<p class=MsoNormal style='margin-left:.5in'><o:p>&nbsp;</o:p></p>
+
+<p class=MsoNormal style='margin-left:.5in'><span style='mso-no-proof:yes'><!--[if gte vml 1]><v:shape
+ id="_x0000_i1028" type="#_x0000_t75" style='width:168pt;height:272.25pt'>
+ <v:imagedata src="framework_files/image009.png" o:title=""/>
+</v:shape><![endif]--><![if !vml]><img width=224 height=363
+src="framework_files/image020.jpg" v:shapes="_x0000_i1028"><![endif]></span><br
+clear=all style='mso-special-character:line-break'>
+</p>
+
+<p class=MsoNormal style='margin-left:.5in'><o:p>&nbsp;</o:p></p>
+
+<p class=MsoNormal style='margin-left:.5in'>A list of available pak files
+(which you created earlier with the pak file utility) are listed. You can
+select multiple pak files if needed. Select a pak file and click on “Client” if
+you want it to be downloaded by the server, or “Server” if it’s a server-only
+pak file and you don’t want it to be downloaded by the server.Click OK to add
+the checked pak files to the mod. <b style='mso-bidi-font-weight:normal'>Note:</b>
+By not checking a pak file, you will be excluding it from the mod. </p>
+
+<p class=MsoNormal style='margin-left:.5in'><o:p>&nbsp;</o:p></p>
+
+<p class=MsoNormal style='margin-left:.5in'>The “Properties” button on the Mod
+Configuration utility brings up the mod information for editing:</p>
+
+<p class=MsoNormal style='margin-left:.5in'><o:p>&nbsp;</o:p></p>
+
+<p class=MsoNormal style='margin-left:.5in'><!--[if gte vml 1]><v:shape id="_x0000_i1031"
+ type="#_x0000_t75" style='width:375pt;height:362.25pt'>
+ <v:imagedata src="framework_files/image005.png" o:title=""/>
+</v:shape><![endif]--><![if !vml]><img width=500 height=483
+src="framework_files/image006.jpg" v:shapes="_x0000_i1031"><![endif]></p>
+
+<p class=MsoNormal style='margin-left:.5in'><o:p>&nbsp;</o:p></p>
+
+<p class=MsoNormal style='margin-left:.5in'>Most of the information presented
+in the Mod Properties Dialog was created when you ran the Mod Wizard. This
+dialog gives you the chance to change any of the information after you’ve
+already created the mod. One thing that can’t be changed is the mod ID. The mod
+ID is the name used to identify the mod and is also the name of the mod’s
+folder. Note that the mod name is intended to be more descriptive, but not used
+by the game or the tools for identifying the mod. New to version 1.1 of the MDK
+is the “Mod Sharing” section. Mod sharing is covered in more detail in the <a
+href="Collaboration.htm">Mod Collaboration</a> section of the <a
+href="index.htm">User Guide</a>. If you’re just getting started, and you don’t
+care about mod sharing, you can leave the default values for now.</p>
+
+<p class=MsoNormal><o:p>&nbsp;</o:p></p>
+
+<p class=MsoNormal style='margin-left:.5in'><b style='mso-bidi-font-weight:
+normal'><u>Testing Your Mod</u></b></p>
+
+<p class=MsoNormal style='margin-left:.5in'><o:p>&nbsp;</o:p></p>
+
+<p class=MsoNormal style='margin-left:.5in'><span style='mso-tab-count:1'>            </span>Once
+the mod has been enabled, it will be used in the game when a map that contains
+a modified asset is used. Often times the map itself is a modified asset. You
+can create a shortcut to the game and use the “+map <i style='mso-bidi-font-style:
+normal'>mapname</i>” command line, but an easier way is to use the Test Mod
+button from the Launcher:</p>
+
+<p class=MsoNormal style='margin-left:.5in'><o:p>&nbsp;</o:p></p>
+
+<p class=MsoNormal style='margin-left:.5in'><!--[if gte vml 1]><v:shape id="_x0000_i1029"
+ type="#_x0000_t75" style='width:225pt;height:238.5pt'>
+ <v:imagedata src="framework_files/image023.png" o:title=""/>
+</v:shape><![endif]--><![if !vml]><img border=0 width=300 height=318
+src="framework_files/image024.jpg" v:shapes="_x0000_i1029"><![endif]></p>
+
+<p class=MsoNormal style='margin-left:.5in'><o:p>&nbsp;</o:p></p>
+
+<p class=MsoNormal style='margin-left:.5in'>The first field of the Test Mod
+dialog is the Current Mod. As described earlier the Current Mod is the mod ID
+of the mod you are currently working on. If you want to test another mod, click
+on the cancel button and go to the “Configure Mod” dialog and select a
+different mod. In the “Map Name” field click on the “…” button to bring up a
+list of available maps. The list will contain maps that exist in the game, as
+well as maps you have created for this mod. Map names are relative to the mod’s
+maps folder. For example if the map is in “maps\dm\mp_shootingrange.bsp”, the
+map name in the list will be: “dm\mp_shootingrange”. If you prefer, you can
+also type in the name of the map (without the .bsp extension). Pull down the
+Game Type combo box to get a list of possible game types to run the mod with.
+Finally, you can add whatever command line arguments you want in the
+“Additional Command Line Aguments” field. All of the information will be saved
+for the next time you click on the “Test Mod” button, so you won’t have to
+re-type it. Click on the “Run Game” button to launch MOHPA.</p>
+
+<p class=MsoNormal style='margin-left:.5in'><o:p>&nbsp;</o:p></p>
+
+<p class=MsoNormal style='margin-left:.5in;text-indent:-.5in'><span
+style='mso-tab-count:2'>                        </span>This concludes the
+introduction to creating mods with the MDK. You now know the mechanics of
+creating a valid mod that can be used in the game and by the tools. What
+remains is the actual content creation. If you’ve created mods for other games,
+content creation should already be familiar to you. You can read the MDK
+documents for the type of mod you want to create to find out the specifics for
+this game.</p>
+
+</div>
+
+</body>
+
+</html>
